@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "hexo-blog-site",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": ""
+    "version": "5.4.0"
   },
   "dependencies": {
     "hexo": "^5.0.0",
