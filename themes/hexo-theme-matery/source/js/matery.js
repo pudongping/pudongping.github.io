@@ -103,8 +103,17 @@ $(function () {
         $('#articleContent, #myGallery').lightGallery({
             selector: '.img-item',
             // 启用字幕
-            subHtmlSelectorRelative: true
+            subHtmlSelectorRelative: true,
+            // 关闭掉图片缩略图显示（因为使用懒加载时，缩略图都只会显示 loading 动图，用户体验不是很好）
+            showThumbByDefault: false
         });
+
+        // 当使用懒加载（hexo-lazyload-image）时，图片切换会一直显示 loading 图片，因此使用以下代码手动替换下 href
+        // ====> start
+        $(document).find('img[data-original]').each(function(){
+            $(this).parent().attr("href", $(this).attr("data-original"));
+        });
+        // ====> end
 
         // progress bar init
         const progressElement = window.document.querySelector('.progress-bar');
@@ -146,16 +155,16 @@ $(function () {
         }
     }
 
-    	
+
 	$(".nav-menu>li").hover(function(){
 		$(this).children('ul').stop(true,true).show();
 		 $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
-		
+
 	},function(){
 		$(this).children('ul').stop(true,true).hide();
 		$('.nav-item.nav-show').removeClass('nav-show');
 	})
-	
+
     $('.m-nav-item>a').on('click',function(){
             if ($(this).next('ul').css('display') == "none") {
                 $('.m-nav-item').children('ul').slideUp(300);

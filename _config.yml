@@ -131,3 +131,9 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# 图片懒加载
+lazyload:
+  enable: true
+  onlypost: true # 如果为 true，则只有文章或页面中的图像支持延迟加载，如果为 false，则站点的整个图像将使用延迟加载，但不包括来自CSS样式的背景图像。
+  loadingImg: /medias/loading.gif  # loading 图片路径，也可以支持网络图片
