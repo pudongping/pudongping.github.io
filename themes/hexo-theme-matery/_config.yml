@@ -668,10 +668,14 @@ dynamicLabel:
 fireworks:
   enable: true # 开启为 true，关闭为 false
 
+# 鼠标点击，文字浮层特效
+wordfloat:
+  enable: true # 开启为 true，关闭为 false
+
 # 页面樱花飘落动态特效
 sakura:
   enable: true # 开启为 true，关闭为 false
 
-# 鼠标点击，文字浮层特效
-wordfloat:
+# 背景雪花飘落特效
+snow:
   enable: true # 开启为 true，关闭为 false
