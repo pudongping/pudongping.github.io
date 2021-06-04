@@ -667,3 +667,7 @@ dynamicLabel:
 # 鼠标点击烟花爆炸效果
 fireworks:
   enable: true # 开启为 true，关闭为 false
+
+# 页面樱花飘落动态特效
+sakura:
+  enable: true # 开启为 true，关闭为 false
