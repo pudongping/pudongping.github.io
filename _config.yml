@@ -117,3 +117,14 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
+
+# 添加 RSS 订阅支持
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
