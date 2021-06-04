@@ -116,7 +116,7 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
+favicon: /medias/favicon.png
 logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
