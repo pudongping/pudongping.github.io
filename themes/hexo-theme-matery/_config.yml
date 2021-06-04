@@ -589,8 +589,8 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 方向不对，努力白费！
-  sub2: If the direction is wrong, the effort is in vain!
+  sub1: 骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。
+  sub2: It doesn't matter how slowly you go as long as you don't stop!
 
 # 手机二级菜单.
 navMenu:
