@@ -10,10 +10,8 @@
             <% } else { %>
                 <span id="year"><%- theme.time.year %></span>
             <% } %>
-            <span id="year"><%- theme.time.year %></span>
             <a href="<%- url_for('/about') %>" target="_blank"><%- config.author %></a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            |&nbsp;<span style="margin: 0 5px; display: inline-block;"><i class="fa fa-heart" style="color:#ff71a8;"></i></span>  Powered by <a href="<%- url_for('/about') %>" target="_blank"><%- config.author %></a>
             <br>
             <% if (theme.postInfo.totalCount) { %>
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
@@ -82,6 +80,11 @@
             </script>
             <% } %>
             <br>
+            <% if (theme.beian.enable) { %>
+                <span>
+                    <a href="<%- url_for(theme.beian.url) %>" target="_blank"><%= theme.beian.text %></a>
+                </span> &nbsp; | &nbsp;
+            <% } %>
             <% if (theme.icp.enable) { %>
             <span id="icp"><img src="<%- theme.jsDelivr.url %><%- url_for('/medias/icp.png') %>" style="vertical-align: text-bottom;" />
                 <a href="<%- url_for(theme.icp.url) %>" target="_blank"><%= theme.icp.text %></a>
