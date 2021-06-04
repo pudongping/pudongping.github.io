@@ -128,23 +128,3 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-
-# 添加动漫人物（二次元看板娘）
-live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-wanko
-  display:
-    position: left
-    width: 150
-    height: 200
-  mobile:
-    show: false
-  react:
-    opacity: 0.7
