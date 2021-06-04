@@ -663,3 +663,7 @@ bbtime:
 # 动态改变页面标签
 dynamicLabel:
   enable: true # 开启为 true，关闭为 false
+
+# 鼠标点击烟花爆炸效果
+fireworks:
+  enable: true # 开启为 true，关闭为 false
