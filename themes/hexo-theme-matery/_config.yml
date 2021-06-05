@@ -260,15 +260,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/10.jpg
-    - /medias/featureimages/11.jpg
-    - /medias/featureimages/12.jpg
-    - /medias/featureimages/13.jpg
-    - /medias/featureimages/14.jpg
-    - /medias/featureimages/15.jpg
-    - /medias/featureimages/16.jpg
-    - /medias/featureimages/17.jpg
-    - /medias/featureimages/18.jpg
+    - /medias/featureimages/31.jpg
+    - /medias/featureimages/35.jpg
+    - /medias/featureimages/40.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -511,6 +505,23 @@ featureImages:
 - /medias/featureimages/21.jpg
 - /medias/featureimages/22.jpg
 - /medias/featureimages/23.jpg
+- /medias/featureimages/24.jpg
+- /medias/featureimages/25.jpg
+- /medias/featureimages/26.jpg
+- /medias/featureimages/27.jpg
+- /medias/featureimages/28.jpg
+- /medias/featureimages/29.jpg
+- /medias/featureimages/30.jpg
+- /medias/featureimages/31.jpg
+- /medias/featureimages/32.jpg
+- /medias/featureimages/33.jpg
+- /medias/featureimages/34.jpg
+- /medias/featureimages/35.jpg
+- /medias/featureimages/36.jpg
+- /medias/featureimages/37.jpg
+- /medias/featureimages/38.jpg
+- /medias/featureimages/39.jpg
+- /medias/featureimages/40.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
