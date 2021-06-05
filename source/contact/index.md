@@ -19,4 +19,4 @@ layout: "contact"
 
 博客头像: http://pudongping.com/medias/avatar.jpg
 
-博客介绍: 一个痴迷于编程的 90 后精神小伙。
+博客介绍: SELECT * FROM LEARNS WHERE LIVE IS NOT NULL;
