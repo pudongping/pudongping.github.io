@@ -3,11 +3,11 @@
   <title>蒲东平 の 博客</title>
   
   <subtitle>蒲东平 の 博客</subtitle>
-  <link href="https://pudongping.com/atom.xml" rel="self"/>
+  <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
-  <link href="https://pudongping.com/"/>
+  <link href="https://pudongping.github.io/"/>
   <updated>2021-06-05T19:46:51.390Z</updated>
-  <id>https://pudongping.com/</id>
+  <id>https://pudongping.github.io/</id>
   
   <author>
     <name>Alex</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>demo post2</title>
-    <link href="https://pudongping.com/posts/536ab826.html"/>
-    <id>https://pudongping.com/posts/536ab826.html</id>
+    <link href="https://pudongping.github.io/posts/536ab826.html"/>
+    <id>https://pudongping.github.io/posts/536ab826.html</id>
     <published>2021-06-04T00:30:06.000Z</published>
     <updated>2021-06-05T19:46:51.390Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>demo post2</title>
-    <link href="https://pudongping.com/posts/536ab826.html"/>
-    <id>https://pudongping.com/posts/536ab826.html</id>
+    <link href="https://pudongping.github.io/posts/536ab826.html"/>
+    <id>https://pudongping.github.io/posts/536ab826.html</id>
     <published>2021-06-04T00:29:51.000Z</published>
     <updated>2021-06-04T17:45:14.925Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>demo post1</title>
-    <link href="https://pudongping.com/posts/ca63e99c.html"/>
-    <id>https://pudongping.com/posts/ca63e99c.html</id>
+    <link href="https://pudongping.github.io/posts/ca63e99c.html"/>
+    <id>https://pudongping.github.io/posts/ca63e99c.html</id>
     <published>2021-06-04T00:12:24.000Z</published>
     <updated>2021-06-04T17:45:14.924Z</updated>
     
@@ -84,8 +84,8 @@
   
   <entry>
     <title>Python 的基础使用</title>
-    <link href="https://pudongping.com/posts/bc15b9dc.html"/>
-    <id>https://pudongping.com/posts/bc15b9dc.html</id>
+    <link href="https://pudongping.github.io/posts/bc15b9dc.html"/>
+    <id>https://pudongping.github.io/posts/bc15b9dc.html</id>
     <published>2021-06-04T00:11:56.000Z</published>
     <updated>2021-06-04T17:45:14.916Z</updated>
     
@@ -101,16 +101,16 @@
     
     
     
-    <category term="python" scheme="https://pudongping.com/tags/python/"/>
+    <category term="python" scheme="https://pudongping.github.io/tags/python/"/>
     
-    <category term="pip" scheme="https://pudongping.com/tags/pip/"/>
+    <category term="pip" scheme="https://pudongping.github.io/tags/pip/"/>
     
   </entry>
   
   <entry>
     <title>demo page3</title>
-    <link href="https://pudongping.com/posts/8c44d73f.html"/>
-    <id>https://pudongping.com/posts/8c44d73f.html</id>
+    <link href="https://pudongping.github.io/posts/8c44d73f.html"/>
+    <id>https://pudongping.github.io/posts/8c44d73f.html</id>
     <published>2021-06-03T03:44:48.000Z</published>
     <updated>2021-06-04T17:45:14.923Z</updated>
     
@@ -125,17 +125,17 @@
     
     
     
-    <category term="分类3" scheme="https://pudongping.com/categories/%E5%88%86%E7%B1%BB3/"/>
+    <category term="分类3" scheme="https://pudongping.github.io/categories/%E5%88%86%E7%B1%BB3/"/>
     
     
-    <category term="博客" scheme="https://pudongping.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://pudongping.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>demo page2</title>
-    <link href="https://pudongping.com/posts/fb43e7a9.html"/>
-    <id>https://pudongping.com/posts/fb43e7a9.html</id>
+    <link href="https://pudongping.github.io/posts/fb43e7a9.html"/>
+    <id>https://pudongping.github.io/posts/fb43e7a9.html</id>
     <published>2021-06-03T03:44:37.000Z</published>
     <updated>2021-06-05T13:06:12.987Z</updated>
     
@@ -150,17 +150,17 @@
     
     
     
-    <category term="分类2" scheme="https://pudongping.com/categories/%E5%88%86%E7%B1%BB2/"/>
+    <category term="分类2" scheme="https://pudongping.github.io/categories/%E5%88%86%E7%B1%BB2/"/>
     
     
-    <category term="博客" scheme="https://pudongping.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://pudongping.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>demo page1</title>
-    <link href="https://pudongping.com/posts/624ab613.html"/>
-    <id>https://pudongping.com/posts/624ab613.html</id>
+    <link href="https://pudongping.github.io/posts/624ab613.html"/>
+    <id>https://pudongping.github.io/posts/624ab613.html</id>
     <published>2021-06-03T03:44:24.000Z</published>
     <updated>2021-06-04T17:45:14.918Z</updated>
     
@@ -176,14 +176,14 @@
     
     
     
-    <category term="分类1" scheme="https://pudongping.com/categories/%E5%88%86%E7%B1%BB1/"/>
+    <category term="分类1" scheme="https://pudongping.github.io/categories/%E5%88%86%E7%B1%BB1/"/>
     
     
-    <category term="Hexo" scheme="https://pudongping.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://pudongping.github.io/tags/Hexo/"/>
     
-    <category term="Github" scheme="https://pudongping.com/tags/Github/"/>
+    <category term="Github" scheme="https://pudongping.github.io/tags/Github/"/>
     
-    <category term="博客" scheme="https://pudongping.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://pudongping.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
