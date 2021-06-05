@@ -10,6 +10,7 @@
 <main class="content">
 
     <div id="aboutme" class="container about-container">
+
         <div class="card">
             <div class="card-content">
                 <div class="row">
@@ -59,5 +60,22 @@
 
             </div>
         </div>
+
+        <!--    是否开启在关于页面写简历    -->
+        <% if (theme.writeCV && theme.writeCV.enable) { %>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-content article-card-content">
+                    <div class="title center-align" data-aos="zoom-in-up">
+                        <i class="fa fa-address-book"></i>&nbsp;&nbsp;<%- __('myCV') %>
+                    </div>
+                    <div id="articleContent" data-aos="fade-up">
+                        <%- page.content %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
     </div>
 </main>

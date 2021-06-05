@@ -290,12 +290,13 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: false
-  owner:
-  repo:
+  owner: pudongping
+  repo: pudongping.github.io
   oauth:
     clientId:
     clientSecret:
   admin:
+    - pudongping
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -679,3 +680,7 @@ sakura:
 # 背景雪花飘落特效
 snow:
   enable: true # 开启为 true，关闭为 false
+
+# 是否开启在 about 页面写我的简历
+writeCV:
+  enable: false # 开启为 true，关闭为 false

@@ -4,3 +4,19 @@ date: 2021-06-04 07:46:17
 type: "contact"
 layout: "contact"
 ---
+
+## 畅所欲言
+---
+在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！
+
+## 友链
+---
+蒲东平の友链信息
+
+博客名称: 蒲东平の博客
+
+博客网址: https://pudongping.com
+
+博客头像: http://pudongping.com/medias/avatar.jpg
+
+博客介绍: 一个痴迷于编程的 90 后精神小伙。
