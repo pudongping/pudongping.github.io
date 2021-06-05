@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://pudongping.github.io
+url: https://pudongping.github.io
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
 abbrlink:
@@ -106,7 +106,9 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:pudongping/pudongping.github.io.git
+  branch: gh-pages
 
 # 内容搜索
 search:
