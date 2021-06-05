@@ -283,12 +283,12 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
+  enable: true
   owner: pudongping
   repo: pudongping.github.io
   oauth:
-    clientId:
-    clientSecret:
+    clientId: 736ff0a6e49d2f9bb2ee
+    clientSecret: 3e2997df5da9ff995b6f0354a0e6d783cf579801
   admin:
     - pudongping
 
@@ -437,7 +437,8 @@ libs:
     aplayer: https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css
 #    dplayer: /libs/dplayer/DPlayer.min.css
     dplayer: https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.css
-    gitalk: /libs/gitalk/gitalk.css
+#    gitalk: /libs/gitalk/gitalk.css
+    gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
 #    jqcloud: /libs/jqcloud/jqcloud.css
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.min.css
     tocbot: /libs/tocbot/tocbot.css
@@ -466,7 +467,8 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
 #    echarts: /libs/echarts/echarts.min.js
     echarts: https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js
-    gitalk: /libs/gitalk/gitalk.min.js
+#    gitalk: /libs/gitalk/gitalk.min.js
+    gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
     valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     minivaline: /libs/minivaline/MiniValine.js
 #    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
