@@ -33,7 +33,7 @@
         <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/pudongping/pudongping.github.io?style=social">
     </a>
 </p>
-<p align="center">喜欢这个博客？可以考虑通过 <a href="/medias/reward/wechat.png" target="_blank">赞赏</a> 来帮助它完善！</p>
+<p align="center">喜欢这个博客？可以考虑通过 <a href="https://pudongping.github.io/medias/reward/wechat.png" target="_blank">赞赏</a> 来帮助它完善！</p>
 
 ## 前言
 
@@ -165,16 +165,16 @@ hexo d
 
 ## 博客截图
 
-![首页](./medias/sample/home.png)
-![文章列表](./medias/sample/article-list.png)
-![文章列表](./medias/sample/article-list-1.png)
-![文章详情](./medias/sample/article-detail.png)
-![文章详情](./medias/sample/article-detail-1.png)
-![标签页](./medias/sample/tags.png)
-![分类页](./medias/sample/categories.png)
-![归档页](./medias/sample/archives.png)
-![关于我页](./medias/sample/about-me.png)
-![留言板页](./medias/sample/contact.png)
+![首页](https://pudongping.github.io/medias/sample/home.png)
+![文章列表](https://pudongping.github.io/medias/sample/article-list.png)
+![文章列表](https://pudongping.github.io/medias/sample/article-list-1.png)
+![文章详情](https://pudongping.github.io/medias/sample/article-detail.png)
+![文章详情](https://pudongping.github.io/medias/sample/article-detail-1.png)
+![标签页](https://pudongping.github.io/medias/sample/tags.png)
+![分类页](https://pudongping.github.io/medias/sample/categories.png)
+![归档页](https://pudongping.github.io/medias/sample/archives.png)
+![关于我页](https://pudongping.github.io/medias/sample/about-me.png)
+![留言板页](https://pudongping.github.io/medias/sample/contact.png)
 
 ## 感谢支持
 
@@ -188,10 +188,10 @@ hexo d
 <table>
   <tr>
     <td>
-        <img width="100" src="./medias/reward/alipay.png" alt="alipay" >
+        <img width="100" src="https://pudongping.github.io/medias/reward/alipay.png" alt="alipay" >
     </td>
     <td>
-        <img width="100" src="./medias/reward/wechat.png" alt="wechat" >
+        <img width="100" src="https://pudongping.github.io/medias/reward/wechat.png" alt="wechat" >
     </td>
   </tr>
 </table>
