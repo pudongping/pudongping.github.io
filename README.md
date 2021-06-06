@@ -166,8 +166,8 @@ hexo d
 ## 博客截图
 
 ![首页](https://pudongping.github.io/medias/sample/home.png)
-![文章列表](https://pudongping.github.io/medias/sample/article-list.png)
-![文章列表](https://pudongping.github.io/medias/sample/article-list-1.png)
+![文章列表](https://pudongping.github.io/medias/sample/articles-list.png)
+![文章列表](https://pudongping.github.io/medias/sample/articles-list-1.png)
 ![文章详情](https://pudongping.github.io/medias/sample/article-detail.png)
 ![文章详情](https://pudongping.github.io/medias/sample/article-detail-1.png)
 ![标签页](https://pudongping.github.io/medias/sample/tags.png)
