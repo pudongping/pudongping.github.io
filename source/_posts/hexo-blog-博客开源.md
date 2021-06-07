@@ -1,5 +1,5 @@
 ---
-title: 博客开源
+title: hexo-blog 博客开源
 author: Alex
 top: true
 hide: false
