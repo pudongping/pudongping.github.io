@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python 的基础使用, 技术博客 PHP python node.js go vue">
-    <meta name="description" content="蒲东平的技术博客 技术博客 PHP python node.js go vue">
+    <meta name="keywords" content="ubiquitous-nodejs, 技术博客 PHP python node.js go vue 编程爱好者">
+    <meta name="description" content="致力于提供个人所学所想，为开源做一点贡献。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python 的基础使用 | 蒲东平 の 博客</title>
+    <title>ubiquitous-nodejs | 蒲东平 の 博客</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -150,7 +150,7 @@
         <div class="logo-name">蒲东平 の 博客</div>
         <div class="logo-desc">
             
-            蒲东平的技术博客 技术博客 PHP python node.js go vue
+            致力于提供个人所学所想，为开源做一点贡献。
             
         </div>
     </div>
@@ -328,12 +328,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/34.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python 的基础使用</h1>
+                    <h1 class="description center-align post-title">ubiquitous-nodejs</h1>
                 </div>
             </div>
         </div>
@@ -449,18 +449,27 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/Github/">
+                                <span class="chip bg-color">Github</span>
                             </a>
                         
-                            <a href="/tags/pip/">
-                                <span class="chip bg-color">pip</span>
+                            <a href="/tags/node-js/">
+                                <span class="chip bg-color">node.js</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%BC%80%E6%BA%90/" class="post-category">
+                                开源
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -469,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-04
+                    2021-06-07
                 </div>
                 
 
@@ -478,7 +487,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    935
+                    934
                 </div>
                 
 
@@ -508,164 +517,186 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python-搭建环境与安装-pip-扩展"><a href="#Python-搭建环境与安装-pip-扩展" class="headerlink" title="Python 搭建环境与安装 pip 扩展"></a>Python 搭建环境与安装 pip 扩展</h1><h1 id="mac-下安装"><a href="#mac-下安装" class="headerlink" title="mac 下安装"></a>mac 下安装</h1><h2 id="mac-上安装-python"><a href="#mac-上安装-python" class="headerlink" title="mac 上安装 python"></a><a target="_blank" rel="noopener" href="https://www.python.org/downloads/">mac 上安装 python</a></h2><p>可以直接通过下载官网的<a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3/using/mac.html">安装器</a>进行安装。</p>
-<p>或者使用</p>
-<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">brew install python3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <p align="center">
+    </p><h1 align="center"><a target="_blank" rel="noopener" href="https://pudodngping.com">ubiquitous-nodejs</a></h1>
+    <p align="center">⚡ ubiquity-nodejs 是一个基于 node.js 的 web 脚手架。😘 支持模版渲染、Restful API、ORM 等特性，遵循 MVC 架构。</p>
+<p></p>
 
-<h2 id="mac-下使用-pip"><a href="#mac-下使用-pip" class="headerlink" title="mac 下使用 pip"></a><a target="_blank" rel="noopener" href="https://pip.pypa.io/en/stable/quickstart/">mac 下使用 pip</a></h2><p>可以直接使用 <code>python3 -m pip ……</code> 命令</p>
-<pre class="line-numbers language-none"><code class="language-none"># 查看 pip 版本
-python3 -m pip --version
-
-# 升级 pip 版本
-/Library/Frameworks/Python.framework/Versions/3.8/bin/python3 -m pip install --upgrade pip
-
-# 搜索插件包 query
-python -m pip search "query"
-
-# 安装 SomePackage 包
-python3 -m pip install SomePackage            # latest version
-python3 -m pip install SomePackage==1.0.4     # specific version
-python3 -m pip install 'SomePackage&gt;=1.0.4'     # minimum version
-
-# 安装已经通过 [PyPI](https://pypi.org/) 下载好的包（这在没有网的情况下很有用）
-python3 -m pip install SomePackage-1.0-py2.py3-none-any.whl
-
-# 显示已安装包的详细信息
-python3 -m pip show --files SomePackage
-
-# 列出哪些包已经存在了新版本
-python3 -m pip list --outdated
-
-# 升级包版本
-python3 -m pip install --upgrade SomePackage
-
-# 卸载包
-python3 -m pip uninstall SomePackage
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>如果想直接使用 <code>pip</code> 命令时，则需要如下操作，<a target="_blank" rel="noopener" href="https://pip.pypa.io/en/stable/installing/">官网安装 pip 步骤文档</a></p>
-<pre class="line-numbers language-none"><code class="language-none"># 安装 get-pip.py 脚本
-curl https://bootstrap.pypa.io/get-pip.py | python3
-
-# 查看 pip 版本
-pip --version 或者 pip3 --version
-
-# 查看已经安装的包
-pip list 或者 pip3 list
-
-# 更新 pip 版本
-pip install --upgrade pip 或者 pip3 install --upgrade pip
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="requirements-txt"><a href="#requirements-txt" class="headerlink" title="requirements.txt"></a>requirements.txt</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">
-<span class="token comment"># 生成 requirements 文件</span>
-pip freeze <span class="token operator">&gt;</span> requirements<span class="token punctuation">.</span>txt
-
-<span class="token comment"># 安装 requirements.txt 依赖命令</span>
-pip install <span class="token operator">-</span>r requirements<span class="token punctuation">.</span>txt
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<h1 id="Windows-下安装背景"><a href="#Windows-下安装背景" class="headerlink" title="Windows 下安装背景"></a>Windows 下安装背景</h1><p>系统 windows7 64位，安装的 python 版本为 3.6.7 ，此文档为过程总结。</p>
-<h1 id="Python-与-pip-下载与安装"><a href="#Python-与-pip-下载与安装" class="headerlink" title="Python 与 pip 下载与安装"></a>Python 与 pip 下载与安装</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ul>
-<li> 进入 <code>https://www.python.org/</code> 选择  <code>downloads</code></li>
-</ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-0e913bc27da7cfc2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="官网首页"></p>
+<h2 id="如何部署项目？"><a href="#如何部署项目？" class="headerlink" title="如何部署项目？"></a>如何部署项目？</h2><p>仓库地址：</p>
 <ul>
-<li>选择 3.6.7 版本</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pudongping/ubiquitous-nodejs.git">GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitee.com/pudongping/ubiquitous-nodejs.git">Gitee</a></li>
 </ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-da7102d7d5108480.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择3.6.7版本"></p>
-<ul>
-<li>拉到屏幕底部，选择<ul>
-<li>Windows x86-64 executable installer<br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-4a7bf34585ea3e31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择64位安装包"></li>
-</ul>
+<p>本地部署</p>
+<ol>
+<li>直接使用 git 拉取项目源码，并进入项目根目录</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> clone https://gitee.com/pudongping/ubiquitous-nodejs.git ubiquitous <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> ./ubiquitous<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="2">
+<li>安装项目依赖包</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="3">
+<li>填写配置信息</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 复制开发环境配置文件</span>
+<span class="token function">cp</span> ./config/development.js.example ./config/development.js
+
+<span class="token comment"># 复制生产环境配置文件</span>
+<span class="token function">cp</span> ./config/production.js.example ./config/production.js
+
+<span class="token comment"># 复制测试环境配置文件</span>
+<span class="token function">cp</span> ./config/test.js.example ./config/test.js<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="4">
+<li>导入初始数据表<blockquote>
+<p>这里只是为了演示 restful api 的 CRUD 功能，故此创建了一个初始数据库。</p>
+</blockquote>
 </li>
-</ul>
-<h2 id="Windows-下安装"><a href="#Windows-下安装" class="headerlink" title="Windows 下安装"></a>Windows 下安装</h2><ul>
-<li>直接对下载好的安装包双进运行 (Install Python 3.6.7(64-bit) )<ul>
-<li>选择自定义安装（Customize installation）</li>
-<li>勾选 add python3.6 to path（自动添加环境变量）</li>
-<li>下一步</li>
-</ul>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 连接数据库</span>
+mysql -h <span class="token operator">&lt;</span>your-mysql-host<span class="token operator">&gt;</span> -u <span class="token operator">&lt;</span>your-mysql-account<span class="token operator">&gt;</span> -p <span class="token operator">&lt;</span>your-mysql-password<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 导入初始数据表</span>
+<span class="token builtin class-name">source</span> ./database/ubiquitous.sql<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="5">
+<li>启动项目<blockquote>
+<p>以下方式执行任意一条命令即可</p>
+</blockquote>
 </li>
-<li>勾选 (Optional Features)<ul>
-<li>document</li>
-<li>pip（必须选）</li>
-<li>.. 其他的多装总比少装强</li>
-<li>下一步</li>
-</ul>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 直接使用 node 执行项目入口文件的方式</span>
+node --use_strict app.js
+
+<span class="token comment"># 使用 npm 执行</span>
+<span class="token comment"># 运行开发环境</span>
+<span class="token function">npm</span> start
+<span class="token comment"># 或者</span>
+<span class="token function">npm</span> run dev
+
+<span class="token comment"># 运行生产环境</span>
+<span class="token function">npm</span> run prod
+
+<span class="token comment"># 运行测试环境</span>
+<span class="token function">npm</span> run <span class="token builtin class-name">test</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="6">
+<li>搭建完毕！enjoy it! ✌️<blockquote>
+<p>可以打开浏览器访问 <code>localhost:9500</code> 或者 <code>127.0.0.1:9500</code> 进行访问，即可看到首页欢迎语。</p>
+</blockquote>
 </li>
-<li>选择安装路径 （Advanced Options）<ul>
-<li>安装路径，c:\python\Python3.6（可自行定义 Browse）</li>
-<li>安装 （Install）</li>
+</ol>
+<h2 id="关于项目目录"><a href="#关于项目目录" class="headerlink" title="关于项目目录"></a>关于项目目录</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">
+├── LICENSE  License
+├── README.md  项目说明文档
+├── app.js  项目入口文件
+├── bootstrap  项目启动目录
+│   ├── boot.js  启动文件
+│   ├── db.js  数据库封装
+│   ├── rest.js  restful api 方法封装
+│   ├── static-files.js  静态文件处理方法封装
+│   └── templating.js  模版处理方法封装
+├── config  配置文件目录
+│   ├── development.js  开发环境配置文件
+│   ├── development.js.example  开发环境配置文件模版
+│   ├── production.js.example  生产环境配置文件模版
+│   └── test.js.example  测试环境配置文件模板
+├── constants  常量文件
+│   └── ErrorCode.js  api 错误码常量
+├── controllers  控制器目录
+│   ├── auth  auth 模块目录
+│   │   └── user_controller.js  用户控制器（这里作为演示 restful api 写的 demo）
+│   └── home_controller.js  首页控制器 （这里作为演示模版调用写的 demo）
+├── database  数据文件目录
+│   └── ubiquitous.sql  初始化数据库文件
+├── lib  工具目录
+│   ├── api_error.js  自定义错误异常类
+│   └── helper.js  助手函数
+├── loader.js  项目加载文件（这里定义项目全局变量）
+├── models  模型目录
+│   ├── WebSite.js  站点模型文件
+│   ├── auth  auth 模块模型目录
+│   │   └── User.js  用户模型文件
+│   └── model.js  自动化扫描加载所有的模型
+├── package-lock.json  插件包描述锁文件
+├── package.json  插件包描述文件
+├── routes  路由目录
+│   ├── api.js  restful api 路由目录
+│   └── web.js  web 路由目录
+├── services  服务层目录
+│   └── auth  auth 模块服务层目录
+│       └── user_service.js  用户服务层文件
+├── static  静态文件目录
+│   ├── css  样式文件目录
+│   │   ├── googleapis-fonts.css
+│   │   └── iview.css
+│   ├── fonts  字体文件目录
+│   └── js  js 文件目录
+│       ├── iview.min.js
+│       └── vue.min.js
+└── views  视图层文件目录
+    ├── base.html  视图基础文件
+    ├── home  home 模块视图文件目录
+    │   └── hello.html
+    └── home.html  首页视图文件
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="项目所使用依赖包"><a href="#项目所使用依赖包" class="headerlink" title="项目所使用依赖包"></a>项目所使用依赖包</h2><table>
+<thead>
+<tr>
+<th>插件包</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://koa.bootcss.com/">koa</a></td>
+<td>使用 Koa2 作为 web 框架</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/koajs/router">koa-router</a></td>
+<td>处理 url</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/koajs/bodyparser">koa-bodyparser</a></td>
+<td>解析原始 request 的 body</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://mozilla.github.io/nunjucks/cn/templating.html">nunjucks</a></td>
+<td>模版引擎</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/kentcdodds/cross-env#readme">cross-env</a></td>
+<td>环境脚本的跨平台设置</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/normalize/mz#readme">mz</a></td>
+<td>支持 Promise 的 fs 模块</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/broofa/mime#readme">mime</a></td>
+<td>读取文件的 mime</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/sidorares/node-mysql2#readme">mysql2</a></td>
+<td>Node.js 的 mysql 驱动程序</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.sequelize.com.cn/">sequelize</a></td>
+<td>Node.js 的 ORM 框架</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://momentjs.cn/">moment</a></td>
+<td>日期处理</td>
+</tr>
+</tbody></table>
+<h2 id="使用演示"><a href="#使用演示" class="headerlink" title="使用演示"></a>使用演示</h2><ul>
+<li>如果需要使用模版引擎的方式，请查看 <code>controllers/home_controller.js</code> 文件。</li>
+<li>如果需要使用 api 的方式，请查看 <code>controllers/auth/user_controller.js</code> 文件。</li>
 </ul>
-</li>
-<li>安装完成</li>
-</ul>
-<h2 id="检查安装效果"><a href="#检查安装效果" class="headerlink" title="检查安装效果"></a>检查安装效果</h2><pre><code>- 开始，运行，进入cmd命令行
-- 敲命令 python
-    - windodws 用 ctrl+z 退出交互界面
-- 敲命令 pip
-    - 命令存在
-- 如果提示命令不存在
-    - 很可能是你的 环境变量未设置好
-</code></pre>
-<h1 id="安装-pipenv"><a href="#安装-pipenv" class="headerlink" title="安装 pipenv"></a>安装 pipenv</h1><p>它是一个项目虚拟环境管理工具。</p>
-<h2 id="利用-pip-安装"><a href="#利用-pip-安装" class="headerlink" title="利用 pip 安装"></a>利用 pip 安装</h2><pre><code>pip install pipenv
-</code></pre>
-<p>执行该命令自动进入下载安装过程。</p>
-<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><ul>
-<li>在电脑中创建文件夹，比如 I:\Python\test</li>
-<li>在命令行切换到此<ul>
-<li>cmd: cd  I:\Python\test</li>
-</ul>
-</li>
-<li>执行 pipenv 的初始化命令<ul>
-<li>pipenv –python 3.6</li>
-</ul>
-</li>
-</ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-0742c148428484a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="执行 pipenv 初始化命令之后的画面"></p>
-<ul>
-<li>进入 pipenv 的虚拟环境<ul>
-<li>pipenv shell</li>
-</ul>
-</li>
-</ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-b40a5bcc9c69f618.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入 pipenv 的虚拟环境"></p>
-<ul>
-<li>安装一个库试试<ul>
-<li>pip install requests</li>
-</ul>
-</li>
-</ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-d2ac78cb65d7f691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装 requests 库界面"></p>
-<ul>
-<li>虚拟化环境存放路径<ul>
-<li>默认 c:\users\administrator.vi*****</li>
-</ul>
-</li>
-</ul>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-1cd80d6ed3238a66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="本次安装虚拟化环境存放路径"></p>
-<ul>
-<li>OK End</li>
-</ul>
-<h1 id="下载使用-pycharm"><a href="#下载使用-pycharm" class="headerlink" title="下载使用 pycharm"></a>下载使用 pycharm</h1><p>直接去官网下载 windows 的 pro版本。</p>
-<p>地址 <a target="_blank" rel="noopener" href="http://www.jetbrains.com/pycharm/download/">http://www.jetbrains.com/pycharm/download/</a><br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-120aa374788beefc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下载 Pro 版本"></p>
-<h2 id="创建项目-1"><a href="#创建项目-1" class="headerlink" title="创建项目"></a>创建项目</h2><p>直接选择我们刚刚的项目路径 <code>I:\Python\test</code></p>
-<h2 id="让项目使用pipenv的虚拟环境"><a href="#让项目使用pipenv的虚拟环境" class="headerlink" title="让项目使用pipenv的虚拟环境"></a>让项目使用pipenv的虚拟环境</h2><pre><code>file -&gt; setting -&gt; project:test
-</code></pre>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-ac306de03f065e51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="如图所示"></p>
-<p>进一步选择 <code>interperter</code> 在下拉选单中选中我们刚刚的虚拟化环境目录即可。<br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-175faf09036cc3a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择上文中创建的虚拟环境目录"></p>
-<h2 id="interperter-中没有怎么办？"><a href="#interperter-中没有怎么办？" class="headerlink" title="interperter 中没有怎么办？"></a>interperter 中没有怎么办？</h2><p>下拉选单中，选择 <code>show all</code><br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-6828f88cd9937443.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第一步： interperter 中没有的话，点击下拉选单之后选择 show all"><br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-6171dcff4886c3bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第二步：点击加号+"><br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-e6d11f9351337be9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第三步：选择已经存在的，不要选择新建的"></p>
-<p>然后在 existing environment，在右侧<code>...</code>选中虚拟环境的 python.exe 即可。<br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-3b5e2bdbeb07032e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第四步：选择已存在的之后点击最右边的 …"><br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-87dab8f9313b439e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第五步：选择 python.exe 既可"><br>一般情况下，默认路径：</p>
-<pre><code>c:\users\administrator\.virtualenvs\项目名\Scripts\python.exe
-</code></pre>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-61e21223cf87bdf2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="切记切记！！！"></p>
-<p>然后一直点 ok 即可<br>效果如下<br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-78490ce15425ed18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可以看到会出现两个虚拟环境的选项"><br>最终可以看到编辑器中包含了刚刚创建的虚拟环境<br><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-8260285f4c846b36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="看到这里证明编辑器配置成功了"></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>至此，整个项目环境配置完毕。</p>
-<p>以后我们所有对项目的命令行操作都需要在项目根目录先进入 <code>pipenv shell</code> 然后再执行命令操作，这样就可以使得每一个项目安装独立的安装包。</p>
+<h2 id="感谢支持"><a href="#感谢支持" class="headerlink" title="感谢支持"></a>感谢支持</h2><p>如果你觉得本项目对你有所帮助,请帮忙给个 <code>Star</code>。<br>如果你想贡献一份力量,欢迎提交 <code>Pull Request</code>。</p>
 
                 
             </div>
@@ -692,7 +723,7 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://pudongping.com/posts/bc15b9dc.html">https://pudongping.com/posts/bc15b9dc.html</a>
+                    <a href="https://pudongping.com/posts/6b5490ac.html">https://pudongping.com/posts/6b5490ac.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -730,12 +761,12 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/Github/">
+                                    <span class="chip bg-color">Github</span>
                                 </a>
                             
-                                <a href="/tags/pip/">
-                                    <span class="chip bg-color">pip</span>
+                                <a href="/tags/node-js/">
+                                    <span class="chip bg-color">node.js</span>
                                 </a>
                             
                         </div>
@@ -906,7 +937,7 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
         repo: 'pudongping.github.io',
         owner: 'pudongping',
         admin: ["pudongping"],
-        id: '2021-06-04T08-11-56',
+        id: '2021-06-07T10-27-15',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -932,36 +963,54 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/ca63e99c.html">
+                <a href="/posts/6b5490ac.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/38.jpg" class="responsive-img" alt="demo post1">
+                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="ubiquitous-nodejs">
                         
-                        <span class="card-title">demo post1</span>
+                        <span class="card-title">ubiquitous-nodejs</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ⚡ ubiquity-nodejs 是一个本人基于 node.js 开发的 web 脚手架。😘 支持模版渲染、Restful API、ORM 等特性，遵循 MVC 架构。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-07
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Alex
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BC%80%E6%BA%90/" class="post-category">
+                                    开源
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Github/">
+                        <span class="chip bg-color">Github</span>
+                    </a>
+                    
+                    <a href="/tags/node-js/">
+                        <span class="chip bg-color">node.js</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -973,31 +1022,31 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/8c44d73f.html">
+                <a href="/posts/d2a0cef0.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="demo page3">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="weather composer 插件">
                         
-                        <span class="card-title">demo page3</span>
+                        <span class="card-title">weather composer 插件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本人基于高德开放平台编写的 PHP 天气信息 composer 组件，并且能够友好的支持 laravel 框架。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%88%86%E7%B1%BB3/" class="post-category">
-                                    分类3
+                            <a href="/categories/%E5%BC%80%E6%BA%90/" class="post-category">
+                                    开源
                                 </a>
                             
                             
@@ -1007,8 +1056,16 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/GitHub/">
+                        <span class="chip bg-color">GitHub</span>
+                    </a>
+                    
+                    <a href="/tags/Laravel/">
+                        <span class="chip bg-color">Laravel</span>
+                    </a>
+                    
+                    <a href="/tags/Composer/">
+                        <span class="chip bg-color">Composer</span>
                     </a>
                     
                 </div>
@@ -1155,7 +1212,7 @@ pip install <span class="token operator">-</span>r requirements<span class="toke
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.9k</span>&nbsp;字
+                class="white-color">15.9k</span>&nbsp;字
             
             
             

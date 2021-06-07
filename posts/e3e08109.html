@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="demo page2, 技术博客 PHP python node.js go vue">
-    <meta name="description" content="蒲东平的技术博客 技术博客 PHP python node.js go vue">
+    <meta name="keywords" content="hexo-blog 博客开源, 技术博客 PHP python node.js go vue 编程爱好者">
+    <meta name="description" content="致力于提供个人所学所想，为开源做一点贡献。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>demo page2 | 蒲东平 の 博客</title>
+    <title>hexo-blog 博客开源 | 蒲东平 の 博客</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -150,7 +150,7 @@
         <div class="logo-name">蒲东平 の 博客</div>
         <div class="logo-desc">
             
-            蒲东平的技术博客 技术博客 PHP python node.js go vue
+            致力于提供个人所学所想，为开源做一点贡献。
             
         </div>
     </div>
@@ -328,12 +328,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/33.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">demo page2</h1>
+                    <h1 class="description center-align post-title">hexo-blog 博客开源</h1>
                 </div>
             </div>
         </div>
@@ -449,8 +449,16 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/GitHub/">
+                                <span class="chip bg-color">GitHub</span>
+                            </a>
+                        
                             <a href="/tags/%E5%8D%9A%E5%AE%A2/">
                                 <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
                             </a>
                         
                     </div>
@@ -461,8 +469,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%88%86%E7%B1%BB2/" class="post-category">
-                                分类2
+                            <a href="/categories/%E5%BC%80%E6%BA%90/" class="post-category">
+                                开源
                             </a>
                         
                     </div>
@@ -474,7 +482,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-03
+                    2021-06-06
                 </div>
                 
 
@@ -483,7 +491,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.4k
                 </div>
                 
 
@@ -513,181 +521,134 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><h2 id="var、let、const-的区别"><a href="#var、let、const-的区别" class="headerlink" title="var、let、const 的区别"></a>var、let、const 的区别</h2><ul>
-<li><code>var</code> 声明的变量是全局作用域（var 声明的全局作用域变量属于 window 对象，可以通过 <code>window.variable</code> 的方式去访问）或函数作用域，而 <code>let</code> 和 <code>const</code> 是块作用域。</li>
-<li><code>var</code> 声明的变量可以在其范围内更新和重新声明，而 <code>let</code> 变量可以被更新但不能重新声明，<code>const</code> 常量既不能更新也不能重新声明。</li>
-<li><code>var</code> 、 <code>let</code> 、<code>const</code> 都会被提升到作用域的顶端（变量提升），但是，虽然会使用 <code>undefined</code> 初始化 <code>var</code> 定义的变量，但是不会初始化 <code>let</code> 和 <code>const</code> 声明的变量。</li>
-<li>尽管可以在不初始化的情况下声明 <code>var</code> 和 <code>let</code> 变量，但是在声明期间必须初始化 <code>const</code> 。</li>
+                <h1 id="博客开源"><a href="#博客开源" class="headerlink" title="博客开源"></a>博客开源</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>折腾了一个星期左右，总算是把我的个人博客给完善了，为了回馈开源，我会把我自己修改后的且完善的 <code>blog</code> 网站源码开源。<br>代码都是源码，您可以直接下载我的博客源码，然后将根目录下的 <code>/_config.yml</code> 和 <code>/themes/hexo-theme-matery/_config.yml</code><br>这两个配置文件中的信息修改成您的信息就可以部署成和我一摸一样的博客了。是不是很方便？这对于一些想写博客，但是又不想太折腾，<br>并且对美观有一定要求的朋友来说，简直是爽的不要不要的。😜 <a target="_blank" rel="noopener" href="https://github.com/pudongping/pudongping.github.io">点我立即下载我的博客源码</a></p>
+<h2 id="关于我的博客项目"><a href="#关于我的博客项目" class="headerlink" title="关于我的博客项目"></a>关于我的博客项目</h2><p>这个博客，我是基于 <strong><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a></strong> 框架搭建，并且用到 <strong><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a></strong> 主题，<br>在此基础上做了不少的修改，增加了一些新的特性和功能。我的博客访问地址为：<a target="_blank" rel="noopener" href="http://www.pudongping.com/">http://www.pudongping.com</a> 或者访问 <a target="_blank" rel="noopener" href="https://pudongping.github.io/">https://pudongping.github.io</a></p>
+<h2 id="创建项目时，各个软件版本介绍"><a href="#创建项目时，各个软件版本介绍" class="headerlink" title="创建项目时，各个软件版本介绍"></a>创建项目时，各个软件版本介绍</h2><ul>
+<li>修改项目时间为 2021 年 6 月 5 日</li>
+<li>使用的 node.js 版本为：v16.2.0</li>
+<li>使用的 npm 版本为：7.13.0</li>
+<li>使用的 hexo 版本为：5.4.0</li>
+<li>使用的 hexo-theme-matery 皮肤版本为：v2.0.0</li>
+<li>其他的依赖包见 package.json 文件，具体版本号见 package-lock.json 文件。</li>
 </ul>
-<p>变量赋值只是变量名和变量值的映射关系，变量名也只是会保存变量值的内存地址，const 修饰之后，不允许修改已经保存的变量值的内存地址，但是允许改变变量值内部的属性。</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js">
-<span class="token keyword">const</span> boy <span class="token operator">=</span> <span class="token punctuation">{</span>
-    sex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-    age<span class="token operator">:</span> <span class="token number">26</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<h2 id="如何搭建和我一摸一样的博客？"><a href="#如何搭建和我一摸一样的博客？" class="headerlink" title="如何搭建和我一摸一样的博客？"></a>如何搭建和我一摸一样的博客？</h2><blockquote>
+<p>前提你需要先安装 <code>git</code> 和 <code>node.js</code> （安装好 node.js 之后，会自动安装 npm，强烈建议使用 <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm">nvm</a> 安装 node.js 以方便管理多个版本的 node.js）</p>
+</blockquote>
+<ul>
+<li>安装 <code>hexo-cli</code></li>
+</ul>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 全局安装 hexo
+npm install -g hexo-cli
 
-<span class="token comment">// 这样会报错</span>
-<span class="token keyword">const</span> boy <span class="token operator">=</span> <span class="token punctuation">{</span>
-    sex<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-    age<span class="token operator">:</span> <span class="token number">18</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+# 局部安装 hexo
+npm install hexo
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token comment">// 但是可以这么操作</span>
-boy<span class="token punctuation">.</span>sex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-boy<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>直接使用 <code>git</code> 拉取项目并进入相应的文件目录</li>
+</ul>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 使用 GitHub 地址
+git clone https://github.com/pudongping/pudongping.github.io.git blog
 
-<p>var 可以声明为全局或者函数内部的变量作用域，但是没有块级别作用域，如 for 、 while 循环时，使用 let 声明变量时，for 、while 循环就有作用域了。</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js">
-<span class="token string">'use strict'</span><span class="token punctuation">;</span>
+# 使用 gitee 地址 （要是代码拉取不下来的话，建议使用 gitee 地址）
+git clone https://gitee.com/pudongping/pudongping.git blog<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment">//</span>
-    <span class="token punctuation">}</span>
-    i <span class="token operator">+=</span> <span class="token number">100</span><span class="token punctuation">;</span> <span class="token comment">// 仍然可以引用变量i</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>切换分支</li>
+</ul>
+<p>建议切换到 <code>hexo</code> 分支，方便你自定义你的博客。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 如果你想实现和我一摸一样的博客的话，你可以直接切换到 `main` 分支，这是我自己完整的博客源码分支，其中包含了我所有的博客文章
+git checkout main
 
-<p>let 可以申明一个块级作用域的变量</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js">
-<span class="token string">'use strict'</span><span class="token punctuation">;</span>
+# 如果你只想获取我所有的修改，并基于此基础之上改成自己的博客的话，那么可以切换到 `hexo` 分支，这个分支上是我博客修改的基础分支，
+# 在此分支基础之上你可以添加你自己的任何修改。（不包含我所有的博客文章和我自定义的其他修改）
+git checkout hexo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        sum <span class="token operator">+=</span> i<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token comment">// SyntaxError:</span>
-    i <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>安装依赖插件</li>
+</ul>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">npm install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li><p>修改根目录下的 <code>/_config.yml</code> 和 <code>/themes/hexo-theme-matery/_config.yml</code> 的这两个配置文件，改成自己的信息</p>
+</li>
+<li><p>编译源代码</p>
+</li>
+</ul>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 清除生成的静态文件
+hexo cl
+
+# 生成静态页面至 public 页面 （如果只是本地预览，可不进行此步骤）
+hexo g
+
+# 生成本地预览
+hexo s
+
+# 如果需要生成 github-pages 的话，则执行以下命令 （需要安装 npm install hexo-deployer-git --save 插件包）
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>本地访问项目</li>
+</ul>
+<p>直接在浏览器中访问 <a target="_blank" rel="noopener" href="http://localhost:4000/]">http://localhost:4000/</a> 即可。部署完毕！</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><h3 id="hexo-theme-matery-主题特性"><a href="#hexo-theme-matery-主题特性" class="headerlink" title="hexo-theme-matery 主题特性"></a>hexo-theme-matery 主题特性</h3><ul>
+<li>简单漂亮，文章内容美观易读</li>
+<li><a target="_blank" rel="noopener" href="https://material.io/">Material Design</a> 设计</li>
+<li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li>
+<li>首页轮播文章及每天动态切换 <code>Banner</code> 图片</li>
+<li>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</li>
+<li>时间轴式的归档页</li>
+<li><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</li>
+<li>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</li>
+<li>可自定义的数据的友情链接页面</li>
+<li>支持文章置顶和文章打赏</li>
+<li>支持 <code>MathJax</code></li>
+<li><code>TOC</code> 目录</li>
+<li>可设置复制文章内容时追加版权信息</li>
+<li>可设置阅读文章时做密码验证</li>
+<li><a target="_blank" rel="noopener" href="https://gitalk.github.io/">Gitalk</a>、<a target="_blank" rel="noopener" href="https://imsun.github.io/gitment/">Gitment</a>、<a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a> 和 <a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</li>
+<li>集成了<a target="_blank" rel="noopener" href="http://busuanzi.ibruce.info/">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li>
+<li>支持在首页的音乐播放和视频播放功能</li>
+<li>支持<code>emoji</code>表情，用<code>markdown emoji</code>语法书写直接生成对应的能<strong>跳跃</strong>的表情。</li>
+<li>支持 <a target="_blank" rel="noopener" href="http://www.daovoice.io/">DaoVoice</a>、<a target="_blank" rel="noopener" href="https://www.tidio.com/">Tidio</a> 在线聊天功能。</li>
+</ul>
+<h3 id="修改或增加的特性功能"><a href="#修改或增加的特性功能" class="headerlink" title="修改或增加的特性功能"></a>修改或增加的特性功能</h3><ul>
+<li>添加 emoji 表情支持</li>
+<li>添加 RSS 订阅支持</li>
+<li>添加站点地图支持</li>
+<li>css、js资源增加 cdn 加速</li>
+<li>底部增加备案号信息</li>
+<li>修改了主题颜色</li>
+<li>处理了图片因防盗链无法显示问题</li>
+<li>添加了动态改变页面标签的功能</li>
+<li>添加了鼠标点击烟花爆炸特效</li>
+<li>添加了鼠标点击出现自定义文字浮层特效</li>
+<li>添加了页面樱花飘落动态特效</li>
+<li>添加了页面雪花飘落动态特效</li>
+<li>优化文章的 url</li>
+<li>图片懒加载</li>
+<li>添加了在<strong>关于我</strong>页面写简历功能</li>
+<li>修改了 banner 图随机轮播</li>
+</ul>
+<h2 id="博客截图"><a href="#博客截图" class="headerlink" title="博客截图"></a>博客截图</h2><p><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/page.png" alt="首页"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/articles-list.png" alt="文章列表"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/articles-list-1.png" alt="文章列表"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/article-detail.png" alt="文章详情"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/article-detail-1.png" alt="文章详情"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/tags.png" alt="标签页"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/categories.png" alt="分类页"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/archives.png" alt="归档页"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/about-me.png" alt="关于我页"><br><img src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/sample/contact.png" alt="留言板页"></p>
+<h2 id="感谢支持"><a href="#感谢支持" class="headerlink" title="感谢支持"></a>感谢支持</h2><p>如果你觉得对你有所帮助,请帮忙给个 <code>Star</code>。<br>如果你想贡献一份力量,欢迎提交 <code>Pull Request</code>。</p>
+<h2 id="赞赏捐助"><a href="#赞赏捐助" class="headerlink" title="赞赏捐助"></a>赞赏捐助</h2><p>有问题可以在文章最后评论区进行 <strong>留言和评论</strong> ，如果你喜欢我的博客，请博主喝一杯冰阔乐呀^_^ 😘</p>
+<table>
+  <tbody><tr>
+    <td>
+        <img width="100" src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/reward/alipay.png" alt="alipay">
+    </td>
+    <td>
+        <img width="100" src="/medias/loading.gif" data-original="https://pudongping.github.io/medias/reward/wechat.png" alt="wechat">
+    </td>
+  </tr>
+</tbody></table>
 
 
-<h2 id="MVVM-（model–view–viewmodel）"><a href="#MVVM-（model–view–viewmodel）" class="headerlink" title="MVVM （model–view–viewmodel）"></a>MVVM （model–view–viewmodel）</h2><ol>
-<li>View 层，（视图层，在我们前端开发中，通常就是 DOM 层）主要的作用是显示信息</li>
-<li>Model 层，（数据层，来源于接口或者写死的数据）</li>
-<li>ViewModel 层，（视图模型层）视图模型层是 View 和 Model 沟通的桥梁。一方面它实现了 Data Binding（数据绑定），将 Model 的改变实时反应到 View 中，另一方面它实现了 DOM Listener（DOM 监听），当 DOM 发生一些事件（点击、滚动、touch 等）时，可以监听到，并在需要的情况下改变对应的 Data。</li>
-</ol>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">
-<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh-CN<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-		
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>hello {{message}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
-				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in movies<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{item}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-		
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vue-js/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-	
-	<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-		message<span class="token operator">:</span> <span class="token string">'你好啊'</span><span class="token punctuation">,</span>
-		movies<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'星际穿越'</span><span class="token punctuation">,</span> <span class="token string">'大话西游'</span><span class="token punctuation">,</span> <span class="token string">'少年派'</span><span class="token punctuation">,</span> <span class="token string">'盗梦空间'</span><span class="token punctuation">]</span>
-	<span class="token punctuation">}</span>
-	
-	<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-		el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
-		data<span class="token operator">:</span> obj<span class="token punctuation">,</span>
-		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
-			<span class="token function-variable function">add</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-				
-			<span class="token punctuation">}</span>
-		<span class="token punctuation">}</span>
-	<span class="token punctuation">}</span><span class="token punctuation">)</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="数组中哪些方法是响应式的？"><a href="#数组中哪些方法是响应式的？" class="headerlink" title="数组中哪些方法是响应式的？"></a>数组中哪些方法是响应式的？</h2><pre class="line-numbers language-html" data-language="html"><code class="language-html">
-<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh-CN<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-		
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-			
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
-				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in letters<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{item}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-
-			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btnClick()<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>去改变值<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-
-		
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vue-js/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-		
-	<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-		el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
-		data<span class="token operator">:</span> <span class="token punctuation">{</span>
-			letters<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">]</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
-			<span class="token function">btnClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-				<span class="token comment">// 1.push() 方法 ：尾部追加值</span>
-				<span class="token comment">// this.letters.push('aaa')</span>
-				<span class="token comment">// this.letters.push('aaa', 'bbb', 'ccc')</span>
-
-				<span class="token comment">// 2. pop() 方法，删除数组中的最后一个元素</span>
-				<span class="token comment">// this.letters.pop()</span>
-
-				<span class="token comment">// 3. shift() 方法，删除数组中的第一个元素</span>
-				<span class="token comment">// this.letters.shift()</span>
-
-				<span class="token comment">// 4. unshift() 方法，在数组最前面添加元素</span>
-				<span class="token comment">// this.letters.unshift('aaa')</span>
-				<span class="token comment">// this.letters.unshift('aaa', 'bbb', 'ccc')</span>
-
-				<span class="token comment">// 5. splice() 方法，可以 删除元素/插入元素/替换元素</span>
-				<span class="token comment">// 删除元素：第二个参数传入你要删除几个元素（如果没有传，就删除后面所有的元素）</span>
-				<span class="token comment">// 替换元素：第二个参数，表示我们要替换成几个元素，后面是用于替换前面的元素</span>
-				<span class="token comment">// 插入元素：第二个参数，传入 0，并且后面跟上要插入的元素</span>
-				<span class="token comment">// this.letters.splice(1)</span>
-				<span class="token comment">// this.letters.splice(1, 2, 'm', 'n', 'l', 'x')</span>
-				<span class="token comment">// this.letters.splice(1, 0, 'x', 'y', 'z')</span>
-
-				<span class="token comment">// sort() 排序</span>
-				<span class="token comment">// reverse() 数组反转</span>
-
-				<span class="token comment">// 以上方法，都是响应式的，唯独下面以索引值对数组进行修改，不是响应式的</span>
-				<span class="token keyword">this</span><span class="token punctuation">.</span>letters<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'hhhh'</span><span class="token punctuation">;</span>
-
-			<span class="token punctuation">}</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-
-	<span class="token punctuation">}</span><span class="token punctuation">)</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="～-波浪线的使用"><a href="#～-波浪线的使用" class="headerlink" title="～ 波浪线的使用"></a>～ 波浪线的使用</h2><p>波浪线后面跟数字时，<strong>返回值为该数字取反（正数变负数，负数变正数）然后减去 1</strong></p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js">
-<span class="token operator">~</span><span class="token number">1</span>  <span class="token comment">// -2</span>
-<span class="token operator">~</span><span class="token number">2</span>  <span class="token comment">// -3</span>
-<span class="token operator">~</span><span class="token operator">-</span><span class="token number">1</span>  <span class="token comment">// 0</span>
-<span class="token operator">~</span><span class="token operator">-</span><span class="token number">2</span>  <span class="token comment">// 1</span>
-<span class="token operator">~</span><span class="token number">0</span>  <span class="token comment">// -1</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>结论：只有 <code>~-1</code> 时结果才会为 <code>0</code> ，其他任何数值结果都不为 <code>0</code>，（波浪线）~ 与 indexOf() 方法连用，如果父字符串不包含子字符时返回 0 或者 false，多用于条件判断。</p>
+<blockquote>
+<p>😘 若有共鸣，留言足矣，若有赞赏，何以复加？ 🤞</p>
+</blockquote>
+<h2 id="LICENSE"><a href="#LICENSE" class="headerlink" title="LICENSE"></a>LICENSE</h2><p>MIT</p>
 
                 
             </div>
@@ -714,7 +675,7 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://pudongping.com/posts/fb43e7a9.html">https://pudongping.com/posts/fb43e7a9.html</a>
+                    <a href="https://pudongping.com/posts/e3e08109.html">https://pudongping.com/posts/e3e08109.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,8 +713,16 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/GitHub/">
+                                    <span class="chip bg-color">GitHub</span>
+                                </a>
+                            
                                 <a href="/tags/%E5%8D%9A%E5%AE%A2/">
                                     <span class="chip bg-color">博客</span>
+                                </a>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
                                 </a>
                             
                         </div>
@@ -924,7 +893,7 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
         repo: 'pudongping.github.io',
         owner: 'pudongping',
         admin: ["pudongping"],
-        id: '2021-06-03T11-44-37',
+        id: '2021-06-06T19-23-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -954,31 +923,31 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/8c44d73f.html">
+                <a href="/posts/8dcd0c17.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="demo page3">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="2019 年 9 月 6 日魔都上海静安考红帽 rhcsa、rhce 记录">
                         
-                        <span class="card-title">demo page3</span>
+                        <span class="card-title">2019 年 9 月 6 日魔都上海静安考红帽 rhcsa、rhce 记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            习武之人，不怕练千万招，就怕一招练千万遍！此篇文章记录了本人考红帽 RHCSA 和 RHCE 时的考题内容，仅供大家参考。祝大家考试顺利！
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%88%86%E7%B1%BB3/" class="post-category">
-                                    分类3
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
@@ -988,8 +957,12 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%A2%E5%B8%BD%E8%AE%A4%E8%AF%81/">
+                        <span class="chip bg-color">红帽认证</span>
                     </a>
                     
                 </div>
@@ -1000,53 +973,53 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/posts/624ab613.html">
+                <a href="/posts/e3e08109.html">
                     <div class="card-image">
                         
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="hexo-blog 博客开源">
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="demo page1">
-                        
-                        <span class="card-title">demo page1</span>
+                        <span class="card-title">hexo-blog 博客开源</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            折腾了个把星期左右，终于把博客改的有点儿样子了，秉承着开源精神，现在把博客源码开源出来。如果你也想拥有和我一摸一样的博客，那么赶紧来试试吧！如果你喜欢，请记得给个 Star！
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%88%86%E7%B1%BB1/" class="post-category">
-                                    分类1
+                            <a href="/categories/%E5%BC%80%E6%BA%90/" class="post-category">
+                                    开源
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/GitHub/">
+                        <span class="chip bg-color">GitHub</span>
                     </a>
                     
                     <a href="/tags/%E5%8D%9A%E5%AE%A2/">
                         <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>
@@ -1193,7 +1166,7 @@ boy<span class="token punctuation">.</span>age <span class="token operator">=</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.9k</span>&nbsp;字
+                class="white-color">15.9k</span>&nbsp;字
             
             
             
