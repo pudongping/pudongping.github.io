@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pudongping.com/posts/b00f410f.html</loc>
+    
+    <lastmod>2021-06-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/posts/e3e08109.html</loc>
     
     <lastmod>2021-06-07</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://pudongping.com/posts/8dcd0c17.html</loc>
     
     <lastmod>2021-06-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/posts/b00f410f.html</loc>
-    
-    <lastmod>2021-06-06</lastmod>
     
   </url>
   
@@ -95,20 +95,6 @@
 
   
   <url>
-    <loc>https://pudongping.com/tags/Linux/</loc>
-    <lastmod>2021-06-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/%E7%BA%A2%E5%B8%BD%E8%AE%A4%E8%AF%81/</loc>
-    <lastmod>2021-06-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.com/tags/GitHub/</loc>
     <lastmod>2021-06-07</lastmod>
     <changefreq>daily</changefreq>
@@ -124,6 +110,20 @@
   
   <url>
     <loc>https://pudongping.com/tags/Hexo/</loc>
+    <lastmod>2021-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/Linux/</loc>
+    <lastmod>2021-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/%E7%BA%A2%E5%B8%BD%E8%AE%A4%E8%AF%81/</loc>
     <lastmod>2021-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -167,14 +167,14 @@
 
   
   <url>
-    <loc>https://pudongping.com/categories/Linux/</loc>
+    <loc>https://pudongping.com/categories/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2021-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.com/categories/%E5%BC%80%E6%BA%90/</loc>
+    <loc>https://pudongping.com/categories/Linux/</loc>
     <lastmod>2021-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
