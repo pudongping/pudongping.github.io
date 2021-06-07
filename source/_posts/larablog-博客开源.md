@@ -8,7 +8,7 @@ toc: true
 mathjax: false
 img: /medias/featureimages/40.jpg
 coverImg: /medias/banner/10.jpg
-summary: larablog 是我基于 laravel6.x 构建的博客开源项目，支持 Markdown，支持图片拖拽上传，基于 RBAC 权限管理系统
+summary: larablog 是我基于 laravel6.x 构建的博客开源项目，支持 Markdown，支持图片拖拽上传，基于 RBAC 权限管理系统。
 categories: 开源
 tags:
   - 博客
