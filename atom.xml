@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-06-07T02:32:11.068Z</updated>
+  <updated>2021-06-07T09:00:57.568Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 python3 写的文档格式转换小工具</title>
+    <link href="https://pudongping.com/posts/6cc526bb.html"/>
+    <id>https://pudongping.com/posts/6cc526bb.html</id>
+    <published>2021-06-07T08:45:09.000Z</published>
+    <updated>2021-06-07T09:00:57.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;document-converter-（文档格式互转工具）&quot;&gt;&lt;a href=&quot;#document-converter-（文档格式互转工具）&quot; class=&quot;headerlink&quot; title=&quot;document-converter</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.com/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.com/tags/Python3/"/>
+    
+  </entry>
   
   <entry>
     <title>ubiquitous-nodejs</title>
@@ -50,7 +75,7 @@
     <link href="https://pudongping.com/posts/d2a0cef0.html"/>
     <id>https://pudongping.com/posts/d2a0cef0.html</id>
     <published>2021-06-07T02:10:36.000Z</published>
-    <updated>2021-06-07T02:22:17.876Z</updated>
+    <updated>2021-06-07T08:49:01.454Z</updated>
     
     
       
@@ -72,6 +97,8 @@
     
     <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
     
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
     <category term="Composer" scheme="https://pudongping.com/tags/Composer/"/>
     
   </entry>
@@ -81,7 +108,7 @@
     <link href="https://pudongping.com/posts/b6f184c0.html"/>
     <id>https://pudongping.com/posts/b6f184c0.html</id>
     <published>2021-06-07T01:33:58.000Z</published>
-    <updated>2021-06-07T02:23:35.588Z</updated>
+    <updated>2021-06-07T08:48:36.036Z</updated>
     
     
       
@@ -102,6 +129,8 @@
     <category term="博客" scheme="https://pudongping.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
     
   </entry>
   

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>使用 python3 写的文档格式转换小工具</title>
+      <link href="posts/6cc526bb.html"/>
+      <url>posts/6cc526bb.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="document-converter-（文档格式互转工具）"><a href="#document-converter-（文档格式互转工具）" class="headerlink" title="document-converter （文档格式互转工具）"></a>document-converter （文档格式互转工具）</h1><h2 id="项目发起初衷"><a href="#项目发起初衷" class="headerlink" title="项目发起初衷"></a>项目发起初衷</h2><p>近期有朋友要我帮忙将 pdf 格式文档数据提取成 docx 格式，平时我自己要么就通过编辑器转换了，要么就通过命令行转换，但这种方式对于一些朋友来说不是很友好，故此有此项目。</p><p>目前只支持 docx 和 pdf 互转，后续有时间了，会考虑支持多种常用文档格式互转，如果你对这感兴趣，欢迎提 PR ！</p><h2 id="项目特性"><a href="#项目特性" class="headerlink" title="项目特性"></a>项目特性</h2><ul><li>使用 python3 编写的 docx、pdf 互转工具。</li><li>支持多线程。</li><li>支持跨平台（macOS、Windows、Linux）。</li><li>批量 docx 文档转 pdf 格式（效果良好）。</li><li>批量 pdf 文档转 docx 格式（尝试过多个扩展库，遗憾的是均不支持图片提取）。</li><li>后续有时间了，会考虑支持多种常用的文档格式互转。</li></ul><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p>命令行提示</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-155e22f797a6ee6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文档简介"></p><p>批量 docx 转 pdf</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-3df6914674c7e060.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="docx转pdf"></p><p>批量 pdf 转 docx</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-800ff9980abdb59a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pdf转docx"></p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol><li>克隆源代码</li></ol><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># GitHubgit clone https://github.com/pudongping/document-converter.git# giteegit clone https://gitee.com/pudongping/document-converter.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ol start="2"><li>进入项目根目录，并安装相关依赖扩展</li></ol><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd document-converter &amp;&amp; sudo pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="3"><li>使用文档格式转换</li></ol><p>举个例子来说，如果此时我想将 <code>n</code> 个 <code>.docx</code> 格式的文档转换成 <code>.pdf</code> 格式的文档，那么我需要这么操作：</p><ul><li>将这 <code>n</code> 个 <code>.docx</code> 文档复制到此项目的 <code>data/input/docxs</code> 目录（如果想转 <code>.pdf</code> 格式的文档，则需要将文档复制到 <code>data/input/pdfs</code> 目录）</li><li>在项目根目录执行 <code>python3 main.py --docx-to-pdf</code> 命令，且等待命令执行结束（你可以去泡杯咖啡，之后静静等待，一般来说会很快，因为支持多线程）</li><li>之后在 <code>data/output/pdfs</code> 目录查看已经转换好的文档。至此，完毕！</li></ul><ol start="4"><li>命令介绍</li></ol><table><thead><tr><th>命令</th><th>说明</th></tr></thead><tbody><tr><td>python3 main.py –version</td><td>显示当前应用的版本号</td></tr><tr><td>python3 main.py –help 或者 python3 main.py -h</td><td>显示帮助文档</td></tr><tr><td>python3 main.py –docx-to-pdf</td><td>执行 docx 文档转成 pdf 格式的文档</td></tr><tr><td>python3 main.py –pdf-to-docx</td><td>执行 pdf 文档转成 docx 格式的文档</td></tr></tbody></table><h2 id="项目目录介绍"><a href="#项目目录介绍" class="headerlink" title="项目目录介绍"></a>项目目录介绍</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">├── LICENSE├── Pipfile├── README.md  项目介绍文档├── app  代码目录│&nbsp;&nbsp; ├── __init__.py│&nbsp;&nbsp; ├── config  配置文件目录│&nbsp;&nbsp; │&nbsp;&nbsp; ├── __init__.py│&nbsp;&nbsp; │&nbsp;&nbsp; └── app.py  配置相关│&nbsp;&nbsp; ├── converter  转换相关代码目录│&nbsp;&nbsp; │&nbsp;&nbsp; ├── __init__.py│&nbsp;&nbsp; │&nbsp;&nbsp; ├── converter_docx.py  *文档转 docx 格式相关代码│&nbsp;&nbsp; │&nbsp;&nbsp; └── converter_pdf.py   *文档转 pdf 格式相关代码│&nbsp;&nbsp; └── helper.py  助手函数├── data  数据相关│&nbsp;&nbsp; ├── input  需要转换的文档目录│&nbsp;&nbsp; │&nbsp;&nbsp; ├── docxs  如果需要将 docx 文档转换成其他格式，则默认需要将文档放入此目录下│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── 文档1.docx│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── 文档2.docx│&nbsp;&nbsp; │&nbsp;&nbsp; └── pdfs  如果需要将 pdf 文档转换成其他格式，则默认需要将文档放入此目录下│&nbsp;&nbsp; │&nbsp;&nbsp;     ├── alex1.pdf│&nbsp;&nbsp; │&nbsp;&nbsp;     └── sample.pdf│&nbsp;&nbsp; └── output  文档转换后存放的文档目录│&nbsp;&nbsp;     ├── docxs  所有经过转换后的 docx 文档默认会放到此目录下│&nbsp;&nbsp;     │&nbsp;&nbsp; ├── alex1.pdf.docx│&nbsp;&nbsp;     │&nbsp;&nbsp; └── sample.pdf.docx│&nbsp;&nbsp;     └── pdfs  所有经过转换后的 pdf 文档默认会放到此目录下│&nbsp;&nbsp;         ├── 文档1.docx.pdf│&nbsp;&nbsp;         └── 文档2.docx.pdf├── main.py  项目入口文件├── requirements.txt  项目依赖关系清单└── runtime  项目运行相关    └── logs  日志目录        └── 202104            └── converter-2021-04-24.log  以天为单位记录的操作日志<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>源代码基于 <a href="https://opensource.org/licenses/MIT">MIT</a> 协议发布。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ubiquitous-nodejs</title>
       <link href="posts/6b5490ac.html"/>
       <url>posts/6b5490ac.html</url>
@@ -51,6 +76,8 @@
             
             <tag> Laravel </tag>
             
+            <tag> PHP </tag>
+            
             <tag> Composer </tag>
             
         </tags>
@@ -81,6 +108,8 @@
             <tag> 博客 </tag>
             
             <tag> Laravel </tag>
+            
+            <tag> PHP </tag>
             
         </tags>
       
