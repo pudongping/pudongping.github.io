@@ -106,8 +106,11 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repository: git@github.com:pudongping/pudongping.github.io.git
+  branch: gh-pages
+- type: git
+  repository: git@gitee.com:pudongping/pudongping.git
   branch: gh-pages
 
 # 内容搜索
