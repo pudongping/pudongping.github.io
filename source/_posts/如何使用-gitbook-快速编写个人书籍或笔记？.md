@@ -31,6 +31,14 @@ password:
 [推荐12个实用的gitbook插件](https://juejin.im/post/6844903865146441741)  
 [GitBook 和它有趣的插件](http://jartto.wang/2020/02/02/about-gitbook/)
 
+## 示例图
+
+![页面截图](https://pudongping.github.io/notes/resources/images/sample/page.png)
+
+## 在线访问
+
+[蒲东平的编程笔记](https://notes.pudongping.com) 或者 [蒲东平的编程笔记-GitHub Pages](https://pudongping.github.io/notes)
+
 ## 使用
 
 - 安装
