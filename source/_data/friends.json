@@ -12,8 +12,8 @@
   "title": "看一看"
 },{
   "avatar": "https://blog.pudongping.com/uploads/images/avatars/201912/07/1_1575651320_G3hUEZnQgE.png",
-  "name": "削个椰子皮_给个梨の博客",
-  "introduction": "致力于提供个人所学所想，为开源做一点贡献。",
+  "name": "蒲东平の博客",
+  "introduction": "致力于提供个人所学所想，为开源做一点贡献。（旧博客项目）",
   "url": "https://blog.pudongping.com/",
   "title": "瞧一瞧"
 },{
@@ -27,5 +27,17 @@
   "name": "闪烁之狐",
   "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬。",
   "url": "https://blinkfox.github.io/",
+  "title": "前去学习"
+},{
+  "avatar": "https://blog.tgwork.top/wp-content/uploads/2019/12/WechatIMG24.jpeg",
+  "name": "tg11",
+  "introduction": "一沙一世界，一花一天堂。君掌盛无边，刹那成永恒。",
+  "url": "https://blog.tgwork.top/",
+  "title": "前去学习"
+},{
+  "avatar": "https://zoulingbin.github.io/avatar.jpg",
+  "name": "zoulingbin",
+  "introduction": "几多人位于山之巅俯瞰我的疲倦。",
+  "url": "https://zoulingbin.github.io/",
   "title": "前去学习"
 }]
