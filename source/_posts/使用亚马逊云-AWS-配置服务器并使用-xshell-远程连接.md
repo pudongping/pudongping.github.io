@@ -15,7 +15,7 @@ date: 2021-06-08 09:19:56
 img:
 coverImg:
 password:
-summary:
+summary: 使用亚马逊云 AWS 配置服务器并使用 xshell 远程连接，如果之前使用亚马逊云配置服务器没有配置成功，那么请按照下面的方式删除掉实例
 ---
 
 # 使用亚马逊云 AWS 配置服务器并使用 xshell 远程连接
