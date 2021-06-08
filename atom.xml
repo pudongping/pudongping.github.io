@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-06-07T09:00:57.568Z</updated>
+  <updated>2021-06-08T01:45:15.274Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用亚马逊云 AWS 配置服务器并使用 xshell 远程连接</title>
+    <link href="https://pudongping.com/posts/34efcb18.html"/>
+    <id>https://pudongping.com/posts/34efcb18.html</id>
+    <published>2021-06-08T01:19:56.000Z</published>
+    <updated>2021-06-08T01:45:15.274Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用亚马逊云-AWS-配置服务器并使用-xshell-远程连接&quot;&gt;&lt;a href=&quot;#使用亚马逊云-AWS-配置服务器并使用-xshell-远程连接&quot; class=&quot;headerlink&quot; title=&quot;使用亚马逊云 AWS 配置服务器并使用 xshell</summary>
+        
+      
+    
+    
+    
+    <category term="服务器" scheme="https://pudongping.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="服务器" scheme="https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 python3 写的文档格式转换小工具</title>
