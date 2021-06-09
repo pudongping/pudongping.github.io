@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-06-08T02:01:43.933Z</updated>
+  <updated>2021-06-09T02:10:50.619Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hyperf 框架常用的助手函数</title>
+    <link href="https://pudongping.com/posts/79e7b1a4.html"/>
+    <id>https://pudongping.com/posts/79e7b1a4.html</id>
+    <published>2021-06-09T02:07:33.000Z</published>
+    <updated>2021-06-09T02:10:50.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;以下列出部分 hyperf 常用的助手函数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中要是想获取当前请求的路由所对应的控制器和方法，请直接调用 &lt;code&gt;get_current_action()&lt;/code&gt; 方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="hyperf" scheme="https://pudongping.com/tags/hyperf/"/>
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>使用亚马逊云 AWS 配置服务器并使用 xshell 远程连接</title>
@@ -122,9 +153,9 @@
     
     <category term="GitHub" scheme="https://pudongping.com/tags/GitHub/"/>
     
-    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
-    
     <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
     
     <category term="Composer" scheme="https://pudongping.com/tags/Composer/"/>
     
@@ -155,9 +186,9 @@
     
     <category term="博客" scheme="https://pudongping.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
-    
     <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
     
   </entry>
   
