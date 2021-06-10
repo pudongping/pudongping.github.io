@@ -1,11 +1,11 @@
 [{
-  "avatar": "https://pudongping.com/medias/avatar.jpg",
+  "avatar": "https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/avatar.jpg",
   "name": "蒲东平の博客",
   "introduction": "✊🏻 SELECT * FROM LEARNS WHERE LIVE IS NOT NULL;",
   "url": "https://pudongping.com/",
   "title": "瞅一瞅"
 },{
-  "avatar": "https://pudongping.com/medias/favicon.png",
+  "avatar": "https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/favicon.png",
   "name": "蒲东平の笔记",
   "introduction": "三观比五官正，思想比套路深的终身学习编程爱好者。 😘",
   "url": "https://notes.pudongping.com/",

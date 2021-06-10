@@ -6,7 +6,7 @@ hide: false
 cover: true
 toc: true
 mathjax: false
-coverImg: /medias/banner/2.jpg
+coverImg: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/banner/2.jpg
 summary: 本人基于高德开放平台编写的 PHP 天气信息 composer 组件，并且能够友好的支持 laravel 框架。
 categories: 开源
 tags:

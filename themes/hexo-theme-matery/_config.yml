@@ -116,8 +116,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /medias/favicon.png
-logo: /medias/logo.png
+favicon: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/favicon.png
+logo: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -162,8 +162,8 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: /medias/reward/wechat.png
-  alipay: /medias/reward/alipay.png
+  wechat: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/reward/wechat.png
+  alipay: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/reward/alipay.png
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -203,9 +203,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
+  avatar: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/avatar.jpg
   career: 编程爱好者 ｜ 软件工程师
-  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugar, yes please!）。坐标上海，从事后端开发 3 年，入门技术栈为 PHP，先后接触 JavaScript、vue、微信小程序、Python、node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程改变生活！
+  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 3 年，拥有红帽 RHCSA、RHCE 认证，入门技术栈为 PHP，先后接触 JavaScript、Vue、微信小程序、Python、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -260,9 +260,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/31.jpg
-    - /medias/featureimages/35.jpg
-    - /medias/featureimages/40.jpg
+    - https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/31.jpg
+    - https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/35.jpg
+    - https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/40.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -327,7 +327,7 @@ valine:
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
-  background: /medias/comment_bg.png
+  background: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/comment_bg.png
 
 # The configuration of the MiniValine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
@@ -423,14 +423,14 @@ baiduPush: true
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
 libs:
   css:
-    matery: /css/matery.css
-    mycss: /css/my.css
-    fontAwesome: /libs/awesome/css/all.css # V5.11.1
+    matery: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/css/matery.css
+    mycss: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/css/my.css
+    fontAwesome: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/awesome/css/all.css # V5.11.1
 #    materialize: /libs/materialize/materialize.min.css # 1.0.0
     materialize: https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css
 #    aos: /libs/aos/aos.css
     aos: https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css
-    animate: /libs/animate/animate.min.css # V3.5.1
+    animate: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/animate/animate.min.css # V3.5.1
 #    lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
     lightgallery: https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css
 #    aplayer: /libs/aplayer/APlayer.min.css
@@ -441,10 +441,10 @@ libs:
     gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
 #    jqcloud: /libs/jqcloud/jqcloud.css
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.min.css
-    tocbot: /libs/tocbot/tocbot.css
-    prism: /libs/prism/prism.css
+    tocbot: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/tocbot/tocbot.css
+    prism: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/prism/prism.css
   js:
-    matery: /js/matery.js
+    matery: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/js/matery.js
 #    jquery: /libs/jquery/jquery.min.js
     jquery: https://libs.baidu.com/jquery/2.1.4/jquery.min.js
 #    materialize: /libs/materialize/materialize.min.js # 1.0.0
@@ -457,83 +457,83 @@ libs:
     scrollProgress: https://cdn.bootcss.com/scrollprogress/3.0.2/scrollProgress.min.js
 #    lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
     lightgallery: https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js
-    clicklove: /libs/others/clicklove.js
+    clicklove: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/others/clicklove.js
 #    busuanzi: /libs/others/busuanzi.pure.mini.js
     busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 #    aplayer: /libs/aplayer/APlayer.min.js
     aplayer: https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js
 #    dplayer: /libs/dplayer/DPlayer.min.js
     dplayer: https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js
-    crypto: /libs/cryptojs/crypto-js.min.js
+    crypto: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/cryptojs/crypto-js.min.js
 #    echarts: /libs/echarts/echarts.min.js
     echarts: https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js
 #    gitalk: /libs/gitalk/gitalk.min.js
     gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: /libs/minivaline/MiniValine.js
+    valine: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    minivaline: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/minivaline/MiniValine.js
 #    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js
-    tocbot: /libs/tocbot/tocbot.min.js
-    canvas_nest: /libs/background/canvas-nest.js
-    ribbon: /libs/background/ribbon.min.js
-    ribbonRefresh: /libs/background/ribbon-refresh.min.js
-    ribbon_dynamic: /libs/background/ribbon-dynamic.js
-    instantpage: /libs/instantpage/instantpage.js
+    tocbot: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/tocbot/tocbot.min.js
+    canvas_nest: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/background/canvas-nest.js
+    ribbon: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/background/ribbon.min.js
+    ribbonRefresh: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/background/ribbon-refresh.min.js
+    ribbon_dynamic: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/background/ribbon-dynamic.js
+    instantpage: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/libs/instantpage/instantpage.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/11.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
-- /medias/featureimages/24.jpg
-- /medias/featureimages/25.jpg
-- /medias/featureimages/26.jpg
-- /medias/featureimages/27.jpg
-- /medias/featureimages/28.jpg
-- /medias/featureimages/29.jpg
-- /medias/featureimages/30.jpg
-- /medias/featureimages/31.jpg
-- /medias/featureimages/32.jpg
-- /medias/featureimages/33.jpg
-- /medias/featureimages/34.jpg
-- /medias/featureimages/35.jpg
-- /medias/featureimages/36.jpg
-- /medias/featureimages/37.jpg
-- /medias/featureimages/38.jpg
-- /medias/featureimages/39.jpg
-- /medias/featureimages/40.jpg
-- /medias/featureimages/41.jpg
-- /medias/featureimages/42.jpg
-- /medias/featureimages/43.jpg
-- /medias/featureimages/44.jpg
-- /medias/featureimages/45.jpg
-- /medias/featureimages/46.jpg
-- /medias/featureimages/47.jpg
-- /medias/featureimages/48.jpg
-- /medias/featureimages/49.jpg
-- /medias/featureimages/50.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/0.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/1.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/2.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/3.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/4.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/5.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/6.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/7.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/8.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/9.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/10.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/11.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/12.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/13.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/14.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/15.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/16.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/17.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/18.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/19.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/20.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/21.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/22.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/23.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/24.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/25.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/26.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/27.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/28.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/29.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/30.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/31.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/32.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/33.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/34.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/35.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/36.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/37.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/38.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/39.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/40.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/41.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/42.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/43.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/44.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/45.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/46.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/47.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/48.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/49.jpg
+- https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/50.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -652,6 +652,10 @@ beian:
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
   url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
+
+# 自己重新写一个 cdn 配置，方便管理哪些位置使用 cdn ，哪些地方不使用
+myJsDelivr:
+  url: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io
 
 # 网站背景图
 background:

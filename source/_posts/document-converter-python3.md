@@ -11,8 +11,8 @@ tags:
   - Python3
 abbrlink: 6cc526bb
 date: 2021-06-07 16:45:09
-img: /medias/featureimages/41.jpg
-coverImg: /medias/banner/6.jpg
+img: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/41.jpg
+coverImg: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/banner/6.jpg
 password:
 summary: 自己使用 python3 写的文档格式转换工具，目前暂时只支持 docx 和 pdf 文档互转，后面有时间的话，再考虑完善更多的格式互转。
 ---
