@@ -11,7 +11,7 @@ summary: >-
   `book.json`，喜欢就拿去。
 categories: 开源
 tags:
-  - gitbook
+  - GitBook
   - 博客
   - GitHub
 abbrlink: b00f410f

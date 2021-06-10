@@ -8,14 +8,14 @@ toc: true
 mathjax: false
 categories: PHP
 tags:
-  - hyperf
+  - Hyperf
   - PHP
 abbrlink: 79e7b1a4
 date: 2021-06-09 10:07:33
 img:
 coverImg:
 password:
-summary:
+summary: 以下列出部分 hyperf 常用的助手函数，还是比较实用的，仅供各位大佬参考。其中要是想获取当前请求的路由所对应的控制器和方法，请直接调用 `get_current_action()` 方法
 ---
 
 以下列出部分 hyperf 常用的助手函数

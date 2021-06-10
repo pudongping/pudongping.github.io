@@ -10,8 +10,8 @@ coverImg: /medias/banner/12.jpg
 summary: "⚡ ubiquity-nodejs 是一个本人基于 node.js 开发的 web 脚手架。\U0001F618 支持模版渲染、Restful API、ORM 等特性，遵循 MVC 架构。"
 categories: 开源
 tags:
-  - Github
-  - node.js
+  - GitHub
+  - Node.js
 abbrlink: 6b5490ac
 date: 2021-06-07 10:27:15
 img:
