@@ -204,7 +204,7 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/avatar.jpg
-  career: 编程爱好者 ｜ 软件工程师
+  career: Software Engineer | Programming geeks | Artisan, Backend Developer & Overall Web Enthusiast
   introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 3 年，拥有红帽 RHCSA、RHCE 认证，入门技术栈为 PHP，先后接触 JavaScript、Vue、微信小程序、Python、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
