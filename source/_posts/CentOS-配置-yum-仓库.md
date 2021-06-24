@@ -50,9 +50,9 @@ http://mirrors.aliyun.com/repo/Centos-7.repo
 
 ```sh
 
-// 清除所有缓存
+# 清除所有缓存
 yum clean all
 
-// 建立缓存
+# 建立缓存
 yum makecache
 ```
