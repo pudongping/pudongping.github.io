@@ -55,7 +55,7 @@
 - 使用的 hexo-theme-matery 皮肤版本为：v2.0.0
 - 其他的依赖包见 package.json 文件，具体版本号见 package-lock.json 文件。
 
-## 如何搭建和我一摸一样的博客？
+## 如何搭建和我一模一样的博客？
 
 > 前提你需要先安装 `git` 和 `node.js` （安装好 node.js 之后，会自动安装 npm，强烈建议使用 [nvm](https://github.com/nvm-sh/nvm) 安装 node.js 以方便管理多个版本的 node.js）
 
