@@ -6,9 +6,9 @@ hide: false
 cover: false
 toc: true
 mathjax: false
-categories: docker
+categories: Docker
 tags:
-  - docker
+  - Docker
   - Linux
 abbrlink: 2a105f69
 date: 2021-07-02 23:55:35
