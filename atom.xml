@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>蒲东平的博客</title>
+  
+  <subtitle>蒲东平的博客</subtitle>
+  <link href="https://pudongping.com/atom.xml" rel="self"/>
+  
+  <link href="https://pudongping.com/"/>
+  <updated>2021-07-30T15:29:56.352Z</updated>
+  <id>https://pudongping.com/</id>
+  
+  <author>
+    <name>Alex</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL 执行加载顺序</title>
+    <link href="https://pudongping.com/posts/3b8d5b86.html"/>
+    <id>https://pudongping.com/posts/3b8d5b86.html</id>
+    <published>2021-07-30T15:26:09.000Z</published>
+    <updated>2021-07-30T15:29:56.352Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL-执行加载顺序&quot;&gt;&lt;a href=&quot;#MySQL-执行加载顺序&quot; class=&quot;headerlink&quot; title=&quot;MySQL 执行加载顺序&quot;&gt;&lt;/a&gt;MySQL 执行加载顺序&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;这篇文章算是 “水”</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 锁机制</title>
+    <link href="https://pudongping.com/posts/eee5658b.html"/>
+    <id>https://pudongping.com/posts/eee5658b.html</id>
+    <published>2021-07-29T13:50:02.000Z</published>
+    <updated>2021-07-29T13:51:29.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL-锁机制&quot;&gt;&lt;a href=&quot;#MySQL-锁机制&quot; class=&quot;headerlink&quot; title=&quot;MySQL 锁机制&quot;&gt;&lt;/a&gt;MySQL 锁机制&lt;/h1&gt;&lt;h2 id=&quot;锁的概念&quot;&gt;&lt;a href=&quot;#锁的概念&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
+    
+    <category term="锁" scheme="https://pudongping.com/tags/%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 三范式</title>
+    <link href="https://pudongping.com/posts/b17a8184.html"/>
+    <id>https://pudongping.com/posts/b17a8184.html</id>
+    <published>2021-07-27T16:38:29.000Z</published>
+    <updated>2021-07-27T16:40:36.141Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL-三范式&quot;&gt;&lt;a href=&quot;#MySQL-三范式&quot; class=&quot;headerlink&quot; title=&quot;MySQL 三范式&quot;&gt;&lt;/a&gt;MySQL 三范式&lt;/h1&gt;&lt;h2 id=&quot;第一范式（1NF）：表中的每列的属性不可再分&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 主从复制</title>
+    <link href="https://pudongping.com/posts/6b30c31b.html"/>
+    <id>https://pudongping.com/posts/6b30c31b.html</id>
+    <published>2021-07-27T15:08:10.000Z</published>
+    <updated>2021-07-27T15:09:10.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MySQL-主从复制&quot;&gt;&lt;a href=&quot;#MySQL-主从复制&quot; class=&quot;headerlink&quot; title=&quot;MySQL 主从复制&quot;&gt;&lt;/a&gt;MySQL 主从复制&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;主从复制原理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
+    
+    <category term="主从复制" scheme="https://pudongping.com/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开启 redis 远程连接</title>
+    <link href="https://pudongping.com/posts/a15ba792.html"/>
+    <id>https://pudongping.com/posts/a15ba792.html</id>
+    <published>2021-07-26T12:42:54.000Z</published>
+    <updated>2021-07-26T12:43:46.636Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;开启-redis-远程连接&quot;&gt;&lt;a href=&quot;#开启-redis-远程连接&quot; class=&quot;headerlink&quot; title=&quot;开启 redis 远程连接&quot;&gt;&lt;/a&gt;开启 redis 远程连接&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;编辑 redis 配置文件</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis 的持久化</title>
+    <link href="https://pudongping.com/posts/6d929828.html"/>
+    <id>https://pudongping.com/posts/6d929828.html</id>
+    <published>2021-07-25T07:04:56.000Z</published>
+    <updated>2021-07-25T07:06:17.661Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Redis-的持久化&quot;&gt;&lt;a href=&quot;#Redis-的持久化&quot; class=&quot;headerlink&quot; title=&quot;Redis 的持久化&quot;&gt;&lt;/a&gt;Redis 的持久化&lt;/h1&gt;&lt;h2 id=&quot;两种持久化方式&quot;&gt;&lt;a href=&quot;#两种持久化方式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis Cluster 集群解决方案</title>
+    <link href="https://pudongping.com/posts/663a091e.html"/>
+    <id>https://pudongping.com/posts/663a091e.html</id>
+    <published>2021-07-24T15:05:38.000Z</published>
+    <updated>2021-07-24T15:06:36.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Redis-Cluster-集群解决方案&quot;&gt;&lt;a href=&quot;#Redis-Cluster-集群解决方案&quot; class=&quot;headerlink&quot; title=&quot;Redis Cluster 集群解决方案&quot;&gt;&lt;/a&gt;Redis Cluster</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="分布式集群" scheme="https://pudongping.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Memcached 实现分布式算法</title>
+    <link href="https://pudongping.com/posts/aa516918.html"/>
+    <id>https://pudongping.com/posts/aa516918.html</id>
+    <published>2021-07-22T16:35:56.000Z</published>
+    <updated>2021-07-22T16:50:57.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-Memcached-实现分布式算法&quot;&gt;&lt;a href=&quot;#使用-Memcached-实现分布式算法&quot; class=&quot;headerlink&quot; title=&quot;使用 Memcached 实现分布式算法&quot;&gt;&lt;/a&gt;使用 Memcached</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+    <category term="Memcached" scheme="https://pudongping.com/tags/Memcached/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>memcached 简单使用</title>
+    <link href="https://pudongping.com/posts/afc71251.html"/>
+    <id>https://pudongping.com/posts/afc71251.html</id>
+    <published>2021-07-22T15:44:20.000Z</published>
+    <updated>2021-07-22T15:45:23.202Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;memcached-简单使用&quot;&gt;&lt;a href=&quot;#memcached-简单使用&quot; class=&quot;headerlink&quot; title=&quot;memcached 简单使用&quot;&gt;&lt;/a&gt;memcached 简单使用&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+    <category term="Memcached" scheme="https://pudongping.com/tags/Memcached/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Memcached 实现 Session 共享</title>
+    <link href="https://pudongping.com/posts/af14a477.html"/>
+    <id>https://pudongping.com/posts/af14a477.html</id>
+    <published>2021-07-19T12:02:33.000Z</published>
+    <updated>2021-07-19T12:06:42.075Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-Memcached-实现-Session-共享&quot;&gt;&lt;a href=&quot;#使用-Memcached-实现-Session-共享&quot; class=&quot;headerlink&quot; title=&quot;使用 Memcached 实现 Session 共享&quot;&gt;&lt;/a&gt;使用</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+    <category term="Memcached" scheme="https://pudongping.com/tags/Memcached/"/>
+    
+    <category term="Session" scheme="https://pudongping.com/tags/Session/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件缓存（模板缓存）</title>
+    <link href="https://pudongping.com/posts/8a518969.html"/>
+    <id>https://pudongping.com/posts/8a518969.html</id>
+    <published>2021-07-18T08:38:10.000Z</published>
+    <updated>2021-07-18T08:39:05.733Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;文件缓存（模板缓存）&quot;&gt;&lt;a href=&quot;#文件缓存（模板缓存）&quot; class=&quot;headerlink&quot; title=&quot;文件缓存（模板缓存）&quot;&gt;&lt;/a&gt;文件缓存（模板缓存）&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服务器应用程序程序缓存</title>
+    <link href="https://pudongping.com/posts/4230d41e.html"/>
+    <id>https://pudongping.com/posts/4230d41e.html</id>
+    <published>2021-07-17T08:39:55.000Z</published>
+    <updated>2021-07-17T08:40:46.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;服务器应用程序程序缓存&quot;&gt;&lt;a href=&quot;#服务器应用程序程序缓存&quot; class=&quot;headerlink&quot; title=&quot;服务器应用程序程序缓存&quot;&gt;&lt;/a&gt;服务器应用程序程序缓存&lt;/h1&gt;&lt;h2 id=&quot;Web-Server-服务器之-Apache&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器缓存</title>
+    <link href="https://pudongping.com/posts/be7c79f7.html"/>
+    <id>https://pudongping.com/posts/be7c79f7.html</id>
+    <published>2021-07-16T08:48:39.000Z</published>
+    <updated>2021-07-16T08:52:05.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;浏览器缓存&quot;&gt;&lt;a href=&quot;#浏览器缓存&quot; class=&quot;headerlink&quot; title=&quot;浏览器缓存&quot;&gt;&lt;/a&gt;浏览器缓存&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;浏览器处理网页的方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;走到协商缓存会返回</summary>
+        
+      
+    
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows10 专业版 64位系统安装docker并使用 laradock 搭建 laravel 环境</title>
+    <link href="https://pudongping.com/posts/f59f8f31.html"/>
+    <id>https://pudongping.com/posts/f59f8f31.html</id>
+    <published>2021-07-15T02:53:45.000Z</published>
+    <updated>2021-07-15T02:59:54.135Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;windows10-专业版-64-位系统安装-docker-并使用-laradock-搭建-laravel-环境&quot;&gt;&lt;a href=&quot;#windows10-专业版-64-位系统安装-docker-并使用-laradock-搭建-laravel-环境&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+    <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Laradock 笔记</title>
+    <link href="https://pudongping.com/posts/17c35873.html"/>
+    <id>https://pudongping.com/posts/17c35873.html</id>
+    <published>2021-07-14T01:45:56.000Z</published>
+    <updated>2021-07-14T01:47:16.024Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;laradock-笔记&quot;&gt;&lt;a href=&quot;#laradock-笔记&quot; class=&quot;headerlink&quot; title=&quot;laradock 笔记&quot;&gt;&lt;/a&gt;laradock 笔记&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+    <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker 常见命令</title>
+    <link href="https://pudongping.com/posts/59b529b7.html"/>
+    <id>https://pudongping.com/posts/59b529b7.html</id>
+    <published>2021-07-13T01:14:20.000Z</published>
+    <updated>2021-07-13T01:15:36.412Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;docker-常见命令&quot;&gt;&lt;a href=&quot;#docker-常见命令&quot; class=&quot;headerlink&quot; title=&quot;docker 常见命令&quot;&gt;&lt;/a&gt;docker 常见命令&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;查看版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 环境搭建</title>
+    <link href="https://pudongping.com/posts/a8b7793d.html"/>
+    <id>https://pudongping.com/posts/a8b7793d.html</id>
+    <published>2021-07-11T16:10:35.000Z</published>
+    <updated>2021-07-11T16:11:46.737Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Docker-环境搭建&quot;&gt;&lt;a href=&quot;#Docker-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Docker 环境搭建&quot;&gt;&lt;/a&gt;Docker 环境搭建&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 8 安装 docker</title>
+    <link href="https://pudongping.com/posts/de75e5f5.html"/>
+    <id>https://pudongping.com/posts/de75e5f5.html</id>
+    <published>2021-07-11T15:27:23.000Z</published>
+    <updated>2021-07-11T15:28:17.960Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CentOS-8-安装-docker&quot;&gt;&lt;a href=&quot;#CentOS-8-安装-docker&quot; class=&quot;headerlink&quot; title=&quot;CentOS 8 安装 docker&quot;&gt;&lt;/a&gt;CentOS 8 安装</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mitmproxy 抓包工具的使用</title>
+    <link href="https://pudongping.com/posts/cd811a58.html"/>
+    <id>https://pudongping.com/posts/cd811a58.html</id>
+    <published>2021-07-10T17:37:51.000Z</published>
+    <updated>2021-07-10T17:40:52.533Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;mitmproxy-抓包工具的使用&quot;&gt;&lt;a href=&quot;#mitmproxy-抓包工具的使用&quot; class=&quot;headerlink&quot; title=&quot;mitmproxy 抓包工具的使用&quot;&gt;&lt;/a&gt;mitmproxy</summary>
+        
+      
+    
+    
+    
+    <category term="mitmproxy" scheme="https://pudongping.com/categories/mitmproxy/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="mitmproxy" scheme="https://pudongping.com/tags/mitmproxy/"/>
+    
+    <category term="抓包工具" scheme="https://pudongping.com/tags/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 下安装 php7.2</title>
+    <link href="https://pudongping.com/posts/98509b56.html"/>
+    <id>https://pudongping.com/posts/98509b56.html</id>
+    <published>2021-07-08T01:29:25.000Z</published>
+    <updated>2021-07-08T01:30:17.172Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ubuntu-下安装-php7-2&quot;&gt;&lt;a href=&quot;#Ubuntu-下安装-php7-2&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 下安装 php7.2&quot;&gt;&lt;/a&gt;Ubuntu 下安装</summary>
+        
+      
+    
+    
+    
+    <category term="Ubuntu" scheme="https://pudongping.com/categories/Ubuntu/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://pudongping.com/tags/Ubuntu/"/>
+    
+  </entry>
+  
+</feed>
