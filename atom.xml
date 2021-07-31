@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-07-31T15:46:31.711Z</updated>
+  <updated>2021-07-31T16:28:41.228Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL 之索引、视图、触发器</title>
+    <link href="https://pudongping.com/posts/b1cb609d.html"/>
+    <id>https://pudongping.com/posts/b1cb609d.html</id>
+    <published>2021-07-31T16:27:16.000Z</published>
+    <updated>2021-07-31T16:28:41.228Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL-之索引、视图、触发器&quot;&gt;&lt;a href=&quot;#MySQL-之索引、视图、触发器&quot; class=&quot;headerlink&quot; title=&quot;MySQL 之索引、视图、触发器&quot;&gt;&lt;/a&gt;MySQL 之索引、视图、触发器&lt;/h1&gt;&lt;h2 id=&quot;索引&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
+    
+    <category term="索引" scheme="https://pudongping.com/tags/%E7%B4%A2%E5%BC%95/"/>
+    
+    <category term="视图" scheme="https://pudongping.com/tags/%E8%A7%86%E5%9B%BE/"/>
+    
+    <category term="触发器" scheme="https://pudongping.com/tags/%E8%A7%A6%E5%8F%91%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL 性能分析</title>
@@ -563,35 +594,6 @@
     <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mitmproxy 抓包工具的使用</title>
-    <link href="https://pudongping.com/posts/cd811a58.html"/>
-    <id>https://pudongping.com/posts/cd811a58.html</id>
-    <published>2021-07-10T17:37:51.000Z</published>
-    <updated>2021-07-10T17:40:52.533Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;mitmproxy-抓包工具的使用&quot;&gt;&lt;a href=&quot;#mitmproxy-抓包工具的使用&quot; class=&quot;headerlink&quot; title=&quot;mitmproxy 抓包工具的使用&quot;&gt;&lt;/a&gt;mitmproxy</summary>
-        
-      
-    
-    
-    
-    <category term="mitmproxy" scheme="https://pudongping.com/categories/mitmproxy/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
-    
-    <category term="mitmproxy" scheme="https://pudongping.com/tags/mitmproxy/"/>
-    
-    <category term="抓包工具" scheme="https://pudongping.com/tags/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
