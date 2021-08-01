@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-07-31T16:28:41.228Z</updated>
+  <updated>2021-08-01T16:23:35.019Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS 7 搭建 gogs Git 服务器</title>
+    <link href="https://pudongping.com/posts/7aeb56a9.html"/>
+    <id>https://pudongping.com/posts/7aeb56a9.html</id>
+    <published>2021-08-01T16:22:26.000Z</published>
+    <updated>2021-08-01T16:23:35.019Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CentOS-7-搭建-gogs-Git-服务器&quot;&gt;&lt;a href=&quot;#CentOS-7-搭建-gogs-Git-服务器&quot; class=&quot;headerlink&quot; title=&quot;CentOS 7 搭建 gogs Git 服务器&quot;&gt;&lt;/a&gt;CentOS 7 搭建</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
+    
+    <category term="Gogs" scheme="https://pudongping.com/tags/Gogs/"/>
+    
+    <category term="Git 服务器" scheme="https://pudongping.com/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL 之索引、视图、触发器</title>
@@ -552,35 +581,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;Docker-环境搭建&quot;&gt;&lt;a href=&quot;#Docker-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Docker 环境搭建&quot;&gt;&lt;/a&gt;Docker 环境搭建&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 8 安装 docker</title>
-    <link href="https://pudongping.com/posts/de75e5f5.html"/>
-    <id>https://pudongping.com/posts/de75e5f5.html</id>
-    <published>2021-07-11T15:27:23.000Z</published>
-    <updated>2021-07-11T15:28:17.960Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;CentOS-8-安装-docker&quot;&gt;&lt;a href=&quot;#CentOS-8-安装-docker&quot; class=&quot;headerlink&quot; title=&quot;CentOS 8 安装 docker&quot;&gt;&lt;/a&gt;CentOS 8 安装</summary>
         
       
     
