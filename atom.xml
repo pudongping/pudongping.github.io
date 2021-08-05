@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-01T16:23:35.019Z</updated>
+  <updated>2021-08-05T12:27:52.276Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows 下搭建 git 服务器 gogs</title>
+    <link href="https://pudongping.com/posts/a90b1e44.html"/>
+    <id>https://pudongping.com/posts/a90b1e44.html</id>
+    <published>2021-08-05T12:26:49.000Z</published>
+    <updated>2021-08-05T12:27:52.276Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;本文基于-windows7-64位-搭建-gogs&quot;&gt;&lt;a href=&quot;#本文基于-windows7-64位-搭建-gogs&quot; class=&quot;headerlink&quot; title=&quot;本文基于 windows7 64位 搭建 gogs&quot;&gt;&lt;/a&gt;本文基于</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
+    
+    <category term="Gogs" scheme="https://pudongping.com/tags/Gogs/"/>
+    
+    <category term="Git 服务器" scheme="https://pudongping.com/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS 7 搭建 gogs Git 服务器</title>
@@ -552,35 +581,6 @@
 &lt;li&gt;查看版本&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 环境搭建</title>
-    <link href="https://pudongping.com/posts/a8b7793d.html"/>
-    <id>https://pudongping.com/posts/a8b7793d.html</id>
-    <published>2021-07-11T16:10:35.000Z</published>
-    <updated>2021-07-11T16:11:46.737Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Docker-环境搭建&quot;&gt;&lt;a href=&quot;#Docker-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Docker 环境搭建&quot;&gt;&lt;/a&gt;Docker 环境搭建&lt;/h1&gt;&lt;h2</summary>
         
       
     
