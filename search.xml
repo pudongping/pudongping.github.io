@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Git Tag 标签</title>
+      <link href="posts/68649176.html"/>
+      <url>posts/68649176.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Git-Tag-标签"><a href="#Git-Tag-标签" class="headerlink" title="Git Tag 标签"></a>Git Tag 标签</h1><p>标签总是和某个 commit 挂钩。如果这个 commit 既出现在 master 分支，又出现在 dev 分支，那么在这两个分支上都可以看到这个标签。</p><ul><li>创建标签</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git"><span class="token comment"># 给当前提交版本打标签</span>git tag &lt;tag name&gt;<span class="token comment"># eg: 打一个名称为 v1.0 的标签，此时默认将标签打到最新提交的 commit 上</span>git tag v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>给指定提交版本打标签</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git"><span class="token comment"># 查看历史提交的 commit id</span>git log --pretty=oneline --abbrev-commit<span class="token comment"># 给指定提交版本打标签</span>git tag &lt;tag name&gt; &lt;commit id&gt;<span class="token comment"># eg: 给提交版本号为 c53b867 的版本，打一个名称为 v0.8 的标签</span>git tag v0.8 c53b867<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>创建带有说明的标签，用 <code>-a</code> 指定标签名，<code>-m</code> 指定说明文字：</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git tag -a &lt;tag name&gt; -m &lt;tag description&gt; &lt;commit id&gt;<span class="token comment"># eg：给版本号为 c53b867 的版本，打一个名称为 v0.8 的标签，并对 v0.8 这个标签添加说明文字为 "add v0.8 tag"</span>git tag -a v0.8 -m <span class="token string">"add v0.8 tag"</span> c53b867<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>查看所有的标签 （标签不是按时间顺序列出，而是按字母排序的。）</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git tag<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>查看标签信息</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git show &lt;tag name&gt;<span class="token comment"># eg：查看标签名得 v0.9 的标签信息</span>git show v0.9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>删除标签</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git tag -d &lt;tag name&gt;<span class="token comment"># eg：删除标签名为 v0.1 的标签</span>git tag -d v0.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>推送本地标签到远程库</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git push origin &lt;tag name&gt;<span class="token comment"># eg： 推送本地标签名为 v0.1 的标签到远程库中</span>git push origin v0.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>一次性推送全部尚未推送到远程的本地标签</li></ul><pre class="line-numbers language-git" data-language="git"><code class="language-git">git push origin --tags<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>如果标签已经推送到远程，想要删除远程标签</li></ul><pre class="line-numbers language-none"><code class="language-none"># 第一步：删除本地标签git tag -d v0.1# 第二步：从远程删除git push origin :refs/tags/v0.1# 第三步：在远程库中查看是否被删除<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>windows 下搭建 git 服务器 gogs</title>
       <link href="posts/a90b1e44.html"/>
       <url>posts/a90b1e44.html</url>

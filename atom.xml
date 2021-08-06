@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-05T12:27:52.276Z</updated>
+  <updated>2021-08-06T15:34:21.304Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Tag 标签</title>
+    <link href="https://pudongping.com/posts/68649176.html"/>
+    <id>https://pudongping.com/posts/68649176.html</id>
+    <published>2021-08-06T15:33:49.000Z</published>
+    <updated>2021-08-06T15:34:21.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git-Tag-标签&quot;&gt;&lt;a href=&quot;#Git-Tag-标签&quot; class=&quot;headerlink&quot; title=&quot;Git Tag 标签&quot;&gt;&lt;/a&gt;Git Tag 标签&lt;/h1&gt;&lt;p&gt;标签总是和某个 commit 挂钩。如果这个 commit 既出现在</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>windows 下搭建 git 服务器 gogs</title>
@@ -562,38 +587,6 @@
     <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
     
     <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>docker 常见命令</title>
-    <link href="https://pudongping.com/posts/59b529b7.html"/>
-    <id>https://pudongping.com/posts/59b529b7.html</id>
-    <published>2021-07-13T01:14:20.000Z</published>
-    <updated>2021-07-13T01:15:36.412Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;docker-常见命令&quot;&gt;&lt;a href=&quot;#docker-常见命令&quot; class=&quot;headerlink&quot; title=&quot;docker 常见命令&quot;&gt;&lt;/a&gt;docker 常见命令&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;查看版本&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
     
   </entry>
   
