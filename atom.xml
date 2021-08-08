@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-06T15:34:21.304Z</updated>
+  <updated>2021-08-08T08:58:44.418Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何使用 php 写一个类似于 laravel 框架的服务容器？</title>
+    <link href="https://pudongping.com/posts/de7d71ca.html"/>
+    <id>https://pudongping.com/posts/de7d71ca.html</id>
+    <published>2021-08-08T08:49:29.000Z</published>
+    <updated>2021-08-08T08:58:44.418Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何使用-php-写一个类似于-laravel-框架的服务容器？&quot;&gt;&lt;a href=&quot;#如何使用-php-写一个类似于-laravel-框架的服务容器？&quot; class=&quot;headerlink&quot; title=&quot;如何使用 php 写一个类似于 laravel</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
+    
+    <category term="服务容器" scheme="https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git Tag 标签</title>
     <link href="https://pudongping.com/posts/68649176.html"/>
     <id>https://pudongping.com/posts/68649176.html</id>
     <published>2021-08-06T15:33:49.000Z</published>
-    <updated>2021-08-06T15:34:21.304Z</updated>
+    <updated>2021-08-06T15:34:35.784Z</updated>
     
     
       
@@ -555,38 +582,6 @@
     <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
     
     <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Laradock 笔记</title>
-    <link href="https://pudongping.com/posts/17c35873.html"/>
-    <id>https://pudongping.com/posts/17c35873.html</id>
-    <published>2021-07-14T01:45:56.000Z</published>
-    <updated>2021-07-14T01:47:16.024Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;laradock-笔记&quot;&gt;&lt;a href=&quot;#laradock-笔记&quot; class=&quot;headerlink&quot; title=&quot;laradock 笔记&quot;&gt;&lt;/a&gt;laradock 笔记&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.com/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
-    
-    <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
     
   </entry>
   
