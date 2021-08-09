@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-08T08:58:44.418Z</updated>
+  <updated>2021-08-09T04:16:37.086Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 半小时入门 &lt;第一章&gt;</title>
+    <link href="https://pudongping.com/posts/89044c18.html"/>
+    <id>https://pudongping.com/posts/89044c18.html</id>
+    <published>2021-08-09T04:08:25.000Z</published>
+    <updated>2021-08-09T04:16:37.086Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git-半小时入门-lt-第一章-gt&quot;&gt;&lt;a href=&quot;#Git-半小时入门-lt-第一章-gt&quot; class=&quot;headerlink&quot; title=&quot;Git 半小时入门 &lt;第一章&gt;&quot;&gt;&lt;/a&gt;Git 半小时入门 &amp;lt;第一章&amp;gt;&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用 php 写一个类似于 laravel 框架的服务容器？</title>
@@ -553,35 +578,6 @@
     <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows10 专业版 64位系统安装docker并使用 laradock 搭建 laravel 环境</title>
-    <link href="https://pudongping.com/posts/f59f8f31.html"/>
-    <id>https://pudongping.com/posts/f59f8f31.html</id>
-    <published>2021-07-15T02:53:45.000Z</published>
-    <updated>2021-07-15T02:59:54.135Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;windows10-专业版-64-位系统安装-docker-并使用-laradock-搭建-laravel-环境&quot;&gt;&lt;a href=&quot;#windows10-专业版-64-位系统安装-docker-并使用-laradock-搭建-laravel-环境&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/categories/Docker/"/>
-    
-    
-    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
-    
-    <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
-    
-    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
     
   </entry>
   
