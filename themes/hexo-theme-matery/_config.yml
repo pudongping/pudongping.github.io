@@ -66,8 +66,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 名言分享
-  text: 梦想是石，敲出星星之火；梦想是火，点燃熄灭的灯；梦想是灯，照亮夜行的路；梦想是路，引你走到黎明。
+  title: 诫己
+  text: 尺有所长，寸有所短；取长补短，相得益彰。
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
