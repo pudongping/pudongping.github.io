@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-12T12:26:51.303Z</updated>
+  <updated>2021-08-13T15:41:36.382Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>composer 使用</title>
+    <link href="https://pudongping.com/posts/9b3c7295.html"/>
+    <id>https://pudongping.com/posts/9b3c7295.html</id>
+    <published>2021-08-13T15:38:21.000Z</published>
+    <updated>2021-08-13T15:41:36.382Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;composer-使用&quot;&gt;&lt;a href=&quot;#composer-使用&quot; class=&quot;headerlink&quot; title=&quot;composer 使用&quot;&gt;&lt;/a&gt;composer 使用&lt;/h1&gt;&lt;h2 id=&quot;语义化版本&quot;&gt;&lt;a href=&quot;#语义化版本&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="Composer" scheme="https://pudongping.com/tags/Composer/"/>
+    
+  </entry>
   
   <entry>
     <title>Git 常用命令</title>
@@ -391,9 +418,9 @@
     <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
     
@@ -420,9 +447,9 @@
     <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
     
@@ -449,9 +476,9 @@
     <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
     
     <category term="分布式集群" scheme="https://pudongping.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4/"/>
     
@@ -543,33 +570,6 @@
     <category term="Memcached" scheme="https://pudongping.com/tags/Memcached/"/>
     
     <category term="Session" scheme="https://pudongping.com/tags/Session/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文件缓存（模板缓存）</title>
-    <link href="https://pudongping.com/posts/8a518969.html"/>
-    <id>https://pudongping.com/posts/8a518969.html</id>
-    <published>2021-07-18T08:38:10.000Z</published>
-    <updated>2021-07-18T08:39:05.733Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;文件缓存（模板缓存）&quot;&gt;&lt;a href=&quot;#文件缓存（模板缓存）&quot; class=&quot;headerlink&quot; title=&quot;文件缓存（模板缓存）&quot;&gt;&lt;/a&gt;文件缓存（模板缓存）&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
-    
-    
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
-    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   

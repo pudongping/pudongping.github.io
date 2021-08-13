@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>composer 使用</title>
+      <link href="posts/9b3c7295.html"/>
+      <url>posts/9b3c7295.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="composer-使用"><a href="#composer-使用" class="headerlink" title="composer 使用"></a>composer 使用</h1><h2 id="语义化版本"><a href="#语义化版本" class="headerlink" title="语义化版本"></a><a href="http://semver.org/">语义化版本</a></h2><h3 id="版本号的组成"><a href="#版本号的组成" class="headerlink" title="版本号的组成"></a>版本号的组成</h3><p>major.minor.patch =&gt; 主版本号.次版本号.修订号</p><ul><li>major：通常会发生 api 变更，不向后兼容</li><li>minor：新增功能，但是向后兼容</li><li>patch：补丁，向后兼容，修复 bug</li></ul><h3 id="版本符号"><a href="#版本符号" class="headerlink" title="版本符号"></a>版本符号</h3><ul><li><code>~</code>：指定向后兼容的最小版本<ul><li><code>~1.2</code> 等于 &gt;=1.2 &amp;&amp; &lt;2.0.0</li><li><code>~1.2.3</code> 等于 &gt;=1.2.3 &amp;&amp; &lt;1.3.0</li></ul></li><li><code>^</code>：允许大版本前的所有版本<ul><li><code>^1.2</code> 等于 &gt;=1.2 &amp;&amp; &lt;2.0.0</li><li><code>^1.2.3</code> 等于 &gt;=1.2.3 &amp;&amp; &lt;2.0 （区别在这里）<h3 id="使用版本号"><a href="#使用版本号" class="headerlink" title="使用版本号"></a>使用版本号</h3></li></ul></li><li>确切版本：1.0.2</li><li>范围：&gt;=1.0、&gt;=1.0 &lt;2.0、&gt;=1.0 &lt;1.1 || &gt;=1.2</li><li>连字符范围：1.0 - 2.0</li><li>通配符：1.0.*</li><li>波浪运算符：~1.2.3</li><li>^运算符：^1.2.3</li></ul><blockquote><p><a href="https://packagist.org/">packagist 包管理官方网站</a></p></blockquote><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="linux-下安装-composer"><a href="#linux-下安装-composer" class="headerlink" title="linux 下安装 composer"></a>linux 下安装 composer</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 直接从阿里云镜像中下载 composer.phar</span><span class="token function">wget</span> https://mirrors.aliyun.com/composer/composer.phar<span class="token comment"># 或者直接从官网下载 composer.phar 二进制执行文件</span><span class="token function">wget</span> https://getcomposer.org/download/2.0.11/composer.phar<span class="token comment"># 或者使用 composer 中国镜像安装器安装</span><span class="token function">curl</span> -sS http://install.phpcomposer.com/installer <span class="token operator">|</span> <span class="token function">sudo</span> php -- --install-dir<span class="token operator">=</span>/usr/local/bin --filename<span class="token operator">=</span>composer<span class="token comment"># 添加执行权限</span><span class="token function">chmod</span> u+x composer.phar<span class="token comment"># 将 composer.phar 移动到系统环境变量中，以方便在任意位置都可以直接执行 composer 命令</span><span class="token function">mv</span> composer.phar /usr/local/bin/composer<span class="token comment"># 如果没有 /usr/local/bin 目录，则需要自己创建</span><span class="token function">mkdir</span> -p /usr/local/bin<span class="token comment"># 如果你只想为你的用户安装 composer 并避免需要 root 权限，那么你可以直接执行以下命令，前提是你得有 ~/local/bin 目录</span><span class="token function">mv</span> composer.phar ~/local/bin<span class="token comment"># 添加阿里云镜像加速</span><span class="token function">composer</span> config -g repo.packagist <span class="token function">composer</span> https://mirrors.aliyun.com/composer<span class="token comment"># 或者添加中国镜像</span><span class="token function">composer</span> config -g repo.packagist <span class="token function">composer</span> https://packagist.phpcomposer.com<span class="token comment"># 解除镜像</span><span class="token function">composer</span> config -g --unset repos.packagist<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="windows-下安装-composer"><a href="#windows-下安装-composer" class="headerlink" title="windows 下安装 composer"></a>windows 下安装 composer</h3><pre class="line-numbers language-none"><code class="language-none"># 在 D 盘中新建一个 composer 目录# 直接从官网下载 composer.phar 二进制执行文件wget https://getcomposer.org/download/2.0.11/composer.phar# 使用 php.exe 执行 composer.phar 测试是否正常I:\xampp\php\php.exe composer.phar -V# 简化命令echo @I:\xampp\php\php.exe "d:\composer\composer.phar" %*&gt;composer.bat# 将 D:/composer 目录添加到环境变量中去# 查看 composer 版本号，确定是否已经安装成功composer -V （大写的 V）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="composer-json-和-composer-lock"><a href="#composer-json-和-composer-lock" class="headerlink" title="composer.json 和 composer.lock"></a>composer.json 和 composer.lock</h3><p>当项目中存在 composer.lock 文件时，使用 <code>composer install</code> 命令安装依赖时，<code>composer.lock</code> 都会解析并安装你在 <code>composer.json</code> 中所列出来的依赖，但是 <code>composer</code> 会严格使用 <code>composer.lock</code> 文件所列出来的版本以确保项目中得所有成员所安装的版本都是一致的。<strong>需要将 composer.lock</strong> 文件提交到代码管理中。</p><h3 id="自动加载"><a href="#自动加载" class="headerlink" title="自动加载"></a>自动加载</h3><p>执行 <code>composer install</code> 命令时，会生成 <code>vendor/autoload.php</code>  文件，只需 include 这个文件就可以使用这些包所提供的类</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token keyword">require</span> <span class="token constant">__DIR__</span> <span class="token operator">.</span> <span class="token string single-quoted-string">'/vendor/autoload.php'</span><span class="token punctuation">;</span><span class="token variable">$log</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">Monolog<span class="token punctuation">\</span>Logger</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token variable">$log</span><span class="token operator">-&gt;</span><span class="token function">pushHandler</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">Monolog<span class="token punctuation">\</span>Handler<span class="token punctuation">\</span>StreamHandler</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'app.log'</span><span class="token punctuation">,</span> <span class="token class-name class-name-fully-qualified static-context">Monolog<span class="token punctuation">\</span>Logger</span><span class="token operator">::</span><span class="token constant">WARNING</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token variable">$log</span><span class="token operator">-&gt;</span><span class="token function">addWarning</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Foo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>你也可以直接在 <code>composer.json</code> 文件中添加一个 <code>autoload</code> 指令来添加自己的自动加载声明</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token punctuation">{</span>    <span class="token string double-quoted-string">"autoload"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>        <span class="token string double-quoted-string">"psr-4"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string double-quoted-string">"Acme\\"</span><span class="token punctuation">:</span> <span class="token string double-quoted-string">"src/"</span><span class="token punctuation">}</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>composer 会为 Acme 命名空间注册一个 <code>PSR-4</code> 的自动加载。<br>你定义一个命名空间指向目录的映射。 在 vendor 目录同级的 src 目录将成为你项目的根目录。一个案例，文件名 src/Foo.php 需包含 Acme\Foo 类。<br>添加 <code>autoload</code> 指令之后，你必需重新运行 <code>composer dump-autoload</code>来重新生成 vendor/autoload.php 文件。</p><h3 id="composer-命令的使用"><a href="#composer-命令的使用" class="headerlink" title="composer 命令的使用"></a><a href="https://learnku.com/docs/composer/2018/03-cli/2084">composer 命令的使用</a></h3><ul><li>查看 composer 全局配置</li></ul><pre class="line-numbers language-none"><code class="language-none">composer config -l -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>初始化 composer.json</li></ul><pre class="line-numbers language-none"><code class="language-none"># 创建扩展包时，初始化 composer.jsoncomposer init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>安装所有扩展包</li></ul><pre class="line-numbers language-none"><code class="language-none"># 会读取当前目录的 composer.json 文件，解决依赖关系，并将他们安装到 vendor 文件夹中composer install# 制定 composer 略过 require-dev 选项里的扩展包，只加载需要的扩展包composer install --no-dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>安装指定的扩展包</li></ul><pre class="line-numbers language-none"><code class="language-none">composer require &lt;package-name&gt;# 比如安装 vendor/package:2.* 扩展包composer require vendor/package:2.*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>更新扩展包（更新命令执行完毕后，同时也会更新 composer.lock 文件，不要乱用 composer update ，如果需要更新包，建议直接使用 composer require 命令）</li></ul><pre class="line-numbers language-none"><code class="language-none"># 更新所有的依赖包composer update# 更新指定的包composer update &lt;package-name&gt;# 比如更新 vendor/package 包composer update vendor/package# 一次性更新多个包composer update example/example1 example/example2# 更新指定包到指定版本composer require example/example3:1.2.3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>移除扩展包</li></ul><pre class="line-numbers language-none"><code class="language-none">composer remove &lt;package-name&gt;# 比如移除 vendor/package:2.*  扩展包composer remove vendor/package:2.* <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>搜索扩展包</li></ul><pre class="line-numbers language-none"><code class="language-none">composer search &lt;package-name&gt;# 比如搜索 monolog 扩展包composer search monolog<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>列出所有的可用的包</li></ul><pre class="line-numbers language-none"><code class="language-none"># 查看所有的包信息composer show# 查看包详细信息composer show &lt;package-name&gt;# 比如查看 monolog/monolog 包详细信息composer show monolog/monolog 1.0.2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>验证 composer.json 文件是否合法</li></ul><pre class="line-numbers language-none"><code class="language-none">composer validate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>更新 composer</li></ul><pre class="line-numbers language-none"><code class="language-none"># 更新 composer 到最新版本composer self-update# 更新 composer 到指定版本composer self-update 1.0.0# 回滚到上一个安装版本composer self-update -r<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PHP </tag>
+            
+            <tag> Composer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git 常用命令</title>
       <link href="posts/5fddf106.html"/>
       <url>posts/5fddf106.html</url>
@@ -369,9 +396,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -398,9 +425,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -427,9 +454,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 分布式集群 </tag>
             
@@ -1313,9 +1340,9 @@
       
         <tags>
             
-            <tag> Hyperf </tag>
-            
             <tag> PHP </tag>
+            
+            <tag> Hyperf </tag>
             
             <tag> Swoole </tag>
             
@@ -1342,9 +1369,9 @@
       
         <tags>
             
-            <tag> Hyperf </tag>
-            
             <tag> PHP </tag>
+            
+            <tag> Hyperf </tag>
             
             <tag> Swoole </tag>
             
@@ -1371,9 +1398,9 @@
       
         <tags>
             
-            <tag> Hyperf </tag>
-            
             <tag> PHP </tag>
+            
+            <tag> Hyperf </tag>
             
             <tag> Swoole </tag>
             
@@ -1479,13 +1506,13 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> PHP </tag>
             
-            <tag> Laravel </tag>
-            
             <tag> Composer </tag>
+            
+            <tag> GitHub </tag>
+            
+            <tag> Laravel </tag>
             
         </tags>
       
@@ -1510,11 +1537,11 @@
       
         <tags>
             
+            <tag> PHP </tag>
+            
             <tag> GitHub </tag>
             
             <tag> 博客 </tag>
-            
-            <tag> PHP </tag>
             
             <tag> Laravel </tag>
             
