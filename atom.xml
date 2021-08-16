@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-14T11:06:11.341Z</updated>
+  <updated>2021-08-16T11:33:09.635Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP返回可读性更好的文件大小显示</title>
+    <link href="https://pudongping.com/posts/3676e41e.html"/>
+    <id>https://pudongping.com/posts/3676e41e.html</id>
+    <published>2021-08-16T11:31:56.000Z</published>
+    <updated>2021-08-16T11:33:09.635Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;返回可读性更好的文件大小显示&quot;&gt;&lt;a href=&quot;#返回可读性更好的文件大小显示&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP-FPM 性能配置优化</title>
@@ -525,35 +550,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;使用-Memcached-实现分布式算法&quot;&gt;&lt;a href=&quot;#使用-Memcached-实现分布式算法&quot; class=&quot;headerlink&quot; title=&quot;使用 Memcached 实现分布式算法&quot;&gt;&lt;/a&gt;使用 Memcached</summary>
-        
-      
-    
-    
-    
-    <category term="Cache" scheme="https://pudongping.com/categories/Cache/"/>
-    
-    
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
-    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
-    
-    <category term="Memcached" scheme="https://pudongping.com/tags/Memcached/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>memcached 简单使用</title>
-    <link href="https://pudongping.com/posts/afc71251.html"/>
-    <id>https://pudongping.com/posts/afc71251.html</id>
-    <published>2021-07-22T15:44:20.000Z</published>
-    <updated>2021-07-22T15:45:23.202Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;memcached-简单使用&quot;&gt;&lt;a href=&quot;#memcached-简单使用&quot; class=&quot;headerlink&quot; title=&quot;memcached 简单使用&quot;&gt;&lt;/a&gt;memcached 简单使用&lt;/h1&gt;&lt;h2</summary>
         
       
     
