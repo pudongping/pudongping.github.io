@@ -501,6 +501,27 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/tags/CentOS/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/LAMP/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/LNMP/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/tags/Git/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -523,27 +544,6 @@
   
   <url>
     <loc>https://pudongping.com/tags/Docker/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/CentOS/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/LAMP/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/LNMP/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -641,6 +641,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/tags/%E5%85%8D%E8%B4%B9-HTTPS-%E8%AF%81%E4%B9%A6/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -656,13 +663,6 @@
   
   <url>
     <loc>https://pudongping.com/tags/PHP/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/%E5%85%8D%E8%B4%B9-HTTPS-%E8%AF%81%E4%B9%A6/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -697,6 +697,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/tags/%E7%BC%93%E5%AD%98/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/tags/Supervisor/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -705,13 +712,6 @@
   
   <url>
     <loc>https://pudongping.com/tags/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/%E7%BC%93%E5%AD%98/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -781,14 +781,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/Memcached/</loc>
+    <loc>https://pudongping.com/tags/Laravel/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/Laravel/</loc>
+    <loc>https://pudongping.com/tags/Memcached/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -844,14 +844,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/</loc>
+    <loc>https://pudongping.com/tags/GitBook/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/GitBook/</loc>
+    <loc>https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -861,6 +861,13 @@
   
   <url>
     <loc>https://pudongping.com/categories/Linux/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/categories/CentOS/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -881,13 +888,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.com/categories/CentOS/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.com/categories/macOS/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -902,6 +902,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/categories/Ngrok/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -910,13 +917,6 @@
   
   <url>
     <loc>https://pudongping.com/categories/PHP/</loc>
-    <lastmod>2021-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
