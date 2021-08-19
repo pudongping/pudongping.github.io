@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-18T11:51:49.611Z</updated>
+  <updated>2021-08-19T07:54:03.565Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP AES 加解密</title>
+    <link href="https://pudongping.com/posts/ebe0be72.html"/>
+    <id>https://pudongping.com/posts/ebe0be72.html</id>
+    <published>2021-08-19T07:53:12.000Z</published>
+    <updated>2021-08-19T07:54:03.565Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;PHP-AES-加解密&quot;&gt;&lt;a href=&quot;#PHP-AES-加解密&quot; class=&quot;headerlink&quot; title=&quot;PHP AES 加解密&quot;&gt;&lt;/a&gt;PHP AES 加解密&lt;/h1&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="AES" scheme="https://pudongping.com/tags/AES/"/>
+    
+    <category term="加解密" scheme="https://pudongping.com/tags/%E5%8A%A0%E8%A7%A3%E5%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP 使用 CASE WHEN 进行批量更新 （当前基于 laravel 编写）</title>
@@ -515,35 +544,6 @@
         
     <summary type="html">&lt;h1 id=&quot;开启-redis-远程连接&quot;&gt;&lt;a href=&quot;#开启-redis-远程连接&quot; class=&quot;headerlink&quot; title=&quot;开启 redis 远程连接&quot;&gt;&lt;/a&gt;开启 redis 远程连接&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;编辑 redis 配置文件</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.com/categories/Redis/"/>
-    
-    
-    <category term="Cache" scheme="https://pudongping.com/tags/Cache/"/>
-    
-    <category term="Redis" scheme="https://pudongping.com/tags/Redis/"/>
-    
-    <category term="缓存" scheme="https://pudongping.com/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis 的持久化</title>
-    <link href="https://pudongping.com/posts/6d929828.html"/>
-    <id>https://pudongping.com/posts/6d929828.html</id>
-    <published>2021-07-25T07:04:56.000Z</published>
-    <updated>2021-07-25T07:06:17.661Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Redis-的持久化&quot;&gt;&lt;a href=&quot;#Redis-的持久化&quot; class=&quot;headerlink&quot; title=&quot;Redis 的持久化&quot;&gt;&lt;/a&gt;Redis 的持久化&lt;/h1&gt;&lt;h2 id=&quot;两种持久化方式&quot;&gt;&lt;a href=&quot;#两种持久化方式&quot;</summary>
         
       
     
