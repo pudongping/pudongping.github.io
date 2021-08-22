@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-21T14:15:16.539Z</updated>
+  <updated>2021-08-22T08:19:59.594Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>全新服务器使用 lnmp 搭建 laravel 项目</title>
+    <link href="https://pudongping.com/posts/73f4393e.html"/>
+    <id>https://pudongping.com/posts/73f4393e.html</id>
+    <published>2021-08-22T08:19:05.000Z</published>
+    <updated>2021-08-22T08:19:59.594Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-lnmp-搭建-laravel-项目&quot;&gt;&lt;a href=&quot;#使用-lnmp-搭建-laravel-项目&quot; class=&quot;headerlink&quot; title=&quot;使用 lnmp 搭建 laravel 项目&quot;&gt;&lt;/a&gt;使用 lnmp 搭建 laravel</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="LNMP" scheme="https://pudongping.com/tags/LNMP/"/>
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
+    
+  </entry>
   
   <entry>
     <title>php 抽奖算法（适合九宫格和大转盘）</title>
@@ -524,31 +553,6 @@
     <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
     
     <category term="锁" scheme="https://pudongping.com/tags/%E9%94%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL 三范式</title>
-    <link href="https://pudongping.com/posts/b17a8184.html"/>
-    <id>https://pudongping.com/posts/b17a8184.html</id>
-    <published>2021-07-27T16:38:29.000Z</published>
-    <updated>2021-07-27T16:40:36.141Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;MySQL-三范式&quot;&gt;&lt;a href=&quot;#MySQL-三范式&quot; class=&quot;headerlink&quot; title=&quot;MySQL 三范式&quot;&gt;&lt;/a&gt;MySQL 三范式&lt;/h1&gt;&lt;h2 id=&quot;第一范式（1NF）：表中的每列的属性不可再分&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
     
   </entry>
   
