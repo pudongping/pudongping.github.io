@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-24T12:58:05.364Z</updated>
+  <updated>2021-08-25T12:19:42.143Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Laravel 中的模型事件与 Observer</title>
+    <link href="https://pudongping.com/posts/c9de0987.html"/>
+    <id>https://pudongping.com/posts/c9de0987.html</id>
+    <published>2021-08-25T12:19:08.000Z</published>
+    <updated>2021-08-25T12:19:42.143Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Laravel-中的模型事件与-Observer&quot;&gt;&lt;a href=&quot;#Laravel-中的模型事件与-Observer&quot; class=&quot;headerlink&quot; title=&quot;Laravel 中的模型事件与 Observer&quot;&gt;&lt;/a&gt;Laravel</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
+    
+    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
+    
+  </entry>
   
   <entry>
     <title>laravel 使用 ORM 写复杂 sql</title>
@@ -525,35 +552,6 @@
     <category term="视图" scheme="https://pudongping.com/tags/%E8%A7%86%E5%9B%BE/"/>
     
     <category term="触发器" scheme="https://pudongping.com/tags/%E8%A7%A6%E5%8F%91%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL 性能分析</title>
-    <link href="https://pudongping.com/posts/1e4459df.html"/>
-    <id>https://pudongping.com/posts/1e4459df.html</id>
-    <published>2021-07-31T15:45:17.000Z</published>
-    <updated>2021-07-31T15:46:31.711Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;MySQL-性能分析&quot;&gt;&lt;a href=&quot;#MySQL-性能分析&quot; class=&quot;headerlink&quot; title=&quot;MySQL 性能分析&quot;&gt;&lt;/a&gt;MySQL 性能分析&lt;/h1&gt;&lt;h2 id=&quot;explain&quot;&gt;&lt;a href=&quot;#explain&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
-    
-    <category term="explain" scheme="https://pudongping.com/tags/explain/"/>
-    
-    <category term="性能优化" scheme="https://pudongping.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
