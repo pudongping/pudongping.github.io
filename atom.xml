@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-25T12:19:42.143Z</updated>
+  <updated>2021-08-26T01:23:02.692Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用 laradock 安装 elasticsearch</title>
+    <link href="https://pudongping.com/posts/deba288d.html"/>
+    <id>https://pudongping.com/posts/deba288d.html</id>
+    <published>2021-08-26T01:20:49.000Z</published>
+    <updated>2021-08-26T01:23:02.692Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-Laradock-安装-ElasticSearch&quot;&gt;&lt;a href=&quot;#使用-Laradock-安装-ElasticSearch&quot; class=&quot;headerlink&quot; title=&quot;使用 Laradock 安装</summary>
+        
+      
+    
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.com/categories/ElasticSearch/"/>
+    
+    
+    <category term="Docker" scheme="https://pudongping.com/tags/Docker/"/>
+    
+    <category term="Laradock" scheme="https://pudongping.com/tags/Laradock/"/>
+    
+    <category term="ElasticSearch" scheme="https://pudongping.com/tags/ElasticSearch/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Laravel 中的模型事件与 Observer</title>
     <link href="https://pudongping.com/posts/c9de0987.html"/>
     <id>https://pudongping.com/posts/c9de0987.html</id>
     <published>2021-08-25T12:19:08.000Z</published>
-    <updated>2021-08-25T12:19:42.143Z</updated>
+    <updated>2021-08-25T12:20:00.353Z</updated>
     
     
       
@@ -521,37 +550,6 @@
     <category term="Gogs" scheme="https://pudongping.com/tags/Gogs/"/>
     
     <category term="Git 服务器" scheme="https://pudongping.com/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL 之索引、视图、触发器</title>
-    <link href="https://pudongping.com/posts/b1cb609d.html"/>
-    <id>https://pudongping.com/posts/b1cb609d.html</id>
-    <published>2021-07-31T16:27:16.000Z</published>
-    <updated>2021-07-31T16:28:41.228Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;MySQL-之索引、视图、触发器&quot;&gt;&lt;a href=&quot;#MySQL-之索引、视图、触发器&quot; class=&quot;headerlink&quot; title=&quot;MySQL 之索引、视图、触发器&quot;&gt;&lt;/a&gt;MySQL 之索引、视图、触发器&lt;/h1&gt;&lt;h2 id=&quot;索引&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/categories/MySQL/"/>
-    
-    
-    <category term="MySQL" scheme="https://pudongping.com/tags/MySQL/"/>
-    
-    <category term="索引" scheme="https://pudongping.com/tags/%E7%B4%A2%E5%BC%95/"/>
-    
-    <category term="视图" scheme="https://pudongping.com/tags/%E8%A7%86%E5%9B%BE/"/>
-    
-    <category term="触发器" scheme="https://pudongping.com/tags/%E8%A7%A6%E5%8F%91%E5%99%A8/"/>
     
   </entry>
   
