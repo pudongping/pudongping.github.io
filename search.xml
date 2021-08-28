@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>nginx 开启 gzip 压缩</title>
+      <link href="posts/63bed376.html"/>
+      <url>posts/63bed376.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="nginx-开启-gzip-压缩"><a href="#nginx-开启-gzip-压缩" class="headerlink" title="nginx 开启 gzip 压缩"></a>nginx 开启 gzip 压缩</h1><blockquote><p>在服务器 Nginx 开启 gzip 压缩是优化网站性能的方法之一，可以有效减少服务器带宽的消耗，缺点是会增大 CPU 的占用率，但是很多时候 CPU 往往是空闲最多的。</p></blockquote><p>在 nginx 中开启 gzip 压缩，需要编辑 nginx.conf 文件，添加如下</p><pre class="line-numbers language-nginx" data-language="nginx"><code class="language-nginx"><span class="token keyword">gzip</span> on<span class="token punctuation">;</span><span class="token keyword">gzip_min_length</span> <span class="token number">1</span>k<span class="token punctuation">;</span><span class="token keyword">gzip_buffers</span> <span class="token number">16</span> <span class="token number">64</span>k<span class="token punctuation">;</span><span class="token keyword">gzip_http_version</span> <span class="token number">1.1</span><span class="token punctuation">;</span><span class="token keyword">gzip_comp_level</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token keyword">gzip_types</span> text<span class="token operator">/</span>plain text<span class="token operator">/</span>css text<span class="token operator">/</span>javascript application<span class="token operator">/</span>json application<span class="token operator">/</span>javascript application<span class="token operator">/</span>x<span class="token operator">-</span>javascript application<span class="token operator">/</span>xml application<span class="token operator">/</span>x<span class="token operator">-</span>httpd<span class="token operator">-</span>php image<span class="token operator">/</span>jpeg image<span class="token operator">/</span>gif image<span class="token operator">/</span>png font<span class="token operator">/</span>ttf font<span class="token operator">/</span>otf image<span class="token operator">/</span>svg<span class="token operator">+</span>xml<span class="token punctuation">;</span><span class="token keyword">gzip_vary</span> on<span class="token punctuation">;</span>   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="gzip-参数介绍"><a href="#gzip-参数介绍" class="headerlink" title="gzip 参数介绍"></a>gzip 参数介绍</h2><h3 id="gizp-on-off"><a href="#gizp-on-off" class="headerlink" title="gizp on|off;"></a>gizp on|off;</h3><p>开启或者关闭 gzip 模块</p><h3 id="gzip-min-length-1k"><a href="#gzip-min-length-1k" class="headerlink" title="gzip_min_length 1k;"></a>gzip_min_length 1k;</h3><p>设置允许压缩的页面最小字节数，页面字节数从 header 头中的 Content-Length 中进行获取。默认值是 0，不管页面多大都压缩。建议设置成大于 1k 的字节数，小于 1k 可能会越压越大。 即: gzip_min_length 1024</p><h3 id="gzip-proxied-expired-no-cache-no-store-private-auth"><a href="#gzip-proxied-expired-no-cache-no-store-private-auth" class="headerlink" title="gzip_proxied expired no-cache no-store private auth;"></a>gzip_proxied expired no-cache no-store private auth;</h3><p>Nginx 作为反向代理的时候启用，开启或者关闭后端服务器返回的结果，匹配的前提是后端服务器必须要返回包含”Via” 的 header 头。</p><h3 id="gzip-types-text-plain-application-xml"><a href="#gzip-types-text-plain-application-xml" class="headerlink" title="gzip_types text/plain application/xml;"></a>gzip_types text/plain application/xml;</h3><p>匹配 MIME 类型进行压缩，（无论是否指定）”text/html” 类型总是会被压缩的。</p><h2 id="如何判断是否已经开启了-gzip-压缩？"><a href="#如何判断是否已经开启了-gzip-压缩？" class="headerlink" title="如何判断是否已经开启了 gzip 压缩？"></a>如何判断是否已经开启了 gzip 压缩？</h2><p>打开浏览器，按住 f12 查看 Content-Encoding 字段如果是 gzip，表示该网页的 body 数据是经过 gzip 压缩的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Nginx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+            <tag> gzip </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PHP RSA 加解密</title>
       <link href="posts/f7924170.html"/>
       <url>posts/f7924170.html</url>

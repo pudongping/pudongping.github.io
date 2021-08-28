@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-27T12:30:09.706Z</updated>
+  <updated>2021-08-28T14:12:33.177Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx 开启 gzip 压缩</title>
+    <link href="https://pudongping.com/posts/63bed376.html"/>
+    <id>https://pudongping.com/posts/63bed376.html</id>
+    <published>2021-08-28T14:11:09.000Z</published>
+    <updated>2021-08-28T14:12:33.177Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;nginx-开启-gzip-压缩&quot;&gt;&lt;a href=&quot;#nginx-开启-gzip-压缩&quot; class=&quot;headerlink&quot; title=&quot;nginx 开启 gzip 压缩&quot;&gt;&lt;/a&gt;nginx 开启 gzip</summary>
+        
+      
+    
+    
+    
+    <category term="Nginx" scheme="https://pudongping.com/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://pudongping.com/tags/Nginx/"/>
+    
+    <category term="gzip" scheme="https://pudongping.com/tags/gzip/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP RSA 加解密</title>
@@ -519,35 +546,6 @@
     
     
     <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows 下搭建 git 服务器 gogs</title>
-    <link href="https://pudongping.com/posts/a90b1e44.html"/>
-    <id>https://pudongping.com/posts/a90b1e44.html</id>
-    <published>2021-08-05T12:26:49.000Z</published>
-    <updated>2021-08-05T12:27:52.276Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;本文基于-windows7-64位-搭建-gogs&quot;&gt;&lt;a href=&quot;#本文基于-windows7-64位-搭建-gogs&quot; class=&quot;headerlink&quot; title=&quot;本文基于 windows7 64位 搭建 gogs&quot;&gt;&lt;/a&gt;本文基于</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
-    
-    <category term="Gogs" scheme="https://pudongping.com/tags/Gogs/"/>
-    
-    <category term="Git 服务器" scheme="https://pudongping.com/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
