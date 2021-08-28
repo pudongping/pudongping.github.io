@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-28T14:12:33.177Z</updated>
+  <updated>2021-08-28T17:26:59.232Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 搭建环境与安装 pip 扩展</title>
+    <link href="https://pudongping.com/posts/ee47ba79.html"/>
+    <id>https://pudongping.com/posts/ee47ba79.html</id>
+    <published>2021-08-28T17:18:34.000Z</published>
+    <updated>2021-08-28T17:26:59.232Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python-搭建环境与安装-pip-扩展&quot;&gt;&lt;a href=&quot;#Python-搭建环境与安装-pip-扩展&quot; class=&quot;headerlink&quot; title=&quot;Python 搭建环境与安装 pip 扩展&quot;&gt;&lt;/a&gt;Python 搭建环境与安装 pip</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.com/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.com/tags/Python3/"/>
+    
+  </entry>
   
   <entry>
     <title>nginx 开启 gzip 压缩</title>
@@ -521,31 +546,6 @@
     <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
     
     <category term="服务容器" scheme="https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git Tag 标签</title>
-    <link href="https://pudongping.com/posts/68649176.html"/>
-    <id>https://pudongping.com/posts/68649176.html</id>
-    <published>2021-08-06T15:33:49.000Z</published>
-    <updated>2021-08-06T15:34:35.784Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git-Tag-标签&quot;&gt;&lt;a href=&quot;#Git-Tag-标签&quot; class=&quot;headerlink&quot; title=&quot;Git Tag 标签&quot;&gt;&lt;/a&gt;Git Tag 标签&lt;/h1&gt;&lt;p&gt;标签总是和某个 commit 挂钩。如果这个 commit 既出现在</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
     
   </entry>
   

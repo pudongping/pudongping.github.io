@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pudongping.com/posts/ee47ba79.html</loc>
+    
+    <lastmod>2021-08-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/posts/63bed376.html</loc>
     
     <lastmod>2021-08-28</lastmod>
@@ -592,13 +599,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/LNMP/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.com/tags/Git/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -620,6 +620,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/tags/LNMP/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/tags/Docker/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -634,20 +641,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.com/tags/Screen/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/%E4%BC%9A%E8%AF%9D%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.com/tags/PHP/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -656,6 +649,20 @@
   
   <url>
     <loc>https://pudongping.com/tags/Laravel/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/Screen/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.com/tags/%E4%BC%9A%E8%AF%9D%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -788,6 +795,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/tags/Python3/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/tags/Cache/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -845,13 +859,6 @@
   
   <url>
     <loc>https://pudongping.com/tags/Composer/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/tags/Python3/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1049,6 +1056,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.com/categories/Python/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.com/categories/Redis/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1057,13 +1071,6 @@
   
   <url>
     <loc>https://pudongping.com/categories/Ubuntu/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.com/categories/Python/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
