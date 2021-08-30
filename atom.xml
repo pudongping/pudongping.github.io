@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-28T17:26:59.232Z</updated>
+  <updated>2021-08-30T12:38:40.107Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>四舍六入五成双-银行家舍入算法</title>
+    <link href="https://pudongping.com/posts/277fd645.html"/>
+    <id>https://pudongping.com/posts/277fd645.html</id>
+    <published>2021-08-30T12:37:41.000Z</published>
+    <updated>2021-08-30T12:38:40.107Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;四舍六入五成双-银行家算法&quot;&gt;&lt;a href=&quot;#四舍六入五成双-银行家算法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://pudongping.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://pudongping.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 搭建环境与安装 pip 扩展</title>
@@ -519,33 +544,6 @@
     
     
     <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用 php 写一个类似于 laravel 框架的服务容器？</title>
-    <link href="https://pudongping.com/posts/de7d71ca.html"/>
-    <id>https://pudongping.com/posts/de7d71ca.html</id>
-    <published>2021-08-08T08:49:29.000Z</published>
-    <updated>2021-08-08T08:58:44.418Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何使用-php-写一个类似于-laravel-框架的服务容器？&quot;&gt;&lt;a href=&quot;#如何使用-php-写一个类似于-laravel-框架的服务容器？&quot; class=&quot;headerlink&quot; title=&quot;如何使用 php 写一个类似于 laravel</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
-    
-    
-    <category term="Laravel" scheme="https://pudongping.com/tags/Laravel/"/>
-    
-    <category term="服务容器" scheme="https://pudongping.com/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/"/>
     
   </entry>
   
