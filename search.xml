@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Python 更改 pip 源至国内镜像</title>
+      <link href="posts/fbd0fa96.html"/>
+      <url>posts/fbd0fa96.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows-或-Linux-更改-pip-源至国内镜像"><a href="#Windows-或-Linux-更改-pip-源至国内镜像" class="headerlink" title="Windows 或 Linux 更改 pip 源至国内镜像"></a>Windows 或 Linux 更改 pip 源至国内镜像</h1><h2 id="Linux："><a href="#Linux：" class="headerlink" title="Linux："></a>Linux：</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">mkdir</span> ~/.pip<span class="token function">cat</span> <span class="token operator">&gt;</span> ~/.pip/pip.conf <span class="token operator">&lt;&lt;</span> <span class="token string">EOF[global]trusted-host=mirrors.aliyun.comindex-url=https://mirrors.aliyun.com/pypi/simple/EOF</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>或者下载安装包的时候直接接源信息：</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pip3 <span class="token function">install</span> <span class="token assign-left variable">aiohttp</span><span class="token operator">==</span><span class="token number">3.6</span>.2 -i https://pypi.douban.com/simple/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="Windows："><a href="#Windows：" class="headerlink" title="Windows："></a>Windows：</h2><p>首先在 window 的文件夹窗口输入 ： %APPDATA%<br>然后创建 pip 文件夹<br>最后创建 pip.ini 文件，写入如下内容</p><pre class="line-numbers language-none"><code class="language-none">[global]index-url = https://mirrors.aliyun.com/pypi/simple/[install]trusted-host=mirrors.aliyun.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>四舍六入五成双-银行家舍入算法</title>
       <link href="posts/277fd645.html"/>
       <url>posts/277fd645.html</url>

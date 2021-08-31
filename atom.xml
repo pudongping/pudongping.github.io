@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-08-30T12:38:40.107Z</updated>
+  <updated>2021-08-31T12:56:23.549Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 更改 pip 源至国内镜像</title>
+    <link href="https://pudongping.com/posts/fbd0fa96.html"/>
+    <id>https://pudongping.com/posts/fbd0fa96.html</id>
+    <published>2021-08-31T12:55:32.000Z</published>
+    <updated>2021-08-31T12:56:23.549Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Windows-或-Linux-更改-pip-源至国内镜像&quot;&gt;&lt;a href=&quot;#Windows-或-Linux-更改-pip-源至国内镜像&quot; class=&quot;headerlink&quot; title=&quot;Windows 或 Linux 更改 pip</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.com/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.com/tags/Python3/"/>
+    
+  </entry>
   
   <entry>
     <title>四舍六入五成双-银行家舍入算法</title>
@@ -510,31 +535,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;Git-半小时入门-lt-第二章-gt&quot;&gt;&lt;a href=&quot;#Git-半小时入门-lt-第二章-gt&quot; class=&quot;headerlink&quot; title=&quot;Git 半小时入门 &lt;第二章&gt;&quot;&gt;&lt;/a&gt;Git 半小时入门 &amp;lt;第二章&amp;gt;&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 半小时入门 &lt;第一章&gt;</title>
-    <link href="https://pudongping.com/posts/89044c18.html"/>
-    <id>https://pudongping.com/posts/89044c18.html</id>
-    <published>2021-08-09T04:08:25.000Z</published>
-    <updated>2021-08-09T04:16:37.086Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git-半小时入门-lt-第一章-gt&quot;&gt;&lt;a href=&quot;#Git-半小时入门-lt-第一章-gt&quot; class=&quot;headerlink&quot; title=&quot;Git 半小时入门 &lt;第一章&gt;&quot;&gt;&lt;/a&gt;Git 半小时入门 &amp;lt;第一章&amp;gt;&lt;/h1&gt;&lt;h2</summary>
         
       
     
