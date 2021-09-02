@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-09-01T12:52:10.263Z</updated>
+  <updated>2021-09-02T12:33:50.790Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况</title>
+    <link href="https://pudongping.com/posts/dfcf0c33.html"/>
+    <id>https://pudongping.com/posts/dfcf0c33.html</id>
+    <published>2021-09-02T12:33:12.000Z</published>
+    <updated>2021-09-02T12:33:50.790Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况&quot;&gt;&lt;a href=&quot;#使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://pudongping.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://pudongping.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="阶乘" scheme="https://pudongping.com/tags/%E9%98%B6%E4%B9%98/"/>
+    
+  </entry>
   
   <entry>
     <title>NVM 包管理器</title>
@@ -522,31 +549,6 @@
     <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
     
     <category term="Composer" scheme="https://pudongping.com/tags/Composer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 常用命令</title>
-    <link href="https://pudongping.com/posts/5fddf106.html"/>
-    <id>https://pudongping.com/posts/5fddf106.html</id>
-    <published>2021-08-12T12:26:01.000Z</published>
-    <updated>2021-08-12T12:26:51.303Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git-命令&quot;&gt;&lt;a href=&quot;#Git-命令&quot; class=&quot;headerlink&quot; title=&quot;Git 命令&quot;&gt;&lt;/a&gt;Git 命令&lt;/h1&gt;&lt;h2 id=&quot;生成-SSH-Key&quot;&gt;&lt;a href=&quot;#生成-SSH-Key&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.com/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.com/tags/Git/"/>
     
   </entry>
   

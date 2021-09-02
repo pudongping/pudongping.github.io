@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况</title>
+      <link href="posts/dfcf0c33.html"/>
+      <url>posts/dfcf0c33.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况"><a href="#使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况" class="headerlink" title="使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况"></a>使用阶乘原理通过阶乘获取一个一维数组中全部的组合情况</h1><h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span><span class="token comment">/** * 使用阶乘原理，通过阶乘获取一个一维数组中全部的组合情况 * * Created by PhpStorm. * User: Alex * Date: 2020/3/9 * Time: 13:08 */</span><span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Handlers</span><span class="token punctuation">;</span><span class="token keyword">class</span> <span class="token class-name">FactorialHandler</span><span class="token punctuation">{</span>    <span class="token comment">/**     * 使用阶乘原理获取一维数组中全部的组合情况     *     * @param array $arr     * @return array     */</span>    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getArrAllCombineByFactor</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$arr</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword return-type">array</span>    <span class="token punctuation">{</span>        <span class="token comment">// 大于等于1 =&gt; n! = 1*2*3*4*5…………*(n-1)*n</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token variable">$combineArr</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$arr</span> <span class="token keyword">as</span> <span class="token variable">$k</span> <span class="token operator">=&gt;</span> <span class="token variable">$v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token comment">// 除当前 key 以外的单元数组</span>                <span class="token variable">$temArr</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">arrRmoveValueByKey</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token variable">$k</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token variable">$sonCombineArr</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">getArrAllCombineByFactor</span><span class="token punctuation">(</span><span class="token variable">$temArr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$sonCombineArr</span> <span class="token keyword">as</span> <span class="token variable">$value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                    <span class="token variable">$combineArr</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$v</span> <span class="token operator">.</span> <span class="token string single-quoted-string">'|'</span> <span class="token operator">.</span> <span class="token variable">$value</span><span class="token punctuation">;</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span>            <span class="token keyword">return</span> <span class="token variable">$combineArr</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>            <span class="token keyword">return</span> <span class="token variable">$arr</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token comment">/**     * 通过数组的 key 移除掉当前 key 所在的单元，返回除 key 单元以外的单元数组     *     * @param array $arr  原始数组     * @param $k  需要移除数组单元的 key     * @return array     */</span>    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">arrRmoveValueByKey</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token variable">$k</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword return-type">array</span>    <span class="token punctuation">{</span>        <span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$k</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token function">array_values</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token variable">$arr</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'1_1'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'2_3'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'4_6'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token variable">$factorialInstance</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FactorialHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$factorialInstance</span><span class="token operator">-&gt;</span><span class="token function">getArrAllCombineByFactor</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="返回结果"><a href="#返回结果" class="headerlink" title="返回结果"></a>返回结果</h3><pre class="line-numbers language-none"><code class="language-none">array:6 [  0 =&gt; "1_1|2_3|4_6"  1 =&gt; "1_1|4_6|2_3"  2 =&gt; "2_3|1_1|4_6"  3 =&gt; "2_3|4_6|1_1"  4 =&gt; "4_6|1_1|2_3"  5 =&gt; "4_6|2_3|1_1"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="一维数组所有的组合情况（排列组合）"><a href="#一维数组所有的组合情况（排列组合）" class="headerlink" title="一维数组所有的组合情况（排列组合）"></a>一维数组所有的组合情况（排列组合）</h2><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Alpha'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'Beta'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'Gamma'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'Sigma'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">function</span> <span class="token function">depth_picker</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token variable">$temp_string</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token variable">$collect</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$temp_string</span> <span class="token operator">!=</span> <span class="token string double-quoted-string">""</span><span class="token punctuation">)</span>         <span class="token variable">$collect</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span> <span class="token variable">$temp_string</span><span class="token punctuation">;</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">&lt;</span><span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token variable">$arrcopy</span> <span class="token operator">=</span> <span class="token variable">$arr</span><span class="token punctuation">;</span>        <span class="token variable">$elem</span> <span class="token operator">=</span> <span class="token function">array_splice</span><span class="token punctuation">(</span><span class="token variable">$arrcopy</span><span class="token punctuation">,</span> <span class="token variable">$i</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// removes and returns the i'th element</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token variable">$arrcopy</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token function">depth_picker</span><span class="token punctuation">(</span><span class="token variable">$arrcopy</span><span class="token punctuation">,</span> <span class="token variable">$temp_string</span> <span class="token operator">.</span><span class="token string double-quoted-string">" "</span> <span class="token operator">.</span> <span class="token variable">$elem</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">$collect</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>            <span class="token variable">$collect</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span> <span class="token variable">$temp_string</span><span class="token operator">.</span> <span class="token string double-quoted-string">" "</span> <span class="token operator">.</span> <span class="token variable">$elem</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>       <span class="token punctuation">}</span>   <span class="token punctuation">}</span><span class="token variable">$collect</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">depth_picker</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">""</span><span class="token punctuation">,</span> <span class="token variable">$collect</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$collect</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="返回的结果"><a href="#返回的结果" class="headerlink" title="返回的结果"></a>返回的结果</h3><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token keyword">Array</span><span class="token punctuation">(</span>    <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha    <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Beta    <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Beta Gamma    <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Beta Gamma Sigma    <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Beta Sigma    <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Beta Sigma Gamma    <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Gamma    <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Gamma Beta    <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Gamma Beta Sigma    <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Gamma Sigma    <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Gamma Sigma Beta    <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Sigma    <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Sigma Beta    <span class="token punctuation">[</span><span class="token number">13</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Sigma Beta Gamma    <span class="token punctuation">[</span><span class="token number">14</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Sigma Gamma    <span class="token punctuation">[</span><span class="token number">15</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Alpha Sigma Gamma Beta    <span class="token operator">.</span>    <span class="token operator">.</span>    <span class="token operator">.</span>    <span class="token punctuation">[</span><span class="token number">59</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Sigma Gamma    <span class="token punctuation">[</span><span class="token number">60</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Sigma Gamma Alpha    <span class="token punctuation">[</span><span class="token number">61</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Sigma Gamma Alpha Beta    <span class="token punctuation">[</span><span class="token number">62</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Sigma Gamma Beta    <span class="token punctuation">[</span><span class="token number">63</span><span class="token punctuation">]</span> <span class="token operator">=&gt;</span>  Sigma Gamma Beta Alpha<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 阶乘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NVM 包管理器</title>
       <link href="posts/63668a37.html"/>
       <url>posts/63668a37.html</url>
@@ -1162,9 +1189,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1193,9 +1220,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1222,9 +1249,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1251,9 +1278,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1471,9 +1498,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -1710,9 +1737,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -1739,9 +1766,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
