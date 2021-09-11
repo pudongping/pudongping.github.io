@@ -6,7 +6,7 @@
   <link href="https://pudongping.com/atom.xml" rel="self"/>
   
   <link href="https://pudongping.com/"/>
-  <updated>2021-09-10T02:05:21.492Z</updated>
+  <updated>2021-09-11T18:47:35.240Z</updated>
   <id>https://pudongping.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 频繁使用命令</title>
+    <link href="https://pudongping.com/posts/6f6880af.html"/>
+    <id>https://pudongping.com/posts/6f6880af.html</id>
+    <published>2021-09-11T18:47:08.000Z</published>
+    <updated>2021-09-11T18:47:35.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-频繁使用命令&quot;&gt;&lt;a href=&quot;#Linux-频繁使用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux 频繁使用命令&quot;&gt;&lt;/a&gt;Linux 频繁使用命令&lt;/h1&gt;&lt;!-- TOC --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>递归计算笛卡尔乘积</title>
     <link href="https://pudongping.com/posts/1e1630f3.html"/>
     <id>https://pudongping.com/posts/1e1630f3.html</id>
     <published>2021-09-10T02:04:40.000Z</published>
-    <updated>2021-09-10T02:05:21.492Z</updated>
+    <updated>2021-09-10T02:06:06.857Z</updated>
     
     
       
@@ -511,31 +539,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;无限遍历数组&quot;&gt;&lt;a href=&quot;#无限遍历数组&quot; class=&quot;headerlink&quot; title=&quot;无限遍历数组&quot;&gt;&lt;/a&gt;无限遍历数组&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-php&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.com/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.com/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP返回可读性更好的文件大小显示</title>
-    <link href="https://pudongping.com/posts/3676e41e.html"/>
-    <id>https://pudongping.com/posts/3676e41e.html</id>
-    <published>2021-08-16T11:31:56.000Z</published>
-    <updated>2021-08-16T11:33:09.635Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;返回可读性更好的文件大小显示&quot;&gt;&lt;a href=&quot;#返回可读性更好的文件大小显示&quot; class=&quot;headerlink&quot;</summary>
         
       
     
