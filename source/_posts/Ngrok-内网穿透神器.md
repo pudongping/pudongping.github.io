@@ -28,7 +28,7 @@ password:
 
 ```bash
 
-# 下载 zip 安装包
+# 下载 zip 安装包（这里我是 mac 环境，因此下载的为 mac 版本的软件，其他环境需要下载对应环境版本的软件）
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip
 
 # 解压 zip 包
