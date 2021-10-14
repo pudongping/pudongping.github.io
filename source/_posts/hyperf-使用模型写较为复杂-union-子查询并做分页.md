@@ -31,41 +31,41 @@ FROM
 	(
 	(
 SELECT
-	`dfo_account_log`.`log_id`,
-	`dfo_account_log`.`change_time`,
-	`dfo_account_log`.`user_id`,
-	`dfo_account_log`.`pay_points`,
-	`dfo_account_log`.`change_type`,
-	`dfo_account_log`.`from_user_id`,
-	`dfo_u`.`user_id` AS `u_user_id`,
-	`dfo_u`.`username`,
-	`dfo_u`.`head_pic`,
-	`dfo_u`.`vip_time` 
+	`a`.`log_id`,
+	`a`.`change_time`,
+	`a`.`user_id`,
+	`a`.`pay_points`,
+	`a`.`change_type`,
+	`a`.`from_user_id`,
+	`u`.`user_id` AS `u_user_id`,
+	`u`.`username`,
+	`u`.`head_pic`,
+	`u`.`vip_time` 
 FROM
-	`dfo_account_log`
-	LEFT JOIN `dfo_users` AS `dfo_u` ON `dfo_account_log`.`user_id` = `dfo_u`.`user_id` 
+	`a`
+	LEFT JOIN `dfo_users` AS `u` ON `a`.`user_id` = `u`.`user_id` 
 WHERE
-	( `dfo_account_log`.`user_id` = 3649 AND `dfo_account_log`.`pay_points` > 0 ) 
-	AND ( `dfo_account_log`.`from_user_id` IS NULL OR `dfo_account_log`.`from_user_id` = 0 ) 
+	( `a`.`user_id` = 3649 AND `a`.`pay_points` > 0 ) 
+	AND ( `a`.`from_user_id` IS NULL OR `a`.`from_user_id` = 0 ) 
 	) UNION
 	(
 SELECT
-	`dfo_account_log`.`log_id`,
-	`dfo_account_log`.`change_time`,
-	`dfo_account_log`.`user_id`,
-	`dfo_account_log`.`pay_points`,
-	`dfo_account_log`.`change_type`,
-	`dfo_account_log`.`from_user_id`,
-	`dfo_u`.`user_id` AS `u_user_id`,
-	`dfo_u`.`username`,
-	`dfo_u`.`head_pic`,
-	`dfo_u`.`vip_time` 
+	`a`.`log_id`,
+	`a`.`change_time`,
+	`a`.`user_id`,
+	`a`.`pay_points`,
+	`a`.`change_type`,
+	`a`.`from_user_id`,
+	`u`.`user_id` AS `u_user_id`,
+	`u`.`username`,
+	`u`.`head_pic`,
+	`u`.`vip_time` 
 FROM
-	`dfo_account_log`
-	LEFT JOIN `dfo_users` AS `dfo_u` ON `dfo_account_log`.`from_user_id` = `dfo_u`.`user_id` 
+	`a`
+	LEFT JOIN `dfo_users` AS `u` ON `a`.`from_user_id` = `u`.`user_id` 
 WHERE
-	( `dfo_account_log`.`user_id` = 3649 AND `dfo_account_log`.`pay_points` > 0 ) 
-	AND ( `dfo_account_log`.`from_user_id` IS NOT NULL OR `dfo_account_log`.`from_user_id` > 0 ) 
+	( `a`.`user_id` = 3649 AND `a`.`pay_points` > 0 ) 
+	AND ( `a`.`from_user_id` IS NOT NULL OR `a`.`from_user_id` > 0 ) 
 	) 
 	) AS dfo_al 
 ORDER BY
@@ -80,44 +80,45 @@ ORDER BY
 
 ```php
 
-        $tbl = 'account_log';
         $where = [
-            [$tbl . '.user_id', '=', auth()->user_id],
-            [$tbl . '.pay_points', '>', 0]
+            ['a.user_id', '=', auth()->user_id],
+            ['a.pay_points', '>', 0]
         ];
         $fields = [
-            $tbl . '.log_id',
-            $tbl . '.change_time',
-            $tbl . '.user_id',
-            $tbl . '.pay_points',
-            $tbl . '.change_type',
-            $tbl . '.from_user_id',
+            'a.log_id',
+            'a.change_time',
+            'a.user_id',
+            'a.pay_points',
+            'a.change_type',
+            'a.from_user_id',
             'u.user_id AS u_user_id',
             'u.username',
             'u.head_pic',
             'u.vip_time'
         ];
 
-        $table1 = $this->accountLogModel
-            ->leftJoin('users as u', $tbl . '.user_id', '=', 'u.user_id')
+        $table1 = AccountLog::query()
+            ->from('account_log as a')
+            ->leftJoin('users as u', 'a.user_id', '=', 'u.user_id')
             ->select($fields)
             ->where($where)
-            ->where(function ($query) use ($tbl) {
-                $query->whereNull($tbl . '.from_user_id')->orWhere($tbl . '.from_user_id', 0);
+            ->where(function ($query) {
+                $query->whereNull('a.from_user_id')->orWhere('a.from_user_id', 0);
             });
 
-        $table2 = $this->accountLogModel
-            ->leftJoin('users as u', $tbl . '.from_user_id', '=', 'u.user_id')
+        $table2 = AccountLog::query()
+            ->from('account_log as a')
+            ->leftJoin('users as u', 'a.from_user_id', '=', 'u.user_id')
             ->select($fields)
             ->where($where)
-            ->where(function ($query) use ($tbl) {
-                $query->whereNotNull($tbl . '.from_user_id')->orWhere($tbl . '.from_user_id', '>', 0);
+            ->where(function ($query) {
+                $query->whereNotNull('a.from_user_id')->orWhere('a.from_user_id', '>', 0);
             });
 
         $table = $table1->union($table2);
 
         $tablePrefix = Db::connection()->getTablePrefix();  // 获取数据表前缀 => 或者使用  $tablePrefix = Db::getConfig('prefix'); 都可以
-        $model = $this->accountLogModel
+        $model = AccountLog::query()
             ->mergeBindings($table->getQuery())
             ->select(['al.*'])
             ->from(Db::raw("({$table->toSql()}) as {$tablePrefix}" . 'al'));
