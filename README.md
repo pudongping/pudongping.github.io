@@ -203,8 +203,8 @@ hexo d
 
 感谢 Jetbrains 公司对本项目的支持！
 
-<a href="https://jb.gg/OpenSourceSupport">
-<img width="150px" src="./themes/hexo-theme-matery/source/medias/jetbrains_logo_beam.png" alt="jb_beam">
+<a href="https://jb.gg/OpenSourceSupport" target="_blank">
+<img width="150px" src="https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/jetbrains_logo_beam.png" alt="jb_beam">
 </a>
 
 
