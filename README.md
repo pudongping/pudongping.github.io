@@ -199,6 +199,15 @@ hexo d
 
 > 😘 若有共鸣，留言足矣，若有赞赏，何以复加？ 🤞
 
+## 致谢
+
+感谢 Jetbrains 公司对本项目的支持！
+
+<a href="https://jb.gg/OpenSourceSupport">
+<img width="150px" src="./themes/hexo-theme-matery/source/medias/jetbrains_logo_beam.png" alt="jb_beam">
+</a>
+
+
 ## LICENSE
 
 MIT
