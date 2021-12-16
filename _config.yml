@@ -141,7 +141,7 @@ feed:
 lazyload:
   enable: true
   onlypost: true # 如果为 true，则只有文章或页面中的图像支持延迟加载，如果为 false，则站点的整个图像将使用延迟加载，但不包括来自CSS样式的背景图像。
-  loadingImg: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/loading.gif  # loading 图片路径，也可以支持网络图片
+  loadingImg: https://pudongping.com/medias/loading.gif  # loading 图片路径，也可以支持网络图片
 
 # 使用 hexo-neat 优化提速插件（去掉 HTML、css、js 的 blank 字符）
 neat_enable: true
