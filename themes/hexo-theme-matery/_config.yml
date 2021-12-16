@@ -655,7 +655,7 @@ jsDelivr:
 
 # 自己重新写一个 cdn 配置，方便管理哪些位置使用 cdn ，哪些地方不使用
 myJsDelivr:
-  url: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io
+  url: https://pudongping.com
 
 # 网站背景图
 background:

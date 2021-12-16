@@ -6,8 +6,8 @@ hide: false
 cover: true
 toc: true
 mathjax: false
-img: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/featureimages/26.jpg
-coverImg: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/banner/0.jpg
+img: https://pudongping.com/medias/featureimages/26.jpg
+coverImg: https://pudongping.com/medias/banner/0.jpg
 summary: >-
   折腾了个把星期左右，终于把博客改的有点儿样子了，秉承着开源精神，现在把博客源码开源出来。如果你也想拥有和我一摸一样的博客，那么赶紧来试试吧！如果你喜欢，请记得给个
   Star！

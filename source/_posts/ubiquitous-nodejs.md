@@ -6,7 +6,7 @@ hide: false
 cover: true
 toc: true
 mathjax: false
-coverImg: https://cdn.jsdelivr.net/gh/pudongping/pudongping.github.io/medias/banner/12.jpg
+coverImg: https://pudongping.com/medias/banner/12.jpg
 summary: "⚡ ubiquity-nodejs 是一个本人基于 node.js 开发的 web 脚手架。\U0001F618 支持模版渲染、Restful API、ORM 等特性，遵循 MVC 架构。"
 categories: 开源
 tags:
