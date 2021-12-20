@@ -165,16 +165,16 @@ hexo d
 
 ## 博客截图
 
-![首页](https://pudongping.com/medias/sample/page.png)
-![文章列表](https://pudongping.com/medias/sample/articles-list.png)
-![文章列表](https://pudongping.com/medias/sample/articles-list-1.png)
-![文章详情](https://pudongping.com/medias/sample/article-detail.png)
-![文章详情](https://pudongping.com/medias/sample/article-detail-1.png)
-![标签页](https://pudongping.com/medias/sample/tags.png)
-![分类页](https://pudongping.com/medias/sample/categories.png)
-![归档页](https://pudongping.com/medias/sample/archives.png)
-![关于我页](https://pudongping.com/medias/sample/about-me.png)
-![留言板页](https://pudongping.com/medias/sample/contact.png)
+![首页](https://pudongping.github.io/medias/sample/page.png)
+![文章列表](https://pudongping.github.io/medias/sample/articles-list.png)
+![文章列表](https://pudongping.github.io/medias/sample/articles-list-1.png)
+![文章详情](https://pudongping.github.io/medias/sample/article-detail.png)
+![文章详情](https://pudongping.github.io/medias/sample/article-detail-1.png)
+![标签页](https://pudongping.github.io/medias/sample/tags.png)
+![分类页](https://pudongping.github.io/medias/sample/categories.png)
+![归档页](https://pudongping.github.io/medias/sample/archives.png)
+![关于我页](https://pudongping.github.io/medias/sample/about-me.png)
+![留言板页](https://pudongping.github.io/medias/sample/contact.png)
 
 ## 感谢支持
 
