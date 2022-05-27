@@ -116,8 +116,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: https://pudongping.com/medias/favicon.png
-logo: https://pudongping.com/medias/logo.png
+favicon: /medias/favicon.png
+logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -162,8 +162,8 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: https://pudongping.com/medias/reward/wechat.png
-  alipay: https://pudongping.com/medias/reward/alipay.png
+  wechat: /medias/reward/wechat.png
+  alipay: /medias/reward/alipay.png
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -203,7 +203,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: https://pudongping.com/medias/avatar.jpg
+  avatar: /medias/avatar.jpg
   career: Software Engineer | Programming geeks | Artisan, Backend Developer & Overall Web Enthusiast
   introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 4 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
 
@@ -281,9 +281,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - https://pudongping.com/medias/featureimages/31.jpg
-    - https://pudongping.com/medias/featureimages/35.jpg
-    - https://pudongping.com/medias/featureimages/40.jpg
+    - /medias/featureimages/31.jpg
+    - /medias/featureimages/35.jpg
+    - /medias/featureimages/40.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -348,7 +348,7 @@ valine:
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
-  background: https://pudongping.com/medias/comment_bg.png
+  background: /medias/comment_bg.png
 
 # The configuration of the MiniValine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
@@ -504,57 +504,57 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- https://pudongping.com/medias/featureimages/0.jpg
-- https://pudongping.com/medias/featureimages/1.jpg
-- https://pudongping.com/medias/featureimages/2.jpg
-- https://pudongping.com/medias/featureimages/3.jpg
-- https://pudongping.com/medias/featureimages/4.jpg
-- https://pudongping.com/medias/featureimages/5.jpg
-- https://pudongping.com/medias/featureimages/6.jpg
-- https://pudongping.com/medias/featureimages/7.jpg
-- https://pudongping.com/medias/featureimages/8.jpg
-- https://pudongping.com/medias/featureimages/9.jpg
-- https://pudongping.com/medias/featureimages/10.jpg
-- https://pudongping.com/medias/featureimages/11.jpg
-- https://pudongping.com/medias/featureimages/12.jpg
-- https://pudongping.com/medias/featureimages/13.jpg
-- https://pudongping.com/medias/featureimages/14.jpg
-- https://pudongping.com/medias/featureimages/15.jpg
-- https://pudongping.com/medias/featureimages/16.jpg
-- https://pudongping.com/medias/featureimages/17.jpg
-- https://pudongping.com/medias/featureimages/18.jpg
-- https://pudongping.com/medias/featureimages/19.jpg
-- https://pudongping.com/medias/featureimages/20.jpg
-- https://pudongping.com/medias/featureimages/21.jpg
-- https://pudongping.com/medias/featureimages/22.jpg
-- https://pudongping.com/medias/featureimages/23.jpg
-- https://pudongping.com/medias/featureimages/24.jpg
-- https://pudongping.com/medias/featureimages/25.jpg
-- https://pudongping.com/medias/featureimages/26.jpg
-- https://pudongping.com/medias/featureimages/27.jpg
-- https://pudongping.com/medias/featureimages/28.jpg
-- https://pudongping.com/medias/featureimages/29.jpg
-- https://pudongping.com/medias/featureimages/30.jpg
-- https://pudongping.com/medias/featureimages/31.jpg
-- https://pudongping.com/medias/featureimages/32.jpg
-- https://pudongping.com/medias/featureimages/33.jpg
-- https://pudongping.com/medias/featureimages/34.jpg
-- https://pudongping.com/medias/featureimages/35.jpg
-- https://pudongping.com/medias/featureimages/36.jpg
-- https://pudongping.com/medias/featureimages/37.jpg
-- https://pudongping.com/medias/featureimages/38.jpg
-- https://pudongping.com/medias/featureimages/39.jpg
-- https://pudongping.com/medias/featureimages/40.jpg
-- https://pudongping.com/medias/featureimages/41.jpg
-- https://pudongping.com/medias/featureimages/42.jpg
-- https://pudongping.com/medias/featureimages/43.jpg
-- https://pudongping.com/medias/featureimages/44.jpg
-- https://pudongping.com/medias/featureimages/45.jpg
-- https://pudongping.com/medias/featureimages/46.jpg
-- https://pudongping.com/medias/featureimages/47.jpg
-- https://pudongping.com/medias/featureimages/48.jpg
-- https://pudongping.com/medias/featureimages/49.jpg
-- https://pudongping.com/medias/featureimages/50.jpg
+- /medias/featureimages/0.jpg
+- /medias/featureimages/1.jpg
+- /medias/featureimages/2.jpg
+- /medias/featureimages/3.jpg
+- /medias/featureimages/4.jpg
+- /medias/featureimages/5.jpg
+- /medias/featureimages/6.jpg
+- /medias/featureimages/7.jpg
+- /medias/featureimages/8.jpg
+- /medias/featureimages/9.jpg
+- /medias/featureimages/10.jpg
+- /medias/featureimages/11.jpg
+- /medias/featureimages/12.jpg
+- /medias/featureimages/13.jpg
+- /medias/featureimages/14.jpg
+- /medias/featureimages/15.jpg
+- /medias/featureimages/16.jpg
+- /medias/featureimages/17.jpg
+- /medias/featureimages/18.jpg
+- /medias/featureimages/19.jpg
+- /medias/featureimages/20.jpg
+- /medias/featureimages/21.jpg
+- /medias/featureimages/22.jpg
+- /medias/featureimages/23.jpg
+- /medias/featureimages/24.jpg
+- /medias/featureimages/25.jpg
+- /medias/featureimages/26.jpg
+- /medias/featureimages/27.jpg
+- /medias/featureimages/28.jpg
+- /medias/featureimages/29.jpg
+- /medias/featureimages/30.jpg
+- /medias/featureimages/31.jpg
+- /medias/featureimages/32.jpg
+- /medias/featureimages/33.jpg
+- /medias/featureimages/34.jpg
+- /medias/featureimages/35.jpg
+- /medias/featureimages/36.jpg
+- /medias/featureimages/37.jpg
+- /medias/featureimages/38.jpg
+- /medias/featureimages/39.jpg
+- /medias/featureimages/40.jpg
+- /medias/featureimages/41.jpg
+- /medias/featureimages/42.jpg
+- /medias/featureimages/43.jpg
+- /medias/featureimages/44.jpg
+- /medias/featureimages/45.jpg
+- /medias/featureimages/46.jpg
+- /medias/featureimages/47.jpg
+- /medias/featureimages/48.jpg
+- /medias/featureimages/49.jpg
+- /medias/featureimages/50.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -676,7 +676,7 @@ jsDelivr:
 
 # 自己重新写一个 cdn 配置，方便管理哪些位置使用 cdn ，哪些地方不使用
 myJsDelivr:
-  url: https://pudongping.com
+  url:
 
 # 网站背景图
 background:

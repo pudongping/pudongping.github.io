@@ -6,7 +6,7 @@
 title: 蒲东平的博客
 subtitle: '蒲东平的博客'
 description: '致力于提供个人所学所想，为开源做一点贡献。'
-keywords: '技术博客 PHP python node.js go vue 编程爱好者'
+keywords: '技术博客 PHP Python Node.js Go Vue 编程爱好者'
 author: Alex
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -141,7 +141,7 @@ feed:
 lazyload:
   enable: true
   onlypost: true # 如果为 true，则只有文章或页面中的图像支持延迟加载，如果为 false，则站点的整个图像将使用延迟加载，但不包括来自CSS样式的背景图像。
-  loadingImg: https://pudongping.com/medias/loading.gif  # loading 图片路径，也可以支持网络图片
+  loadingImg: /medias/loading.gif  # loading 图片路径，也可以支持网络图片
 
 # 使用 hexo-neat 优化提速插件（去掉 HTML、css、js 的 blank 字符）
 neat_enable: true
