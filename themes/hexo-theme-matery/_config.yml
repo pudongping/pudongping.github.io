@@ -444,14 +444,14 @@ baiduPush: true
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
 libs:
   css:
-    matery: https://pudongping.com/css/matery.css
-    mycss: https://pudongping.com/css/my.css
-    fontAwesome: https://pudongping.com/libs/awesome/css/all.css # V5.11.1
+    matery: /css/matery.css
+    mycss: /css/my.css
+    fontAwesome: /libs/awesome/css/all.css # V5.11.1
 #    materialize: /libs/materialize/materialize.min.css # 1.0.0
     materialize: https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css
 #    aos: /libs/aos/aos.css
     aos: https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css
-    animate: https://pudongping.com/libs/animate/animate.min.css # V3.5.1
+    animate: /libs/animate/animate.min.css # V3.5.1
 #    lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
     lightgallery: https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css
 #    aplayer: /libs/aplayer/APlayer.min.css
@@ -462,10 +462,10 @@ libs:
     gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
 #    jqcloud: /libs/jqcloud/jqcloud.css
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.min.css
-    tocbot: https://pudongping.com/libs/tocbot/tocbot.css
-    prism: https://pudongping.com/libs/prism/prism.css
+    tocbot: /libs/tocbot/tocbot.css
+    prism: /libs/prism/prism.css
   js:
-    matery: https://pudongping.com/js/matery.js
+    matery: /js/matery.js
 #    jquery: /libs/jquery/jquery.min.js
     jquery: https://libs.baidu.com/jquery/2.1.4/jquery.min.js
 #    materialize: /libs/materialize/materialize.min.js # 1.0.0
@@ -478,28 +478,28 @@ libs:
     scrollProgress: https://cdn.bootcss.com/scrollprogress/3.0.2/scrollProgress.min.js
 #    lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
     lightgallery: https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js
-    clicklove: https://pudongping.com/libs/others/clicklove.js
+    clicklove: /libs/others/clicklove.js
 #    busuanzi: /libs/others/busuanzi.pure.mini.js
     busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 #    aplayer: /libs/aplayer/APlayer.min.js
     aplayer: https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js
 #    dplayer: /libs/dplayer/DPlayer.min.js
     dplayer: https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js
-    crypto: https://pudongping.com/libs/cryptojs/crypto-js.min.js
+    crypto: /libs/cryptojs/crypto-js.min.js
 #    echarts: /libs/echarts/echarts.min.js
     echarts: https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js
 #    gitalk: /libs/gitalk/gitalk.min.js
     gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-    valine: https://pudongping.com/libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://pudongping.com/libs/minivaline/MiniValine.js
+    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    minivaline: /libs/minivaline/MiniValine.js
 #    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js
-    tocbot: https://pudongping.com/libs/tocbot/tocbot.min.js
-    canvas_nest: https://pudongping.com/libs/background/canvas-nest.js
-    ribbon: https://pudongping.com/libs/background/ribbon.min.js
-    ribbonRefresh: https://pudongping.com/libs/background/ribbon-refresh.min.js
-    ribbon_dynamic: https://pudongping.com/libs/background/ribbon-dynamic.js
-    instantpage: https://pudongping.com/libs/instantpage/instantpage.js
+    tocbot: /libs/tocbot/tocbot.min.js
+    canvas_nest: /libs/background/canvas-nest.js
+    ribbon: /libs/background/ribbon.min.js
+    ribbonRefresh: /libs/background/ribbon-refresh.min.js
+    ribbon_dynamic: /libs/background/ribbon-dynamic.js
+    instantpage: /libs/instantpage/instantpage.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
