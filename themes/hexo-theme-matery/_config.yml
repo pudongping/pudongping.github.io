@@ -205,7 +205,7 @@ clicklove:
 profile:
   avatar: https://pudongping.com/medias/avatar.jpg
   career: Software Engineer | Programming geeks | Artisan, Backend Developer & Overall Web Enthusiast
-  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 3 年，拥有红帽 RHCSA、RHCE 认证，入门技术栈为 PHP，先后接触 JavaScript、Vue、微信小程序、Python、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
+  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 4 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -217,17 +217,32 @@ myProjects:
       icon: fas fa-blog
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
       url: http://github.com/pudongping/larablog
-      desc: 基于 Laravel6.x 构建的博客应用，支持 Markdown，支持图片拖拽上传，基于 RBAC 权限管理系统。
-    ubiquitous-nodejs:
-      icon: fas fa-file-alt
+      desc: 基于 Laravel6.x 构建的博客应用，支持 Markdown，图片拖拽上传，RBAC 权限管理系统
+    global-pay:
+      icon: fas fa-alipay
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-      url: https://github.com/pudongping/ubiquitous-nodejs
-      desc: ubiquity-nodejs 是一个基于 node.js 的 web 脚手架。
+      url: https://github.com/pudongping/global-pay
+      desc: 简单易用的国际支付宝支付 php composer 插件包，支持花呗分期支付。
     document-converter:
       icon: fas fa-exchange-alt
       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
       url: https://github.com/pudongping/document-converter
       desc: 使用 python3 写的 docx、excel、ppt 转 pdf 工具。
+    hyperf-biz-web-api:
+      icon: fas fa-axe
+      iconBackground: 'linear-gradient(135deg, #e079fc 0%, #7c44ff 100%)'
+      url: https://github.com/pudongping/hyperf-biz-web-api
+      desc: 基于 hyperf 框架封装的业务 web api 框架
+    gin-biz-web-api:
+      icon: fas fa-wrench
+      iconBackground: 'linear-gradient(135deg, #309286 0%, #32dbc6 100%)'
+      url: https://github.com/pudongping/gin-biz-web-api
+      desc: 基于 Gin 框架封装的业务 web api 框架
+    hexo-blog:
+      icon: fas fa-comment
+      iconBackground: 'linear-gradient(135deg, #ffeb3b 0%, #ff9900 100%)'
+      url: https://github.com/pudongping/pudongping.github.io
+      desc: 正在使用的博客
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -238,12 +253,15 @@ mySkills:
     PHP:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
+    Golang:
+      background: 'linear-gradient(to right, #357C99 0%, #8ED3F9 100%)'
+      percent: 45%
     Python:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
+      percent: 70%
     node.js:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 70%
+      percent: 50%
     JavaScript:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
@@ -253,6 +271,9 @@ mySkills:
     SQL:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
+    Linux:
+      background: 'linear-gradient(to right, #c82e73 0%, #f80e79 100%)'
+      percent: 45%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
