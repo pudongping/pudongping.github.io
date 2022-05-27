@@ -219,7 +219,7 @@ myProjects:
       url: http://github.com/pudongping/larablog
       desc: 基于 Laravel6.x 构建的博客，支持 Markdown、RBAC
     global-pay:
-      icon: fas fa-alipay
+      icon: fas fa-coffee
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
       url: https://github.com/pudongping/global-pay
       desc: 简单易用的国际支付宝 php 插件包，支持花呗分期支付
@@ -229,7 +229,7 @@ myProjects:
       url: https://github.com/pudongping/document-converter
       desc: 使用 python3 写的 docx、excel、ppt 转 pdf 工具
     hyperf-biz-web-api:
-      icon: fas fa-axe
+      icon: fas fa-rocket
       iconBackground: 'linear-gradient(135deg, #e079fc 0%, #7c44ff 100%)'
       url: https://github.com/pudongping/hyperf-biz-web-api
       desc: 基于 hyperf 框架封装的业务 web api 框架
