@@ -1,6 +1,6 @@
 <p align="center">
     <h1 align="center"><a href="https://pudongping.github.io">Alex's blog</a></h1>
-    <p align="center">三观比五官正，思想比套路深的 live and learn's coder。😘</p>
+    <p align="center">三观比五官正，思想比套路深，终身学习的编程爱好者 😘</p>
 </p>
 <p align="center">
     <a href="https://github.com/pudongping/pudongping.github.io" target="_blank">
@@ -179,7 +179,7 @@ hexo d
 ## 感谢支持
 
 如果你觉得对你有所帮助,请帮忙给个 `Star`。  
-如果你想贡献一份力量,欢迎提交 `Pull Request`。
+如果你想贡献一份力量,欢迎提交 `PR`。
 
 ## 赞赏捐助
 
@@ -199,9 +199,9 @@ hexo d
 
 > 😘 若有共鸣，留言足矣，若有赞赏，何以复加？ 🤞
 
-## 致谢
+## Project supported by JetBrains
 
-感谢 Jetbrains 公司对本项目的支持！
+Many thanks to Jetbrains for kindly providing a license for me to work on this and other open-source projects.
 
 <a href="https://jb.gg/OpenSourceSupport" target="_blank">
 <img width="150px" src="./themes/hexo-theme-matery/source/medias/jetbrains_logo_beam.png" alt="jb_beam">
