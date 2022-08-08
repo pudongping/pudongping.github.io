@@ -62,6 +62,38 @@ docker run -d --name alex-es \
 -e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
 elasticsearch:7.9.3
 
+
+# 如果要挂载目录时，可能会报错 `Exception in thread "main" java.nio.file.NoSuchFileException: /usr/share/elasticsearch/config/jvm.options`
+# 解决方案是：先随便创建一个容器，然后将随便创建的容器的配置文件先复制一份到宿机上，然后删除掉这个容器，重新再创建容器，比如，如下步骤
+
+# 1. 先随便创建一个容器
+docker run -d --name es_service_1 \
+--net alex-network \
+-p 9200:9200 \
+-p 9300:9300 \
+-e "discovery.type=single-node" \
+-e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
+elasticsearch:7.9.3
+
+# 2. 然后复制该容器的配置文件到宿机上
+docker cp {es_service_1_container_id}:/usr/share/elasticsearch/config/ ~/es-config
+
+# 3. 然后再删除到这个临时容器
+docker rm es_service_1
+
+# 4. 最后再携带挂载参数创建新容器
+docker run -d --name es_service_1 \
+--net alex-network \
+-p 9200:9200 \
+-p 9300:9300 \
+-e "discovery.type=single-node" \
+-e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
+-v ~/es-data:/usr/share/elasticsearch/data \
+-v ~/es-plugins:/usr/share/elasticsearch/plugins \
+-v ~/es-config:/usr/share/elasticsearch/config \
+--privileged -u root \
+elasticsearch:7.9.3
+
 ```
 
 - 也可以直接通过修改配置文件
@@ -91,6 +123,33 @@ vi /usr/share/elasticsearch/config/jvm.options
 ```bash
 # 出现版本号即表示成功
 curl 127.0.0.1:9200
+```
+
+### 安装 ik 中文分词插件
+
+> 注意 ik 分词插件的版本要和 es 的版本一致
+
+```bash
+
+[root@63d697bd738f elasticsearch]# pwd
+/usr/share/elasticsearch
+[root@63d697bd738f elasticsearch]# ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.9.3/elasticsearch-analysis-ik-7.9.3.zip
+-> Installing https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.9.3/elasticsearch-analysis-ik-7.9.3.zip
+-> Downloading https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.9.3/elasticsearch-analysis-ik-7.9.3.zip
+[=================================================] 100%??
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@     WARNING: plugin requires additional permissions     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* java.net.SocketPermission * connect,resolve
+See http://docs.oracle.com/javase/8/docs/technotes/guides/security/permissions.html
+for descriptions of what these permissions allow and the associated risks.
+
+Continue with installation? [y/N]y
+-> Installed analysis-ik
+[root@63d697bd738f elasticsearch]# ./bin/elasticsearch-plugin list
+analysis-ik
+[root@63d697bd738f elasticsearch]#
+
 ```
 
 ## 安装 Kibana
