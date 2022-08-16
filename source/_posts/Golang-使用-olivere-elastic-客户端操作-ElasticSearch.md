@@ -16,7 +16,7 @@ img:
 coverImg:
 password:
 summary:
-categories:
+categories: ElasticSearch
 ---
 
 # Golang 使用 olivere/elastic 客户端操作 ElasticSearch
