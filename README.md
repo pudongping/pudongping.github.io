@@ -165,16 +165,36 @@ hexo d
 
 ## 博客截图
 
-![首页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/page.png)
-![文章列表](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/articles-list.png)
-![文章列表](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/articles-list-1.png)
-![文章详情](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/article-detail.png)
-![文章详情](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/article-detail-1.png)
-![标签页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/tags.png)
-![分类页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/categories.png)
-![归档页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/archives.png)
-![关于我页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/about-me.png)
-![留言板页](https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/contact.png)
+[//]: # (![首页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/page.png&#41;)
+
+[//]: # (![文章列表]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/articles-list.png&#41;)
+
+[//]: # (![文章列表]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/articles-list-1.png&#41;)
+
+[//]: # (![文章详情]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/article-detail.png&#41;)
+
+[//]: # (![文章详情]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/article-detail-1.png&#41;)
+
+[//]: # (![标签页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/tags.png&#41;)
+
+[//]: # (![分类页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/categories.png&#41;)
+
+[//]: # (![归档页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/archives.png&#41;)
+
+[//]: # (![关于我页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/about-me.png&#41;)
+
+[//]: # (![留言板页]&#40;https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/sample/contact.png&#41;)
+
+![首页](https://s2.loli.net/2022/10/10/TYto6AZc1yfgL7R.png)
+![文章列表](https://s2.loli.net/2022/10/10/D19I65vgzYOFMGX.png)
+![文章列表](https://s2.loli.net/2022/10/10/9J6TRomsY23ifWh.png)
+![文章详情](https://s2.loli.net/2022/10/10/aeUEMRK6cuq2G7m.png)
+![文章详情](https://s2.loli.net/2022/10/10/DiYrOmduxJbB6kX.png)
+![标签页](https://s2.loli.net/2022/10/10/EhLoc2R6pCd43w9.png)
+![分类页](https://s2.loli.net/2022/10/10/mlHkyKrBzbuxeD1.png)
+![归档页](https://s2.loli.net/2022/10/10/lmFsogaLHq4fJIG.png)
+![关于我页](https://s2.loli.net/2022/10/10/mliyYPvZo2GSuI4.png)
+![留言板页](https://s2.loli.net/2022/10/10/CqyJfzdLkNEOcGa.png)
 
 ## 感谢支持
 
@@ -188,10 +208,10 @@ hexo d
 <table>
   <tr>
     <td>
-        <img width="100" src="https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/reward/alipay.png" alt="alipay" >
+        <img width="100" src="https://s2.loli.net/2022/10/10/nzPvMUBm4HEx6QC.png" alt="alipay" >
     </td>
     <td>
-        <img width="100" src="https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/reward/wechat.png" alt="wechat" >
+        <img width="100" src="https://s2.loli.net/2022/10/10/nsN2Au8XWdvIcpe.png" alt="wechat" >
     </td>
   </tr>
 </table>
@@ -204,9 +224,8 @@ hexo d
 Many thanks to Jetbrains for kindly providing a license for me to work on this and other open-source projects.
 
 <a href="https://jb.gg/OpenSourceSupport" target="_blank">
-<img width="150px" src="https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/jetbrains_logo_beam.png" alt="jb_beam">
+<img width="150px" src="https://s2.loli.net/2022/10/10/xlWUgcwi32J4oBT.png" alt="jb_beam">
 </a>
-
 
 ## LICENSE
 
