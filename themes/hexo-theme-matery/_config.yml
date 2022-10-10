@@ -205,7 +205,7 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Software Engineer | Programming geeks | Artisan, Backend Developer & Overall Web Enthusiast
-  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 4 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受敲代码的感觉，相信编程是一门艺术，编程丰富生活。
+  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 4 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的感觉，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -467,7 +467,7 @@ libs:
   js:
     matery: /js/matery.js
 #    jquery: /libs/jquery/jquery.min.js
-    jquery: https://libs.baidu.com/jquery/2.1.4/jquery.min.js
+    jquery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js
 #    materialize: /libs/materialize/materialize.min.js # 1.0.0
     materialize: https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js
 #    masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
