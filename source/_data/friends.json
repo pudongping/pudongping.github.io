@@ -1,21 +1,15 @@
 [{
-  "avatar": "https://pudongping.com/medias/avatar.jpg",
+  "avatar": "https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/avatar.jpg",
   "name": "蒲东平的博客",
   "introduction": "✊🏻 SELECT * FROM LEARNS WHERE LIVE IS NOT NULL;",
   "url": "https://pudongping.com/",
   "title": "瞅一瞅"
 },{
-  "avatar": "https://pudongping.com/medias/favicon.png",
+  "avatar": "https://gitee.com/pudongping/pudongping/raw/main/themes/hexo-theme-matery/source/medias/favicon.png",
   "name": "蒲东平的笔记",
   "introduction": "三观比五官正，思想比套路深的终身学习编程爱好者。 😘",
   "url": "https://notes.pudongping.com/",
   "title": "看一看"
-},{
-  "avatar": "https://blog.pudongping.com/uploads/images/avatars/201912/07/1_1575651320_G3hUEZnQgE.png",
-  "name": "蒲东平的博客",
-  "introduction": "致力于提供个人所学所想，为开源做一点贡献。（旧博客项目）",
-  "url": "https://blog.pudongping.com/",
-  "title": "瞧一瞧"
 },{
   "avatar": "https://laravel.gstatics.cn/storage/uploads/images/user/2019-10/thumbs-120-120/me.jpg",
   "name": "学院君",
@@ -39,11 +33,5 @@
   "name": "zoulingbin",
   "introduction": "几多人位于山之巅俯瞰我的疲倦。",
   "url": "https://zoulingbin.github.io/",
-  "title": "前去学习"
-},{
-  "avatar": "https://www.fyxemmmm.cn/wp-content/themes/Saber/images/none.png",
-  "name": "feixiang",
-  "introduction": "Always pending.",
-  "url": "https://www.fyxemmmm.cn/",
   "title": "前去学习"
 }]
