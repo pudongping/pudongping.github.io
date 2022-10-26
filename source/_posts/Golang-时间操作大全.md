@@ -18,7 +18,7 @@ password:
 summary:
 ---
 
-# Go 时间操作大全
+# Golang 时间操作大全
 
 [源代码详见 GitHub](https://github.com/pudongping/golang-tutorial/blob/main/project/time_helper/time_explore.go)
 
