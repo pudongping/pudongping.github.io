@@ -73,7 +73,7 @@ END
 // needUpdateFields := make(map[string][]int)
 // needUpdateFields["view_count"] = []int{11, 22, 33, 44}
 // needUpdateFields["updated_at"] = []int{1653147405, 1653147405, 1653147405, 1653147405}
-func BatchUpdate(tableName string, where, needUpdateFields map[string][]int) string {
+func BatchUpdate(tableName string, where, needUpdateFields map[string][]interface{}) string {
 	if len(where) == 0 || len(needUpdateFields) == 0 {
 		return ""
 	}
