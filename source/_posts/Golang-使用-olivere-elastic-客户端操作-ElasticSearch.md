@@ -58,139 +58,6 @@ var (
 	once     sync.Once
 )
 
-// ConnectES 创建 es 连接
-func ConnectES(options ...elastic.ClientOptionFunc) {
-	once.Do(func() {
-		// client, err := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL("http://127.0.0.1:9200"))
-		var err error
-		ESClient, err = elastic.NewClient(options...)
-		if err != nil {
-			panic(err)
-		}
-	})
-}
-
-func Ping(url string) (*elastic.PingResult, int, error) {
-	return ESClient.Ping(url).Do(context.Background())
-}
-
-// CreateIndexIfNotExists 索引不存在时，创建索引
-// index 索引名称
-// mapping 数据类型
-func CreateIndexIfNotExists(index, mapping string) error {
-	ctx := context.Background()
-	exists, err := ESClient.IndexExists(index).Do(ctx)
-	if err != nil {
-		return err
-	}
-	if exists {
-		return nil
-	}
-
-	info, err := ESClient.CreateIndex(index).BodyString(mapping).Do(ctx)
-	// info, err := ESClient.CreateIndex(index).Do(ctx)  // 如果只是想创建索引时，那么就不需要 BodyString() 方法
-	if err != nil {
-		return err
-	}
-	if !info.Acknowledged {
-		return errors.New(fmt.Sprintf("ES 创建索引 [%s] 失败", index))
-	}
-	return nil
-}
-
-// DeleteIndex 删除索引
-// index 索引名称
-func DeleteIndex(index string) (*elastic.IndicesDeleteResponse, error) {
-	info, err := ESClient.DeleteIndex(index).Do(context.Background())
-	if err != nil {
-		return nil, err
-	}
-	if !info.Acknowledged {
-		return nil, errors.New(fmt.Sprintf("ES 删除索引 [%s] 失败", index))
-	}
-	return info, err
-}
-
-// CreateDoc 单条添加
-// index 索引
-// id 文档 id（可以直接为空字符串，当实参为空字符串时，es 会主动随机生成）
-// body 需要添加的内容
-func CreateDoc(index, id string, body interface{}) (*elastic.IndexResponse, error) {
-	client := ESClient.Index().Index(index)
-	if "" != id {
-		client = client.Id(id)
-	}
-	return client.BodyJson(body).Do(context.Background())
-}
-
-// UpdateDoc 单条更新
-// index 索引
-// id 记录 id
-// body 需要更新的内容 （建议只使用 map[string]interface{} 进行更新指定字段且需要注意 map 中的 key 需要和 es 中的 key 完全匹配，否则 es 会认为新增字段，不要使用 struct 否则会将某些值初始化零值）
-func UpdateDoc(index, id string, body interface{}) (*elastic.UpdateResponse, error) {
-	return ESClient.Update().Index(index).Id(id).Doc(body).Do(context.Background())
-}
-
-// DeleteDoc 删除文档
-// index 索引
-// id 需要删除的文档记录 id
-func DeleteDoc(index, id string) (*elastic.DeleteResponse, error) {
-	return ESClient.Delete().Index(index).Id(id).Do(context.Background())
-}
-
-// CreateBulkDoc 批量添加
-// index 索引
-// ids 需要新建的 id 数组（可以为空的字符串切片）
-// body 需要添加的内容
-// 需要注意：ids 和 body 的顺序要一一对应
-func CreateBulkDoc(index string, ids []string, body []interface{}) (*elastic.BulkResponse, error) {
-	bulkRequest := ESClient.Bulk()
-	for k, v := range body {
-		tmp := v
-		doc := elastic.NewBulkIndexRequest().Index(index).Doc(tmp)
-		if len(ids) > 0 {
-			doc = doc.Id(ids[k])
-		}
-		bulkRequest = bulkRequest.Add(doc)
-	}
-	return bulkRequest.Do(context.Background())
-}
-
-// UpdateBulkDoc 批量更新
-// index 索引
-// ids 需要更新的 id 数组
-// body 需要更新的 id 对应的数据 （建议只使用 []map[string]interface{} 进行更新指定字段且需要注意 map 中的 key 需要和 es 中的 key 完全匹配，否则 es 会认为新增字段，不要使用 struct 否则会将某些值初始化零值）
-// 需要注意：ids 和 body 的顺序要一一对应
-func UpdateBulkDoc(index string, ids []string, body []interface{}) (*elastic.BulkResponse, error) {
-	bulkRequest := ESClient.Bulk()
-	for k, v := range body {
-		tmp := v
-		doc := elastic.NewBulkUpdateRequest().Index(index).Id(ids[k]).Doc(tmp).DocAsUpsert(true)
-		bulkRequest = bulkRequest.Add(doc)
-	}
-	return bulkRequest.Do(context.Background())
-}
-
-// DeleteBulkDoc 批量删除
-// index 索引
-// ids 需要删除的 id 数组
-func DeleteBulkDoc(index string, ids []string) (*elastic.BulkResponse, error) {
-	bulkRequest := ESClient.Bulk()
-	for _, v := range ids {
-		tmp := v
-		req := elastic.NewBulkDeleteRequest().Index(index).Id(tmp)
-		bulkRequest = bulkRequest.Add(req)
-	}
-	return bulkRequest.Do(context.Background())
-}
-
-// FirstDoc 通过 id 取出数据
-// index 索引
-// id 需要取的文档记录 id
-func FirstDoc(index, id string) (*elastic.GetResult, error) {
-	return ESClient.Get().Index(index).Id(id).Do(context.Background())
-}
-
 type RcpGoodsImgChecksES struct {
 	AppName     int    `json:"app_name"`
 	GoodsId     string `json:"goods_id"`
@@ -269,68 +136,192 @@ func main() {
 		panic(err)
 	}
 
-	// 创建文档
-	testCreateDoc()
-
-	// 通过文档 id 的形式更新文档
-	// testUpdateDoc()
-
-	// 通过 Script 方式更新文档（单字段更新，借助文档 id 更新）
-	// testUpdateDocScript()
-
-	// 通过条件 Script 方式更新文档（单字段更新，根据查询条件批量更新）
-	// testUpdateDocScriptQuery()
-
-	// 通过文档 id 查找文档
-	// testFirstDoc()
-
-	// 通过文档 id 删除文档
-	// testDeleteDoc()
-
-	// 批量创建
-	// testCreateBulkDoc()
-
-	// 批量更新
-	// testUpdateBulkDoc()
-
-	// term
-	// testTermQuery()
-	// terms
-	// testTermsQuery()
-	// range
-	// testRangeQuery()
-	// match_all
-	// testMatchAllQuery()
-	// match
-	// testMatchQuery()
-	// match_phrase
-	// testMatchPhraseQuery()
-	// match_phrase_prefix
-	// testMatchPhrasePrefixQuery()
-	// regexp
-	// testRegexpQuery()
-
-	// bool query
-	// testBoolQuery()
-
-	// 分页查询，并排序
-	// testPageSort()
-	// 多字段排序
-	// testMultiFieldSort()
-	// 返回指定字段
-	// testFetchSource()
-
-	// 查询总命中计数
-	// testTrackTotalHits()
-
-	// 通过文档 id 批量删除
-	// testDeleteBulkDoc()
-
-	// 按照条件删除
-	// testDeleteByQuery()
-
 }
 
+```
+
+## 简单封装的一些常见方法
+
+### 创建 es 连接
+
+```go
+// ConnectES 创建 es 连接
+func ConnectES(options ...elastic.ClientOptionFunc) {
+	once.Do(func() {
+		// client, err := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL("http://127.0.0.1:9200"))
+		var err error
+		ESClient, err = elastic.NewClient(options...)
+		if err != nil {
+			panic(err)
+		}
+	})
+}
+```
+
+### ping
+
+```go
+func Ping(url string) (*elastic.PingResult, int, error) {
+	return ESClient.Ping(url).Do(context.Background())
+}
+```
+
+### 索引不存在时，创建索引
+
+```go
+// CreateIndexIfNotExists 索引不存在时，创建索引
+// index 索引名称
+// mapping 数据类型
+func CreateIndexIfNotExists(index, mapping string) error {
+	ctx := context.Background()
+	exists, err := ESClient.IndexExists(index).Do(ctx)
+	if err != nil {
+		return err
+	}
+	if exists {
+		return nil
+	}
+
+	info, err := ESClient.CreateIndex(index).BodyString(mapping).Do(ctx)
+	// info, err := ESClient.CreateIndex(index).Do(ctx)  // 如果只是想创建索引时，那么就不需要 BodyString() 方法
+	if err != nil {
+		return err
+	}
+	if !info.Acknowledged {
+		return errors.New(fmt.Sprintf("ES 创建索引 [%s] 失败", index))
+	}
+	return nil
+}
+```
+
+### 删除索引
+
+```go
+// DeleteIndex 删除索引
+// index 索引名称
+func DeleteIndex(index string) (*elastic.IndicesDeleteResponse, error) {
+	info, err := ESClient.DeleteIndex(index).Do(context.Background())
+	if err != nil {
+		return nil, err
+	}
+	if !info.Acknowledged {
+		return nil, errors.New(fmt.Sprintf("ES 删除索引 [%s] 失败", index))
+	}
+	return info, err
+}
+```
+
+### 单条添加
+
+```go
+// CreateDoc 单条添加
+// index 索引
+// id 文档 id（可以直接为空字符串，当实参为空字符串时，es 会主动随机生成）
+// body 需要添加的内容
+func CreateDoc(index, id string, body interface{}) (*elastic.IndexResponse, error) {
+	client := ESClient.Index().Index(index)
+	if "" != id {
+		client = client.Id(id)
+	}
+	return client.BodyJson(body).Do(context.Background())
+}
+```
+
+### 单条更新
+
+```go
+// UpdateDoc 单条更新
+// index 索引
+// id 记录 id
+// body 需要更新的内容 （建议只使用 map[string]interface{} 进行更新指定字段且需要注意 map 中的 key 需要和 es 中的 key 完全匹配，否则 es 会认为新增字段，不要使用 struct 否则会将某些值初始化零值）
+func UpdateDoc(index, id string, body interface{}) (*elastic.UpdateResponse, error) {
+	return ESClient.Update().Index(index).Id(id).Doc(body).Do(context.Background())
+}
+```
+
+### 删除文档
+
+```go
+// DeleteDoc 删除文档
+// index 索引
+// id 需要删除的文档记录 id
+func DeleteDoc(index, id string) (*elastic.DeleteResponse, error) {
+	return ESClient.Delete().Index(index).Id(id).Do(context.Background())
+}
+```
+
+### 批量添加
+
+```go
+// CreateBulkDoc 批量添加
+// index 索引
+// ids 需要新建的 id 数组（可以为空的字符串切片）
+// body 需要添加的内容
+// 需要注意：ids 和 body 的顺序要一一对应
+func CreateBulkDoc(index string, ids []string, body []interface{}) (*elastic.BulkResponse, error) {
+	bulkRequest := ESClient.Bulk()
+	for k, v := range body {
+		tmp := v
+		doc := elastic.NewBulkIndexRequest().Index(index).Doc(tmp)
+		if len(ids) > 0 {
+			doc = doc.Id(ids[k])
+		}
+		bulkRequest = bulkRequest.Add(doc)
+	}
+	return bulkRequest.Do(context.Background())
+}
+```
+
+### 批量更新
+
+```go
+// UpdateBulkDoc 批量更新
+// index 索引
+// ids 需要更新的 id 数组
+// body 需要更新的 id 对应的数据 （建议只使用 []map[string]interface{} 进行更新指定字段且需要注意 map 中的 key 需要和 es 中的 key 完全匹配，否则 es 会认为新增字段，不要使用 struct 否则会将某些值初始化零值）
+// 需要注意：ids 和 body 的顺序要一一对应
+func UpdateBulkDoc(index string, ids []string, body []interface{}) (*elastic.BulkResponse, error) {
+	bulkRequest := ESClient.Bulk()
+	for k, v := range body {
+		tmp := v
+		doc := elastic.NewBulkUpdateRequest().Index(index).Id(ids[k]).Doc(tmp).DocAsUpsert(true)
+		bulkRequest = bulkRequest.Add(doc)
+	}
+	return bulkRequest.Do(context.Background())
+}
+```
+
+### 批量删除
+
+```go
+// DeleteBulkDoc 批量删除
+// index 索引
+// ids 需要删除的 id 数组
+func DeleteBulkDoc(index string, ids []string) (*elastic.BulkResponse, error) {
+	bulkRequest := ESClient.Bulk()
+	for _, v := range ids {
+		tmp := v
+		req := elastic.NewBulkDeleteRequest().Index(index).Id(tmp)
+		bulkRequest = bulkRequest.Add(req)
+	}
+	return bulkRequest.Do(context.Background())
+}
+```
+
+### 通过文档 id 取出数据
+
+```go
+// FirstDoc 通过 id 取出数据
+// index 索引
+// id 需要取的文档记录 id
+func FirstDoc(index, id string) (*elastic.GetResult, error) {
+	return ESClient.Get().Index(index).Id(id).Do(context.Background())
+}
+```
+
+### 打印出查询条件
+
+```go
 func PrintQuery(src interface{}) {
 	fmt.Println("开始打印参数 ====>")
 	data, err := json.MarshalIndent(src, "", "  ")
@@ -340,7 +331,11 @@ func PrintQuery(src interface{}) {
 	fmt.Println(string(data))
 	fmt.Println("打印参数结束 ====>")
 }
+```
 
+### 查询出数据
+
+```go
 func querySearch(query elastic.Query) {
 	if querySrc, err := query.Source(); err == nil {
 		PrintQuery(querySrc)
@@ -356,7 +351,13 @@ func querySearch(query elastic.Query) {
 		fmt.Printf("已经命中查询的数据为 ==> %+v \n %+v \n\n", v.Id, tmp)
 	}
 }
+```
 
+### 测试方法
+
+#### 删除索引
+
+```go
 func testDeleteIndex() {
 	// 删除索引
 	deleteIndexRet, err := DeleteIndex(RcpGoodsImgChecksESIndex)
@@ -366,7 +367,11 @@ func testDeleteIndex() {
 	// deleteIndexRet  ==> &{Acknowledged:true}
 	fmt.Printf("deleteIndexRet  ==> %+v \n\n", deleteIndexRet)
 }
+```
 
+#### 创建文档
+
+```go
 func testCreateDoc() {
 	// 创建文档
 	now := time.Now().Unix()
@@ -385,7 +390,11 @@ func testCreateDoc() {
 	// CreateDoc ==> &{Index:rcp_goods_img_checks Type:_doc Id:2_18_alex111 Version:1 Result:created Shards:0xc00020c2c0 SeqNo:0 PrimaryTerm:1 Status:0 ForcedRefresh:false}
 	fmt.Printf("CreateDoc ==> %+v \n\n", createDocRet)
 }
+```
 
+#### 通过文档 id 的形式更新文档
+
+```go
 func testUpdateDoc() {
 	// 通过文档 id 的形式更新文档
 	updateDocRet, err := UpdateDoc(RcpGoodsImgChecksESIndex, "2_18_alex111", map[string]interface{}{
@@ -398,7 +407,11 @@ func testUpdateDoc() {
 	// UpdateDoc ==> &{Index:rcp_goods_img_checks Type:_doc Id:2_18_alex111 Version:2 Result:updated Shards:0xc0002bc280 SeqNo:1 PrimaryTerm:1 Status:0 ForcedRefresh:false GetResult:<nil>}
 	fmt.Printf("UpdateDoc ==> %+v \n\n", updateDocRet)
 }
+```
 
+#### 通过 Script 方式更新文档（单字段更新，借助文档 id 更新）
+
+```go
 func testUpdateDocScript() {
 	// 通过 Script 方式更新文档（单字段更新，借助文档 id 更新）
 	updateDocScript, err := ESClient.Update().
@@ -412,7 +425,11 @@ func testUpdateDocScript() {
 	// updateDocScript  ==> &{Index:rcp_goods_img_checks Type:_doc Id:2_18_alex111 Version:3 Result:updated Shards:0xc000098280 SeqNo:2 PrimaryTerm:1 Status:0 ForcedRefresh:false GetResult:<nil>}
 	fmt.Printf("updateDocScript  ==> %+v \n\n", updateDocScript)
 }
+```
 
+#### 通过条件 Script 方式更新文档（单字段更新，根据查询条件批量更新字段）
+
+```go
 func testUpdateDocScriptQuery() {
 	// 通过条件 Script 方式更新文档（单字段更新，根据查询条件批量更新字段）
 	updateDocScriptQuery, err := ESClient.UpdateByQuery(RcpGoodsImgChecksESIndex).
@@ -425,7 +442,11 @@ func testUpdateDocScriptQuery() {
 	// updateDocScriptQuery  ==> &{Header:map[] Took:47 SliceId:<nil> TimedOut:false Total:2 Updated:2 Created:0 Deleted:0 Batches:1 VersionConflicts:0 Noops:0 Retries:{Bulk:0 Search:0} Throttled: ThrottledMillis:0 RequestsPerSecond:-1 Canceled: ThrottledUntil: ThrottledUntilMillis:0 Failures:[]}
 	fmt.Printf("updateDocScriptQuery  ==> %+v \n\n", updateDocScriptQuery)
 }
+```
 
+#### 通过文档 id 查找文档
+
+```go
 func testFirstDoc() {
 	// 通过文档 id 查找文档
 	firstDocRet, err := FirstDoc(RcpGoodsImgChecksESIndex, "2_18_alex111")
@@ -437,7 +458,11 @@ func testFirstDoc() {
 		fmt.Printf("FirstDoc ==>  %+v Source: %+v \n\n", firstDocRet, string(firstDocRet.Source))
 	}
 }
+```
 
+#### 通过文档 id 删除文档
+
+```go
 func testDeleteDoc() {
 	// 通过文档 id 删除文档
 	deleteDocRet, err := DeleteDoc(RcpGoodsImgChecksESIndex, "2_18_alex111")
@@ -447,7 +472,11 @@ func testDeleteDoc() {
 	// DeleteDoc  ==> &{Index:rcp_goods_img_checks Type:_doc Id:2_18_alex111 Version:6 Result:deleted Shards:0xc00007e2c0 SeqNo:7 PrimaryTerm:1 Status:0 ForcedRefresh:false}
 	fmt.Printf("DeleteDoc  ==> %+v \n\n", deleteDocRet)
 }
+```
 
+#### 批量创建
+
+```go
 func testCreateBulkDoc() {
 	now := time.Now().Unix()
 	// 批量创建
@@ -483,7 +512,11 @@ func testCreateBulkDoc() {
 	// CreateBulkDoc ==> &{Took:5 Errors:false Items:[map[index:0xc00019c200] map[index:0xc00019c280] map[index:0xc00019c300]]}
 	fmt.Printf("CreateBulkDoc ==> %+v \n\n", createBulkDocRet)
 }
+```
 
+#### 批量更新
+
+```go
 func testUpdateBulkDoc() {
 	// 批量更新
 	updateBulkDocRet, err := UpdateBulkDoc(RcpGoodsImgChecksESIndex, []string{"h1", "h3"}, []interface{}{
@@ -502,7 +535,43 @@ func testUpdateBulkDoc() {
 	// UpdateBulkDoc ==> &{Took:6 Errors:false Items:[map[update:0xc0001e2080] map[update:0xc0001e2100]]}
 	fmt.Printf("UpdateBulkDoc ==> %+v \n\n", updateBulkDocRet)
 }
+```
 
+#### 通过文档 id 批量删除
+
+```go
+func testDeleteBulkDoc() {
+	// 通过文档 id 批量删除
+	deleteBulkDocRet, err := DeleteBulkDoc(RcpGoodsImgChecksESIndex, []string{"h2", "h3_goods_id"})
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("DeleteBulkDoc ==> %+v \n\n", deleteBulkDocRet)
+
+	// DeleteBulkDoc ==> &{Took:36 Errors:false Items:[map[delete:0xc0000ea080] map[delete:0xc0000ea100]]}
+}
+```
+
+#### 按照条件删除
+
+```go
+func testDeleteByQuery() {
+	// 按照条件删除
+	deleteDocByQuery, err := ESClient.DeleteByQuery(RcpGoodsImgChecksESIndex).
+		Query(elastic.NewRangeQuery("updated_at").Gte(0).Lte(1660579923)).
+		Do(context.Background())
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("deleteDocByQuery ==> %+v \n\n", deleteDocByQuery)
+
+	// deleteDocByQuery ==> &{Header:map[] Took:36 SliceId:<nil> TimedOut:false Total:3 Updated:0 Created:0 Deleted:3 Batches:1 VersionConflicts:0 Noops:0 Retries:{Bulk:0 Search:0} Throttled: ThrottledMillis:0 RequestsPerSecond:-1 Canceled: ThrottledUntil: ThrottledUntilMillis:0 Failures:[]}
+}
+```
+
+#### term
+
+```go
 func testTermQuery() {
 	// term
 	query1 := elastic.NewTermQuery("goods_id", "h2_goods_id")
@@ -519,7 +588,11 @@ func testTermQuery() {
 	// 已经命中查询的数据为 ==> h2
 	// {AppName:1 GoodsId:h2_goods_id SiteId:19 CheckStatus:4 CreatedAt:1660579860 UpdatedAt:1660579860}
 }
+```
 
+#### terms
+
+````go
 func testTermsQuery() {
 	// terms [where goods_id in ('h3_goods_id', 'h2_goods_id')]
 	query2 := elastic.NewTermsQuery("goods_id", []interface{}{"h3_goods_id", "h2_goods_id"}...)
@@ -542,7 +615,11 @@ func testTermsQuery() {
 	// 已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:20 CheckStatus:2 CreatedAt:1660579860 UpdatedAt:1660579923}
 }
+````
 
+#### range 范围查找
+
+```go
 func testRangeQuery() {
 	// 范围查找 [where updated_at >= 0 and updated_at <= 1659695758]
 	// Gt（大于）、Lt（小于）、Gte（大于等于）、Lte（小于等于）
@@ -563,7 +640,11 @@ func testRangeQuery() {
 	// 打印参数结束 ====>
 	// 查询到的结果总数为 0
 }
+```
 
+#### match_all
+
+```go
 func testMatchAllQuery() {
 	// match_all
 	query4 := elastic.NewMatchAllQuery()
@@ -587,7 +668,11 @@ func testMatchAllQuery() {
 	// 已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:20 CheckStatus:2 CreatedAt:1660579860 UpdatedAt:1660579923}
 }
+```
 
+#### match
+
+```go
 func testMatchQuery() {
 	// match
 	query5 := elastic.NewMatchQuery("goods_id", "h2_goods_id")
@@ -606,7 +691,11 @@ func testMatchQuery() {
 	// 已经命中查询的数据为 ==> h2
 	// {AppName:1 GoodsId:h2_goods_id SiteId:19 CheckStatus:4 CreatedAt:1660579860 UpdatedAt:1660579860}
 }
+```
 
+#### match_phrase
+
+```go
 func testMatchPhraseQuery() {
 	// match_phrase
 	query6 := elastic.NewMatchPhraseQuery("goods_id", "h2_goods_id")
@@ -625,14 +714,22 @@ func testMatchPhraseQuery() {
 	// 已经命中查询的数据为 ==> h2
 	// {AppName:1 GoodsId:h2_goods_id SiteId:19 CheckStatus:4 CreatedAt:1660579860 UpdatedAt:1660579860}
 }
+```
 
+#### match_phrase_prefix
+
+```go
 func testMatchPhrasePrefixQuery() {
 	// match_phrase_prefix
 	// 这里因为类型不支持前缀匹配，可能会直接报错
 	query7 := elastic.NewMatchPhrasePrefixQuery("goods_id", "h2_")
 	querySearch(query7)
 }
+```
 
+#### regexp
+
+```go
 func testRegexpQuery() {
 	// regexp
 	// 搜索 goods_id 字段对应的值以 `h` 开头的所有文档
@@ -658,7 +755,11 @@ func testRegexpQuery() {
 	// 已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:20 CheckStatus:2 CreatedAt:1660579860 UpdatedAt:1660579923}
 }
+```
 
+#### bool 组合查询
+
+```go
 func testBoolQuery() {
 	// 组合查询
 	boolQuery := elastic.NewBoolQuery()
@@ -710,7 +811,11 @@ func testBoolQuery() {
 	// 已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:20 CheckStatus:2 CreatedAt:1660579860 UpdatedAt:1660579923}
 }
+```
 
+#### 分页查询，并排序
+
+```go
 func testPageSort() {
 	// 分页查询，并排序
 	// from 为起始偏移量（offset）默认为 0，size 为每页显示数（limit）默认为 10
@@ -738,7 +843,11 @@ func testPageSort() {
 	// 分页查询，已经命中查询的数据为 ==> 2_19_alex111
 	// {AppName:2 GoodsId:alex111 SiteId:18 CheckStatus:23 CreatedAt:1660579517 UpdatedAt:1660579517}
 }
+```
 
+#### 多字段排序
+
+```go
 func testMultiFieldSort() {
 	// 多字段排序
 	sortsBuilders := []elastic.Sorter{
@@ -767,7 +876,11 @@ func testMultiFieldSort() {
 	// 多字段排序，已经命中查询的数据为 ==> 2_19_alex111
 	// {AppName:2 GoodsId:alex111 SiteId:18 CheckStatus:23 CreatedAt:1660579517 UpdatedAt:1660579517}
 }
+```
 
+#### 返回指定字段（只查询指定字段）
+
+```go
 func testFetchSource() {
 	// 返回指定字段
 	includeFields := elastic.NewFetchSourceContext(true).Include([]string{"app_name", "goods_id"}...)
@@ -793,7 +906,11 @@ func testFetchSource() {
 	// 返回指定字段，已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:0 CheckStatus:0 CreatedAt:0 UpdatedAt:0}
 }
+```
 
+#### 查询总命中计数
+
+```go
 func testTrackTotalHits() {
 	// 查询总命中计数
 	hitCounterRet, err := ESClient.Search().Index(RcpGoodsImgChecksESIndex).TrackTotalHits(true).Do(context.Background())
@@ -818,29 +935,4 @@ func testTrackTotalHits() {
 	// 查询总命中计数，已经命中查询的数据为 ==> h3
 	// {AppName:3 GoodsId:h3_goods_id SiteId:20 CheckStatus:2 CreatedAt:1660579860 UpdatedAt:1660579923}
 }
-
-func testDeleteBulkDoc() {
-	// 通过文档 id 批量删除
-	deleteBulkDocRet, err := DeleteBulkDoc(RcpGoodsImgChecksESIndex, []string{"h2", "h3_goods_id"})
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("DeleteBulkDoc ==> %+v \n\n", deleteBulkDocRet)
-
-	// DeleteBulkDoc ==> &{Took:36 Errors:false Items:[map[delete:0xc0000ea080] map[delete:0xc0000ea100]]}
-}
-
-func testDeleteByQuery() {
-	// 按照条件删除
-	deleteDocByQuery, err := ESClient.DeleteByQuery(RcpGoodsImgChecksESIndex).
-		Query(elastic.NewRangeQuery("updated_at").Gte(0).Lte(1660579923)).
-		Do(context.Background())
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("deleteDocByQuery ==> %+v \n\n", deleteDocByQuery)
-
-	// deleteDocByQuery ==> &{Header:map[] Took:36 SliceId:<nil> TimedOut:false Total:3 Updated:0 Created:0 Deleted:3 Batches:1 VersionConflicts:0 Noops:0 Retries:{Bulk:0 Search:0} Throttled: ThrottledMillis:0 RequestsPerSecond:-1 Canceled: ThrottledUntil: ThrottledUntilMillis:0 Failures:[]}
-}
-
 ```
