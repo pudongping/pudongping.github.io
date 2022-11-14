@@ -285,6 +285,44 @@ go list -m -versions -json github.com/gin-gonic/gin
 }
 ```
 
+## 私有库使用 Go Modules 时
+
+- 需要将 `GOPRIVATE` 环境变量设置成你私有库的域名
+
+```shell
+# GO111MODULE 设置成 on 或者 auto 都行
+GO111MODULE="auto"
+# GOPROXY 最好设置成国内镜像地址
+GOPROXY="https://goproxy.cn,direct"
+# GOPRIVATE 一定要设置成你的私有库域名，比如
+GOPRIVATE="gitlab.xxx.com"
+```
+
+- 然后执行以下命令即可。**注意：前提是你能够通过 ssh 公钥拉取代码**
+
+```shell
+# 以下假设我私有 git 仓库地址为 gitlab.xxx.com:2222
+# 那么则需要调整为
+
+cat << EOF >> ~/.gitconfig
+[url "ssh://git@gitlab.xxx.com:2222"]
+        insteadOf = https://gitlab.xxx.com
+EOF
+
+# 或者执行（效果都是一样的）
+git config --global url."ssh://git@gitlab.xxx.com:2222".insteadof "https://gitlab.xxx.com"
+```
+
+- 测试一下下载一个包
+
+```shell
+# 仅仅作为示范，此地址根本就不存在
+go get -v gitlab.xxx.com/utils/arrayx
+```
+
 ## 参考
 
 - [Go Modules 终极入门](https://segmentfault.com/a/1190000021854441)
+- [Go Modules 私有不合规库怎么解决引用问题](https://mp.weixin.qq.com/s/sWlTylbW2f1llbz232P2Fw)
+- [go modules 使用本地库、合规库、私有库](https://studygolang.com/articles/35234)
+- [私有化仓库的 GO 模块使用实践](https://studygolang.com/articles/35235)
