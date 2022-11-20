@@ -4,6 +4,9 @@ menu:
   Index:
     url: /
     icon: fas fa-home
+  Menu:
+    url: /menu
+    icon: fas fa-bars
   Tags:
     url: /tags
     icon: fas fa-tags
