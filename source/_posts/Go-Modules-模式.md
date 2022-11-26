@@ -50,7 +50,7 @@ go mod download | 下载 go.mod 文件中指明的所有依赖到本地（默认
 go mod tidy | 整理现有的依赖，执行时会把未使用的 module 移除掉，同时也会增加缺少的包
 go mod graph | 查看现有的依赖结构图
 go mod edit | 编辑 go.mod 文件，比如修改项目中使用的 go 版本 `go mod edit -go=1.17`
-go mod vendor | 导出项目所有的依赖到 vendor 目录（需要执行 go build -mod=vendor 才可以使用 vendor 作为依赖来编译）
+go mod vendor | 导出项目所有的依赖到 vendor 目录（需要执行 go build -mod=vendor 才可以使用 vendor 作为依赖来编译，但是在 v1.14 及以后的版本中，如果 golang 项目根目录下存在 vendor 目录，go build 命令会默认优先基于 vendor 目录缓存的三方依赖包构建 golang 程序，除非我们在 go build 命令后面加上 -mod=mod 参数）
 go mod verify | 校验一个模块是否被篡改过，校验从 GOPROXY 服务器上下载的 zip 文件与 GOSUMDB 服务器下载下来的哈希值，是否匹配。
 go mod why | 查看为什么需要依赖某模块，比如 `go mod why gopkg.in/yaml.v2 gopkg.in/yaml.v3`
 go clean -modcache | 可以清空本地下载的 Go Modules 缓存 （会清空 `$GOPATH/pkg/mod` 目录）
@@ -218,13 +218,24 @@ github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB7
 
 命令 | 作用
 --- | ---
-go get	| 拉取依赖，会进行指定性拉取（更新），并不会更新所依赖的其它模块。
+go get	| 拉取依赖，会进行指定性拉取（更新），并不会更新所依赖的其它模块。（如果本地已存在要下载的包，将会直接使用本地已存在的包）
 go get -u	| 更新现有的依赖，会强制更新它所依赖的其它全部模块，不包括自身。
 go get -u -t ./…	| 更新所有直接依赖和间接依赖的模块版本，包括单元测试中用到的。
 go get golang.org/x/text@latest	| 拉取最新的版本，若存在 tag，则优先使用。
 go get golang.org/x/text@master	| 拉取 master 分支的最新 commit。
 go get golang.org/x/text@v0.3.2	| 拉取 tag 为 v0.3.2 的 commit。
 go get golang.org/x/text@342b2e	| 拉取 hash 为 342b231 的 commit，最终会被转换为 v0.3.2。
+
+### go get 子参数说明
+
+子命令 | 描述
+--- | ---
+-d | 仅下载，不安装
+-f | 和 -u 配合，强制更新，不检查是否过期
+-t | 下载测试代码所需的依赖包
+-u | 更新包，包括他们的依赖项
+-v | 输出详细信息
+insecure | 使用 http 等非安全协议
 
 ## 修改项目模块的版本依赖关系
 
