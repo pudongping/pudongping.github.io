@@ -20,7 +20,7 @@ function auto_generate_menu() {
   git pull origin main
   ./script/mac-spider-blog-title
   rm -rf source/menu/index.md
-  mv script/blog-menu.md source/menu/index.md
+  mv ./blog-menu.md source/menu/index.md
   nvm use 16.2.0
   hexo cl
   hexo g
