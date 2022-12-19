@@ -27,7 +27,7 @@ function auto_generate_menu() {
   hexo d
   git status
   git add -A
-  git commit -m "auto generate menu"-`date +"%Y-%m-%d %H:%m:%s"`
+  git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
   git push -u origin main
 }
 
