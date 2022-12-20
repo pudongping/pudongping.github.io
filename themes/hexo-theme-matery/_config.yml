@@ -82,7 +82,8 @@ music:
   autoHide: true    # hide automaticaly
   server: tencent   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 7588764455     #require	song id / playlist id / album id / search keyword
+  # 你的名字我的心事 7572474084 、如果你是DJ我也不会爱你 7588764455、陈年老酒 7794271087、
+  id: 7572474084     #require	song id / playlist id / album id / search keyword
   fixed: false       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#542674'  # 播放器主题颜色
