@@ -117,17 +117,25 @@ class ThrottleRequestsHelper
      * @param int $decaySeconds  指定时间（S）
      * @return int  计数器具体增加到多少值
      */
-    public function hit(string $key, int $decaySeconds = 60)
+    private function hit(string $key, int $decaySeconds = 60): int
     {
+        $timerKey = $key . $this->keySuffix;
+
         // 计时器的有效期时间戳
         $expirationTime = Carbon::now()->addRealSeconds($decaySeconds)->getTimestamp();
         // 计时器
-        redis()->setex($key . $this->keySuffix, $decaySeconds, $expirationTime);
+        redis()->set($timerKey, (string)$expirationTime, ['EX' => $decaySeconds, 'NX']);
 
         // 计数器
-        $numbers = redis()->incr($key);  // 返回增加到多少的具体数字
+        $added = redis()->set($key, '0', ['EX' => $decaySeconds, 'NX']);
+        // 自增（返回增加到多少的具体数字）
+        $hits = (int)redis()->incr($key);
+        if ($added && $hits == 1) {
+            // 证明是初始化
+            redis()->set($key, '1', $decaySeconds);
+        }
 
-        return $numbers;
+        return $hits;
     }
 
 
