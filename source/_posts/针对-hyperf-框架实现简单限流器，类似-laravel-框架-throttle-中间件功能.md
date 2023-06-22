@@ -21,6 +21,8 @@ summary: 所谓限流器，指的是限制访问指定服务/路由的流量，�
 
 # 针对 hyperf 框架实现简单限流器，类似 laravel 框架 throttle 中间件功能
 
+**注意**：以下功能已经单独迁移到 [pudongping/hyperf-throttle-requests](https://github.com/pudongping/hyperf-throttle-requests) 插件包中，并支持了 hyperf 2.2 和 3.0 版本。
+
 ## 限流器的概念
 
 所谓限流器，指的是限制访问指定服务/路由的流量，通俗点说，就是限制单位时间内访问指定服务/路由的次数（频率），
