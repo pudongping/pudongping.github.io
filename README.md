@@ -45,7 +45,7 @@
 ## 关于我的博客项目
 
 这个博客，我是基于 **[Hexo](https://hexo.io/zh-cn/docs/)** 框架搭建，并且用到 **[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)** 主题，
-在此基础上做了不少的修改，增加了一些新的特性和功能。我的博客访问地址为：[http://www.pudongping.com](http://www.pudongping.com) 或者访问 [https://pudongping.github.io](https://pudongping.github.io)
+在此基础上做了不少的修改，增加了一些新的特性和功能。我的博客访问地址为：[https://pudongping.github.io](https://pudongping.github.io)
 
 ## 创建项目时，各个软件版本介绍
 - 修改项目时间为 2021 年 6 月 5 日
