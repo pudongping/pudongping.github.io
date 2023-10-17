@@ -38,7 +38,7 @@ jobs:
           go version
           node -v
           npm -v
-          npm install -g hexo-cli
+          npm install hexo
           hexo --version
       # 5. 抓取博客标题，并覆盖 source/menu/index.md 文件
       - name: 'Crawler my blog title'
