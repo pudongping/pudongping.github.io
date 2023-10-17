@@ -11,10 +11,6 @@ on:
   schedule:
     - cron: "30 10,23 * * *"
 
-# 设置环境变量
-env:
-  GO111MODULE: auto
-
 jobs:
   # This workflow contains a single job called "update-menu-job"
   update-menu-job:
@@ -31,6 +27,9 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.16.15'
+        # 设置环境变量
+        env:
+          GO111MODULE: auto
       # 3. 部署 Node.js 环境，并生成
       - name: 'Setup Node.js environment'
         uses: actions/setup-node@v3
@@ -58,6 +57,11 @@ jobs:
       # 6. 打包并发布
       - name: 'Build and deploy'
         run: |
+          UserName=`git log -1 --pretty=format:'%an'`
+          UserEmail=`git log -1 --pretty=format:'%ae'`
+          git config user.name ${UserName}
+          git config user.email ${UserEmail}
+          git checkout -f daily_auto_generate_menu/spider-blog-title
           git status
           git add -A
           git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
