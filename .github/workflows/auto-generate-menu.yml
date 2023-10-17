@@ -51,6 +51,7 @@ jobs:
           cd ./daily_auto_generate_menu
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o spider-blog-title spider_blog_title.go
           ./spider-blog-title
+          rm -rf ./spider-blog-title
           cd ../
           rm -rf source/menu/index.md
           mv daily_auto_generate_menu/blog-menu.md source/menu/index.md
@@ -61,7 +62,6 @@ jobs:
           UserEmail=`git log -1 --pretty=format:'%ae'`
           git config user.name ${UserName}
           git config user.email ${UserEmail}
-          git checkout -f daily_auto_generate_menu/spider-blog-title
           git status
           git add -A
           git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
