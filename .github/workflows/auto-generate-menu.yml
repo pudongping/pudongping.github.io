@@ -81,9 +81,19 @@ jobs:
       # 7. 发布到 GitHub Pages
       - name: '#7. Deploy GitHub Pages'
         run: |
+          RemoteAddr=`git remote get-url --push origin` # eg: https://github.com/pudongping/pudongping.github.io
+          UserName=`git log -1 --pretty=format:'%an'`
+          UserEmail=`git log -1 --pretty=format:'%ae'`
+          DeployBranch=gh-pages
           hexo cl # 清除生成的静态文件
           hexo g  # 生成静态页面至 public 页面
+          mv public .deploy_git # 直接将 public 目录改名成 .deploy_git 因为 public 自身被添加到忽略文件中，因此可以通过直接改名的方式来处理
           cd .deploy_git
-          git config init.defaultBranch gh-pages
-          cd ../
-          hexo d
+          git init
+          git config --global init.defaultBranch $DeployBranch
+          git config --global user.name ${UserName}
+          git config --global user.email ${UserEmail}
+          git remote add origin $RemoteAddr
+          git add -A
+          git commit -m "Site updated:"`date +"%Y-%m-%d_%H:%M:%S"`
+          git push origin -f HEAD:$DeployBranch
