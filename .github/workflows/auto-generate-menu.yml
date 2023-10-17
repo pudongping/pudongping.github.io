@@ -92,3 +92,11 @@ jobs:
           hexo g  # 生成静态页面至 public 页面
           mv public .deploy_git # 直接将 public 目录改名成 .deploy_git 因为 public 自身被添加到忽略文件中，因此可以通过直接改名的方式来处理
           cd .deploy_git
+          git config --global init.defaultBranch $DeployBranch
+          git init
+          git config user.name ${UserName}
+          git config user.email ${UserEmail}
+          git remote add origin $RemoteAddr
+          git add -A
+          git commit -m "Site updated:"`date +"%Y-%m-%d_%H:%M:%S"`
+          git push origin -f HEAD:$DeployBranch
