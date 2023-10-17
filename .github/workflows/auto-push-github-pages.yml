@@ -1,8 +1,8 @@
 # 脚本作用：自动发布到 gh-pages 分支生成 Github Pages
-# 这里关闭了触发 workflow 的条件，那是因为我本地安装了 npm install hexo-deployer-git --save 插件包
+# 这里虽然写了工作流，但是此工作流并没有让它执行。那是因为我本地安装了 npm install hexo-deployer-git --save 插件包
 # 因此当我执行 `hexo d` 命令时，会自动推送到 `gh-pages` 分支
 # 我本地默认配置了 gitee 和 github 的 gh-pages 详见 `_config.yml` 文件中 deploy 配置（文档地址：https://hexo.io/docs/one-command-deployment）
-# 因为 gitee 上面不太方便使用和 GitHub Actions 一样的功能，因此，一般我推送到 gh-pages 的工作流程是：
+# 因为 gitee 上面不太方便使用和 GitHub Actions 一样的功能，但是我又想将变动同步到 gitee。 因此，一般我推送到 gh-pages 的工作流程是：
 # 1. git pull origin main 拉取最新代码，然后在 main 分支上写文章
 # 2. nvm use 16.2.0 # 使用 node 16.2.0 版本
 # 3. hexo cl # 清除生成的静态文件
@@ -26,7 +26,7 @@ env: # 设置环境变量
 
 jobs:
   deploy-github-pages:
-    if: true # 这里为 true 时，才会执行工作流。这里通过了 https://docs.github.com/zh/actions/learn-github-actions/contexts#determining-when-to-use-contexts 巧妙的实现了禁用工作流的功能
+    if: false # 这里为 true 时，才会执行工作流。这里通过了 https://docs.github.com/zh/actions/learn-github-actions/contexts#determining-when-to-use-contexts 巧妙的实现了禁用工作流的功能
     name: Auto push gh-pages branch
     runs-on: ubuntu-latest
     steps:
