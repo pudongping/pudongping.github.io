@@ -22,21 +22,26 @@ jobs:
       # 1. 通过 actions/checkout action 获取项目源码
       - name: 'Checkout codes'
         uses: actions/checkout@master
-      # 2. 部署 Golang 环境，并抓取博客标题
-      - name: 'Setup Go and crawler my blog title'
+      # 2. 部署 Golang 环境
+      - name: 'Setup Go environment'
         uses: actions/setup-go@v4
         with:
           go-version: '1.16.15'
-        run: go version
       # 3. 部署 Node.js 环境，并生成
       - name: 'Setup Node.js environment'
         uses: actions/setup-node@v3
         with:
           node-version: '16.2.0'
+      # 4. check
+      - name: 'Install and check software'
         run: |
+          go version
           node -v
           npm -v
-      - name: 'Build and deploy'
+          npm install -g hexo-cli
+          hexo --version
+      # 5. 抓取博客标题，并覆盖 source/menu/index.md 文件
+      - name: 'Crawler my blog title'
         run: |
           cd ./daily_auto_generate_menu
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o spider-blog-title spider_blog_title.go
@@ -44,4 +49,6 @@ jobs:
           cd ../
           rm -rf source/menu/index.md
           mv daily_auto_generate_menu/blog-menu.md source/menu/index.md
-          npm install -g hexo-cli
+      - name: 'Build and deploy'
+        run: |
+          echo "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
