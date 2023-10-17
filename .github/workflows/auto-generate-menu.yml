@@ -67,8 +67,8 @@ jobs:
           CommitInfo=`git describe --all --always --long`
           UserName=`git log -1 --pretty=format:'%an'`
           UserEmail=`git log -1 --pretty=format:'%ae'`
-          git config user.name ${UserName}
-          git config user.email ${UserEmail}
+          git config --global user.name ${UserName}
+          git config --global user.email ${UserEmail}
           echo 'Commit before'
           git status
           git add -A
@@ -81,6 +81,9 @@ jobs:
       # 7. 发布到 GitHub Pages
       - name: '#7. Deploy GitHub Pages'
         run: |
-          hexo cl
-          hexo g
+          hexo cl # 清除生成的静态文件
+          hexo g  # 生成静态页面至 public 页面
+          cd .deploy_git
+          git config init.defaultBranch gh-pages
+          cd ../
           hexo d
