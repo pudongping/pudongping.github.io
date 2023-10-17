@@ -1,5 +1,5 @@
 # This is a auto generate menu.md file workflow
-name: Auto Generate Menu
+name: Auto Generate Menu And Deploy GitHub Pages
 
 # Controls when the workflow will run
 on:
@@ -11,19 +11,22 @@ on:
   schedule:
     - cron: "30 10,23 * * *"
 
+env: # 设置环境变量
+  TZ: Asia/Shanghai
+
 jobs:
   # This workflow contains a single job called "update-menu-job"
-  update-menu-job:
+  update-menu-and-deploy-gitpages-job:
     name: Update this repo's source/menu/index.md file.
     # 运行在虚拟机环境 ubuntu-latest
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # 1. 通过 actions/checkout action 获取项目源码。官方 actions 库：https://github.com/actions
-      - name: 'Checkout codes'
+      - name: '#1. Checkout codes'
         uses: actions/checkout@master
       # 2. 部署 Golang 环境
-      - name: 'Setup Go environment'
+      - name: '#2. Setup Go environment'
         uses: actions/setup-go@v4
         with:
           go-version: '1.16.15'
@@ -31,12 +34,12 @@ jobs:
         env:
           GO111MODULE: auto
       # 3. 部署 Node.js 环境，并生成
-      - name: 'Setup Node.js environment'
+      - name: '#3. Setup Node.js environment'
         uses: actions/setup-node@v3
         with:
           node-version: '16.2.0'
       # 4. check
-      - name: 'Install and check software'
+      - name: '#4. Install and check software'
         run: |
           go version
           node -v
@@ -46,7 +49,8 @@ jobs:
           npm install
           hexo --version
       # 5. 抓取博客标题，并覆盖 source/menu/index.md 文件
-      - name: 'Crawler my blog title'
+      #（这里之所以通过源码编译的方式，而不通过直接上传二进制文件，去执行的目的是：编译后的二进制文件有几十兆，导致每次生成 GitHub Pages 时，自身仓库过大）
+      - name: '#5. Crawler my blog title'
         run: |
           cd ./daily_auto_generate_menu
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o spider-blog-title spider_blog_title.go
@@ -56,20 +60,27 @@ jobs:
           rm -rf source/menu/index.md
           mv daily_auto_generate_menu/blog-menu.md source/menu/index.md
       # 6. 打包并发布
-      - name: 'Build and deploy'
+      - name: '#6. Build and deploy'
         run: |
-          RemoteAddr=`git remote get-url --push origin`
-          echo ${RemoteAddr}
-          RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'`
-          echo ${RemoteAddr}
+          RemoteAddr=`git remote get-url --push origin` # eg: https://github.com/pudongping/pudongping.github.io
+          RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'` # eg: github.com/pudongping/pudongping.github.io
           CommitInfo=`git describe --all --always --long`
           UserName=`git log -1 --pretty=format:'%an'`
           UserEmail=`git log -1 --pretty=format:'%ae'`
           git config user.name ${UserName}
           git config user.email ${UserEmail}
+          echo 'Commit before'
           git status
           git add -A
           git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
           git push -u origin main
+          echo 'Commit after'
           git status
+          echo 'Check git log'
           git log --oneline
+      # 7. 发布到 GitHub Pages
+      - name: '#7. Deploy GitHub Pages'
+        run: |
+          hexo cl
+          hexo g
+          hexo d
