@@ -90,7 +90,7 @@ jobs:
           DeployBranch=gh-pages
           RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'` # eg: github.com/pudongping/pudongping.github.io
           echo $RemoteAddr
-          RemoteAddr=https://${UserName}:${{secrets.ACCESS_TOKEN}}@${RemoteAddr}
+          RemoteAddr=https://${UserName}:${{secrets.GITHUB_TOKEN}}@${RemoteAddr}
           echo $RemoteAddr
           echo https://${UserName}:123456@${RemoteAddr}
           hexo cl # 清除生成的静态文件
