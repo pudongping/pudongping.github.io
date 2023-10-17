@@ -14,9 +14,9 @@ name: Deploy GitHub Pages
 
 on:
   # 在 main 分支发生 push 时执行
-#  push:
-#    branches:
-#      - main
+  push:
+    branches:
+      - main
   # 通过定时任务执行
 #  schedule:
 #    - cron: "30 10,23 * * *"
@@ -26,6 +26,7 @@ env: # 设置环境变量
 
 jobs:
   deploy-github-pages:
+    if: false
     name: Auto push gh-pages branch
     runs-on: ubuntu-latest
     steps:
