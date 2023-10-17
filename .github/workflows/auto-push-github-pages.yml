@@ -15,7 +15,7 @@ env: # 设置环境变量
 jobs:
   deploy-github-pages:
     name: Auto push gh-pages branch
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       # 1. 通过 actions/checkout action 获取项目源码。官方 actions 库：https://github.com/actions
       - name: '#1. Checkout codes'
