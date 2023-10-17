@@ -58,6 +58,11 @@ jobs:
       # 6. 打包并发布
       - name: 'Build and deploy'
         run: |
+          RemoteAddr=`git remote get-url --push origin`
+          echo ${RemoteAddr}
+          RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'`
+          echo ${RemoteAddr}
+          CommitInfo=`git describe --all --always --long`
           UserName=`git log -1 --pretty=format:'%an'`
           UserEmail=`git log -1 --pretty=format:'%ae'`
           git config user.name ${UserName}
@@ -66,3 +71,5 @@ jobs:
           git add -A
           git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
           git push -u origin main
+          git status
+          git log --oneline
