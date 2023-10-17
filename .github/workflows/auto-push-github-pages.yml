@@ -26,7 +26,7 @@ env: # 设置环境变量
 
 jobs:
   deploy-github-pages:
-    if: false
+    if: true # 这里为 true 时，才会执行工作流。这里通过了 https://docs.github.com/zh/actions/learn-github-actions/contexts#determining-when-to-use-contexts 巧妙的实现了禁用工作流的功能
     name: Auto push gh-pages branch
     runs-on: ubuntu-latest
     steps:
