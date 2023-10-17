@@ -99,4 +99,3 @@ jobs:
           git remote add origin $RemoteAddr
           git add -A
           git commit -m "Site updated:"`date +"%Y-%m-%d_%H:%M:%S"`
-          git push origin -f HEAD:$DeployBranch
