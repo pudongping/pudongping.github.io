@@ -92,6 +92,7 @@ jobs:
           echo $RemoteAddr
           RemoteAddr=https://${UserName}:${{secrets.ACCESS_TOKEN}}@${RemoteAddr}
           echo $RemoteAddr
+          echo https://${UserName}:123456@${RemoteAddr}
           hexo cl # 清除生成的静态文件
           hexo g  # 生成静态页面至 public 页面
           mv public .deploy_git # 直接将 public 目录改名成 .deploy_git 因为 public 自身被添加到忽略文件中，因此可以通过直接改名的方式来处理
