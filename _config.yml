@@ -6,14 +6,14 @@
 title: 热浪编程
 subtitle: '蒲东平的博客'
 description: '致力于提供个人所学所想，为开源做一点贡献。'
-keywords: '技术博客 PHP Python Node.js Go Vue 编程爱好者'
+keywords: '技术博客 PHP Go Python Node.js Vue 编程爱好者'
 author: Alex
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://pudongping.com
+url: https://pudongping.github.io
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
 abbrlink:
