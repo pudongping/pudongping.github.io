@@ -1,0 +1,68 @@
+name: Deploy GitHub Pages
+
+on:
+  # 在 main 分支发生 push 时执行
+  push:
+    branches:
+      - main
+  # 通过定时任务执行
+  schedule:
+    - cron: "30 10,23 * * *"
+
+env: # 设置环境变量
+  TZ: Asia/Shanghai
+
+jobs:
+  deploy-github-pages:
+    name: Auto push gh-pages branch
+    runs-on: ubuntu-18.04
+    steps:
+      # 1. 通过 actions/checkout action 获取项目源码。官方 actions 库：https://github.com/actions
+      - name: '#1. Checkout codes'
+        uses: actions/checkout@master
+      # 2. 部署 Node.js 环境 https://github.com/actions/setup-node
+      - name: '#2. Setup Node.js environment'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.2.0'
+      # 3. check
+      - name: '#3. Install and check software'
+        run: |
+          node -v
+          npm -v
+          rm -rf ./node_modules
+          npm install -g hexo-cli
+          npm install
+          hexo --version
+      # 4. 发布到 GitHub Pages
+      - name: '#4. Deploy GitHub Pages'
+        run: |
+          # eg: https://github.com/pudongping/pudongping.github.io
+          RemoteAddr=`git remote get-url --push origin`
+          UserName=`git log -1 --pretty=format:'%an'`
+          UserEmail=`git log -1 --pretty=format:'%ae'`
+          DeployBranch=gh-pages
+          CommitInfo=`git describe --all --always --long`
+          # eg: github.com/pudongping/pudongping.github.io
+          RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'`
+          # 在每个工作流作业开始时，GitHub 会自动创建唯一的 GITHUB_TOKEN 机密以在工作流中使用 https://docs.github.com/zh/actions/security-guides/automatic-token-authentication
+          RemoteAddr=https://${UserName}:${{secrets.GITHUB_TOKEN}}@${RemoteAddr}
+          # 清除生成的静态文件
+          hexo cl
+          # 生成静态页面至 public 页面
+          hexo g
+          # 直接将 public 目录改名成 .deploy_git 因为 public 自身被添加到忽略文件中，因此可以通过直接改名的方式来处理
+          mv public .deploy_git
+          cd .deploy_git
+          git config --global init.defaultBranch $DeployBranch
+          git init
+          git config user.name ${UserName}
+          git config user.email ${UserEmail}
+          git remote add origin $RemoteAddr
+          git status
+          git add -A
+          git commit -sm "Site updated:"`date +"%Y-%m-%d_%H:%M:%S"`
+          git remote -vvv
+          git push -f -u origin HEAD:$DeployBranch
+          git status
+          git log -5 --oneline
