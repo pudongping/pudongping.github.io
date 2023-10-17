@@ -11,15 +11,19 @@ on:
   schedule:
     - cron: "30 10,23 * * *"
 
+# 设置环境变量
+env:
+  GO111MODULE: auto
+
 jobs:
   # This workflow contains a single job called "update-menu-job"
   update-menu-job:
     name: Update this repo's source/menu/index.md file.
-    # The type of runner that the job will run on
+    # 运行在虚拟机环境 ubuntu-latest
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # 1. 通过 actions/checkout action 获取项目源码
+      # 1. 通过 actions/checkout action 获取项目源码。官方 actions 库：https://github.com/actions
       - name: 'Checkout codes'
         uses: actions/checkout@master
       # 2. 部署 Golang 环境
@@ -51,6 +55,10 @@ jobs:
           cd ../
           rm -rf source/menu/index.md
           mv daily_auto_generate_menu/blog-menu.md source/menu/index.md
+      # 6. 打包并发布
       - name: 'Build and deploy'
         run: |
-          echo "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
+          git status
+          git add -A
+          git commit -m "auto generate menu"-`date +"%Y-%m-%d_%H:%M:%S"`
+          git push -u origin main
