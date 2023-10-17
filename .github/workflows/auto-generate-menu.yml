@@ -88,6 +88,10 @@ jobs:
           echo $UserName
           echo $UserEmail
           DeployBranch=gh-pages
+          RemoteAddr=`echo $RemoteAddr | awk -F'://' '{print $2}'` # eg: github.com/pudongping/pudongping.github.io
+          echo $RemoteAddr
+          RemoteAddr=https://${UserName}:${{secrets.ACCESS_TOKEN}}@${RemoteAddr}
+          echo $RemoteAddr
           hexo cl # 清除生成的静态文件
           hexo g  # 生成静态页面至 public 页面
           mv public .deploy_git # 直接将 public 目录改名成 .deploy_git 因为 public 自身被添加到忽略文件中，因此可以通过直接改名的方式来处理
@@ -100,4 +104,4 @@ jobs:
           git add -A
           git commit -m "Site updated:"`date +"%Y-%m-%d_%H:%M:%S"`
           git remote -vvv
-          git push -f -u origin $DeployBranch
+          git push -f -u origin HEAD:$DeployBranch
