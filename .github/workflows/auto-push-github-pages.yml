@@ -1,13 +1,25 @@
+# 脚本作用：自动发布到 gh-pages 分支生成 Github Pages
+# 这里关闭了触发 workflow 的条件，那是因为我本地安装了 npm install hexo-deployer-git --save 插件包
+# 因此当我执行 `hexo d` 命令时，会自动推送到 `gh-pages` 分支
+# 我本地默认配置了 gitee 和 github 的 gh-pages 详见 `_config.yml` 文件中 deploy 配置（文档地址：https://hexo.io/docs/one-command-deployment）
+# 因为 gitee 上面不太方便使用和 GitHub Actions 一样的功能，因此，一般我推送到 gh-pages 的工作流程是：
+# 1. git pull origin main 拉取最新代码，然后在 main 分支上写文章
+# 2. nvm use 16.2.0 # 使用 node 16.2.0 版本
+# 3. hexo cl # 清除生成的静态文件
+# 4. hexo g # 生成静态页面至 public 页面
+# 5. hexo d # 这一步会自动帮我推送到 gitee 和 GitHub 的 gh-pages 分支
+# 6. git add -A && git commit -sm '添加了新文章'
+# 7. git push -u origin main # 推送变动到 main 分支
 name: Deploy GitHub Pages
 
 on:
   # 在 main 分支发生 push 时执行
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
   # 通过定时任务执行
-  schedule:
-    - cron: "30 10,23 * * *"
+#  schedule:
+#    - cron: "30 10,23 * * *"
 
 env: # 设置环境变量
   TZ: Asia/Shanghai
