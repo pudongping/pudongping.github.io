@@ -6,7 +6,7 @@
 # 1. git pull origin main 拉取最新代码，然后在 main 分支上写文章
 # 2. nvm use 16.2.0 # 使用 node 16.2.0 版本
 # 3. hexo cl # 清除生成的静态文件
-# 4. hexo g # 生成静态页面至 public 页面
+# 4. hexo g # 生成静态页面至 public 文件夹
 # 5. hexo d # 这一步会自动帮我推送到 gitee 和 GitHub 的 gh-pages 分支
 # 6. git add -A && git commit -sm '添加了新文章'
 # 7. git push -u origin main # 推送变动到 main 分支
