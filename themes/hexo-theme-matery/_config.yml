@@ -208,8 +208,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer | Programming geeks | Artisan, Backend Developer & Overall Web Enthusiast
-  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 4 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的感觉，相信编程是一门艺术，编程丰富生活。
+  career: Software Engineer | Programming Geeker | Artisan, Backend Developer & Overall Web Enthusiast
+  introduction: 姓名：蒲东平，英文名：Alex，网名：削个椰子皮_给个梨（sugaryesp）。坐标上海，从事后端开发 5 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的感觉，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -247,6 +247,21 @@ myProjects:
       iconBackground: 'linear-gradient(135deg, #ffeb3b 0%, #ff9900 100%)'
       url: https://github.com/pudongping/pudongping.github.io
       desc: 正在使用的博客
+    wise-locksmith:
+      icon: fas fa-lock
+      iconBackground: 'linear-gradient(135deg, #8f7394 0%, #b54fad 100%)'
+      url: https://github.com/pudongping/wise-locksmith
+      desc: PHP 互斥锁库。文件锁、协程锁、分布式锁、红锁。
+    hyperf-throttle-requests:
+      icon: fas fa-hourglass-start
+      iconBackground: 'linear-gradient(135deg, #82818b 0%, #5aa06e 100%)'
+      url: https://github.com/pudongping/hyperf-throttle-requests
+      desc: 适配 hyperf 框架的请求频率限流器
+    golang-tutorial:
+      icon: fas fa-book
+      iconBackground: 'linear-gradient(135deg, #c17415 0%, #eb545b 100%)'
+      url: https://github.com/pudongping/golang-tutorial
+      desc: Golang 学习笔记
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.

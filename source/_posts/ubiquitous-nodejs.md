@@ -3,7 +3,7 @@ title: ubiquitous-nodejs
 author: Alex
 top: true
 hide: false
-cover: true
+cover: false
 toc: true
 mathjax: false
 coverImg: https://pudongping.com/medias/banner/12.jpg
