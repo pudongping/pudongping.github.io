@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2023-10-17T13:41:18.211Z</updated>
+  <updated>2023-11-04T05:28:29.925Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,121 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>认识下 JWT</title>
+    <link href="https://pudongping.github.io/posts/22722346.html"/>
+    <id>https://pudongping.github.io/posts/22722346.html</id>
+    <published>2023-11-04T05:26:50.000Z</published>
+    <updated>2023-11-04T05:28:29.925Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;认识下-JWT&quot;&gt;&lt;a href=&quot;#认识下-JWT&quot; class=&quot;headerlink&quot; title=&quot;认识下 JWT&quot;&gt;&lt;/a&gt;认识下 JWT&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt; 是 JSON Web</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你愿意花半个小时时间得到一个终身受益的技能吗</title>
+    <link href="https://pudongping.github.io/posts/7c4e8ab6.html"/>
+    <id>https://pudongping.github.io/posts/7c4e8ab6.html</id>
+    <published>2023-10-30T10:09:33.000Z</published>
+    <updated>2023-11-04T05:26:14.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;首先我们用 3 秒时间来闭目思考一下，半个小时我们可以做哪些事情？3 2 1 好，时间到。相信你已经有了你自己的答案，而今天我要给大家介绍的是可以用半个小时就能够快速掌握的一项技能：用双拼打字。&lt;/p&gt;
+&lt;h2 id=&quot;什么是双拼？&quot;&gt;&lt;a href=&quot;#什么是双拼？&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://pudongping.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://pudongping.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wise-locksmith PHP 互斥锁库</title>
+    <link href="https://pudongping.github.io/posts/1e08f87d.html"/>
+    <id>https://pudongping.github.io/posts/1e08f87d.html</id>
+    <published>2023-10-18T07:36:06.000Z</published>
+    <updated>2023-10-18T15:18:12.480Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;PHP-互斥锁库&quot;&gt;&lt;a href=&quot;#PHP-互斥锁库&quot; class=&quot;headerlink&quot; title=&quot;PHP 互斥锁库&quot;&gt;&lt;/a&gt;PHP 互斥锁库&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
+    
+    <category term="Mutex" scheme="https://pudongping.github.io/tags/Mutex/"/>
+    
+    <category term="Lock" scheme="https://pudongping.github.io/tags/Lock/"/>
+    
+    <category term="互斥锁" scheme="https://pudongping.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/"/>
+    
+    <category term="红锁" scheme="https://pudongping.github.io/tags/%E7%BA%A2%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 GRPC</title>
+    <link href="https://pudongping.github.io/posts/8a377bf8.html"/>
+    <id>https://pudongping.github.io/posts/8a377bf8.html</id>
+    <published>2023-10-18T07:21:01.000Z</published>
+    <updated>2023-10-18T15:18:12.480Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-GRPC&quot;&gt;&lt;a href=&quot;#使用-GRPC&quot; class=&quot;headerlink&quot; title=&quot;使用 GRPC&quot;&gt;&lt;/a&gt;使用 GRPC&lt;/h1&gt;&lt;h2 id=&quot;安装-protobuf&quot;&gt;&lt;a href=&quot;#安装-protobuf&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="RPC" scheme="https://pudongping.github.io/categories/RPC/"/>
+    
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
+    
+  </entry>
   
   <entry>
     <title>Git 合并多个 commit</title>
@@ -120,9 +235,9 @@
     
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
     
-    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
-    
     <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
     
   </entry>
   
@@ -457,122 +572,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="批量更新" scheme="https://pudongping.github.io/tags/%E6%89%B9%E9%87%8F%E6%9B%B4%E6%96%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gin 框架优雅的获取所有的请求参数</title>
-    <link href="https://pudongping.github.io/posts/ccb188ca.html"/>
-    <id>https://pudongping.github.io/posts/ccb188ca.html</id>
-    <published>2022-05-14T07:41:49.000Z</published>
-    <updated>2023-06-22T02:40:09.608Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Gin-框架优雅的获取所有的请求参数&quot;&gt;&lt;a href=&quot;#Gin-框架优雅的获取所有的请求参数&quot; class=&quot;headerlink&quot; title=&quot;Gin 框架优雅的获取所有的请求参数&quot;&gt;&lt;/a&gt;Gin</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Gin" scheme="https://pudongping.github.io/tags/Gin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 和 Mac 下时间戳与时间互转</title>
-    <link href="https://pudongping.github.io/posts/fe92d324.html"/>
-    <id>https://pudongping.github.io/posts/fe92d324.html</id>
-    <published>2022-04-20T04:54:32.000Z</published>
-    <updated>2023-06-22T02:40:09.618Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Linux-和-Mac-下时间戳与时间互转&quot;&gt;&lt;a href=&quot;#Linux-和-Mac-下时间戳与时间互转&quot; class=&quot;headerlink&quot; title=&quot;Linux 和 Mac 下时间戳与时间互转&quot;&gt;&lt;/a&gt;Linux 和 Mac</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Mac" scheme="https://pudongping.github.io/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>支付宝花呗分期费用计算 PHP 示例代码</title>
-    <link href="https://pudongping.github.io/posts/c63afd43.html"/>
-    <id>https://pudongping.github.io/posts/c63afd43.html</id>
-    <published>2022-01-07T09:38:47.000Z</published>
-    <updated>2023-06-22T02:40:09.634Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;支付宝花呗分期费用计算-PHP-示例代码&quot;&gt;&lt;a href=&quot;#支付宝花呗分期费用计算-PHP-示例代码&quot; class=&quot;headerlink&quot; title=&quot;支付宝花呗分期费用计算 PHP 示例代码&quot;&gt;&lt;/a&gt;支付宝花呗分期费用计算 PHP</summary>
-        
-      
-    
-    
-    
-    <category term="Pay" scheme="https://pudongping.github.io/categories/Pay/"/>
-    
-    
-    <category term="支付宝花呗分期" scheme="https://pudongping.github.io/tags/%E6%94%AF%E4%BB%98%E5%AE%9D%E8%8A%B1%E5%91%97%E5%88%86%E6%9C%9F/"/>
-    
-    <category term="支付" scheme="https://pudongping.github.io/tags/%E6%94%AF%E4%BB%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简单易用且优雅的跨境支付 PHP SDK 扩展包</title>
-    <link href="https://pudongping.github.io/posts/1c7fe35b.html"/>
-    <id>https://pudongping.github.io/posts/1c7fe35b.html</id>
-    <published>2021-10-10T10:51:46.000Z</published>
-    <updated>2023-06-22T02:40:09.635Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/pudongping/global-pay&quot;&gt;GlobalPay&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;支持国际版支付的 PHP</summary>
-        
-      
-    
-    
-    
-    <category term="Pay" scheme="https://pudongping.github.io/categories/Pay/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="支付" scheme="https://pudongping.github.io/tags/%E6%94%AF%E4%BB%98/"/>
-    
-    <category term="跨境支付" scheme="https://pudongping.github.io/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/"/>
-    
-    <category term="SDK" scheme="https://pudongping.github.io/tags/SDK/"/>
     
   </entry>
   
