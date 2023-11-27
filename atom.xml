@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2023-11-04T05:28:29.925Z</updated>
+  <updated>2023-11-27T15:03:53.779Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,118 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>M1 安装 Homebrew 和 php 开发环境</title>
+    <link href="https://pudongping.github.io/posts/b12a8007.html"/>
+    <id>https://pudongping.github.io/posts/b12a8007.html</id>
+    <published>2023-11-27T14:22:13.000Z</published>
+    <updated>2023-11-27T15:03:53.779Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;先安装 homebrew 方便下载软件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果使用官网推荐的方式下载时提示以下错误信息时，则表示网络超时，建议直接使用源码包的形式安装&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;错误信息如下所示：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="Homebrew" scheme="https://pudongping.github.io/tags/Homebrew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不花一分钱也可以用上 JetBrains 正版全家桶</title>
+    <link href="https://pudongping.github.io/posts/b3af447c.html"/>
+    <id>https://pudongping.github.io/posts/b3af447c.html</id>
+    <published>2023-11-24T08:18:45.000Z</published>
+    <updated>2023-11-27T14:21:41.675Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;昨天，发现正在使用的 idea 要到期了，于是自己得马上去续约，免得影响自己的工作。&lt;/p&gt;
+&lt;p&gt;其实，我体验过不少的编辑器，Notepad++、Sublime Text、Apache NetBeans、Vim、Neovim、再就是大名鼎鼎的 Visual Studio</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="JetBrains" scheme="https://pudongping.github.io/tags/JetBrains/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何找到 Redis 的 Big key？</title>
+    <link href="https://pudongping.github.io/posts/fe9e07a8.html"/>
+    <id>https://pudongping.github.io/posts/fe9e07a8.html</id>
+    <published>2023-11-10T07:59:25.000Z</published>
+    <updated>2023-11-11T07:09:12.050Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何找到-Redis-的-Big-key？&quot;&gt;&lt;a href=&quot;#如何找到-Redis-的-Big-key？&quot; class=&quot;headerlink&quot; title=&quot;如何找到 Redis 的 Big key？&quot;&gt;&lt;/a&gt;如何找到 Redis 的 Big</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 使用虚拟环境</title>
+    <link href="https://pudongping.github.io/posts/ddef4649.html"/>
+    <id>https://pudongping.github.io/posts/ddef4649.html</id>
+    <published>2023-11-07T09:46:01.000Z</published>
+    <updated>2023-11-07T16:08:20.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python-使用虚拟环境&quot;&gt;&lt;a href=&quot;#Python-使用虚拟环境&quot; class=&quot;headerlink&quot; title=&quot;Python 使用虚拟环境&quot;&gt;&lt;/a&gt;Python 使用虚拟环境&lt;/h1&gt;&lt;p&gt;Python</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="Pip" scheme="https://pudongping.github.io/tags/Pip/"/>
+    
+  </entry>
   
   <entry>
     <title>认识下 JWT</title>
@@ -458,120 +570,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="Http" scheme="https://pudongping.github.io/tags/Http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang 时间操作大全</title>
-    <link href="https://pudongping.github.io/posts/d0937fdd.html"/>
-    <id>https://pudongping.github.io/posts/d0937fdd.html</id>
-    <published>2022-10-24T15:57:44.000Z</published>
-    <updated>2023-06-22T02:40:09.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Golang-时间操作大全&quot;&gt;&lt;a href=&quot;#Golang-时间操作大全&quot; class=&quot;headerlink&quot; title=&quot;Golang 时间操作大全&quot;&gt;&lt;/a&gt;Golang 时间操作大全&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang 使用 olivere/elastic 客户端操作 ElasticSearch</title>
-    <link href="https://pudongping.github.io/posts/a443aa.html"/>
-    <id>https://pudongping.github.io/posts/a443aa.html</id>
-    <published>2022-08-16T03:02:24.000Z</published>
-    <updated>2023-06-22T02:40:09.614Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Golang-使用-olivere-elastic-客户端操作-ElasticSearch&quot;&gt;&lt;a href=&quot;#Golang-使用-olivere-elastic-客户端操作-ElasticSearch&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 安装 ElasticSearch 和 Kibana</title>
-    <link href="https://pudongping.github.io/posts/2e9eaf3a.html"/>
-    <id>https://pudongping.github.io/posts/2e9eaf3a.html</id>
-    <published>2022-08-06T10:26:07.000Z</published>
-    <updated>2023-06-22T02:40:09.608Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Docker-安装-ElasticSearch-和-Kibana&quot;&gt;&lt;a href=&quot;#Docker-安装-ElasticSearch-和-Kibana&quot; class=&quot;headerlink&quot; title=&quot;Docker 安装 ElasticSearch 和</summary>
-        
-      
-    
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-    <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang 使用 CASE WHEN 进行批量更新</title>
-    <link href="https://pudongping.github.io/posts/84fd0244.html"/>
-    <id>https://pudongping.github.io/posts/84fd0244.html</id>
-    <published>2022-05-21T18:34:25.000Z</published>
-    <updated>2023-06-22T02:40:09.613Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Golang-使用-CASE-WHEN-进行批量更新&quot;&gt;&lt;a href=&quot;#Golang-使用-CASE-WHEN-进行批量更新&quot; class=&quot;headerlink&quot; title=&quot;Golang 使用 CASE WHEN 进行批量更新&quot;&gt;&lt;/a&gt;Golang</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="批量更新" scheme="https://pudongping.github.io/tags/%E6%89%B9%E9%87%8F%E6%9B%B4%E6%96%B0/"/>
     
   </entry>
   
