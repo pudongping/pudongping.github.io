@@ -12,7 +12,7 @@ tags:
   - Linux
 abbrlink: ce06863f
 date: 2021-07-07 23:40:10
-img: https://pudongping.com/medias/featureimages/20.jpg
+img: https://pudongping.github.io/medias/featureimages/20.jpg
 coverImg:
 password:
 summary:

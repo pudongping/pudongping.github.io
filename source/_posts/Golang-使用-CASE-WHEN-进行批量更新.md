@@ -21,7 +21,7 @@ summary:
 
 # Golang 使用 CASE WHEN 进行批量更新
 
-> 这是使用 `Go` 语言写的 `CASE WHEN` 拼接语句，如果需要 `PHP` 版本的，可以参考我的这篇文章 [PHP 使用 CASE WHEN 进行批量更新 （当前基于 laravel 编写）](https://pudongping.com/posts/eaf6377d.html)
+> 这是使用 `Go` 语言写的 `CASE WHEN` 拼接语句，如果需要 `PHP` 版本的，可以参考我的这篇文章 [PHP 使用 CASE WHEN 进行批量更新 （当前基于 laravel 编写）](https://pudongping.github.io/posts/eaf6377d.html)
 
 ## 以下代码最终返回的 sql 语句为
 

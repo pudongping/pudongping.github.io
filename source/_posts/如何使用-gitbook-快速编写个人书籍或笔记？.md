@@ -37,7 +37,7 @@ password:
 
 ## 在线访问
 
-[蒲东平的编程笔记](https://notes.pudongping.com) 或者 [蒲东平的编程笔记-GitHub Pages](https://pudongping.github.io/notes)
+[蒲东平的编程笔记](https://pudongping.github.io/notes) 或者 [蒲东平的编程笔记-GitHub Pages](https://pudongping.github.io/notes)
 
 ## 使用
 
