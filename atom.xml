@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2023-12-08T16:57:20.026Z</updated>
+  <updated>2023-12-08T17:03:36.950Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手摸手教你安装 Redis</title>
+    <link href="https://pudongping.github.io/posts/b76f1d2.html"/>
+    <id>https://pudongping.github.io/posts/b76f1d2.html</id>
+    <published>2023-12-08T17:02:44.000Z</published>
+    <updated>2023-12-08T17:03:36.950Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装-Redis&quot;&gt;&lt;a href=&quot;#安装-Redis&quot; class=&quot;headerlink&quot; title=&quot;安装 Redis&quot;&gt;&lt;/a&gt;安装 Redis&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Redis 高频常用命令列表</title>
@@ -543,33 +573,6 @@
     <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
     
     <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang 开发环境搭建</title>
-    <link href="https://pudongping.github.io/posts/2417f014.html"/>
-    <id>https://pudongping.github.io/posts/2417f014.html</id>
-    <published>2022-11-08T15:15:42.000Z</published>
-    <updated>2023-06-22T02:40:09.615Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Golang-开发环境搭建&quot;&gt;&lt;a href=&quot;#Golang-开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Golang 开发环境搭建&quot;&gt;&lt;/a&gt;Golang 开发环境搭建&lt;/h1&gt;&lt;h2 id=&quot;第一种方式：安装包安装&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
