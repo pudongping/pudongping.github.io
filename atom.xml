@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2023-11-27T15:03:53.779Z</updated>
+  <updated>2023-12-08T16:57:20.026Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Redis 高频常用命令列表</title>
+    <link href="https://pudongping.github.io/posts/d7e52b6f.html"/>
+    <id>https://pudongping.github.io/posts/d7e52b6f.html</id>
+    <published>2023-12-08T16:55:25.000Z</published>
+    <updated>2023-12-08T16:57:20.026Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Redis-的数据类型&quot;&gt;&lt;a href=&quot;#Redis-的数据类型&quot; class=&quot;headerlink&quot; title=&quot;Redis 的数据类型&quot;&gt;&lt;/a&gt;Redis 的数据类型&lt;/h1&gt;&lt;h2 id=&quot;redis-cli-命令&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>M1 安装 Homebrew 和 php 开发环境</title>
     <link href="https://pudongping.github.io/posts/b12a8007.html"/>
     <id>https://pudongping.github.io/posts/b12a8007.html</id>
     <published>2023-11-27T14:22:13.000Z</published>
-    <updated>2023-11-27T15:03:53.779Z</updated>
+    <updated>2023-11-27T15:04:04.032Z</updated>
     
     
       
@@ -541,35 +570,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang http client 请求封装</title>
-    <link href="https://pudongping.github.io/posts/ce804739.html"/>
-    <id>https://pudongping.github.io/posts/ce804739.html</id>
-    <published>2022-10-26T07:20:20.000Z</published>
-    <updated>2023-06-22T02:40:09.612Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Golang-http-client-请求封装&quot;&gt;&lt;a href=&quot;#Golang-http-client-请求封装&quot; class=&quot;headerlink&quot; title=&quot;Golang http client 请求封装&quot;&gt;&lt;/a&gt;Golang http</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Http" scheme="https://pudongping.github.io/tags/Http/"/>
     
   </entry>
   
