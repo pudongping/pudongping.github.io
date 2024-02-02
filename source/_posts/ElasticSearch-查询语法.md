@@ -6,14 +6,15 @@ hide: false
 cover: false
 toc: true
 mathjax: false
+categories: ElasticSearch
+tags:
+  - ElasticSearch
+abbrlink: 65a50e61
 date: 2024-02-02 16:55:14
 img:
 coverImg:
 password:
 summary:
-categories: ElasticSearch
-tags:
-  - ElasticSearch
 ---
 
 ## 查询的基本语法结构
