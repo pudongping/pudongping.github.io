@@ -6,14 +6,15 @@ hide: false
 cover: false
 toc: true
 mathjax: false
+categories: ElasticSearch
+tags:
+  - ElasticSearch
+abbrlink: 25480f12
 date: 2024-02-02 17:04:39
 img:
 coverImg:
 password:
 summary:
-categories: ElasticSearch
-tags:
-  - ElasticSearch
 ---
 
 ## 聚合的基本语法结构
