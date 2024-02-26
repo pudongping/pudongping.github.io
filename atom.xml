@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2023-12-08T17:03:36.950Z</updated>
+  <updated>2024-02-26T15:46:46.363Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,440 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何编写Dockerfile</title>
+    <link href="https://pudongping.github.io/posts/1a6d22ba.html"/>
+    <id>https://pudongping.github.io/posts/1a6d22ba.html</id>
+    <published>2024-02-26T15:45:27.000Z</published>
+    <updated>2024-02-26T15:46:46.363Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;编写-dockerfile&quot;&gt;&lt;a href=&quot;#编写-dockerfile&quot; class=&quot;headerlink&quot; title=&quot;编写 dockerfile&quot;&gt;&lt;/a&gt;编写 dockerfile&lt;/h1&gt;&lt;p&gt;Dockerfile 文件是用于定义 Docker</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+    <category term="Dockerfile" scheme="https://pudongping.github.io/tags/Dockerfile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker alpine linux 修改时区</title>
+    <link href="https://pudongping.github.io/posts/e7d57128.html"/>
+    <id>https://pudongping.github.io/posts/e7d57128.html</id>
+    <published>2024-02-26T15:30:05.000Z</published>
+    <updated>2024-02-26T15:30:57.829Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Docker alpine Linux 中修改时区&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.alpinelinux.org/wiki/Setting_the_timezone&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 容器内服务访问宿主机中的服务</title>
+    <link href="https://pudongping.github.io/posts/f085ffcd.html"/>
+    <id>https://pudongping.github.io/posts/f085ffcd.html</id>
+    <published>2024-02-26T15:06:19.000Z</published>
+    <updated>2024-02-26T15:07:49.689Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;docker-容器内服务访问宿主机中的服务&quot;&gt;&lt;a href=&quot;#docker-容器内服务访问宿主机中的服务&quot; class=&quot;headerlink&quot; title=&quot;docker 容器内服务访问宿主机中的服务&quot;&gt;&lt;/a&gt;docker</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 容器关联的几种方式</title>
+    <link href="https://pudongping.github.io/posts/775a3bbf.html"/>
+    <id>https://pudongping.github.io/posts/775a3bbf.html</id>
+    <published>2024-02-26T14:52:55.000Z</published>
+    <updated>2024-02-26T14:54:12.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-通过-link-容器关联&quot;&gt;&lt;a href=&quot;#1-通过-link-容器关联&quot; class=&quot;headerlink&quot; title=&quot;1. 通过 link 容器关联&quot;&gt;&lt;/a&gt;1. 通过 link 容器关联&lt;/h2&gt;&lt;p&gt;通过</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一起来了解下Docker-compose</title>
+    <link href="https://pudongping.github.io/posts/2d05cf8b.html"/>
+    <id>https://pudongping.github.io/posts/2d05cf8b.html</id>
+    <published>2024-02-26T14:43:52.000Z</published>
+    <updated>2024-02-26T14:45:29.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Docker Compose是一个用于定义和运行多容器Docker应用程序的工具。通过Compose，你可以使用 YAML 文件来配置应用程序的服务。然后，只需一个简单的命令，就可以创建并启动配置中的所有服务。这使得部署多容器应用变得简单快捷。&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ElasticSearch 聚合查询</title>
+    <link href="https://pudongping.github.io/posts/25480f12.html"/>
+    <id>https://pudongping.github.io/posts/25480f12.html</id>
+    <published>2024-02-02T09:04:39.000Z</published>
+    <updated>2024-02-26T14:42:15.029Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;聚合的基本语法结构&quot;&gt;&lt;a href=&quot;#聚合的基本语法结构&quot; class=&quot;headerlink&quot; title=&quot;聚合的基本语法结构&quot;&gt;&lt;/a&gt;聚合的基本语法结构&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-json&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ElasticSearch 查询语法</title>
+    <link href="https://pudongping.github.io/posts/65a50e61.html"/>
+    <id>https://pudongping.github.io/posts/65a50e61.html</id>
+    <published>2024-02-02T08:55:14.000Z</published>
+    <updated>2024-02-26T14:42:15.029Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;查询的基本语法结构&quot;&gt;&lt;a href=&quot;#查询的基本语法结构&quot; class=&quot;headerlink&quot; title=&quot;查询的基本语法结构&quot;&gt;&lt;/a&gt;查询的基本语法结构&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-json&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 pyenv 管理多个版本 Python</title>
+    <link href="https://pudongping.github.io/posts/9fc3a49a.html"/>
+    <id>https://pudongping.github.io/posts/9fc3a49a.html</id>
+    <published>2024-01-15T06:23:50.000Z</published>
+    <updated>2024-02-26T14:42:15.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;pyenv&lt;/a&gt; 是 Python 的版本管理工具，利用它可以在同一台电脑上安装多个版本的 Python。&lt;/p&gt;
+&lt;h2 id=&quot;安装方式&quot;&gt;&lt;a href=&quot;#安装方式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git bug 分支</title>
+    <link href="https://pudongping.github.io/posts/56cac605.html"/>
+    <id>https://pudongping.github.io/posts/56cac605.html</id>
+    <published>2024-01-15T06:15:19.000Z</published>
+    <updated>2024-02-26T14:42:15.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git-bug-分支&quot;&gt;&lt;a href=&quot;#Git-bug-分支&quot; class=&quot;headerlink&quot; title=&quot;Git bug 分支&quot;&gt;&lt;/a&gt;Git bug 分支&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;修复 bug 时，我们会通过创建新的 bug</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建 GitLab Git 服务器</title>
+    <link href="https://pudongping.github.io/posts/34b62620.html"/>
+    <id>https://pudongping.github.io/posts/34b62620.html</id>
+    <published>2024-01-15T06:00:58.000Z</published>
+    <updated>2024-02-26T14:42:15.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
+    
+    <category term="Git 服务器" scheme="https://pudongping.github.io/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用 Docker 安装 Gitlab</title>
+    <link href="https://pudongping.github.io/posts/bd835025.html"/>
+    <id>https://pudongping.github.io/posts/bd835025.html</id>
+    <published>2024-01-15T03:51:08.000Z</published>
+    <updated>2024-02-26T14:42:15.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/gitlab/gitlab-ce&quot;&gt;Gitlab 官方 docker&lt;/a&gt;&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何运用 systemd 管理 Linux 中的服务</title>
+    <link href="https://pudongping.github.io/posts/ad8a576e.html"/>
+    <id>https://pudongping.github.io/posts/ad8a576e.html</id>
+    <published>2024-01-15T02:05:49.000Z</published>
+    <updated>2024-02-26T14:42:15.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是-systemd&quot;&gt;&lt;a href=&quot;#什么是-systemd&quot; class=&quot;headerlink&quot; title=&quot;什么是 systemd&quot;&gt;&lt;/a&gt;什么是 systemd&lt;/h2&gt;&lt;p&gt;&lt;code&gt;systemd&lt;/code&gt; 是 Linux</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一文讲懂 HTTP 协议知识</title>
+    <link href="https://pudongping.github.io/posts/d8b21c9b.html"/>
+    <id>https://pudongping.github.io/posts/d8b21c9b.html</id>
+    <published>2023-12-19T08:34:20.000Z</published>
+    <updated>2024-02-26T14:42:15.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;h2 id=&quot;HTTP是什么？&quot;&gt;&lt;a href=&quot;#HTTP是什么？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 用户、用户组、权限</title>
+    <link href="https://pudongping.github.io/posts/41bc9f3e.html"/>
+    <id>https://pudongping.github.io/posts/41bc9f3e.html</id>
+    <published>2023-12-19T07:43:10.000Z</published>
+    <updated>2024-02-26T14:42:15.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-用户、用户组、权限&quot;&gt;&lt;a href=&quot;#Linux-用户、用户组、权限&quot; class=&quot;headerlink&quot; title=&quot;Linux 用户、用户组、权限&quot;&gt;&lt;/a&gt;Linux 用户、用户组、权限&lt;/h1&gt;&lt;h2 id=&quot;用户&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入理解Vim保存命令“:w !sudo tee %”</title>
+    <link href="https://pudongping.github.io/posts/c1413261.html"/>
+    <id>https://pudongping.github.io/posts/c1413261.html</id>
+    <published>2023-12-19T06:57:15.000Z</published>
+    <updated>2024-02-26T14:42:15.033Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Linux 世界中，Vim 编辑器是一个广受欢迎的文本编辑器，它强大的功能和丰富的命令集合赋予了它无与伦比的生命力。今天我们要来探讨的是 Vim 中的一个&lt;strong&gt;很常用但可能初学者易于忽略&lt;/strong&gt;的命令——&lt;code&gt;:w !sudo tee</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Vim" scheme="https://pudongping.github.io/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown：解放排版，简洁高效的文字创作神器！</title>
+    <link href="https://pudongping.github.io/posts/23b678b6.html"/>
+    <id>https://pudongping.github.io/posts/23b678b6.html</id>
+    <published>2023-12-11T09:01:43.000Z</published>
+    <updated>2024-02-26T14:42:15.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Markdown 是一种轻量级的标记语言，它允许人们使用&lt;strong&gt;易读易写&lt;/strong&gt;的纯文本格式编写文档，借助可实现快速排版且转换成格式丰富的 HTML</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://pudongping.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://pudongping.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手摸手教你安装 Redis</title>
     <link href="https://pudongping.github.io/posts/b76f1d2.html"/>
     <id>https://pudongping.github.io/posts/b76f1d2.html</id>
     <published>2023-12-08T17:02:44.000Z</published>
-    <updated>2023-12-08T17:03:36.950Z</updated>
+    <updated>2023-12-08T17:04:12.217Z</updated>
     
     
       
@@ -130,449 +559,6 @@
     
     
     <category term="JetBrains" scheme="https://pudongping.github.io/tags/JetBrains/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何找到 Redis 的 Big key？</title>
-    <link href="https://pudongping.github.io/posts/fe9e07a8.html"/>
-    <id>https://pudongping.github.io/posts/fe9e07a8.html</id>
-    <published>2023-11-10T07:59:25.000Z</published>
-    <updated>2023-11-11T07:09:12.050Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何找到-Redis-的-Big-key？&quot;&gt;&lt;a href=&quot;#如何找到-Redis-的-Big-key？&quot; class=&quot;headerlink&quot; title=&quot;如何找到 Redis 的 Big key？&quot;&gt;&lt;/a&gt;如何找到 Redis 的 Big</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 使用虚拟环境</title>
-    <link href="https://pudongping.github.io/posts/ddef4649.html"/>
-    <id>https://pudongping.github.io/posts/ddef4649.html</id>
-    <published>2023-11-07T09:46:01.000Z</published>
-    <updated>2023-11-07T16:08:20.421Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python-使用虚拟环境&quot;&gt;&lt;a href=&quot;#Python-使用虚拟环境&quot; class=&quot;headerlink&quot; title=&quot;Python 使用虚拟环境&quot;&gt;&lt;/a&gt;Python 使用虚拟环境&lt;/h1&gt;&lt;p&gt;Python</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
-    
-    
-    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
-    
-    <category term="Pip" scheme="https://pudongping.github.io/tags/Pip/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>认识下 JWT</title>
-    <link href="https://pudongping.github.io/posts/22722346.html"/>
-    <id>https://pudongping.github.io/posts/22722346.html</id>
-    <published>2023-11-04T05:26:50.000Z</published>
-    <updated>2023-11-04T05:28:29.925Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;认识下-JWT&quot;&gt;&lt;a href=&quot;#认识下-JWT&quot; class=&quot;headerlink&quot; title=&quot;认识下 JWT&quot;&gt;&lt;/a&gt;认识下 JWT&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt; 是 JSON Web</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你愿意花半个小时时间得到一个终身受益的技能吗</title>
-    <link href="https://pudongping.github.io/posts/7c4e8ab6.html"/>
-    <id>https://pudongping.github.io/posts/7c4e8ab6.html</id>
-    <published>2023-10-30T10:09:33.000Z</published>
-    <updated>2023-11-04T05:26:14.200Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;首先我们用 3 秒时间来闭目思考一下，半个小时我们可以做哪些事情？3 2 1 好，时间到。相信你已经有了你自己的答案，而今天我要给大家介绍的是可以用半个小时就能够快速掌握的一项技能：用双拼打字。&lt;/p&gt;
-&lt;h2 id=&quot;什么是双拼？&quot;&gt;&lt;a href=&quot;#什么是双拼？&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://pudongping.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://pudongping.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wise-locksmith PHP 互斥锁库</title>
-    <link href="https://pudongping.github.io/posts/1e08f87d.html"/>
-    <id>https://pudongping.github.io/posts/1e08f87d.html</id>
-    <published>2023-10-18T07:36:06.000Z</published>
-    <updated>2023-10-18T15:18:12.480Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;PHP-互斥锁库&quot;&gt;&lt;a href=&quot;#PHP-互斥锁库&quot; class=&quot;headerlink&quot; title=&quot;PHP 互斥锁库&quot;&gt;&lt;/a&gt;PHP 互斥锁库&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
-    
-    <category term="Mutex" scheme="https://pudongping.github.io/tags/Mutex/"/>
-    
-    <category term="Lock" scheme="https://pudongping.github.io/tags/Lock/"/>
-    
-    <category term="互斥锁" scheme="https://pudongping.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/"/>
-    
-    <category term="红锁" scheme="https://pudongping.github.io/tags/%E7%BA%A2%E9%94%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 GRPC</title>
-    <link href="https://pudongping.github.io/posts/8a377bf8.html"/>
-    <id>https://pudongping.github.io/posts/8a377bf8.html</id>
-    <published>2023-10-18T07:21:01.000Z</published>
-    <updated>2023-10-18T15:18:12.480Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;使用-GRPC&quot;&gt;&lt;a href=&quot;#使用-GRPC&quot; class=&quot;headerlink&quot; title=&quot;使用 GRPC&quot;&gt;&lt;/a&gt;使用 GRPC&lt;/h1&gt;&lt;h2 id=&quot;安装-protobuf&quot;&gt;&lt;a href=&quot;#安装-protobuf&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="RPC" scheme="https://pudongping.github.io/categories/RPC/"/>
-    
-    
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
-    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 合并多个 commit</title>
-    <link href="https://pudongping.github.io/posts/d05f7a67.html"/>
-    <id>https://pudongping.github.io/posts/d05f7a67.html</id>
-    <published>2023-10-16T03:11:37.000Z</published>
-    <updated>2023-10-17T13:41:18.211Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git-合并多个-commit&quot;&gt;&lt;a href=&quot;#Git-合并多个-commit&quot; class=&quot;headerlink&quot; title=&quot;Git 合并多个 commit&quot;&gt;&lt;/a&gt;Git 合并多个 commit&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 下解压缩文件</title>
-    <link href="https://pudongping.github.io/posts/1ee32f49.html"/>
-    <id>https://pudongping.github.io/posts/1ee32f49.html</id>
-    <published>2023-09-04T03:42:58.000Z</published>
-    <updated>2023-10-17T13:41:18.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Linux-下解压缩文件&quot;&gt;&lt;a href=&quot;#Linux-下解压缩文件&quot; class=&quot;headerlink&quot; title=&quot;Linux 下解压缩文件&quot;&gt;&lt;/a&gt;Linux 下解压缩文件&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;建议不要添加成 rar</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="tar" scheme="https://pudongping.github.io/tags/tar/"/>
-    
-    <category term="zip" scheme="https://pudongping.github.io/tags/zip/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 systemd 管理服务</title>
-    <link href="https://pudongping.github.io/posts/9a5708c9.html"/>
-    <id>https://pudongping.github.io/posts/9a5708c9.html</id>
-    <published>2023-09-01T07:56:36.000Z</published>
-    <updated>2023-10-17T13:41:18.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;使用-systemd-管理服务&quot;&gt;&lt;a href=&quot;#使用-systemd-管理服务&quot; class=&quot;headerlink&quot; title=&quot;使用 systemd 管理服务&quot;&gt;&lt;/a&gt;使用 systemd 管理服务&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="systemd" scheme="https://pudongping.github.io/tags/systemd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何基于 PHP 搭建 GRPC 服务</title>
-    <link href="https://pudongping.github.io/posts/e4a23e35.html"/>
-    <id>https://pudongping.github.io/posts/e4a23e35.html</id>
-    <published>2023-04-27T10:32:05.000Z</published>
-    <updated>2023-06-22T02:40:09.632Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;PHP7-4-搭建-GRPC-客户端服务&quot;&gt;&lt;a href=&quot;#PHP7-4-搭建-GRPC-客户端服务&quot; class=&quot;headerlink&quot; title=&quot;PHP7.4 搭建 GRPC 客户端服务&quot;&gt;&lt;/a&gt;PHP7.4 搭建 GRPC</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
-    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在 redis 中通过 redis-cli 调试 lua 脚本</title>
-    <link href="https://pudongping.github.io/posts/81563347.html"/>
-    <id>https://pudongping.github.io/posts/81563347.html</id>
-    <published>2023-04-25T10:04:27.000Z</published>
-    <updated>2023-06-22T02:40:09.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在-redis-中通过-redis-cli-调试-lua-脚本&quot;&gt;&lt;a href=&quot;#在-redis-中通过-redis-cli-调试-lua-脚本&quot; class=&quot;headerlink&quot; title=&quot;在 redis 中通过 redis-cli 调试 lua</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-    <category term="Lua" scheme="https://pudongping.github.io/tags/Lua/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis 数据备份与恢复</title>
-    <link href="https://pudongping.github.io/posts/c14e496.html"/>
-    <id>https://pudongping.github.io/posts/c14e496.html</id>
-    <published>2022-12-11T13:41:58.000Z</published>
-    <updated>2023-06-22T02:40:09.623Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Redis-数据备份与恢复&quot;&gt;&lt;a href=&quot;#Redis-数据备份与恢复&quot; class=&quot;headerlink&quot; title=&quot;Redis 数据备份与恢复&quot;&gt;&lt;/a&gt;Redis 数据备份与恢复&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 打包和部署</title>
-    <link href="https://pudongping.github.io/posts/5c09a73d.html"/>
-    <id>https://pudongping.github.io/posts/5c09a73d.html</id>
-    <published>2022-11-26T14:45:03.000Z</published>
-    <updated>2023-06-22T02:40:09.612Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Go-打包和部署&quot;&gt;&lt;a href=&quot;#Go-打包和部署&quot; class=&quot;headerlink&quot; title=&quot;Go 打包和部署&quot;&gt;&lt;/a&gt;Go 打包和部署&lt;/h1&gt;&lt;h2 id=&quot;打包相关命令&quot;&gt;&lt;a href=&quot;#打包相关命令&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在 Go 项目中可靠的获取项目根目录</title>
-    <link href="https://pudongping.github.io/posts/7c9ed3a3.html"/>
-    <id>https://pudongping.github.io/posts/7c9ed3a3.html</id>
-    <published>2022-11-22T02:24:05.000Z</published>
-    <updated>2023-06-22T02:40:09.632Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何在-Go-项目中可靠的获取项目根目录&quot;&gt;&lt;a href=&quot;#如何在-Go-项目中可靠的获取项目根目录&quot; class=&quot;headerlink&quot; title=&quot;如何在 Go 项目中可靠的获取项目根目录&quot;&gt;&lt;/a&gt;如何在 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go Modules 模式</title>
-    <link href="https://pudongping.github.io/posts/2f3aad3a.html"/>
-    <id>https://pudongping.github.io/posts/2f3aad3a.html</id>
-    <published>2022-11-14T14:49:58.000Z</published>
-    <updated>2023-06-22T02:40:09.611Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Go-Modules-模式&quot;&gt;&lt;a href=&quot;#Go-Modules-模式&quot; class=&quot;headerlink&quot; title=&quot;Go Modules 模式&quot;&gt;&lt;/a&gt;Go Modules 模式&lt;/h1&gt;&lt;h2 id=&quot;GOPATH-目录&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hyperf 框架中将数据导出到 csv 文件中</title>
-    <link href="https://pudongping.github.io/posts/d0c857b0.html"/>
-    <id>https://pudongping.github.io/posts/d0c857b0.html</id>
-    <published>2022-11-09T15:15:52.000Z</published>
-    <updated>2023-06-22T02:40:09.617Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Hyperf-框架中将数据导出到-csv-文件中&quot;&gt;&lt;a href=&quot;#Hyperf-框架中将数据导出到-csv-文件中&quot; class=&quot;headerlink&quot; title=&quot;Hyperf 框架中将数据导出到 csv 文件中&quot;&gt;&lt;/a&gt;Hyperf</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
-    
-    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
     
   </entry>
   
