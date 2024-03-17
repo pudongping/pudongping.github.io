@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>一文弄懂 Swoole 进程、线程、协程到底是什么？</title>
+      <link href="posts/289a4dbc.html"/>
+      <url>posts/289a4dbc.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="swoole-和-workerman-的区别"><a href="#swoole-和-workerman-的区别" class="headerlink" title="swoole 和 workerman 的区别"></a>swoole 和 workerman 的区别</h2><ul><li>workerman 使用纯 php 编写；swoole 采用 c/c++ 语言编写，作为 php 扩展</li><li>workerman 多进程；swoole 协程，多进程，多线程</li><li>swoole 性能优于 workerman</li><li>swoole 并没有用 libevent，所以不需要安装 libevent</li><li>swoole 并不依赖 php 的 stream/sockets/pcntl/posix/sysvmsg 等扩展</li></ul><h2 id="master-（主进程）、reactor-（线程）、manager（管理进程）、worker-（工作进程）-、-task-（任务进程）"><a href="#master-（主进程）、reactor-（线程）、manager（管理进程）、worker-（工作进程）-、-task-（任务进程）" class="headerlink" title="master （主进程）、reactor （线程）、manager（管理进程）、worker （工作进程） 、 task （任务进程）"></a>master （主进程）、reactor （线程）、manager（管理进程）、worker （工作进程） 、 task （任务进程）</h2><p>对于 Linux 系统，是无法区分<strong>进程</strong>和<strong>线程</strong>的，CPU 是单进程（因此<strong>并行执行</strong>只有1，因为只有 1 个 CPU，但是可用开多个进程/线程去执行，这样就达到了<strong>并发执行</strong>，CPU 可以通过轮训调度从多个进程/线程之间来回做切换，但是多进程/线程切换也就产生了切换之间的成本<strong>进程/线程的数量越多，切换成本就越大，也就越浪费，因为这种切换并没有在业务代码中消耗</strong>）</p><p>一个线程，又可用分为用户空间（用户线程）和内核空间（内核线程），内核线程就是 thread（线程），用户线程就是 co-routine（协程，golang 中叫做 goroutine），然后又可以通过一个线程去绑定一个 <strong>协程调度器</strong>，一个协程调度器又可以绑定多个协程，这样性能高低就完全取决于优化协程调度器，哪门语言的协程调度器做的好，那么性能就高。</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-e8dbb161c619f9c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-877e8c01041475e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h3 id="master-进程"><a href="#master-进程" class="headerlink" title="master 进程"></a>master 进程</h3><p>主进程内有多个 reactor 线程，reactor 线程基于 epoll/kqueue 进行网络事件轮训。收到数据后转发到 worker 进程去处理。</p><h3 id="reactor-线程"><a href="#reactor-线程" class="headerlink" title="reactor 线程"></a>reactor 线程</h3><p>reactor 线程个数默认和 cpu 核心数一致</p><h3 id="manager-进程"><a href="#manager-进程" class="headerlink" title="manager 进程"></a>manager 进程</h3><p>对所有 worker 进程进行管理，worker 进程生命周期结束或者发生异常时自动回收，并创建新的 worker 进程</p><h3 id="worker-进程"><a href="#worker-进程" class="headerlink" title="worker 进程"></a>worker 进程</h3><p>对收到的数据进行处理，包括协议解析和响应请求。如果 swoole 没有设置 worker_num ，底层会启动与 cpu 数量一致的 worker 进程</p><h3 id="task-进程"><a href="#task-进程" class="headerlink" title="task 进程"></a>task 进程</h3><p>task 进程和 worker 进程是同级别的，可以将 worker 进程中的一些服务投递给 task 进程进行处理，来达到分担 worker 进程工作量的目的</p><h3 id="coroutine-协程"><a href="#coroutine-协程" class="headerlink" title="coroutine 协程"></a>coroutine 协程</h3><p>协程可以理解为纯用户态的线程，其通过协作而不是抢占来进行切换，相对于进程或者线程，协程所有的操作都可以在用户态完成，创建和切换的消耗更低，Swoole 可以为每一个请求创建对应的协程，根据 IO 的状态来合理的调度协程。</p><p>在 Swoole 4.x 中，协程（Coroutine）取代了异步回调，成为 Swoole 官方推荐的编程方式。Swoole 协程解决了异步回调编程困难的问题，使用协程可以以传统同步编程的方法编写代码，底层自动切换为异步 IO，既保证了编程的简单性，又可借助异步 IO，提升系统的并发能力。</p><blockquote><p>注：Swoole 4.x 之前的版本也支持协程，不过 4.x 版本对协程内核进行了重构，功能更加强大，提供了完整的协程+通道特性，带来全新的 CSP 编程模型，后续介绍和示例都是基于 Swoole 4.x 版本。</p></blockquote><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-78ba06649d969718.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进程/线程结构图"></p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-aa2ab771fa24e858.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="swoole 架构"></p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-e90a521635fbfee1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="swoole 运行流程图"></p><h2 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h2><ul><li>进程<br>进程是一个具有一定独立功能的程序在一个数据集上的一次动态执行的过程，是操作系统进行资源分配和调度的一个独立单位，是应用程序运行的载体。</li><li>线程<br>线程是程序执行中一个单一的顺序控制流程，是程序执行流的最小单元，是处理器调度和分派的基本单位。一个进程可以有一个或多个线程。</li></ul><h3 id="进程和线程的区别"><a href="#进程和线程的区别" class="headerlink" title="进程和线程的区别"></a>进程和线程的区别</h3><ul><li>线程是程序执行的最小单位，而进程是操作系统分配资源的最小单位。</li><li>一个进程由一个或多个线程组成，线程是一个进程中代码的不同执行路线。</li><li>进程之间相互独立，但同一进程下的各个线程之间共享程序的内存空间（包括代码段，数据集，堆等）及一些进程级的资源（如打开文件和信号等），某进程内的线程在其他进程不可见。</li><li>调度和切换：线程上下文切换比进程上下文切换要快得多。</li><li>线程天生的共享内存空间，线程间的通信更简单，避免了进程 IPC（进程间的通信） 引入新的复杂度。</li><li>进程开销大，线程开销小。</li></ul><h3 id="php-实现多进程"><a href="#php-实现多进程" class="headerlink" title="php 实现多进程"></a>php 实现多进程</h3><p>pcntl 是 php 官方的多进程扩展，只能在 Linux 环境下使用，编译 php 的时候需要开启 –enable-pcntl<br>pcntl_fork 在当前进程当前位置产生分支（子进程），fork 是创建了一个子进程，父进程和子进程都从 fork 得位置开始向下继续执行，不同的是父进程执行过程中，得到的 fork 返回值为子进程号，而子进程得到得是 0。</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span><span class="token variable">$pid</span> <span class="token operator">=</span> <span class="token function">pcntl_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$pid</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'我是父进程'</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token keyword">elseif</span> <span class="token punctuation">(</span><span class="token variable">$pid</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'我是子进程'</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span><span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>多进程例子：会先输出 <code>111</code> 然后输出 <code>222</code></p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$pid</span> <span class="token operator">=</span> <span class="token function">pcntl_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'222'</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$pid</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">pcntl_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'111'</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">// 两段代码并行执行，并不会因为第一个判断中有了 sleep 就停止往下执行代码</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="进程间的通信"><a href="#进程间的通信" class="headerlink" title="进程间的通信"></a>进程间的通信</h3><p>在各个进程中，内存空间都是不一致的，各个变量都是在不同的内存空间。进程间空间独立，数据不能共享。</p><p>例子如下：</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span><span class="token variable">$str</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'alex'</span><span class="token punctuation">;</span><span class="token variable">$pid</span> <span class="token operator">=</span> <span class="token function">pcntl_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$pid</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token variable">$str</span> <span class="token operator">.=</span> <span class="token string single-quoted-string">'===111'</span><span class="token punctuation">;</span>    <span class="token keyword">echo</span> <span class="token variable">$str</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>  <span class="token comment">// 会输出 alex===111</span><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>    <span class="token keyword">echo</span> <span class="token variable">$str</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>  <span class="token comment">// 会输出 alex</span><span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>进程间的通信可以采用多种方式，比如：管道通信、消息队列通信、进程信号通信、套接字通信、第三方通信（使用文件操作，或者mysql，或者redis等方法也可以实现通信）、共享内存通信（映射一段能被其他进程所访问的内存，这段共享内存由一个进程创建，但多个进程都可以访问。共享内存是最快的 IPC &lt;进程间通信&gt; 方式，它是针对其他进程间通信方式运行效率低而专门设计的。<code>swoole</code> 就是采用共享内存通信）</p><h2 id="线程和协程"><a href="#线程和协程" class="headerlink" title="线程和协程"></a>线程和协程</h2><p>提起并发编程，最常见的就是 <strong>多线程编程</strong> 。线程是操作系统能够进行调度的最小单位，共享同一进程的数据和资源，并行地处理多个任务。（同一进程下多线程之间的内存是共享的）。</p><p>多线程存在两个问题，在线程数量过多时，问题被放大的尤为明显。</p><ul><li>线程的上下文切换造成的开销。</li><li>线程之间对资源的竞争问题（线程安全）。</li></ul><p>协程也是一种异步方案。在代码 IO 阻塞时，当前协程让出 CPU 执行权，让其它协程执行，待 IO 执行完毕，阻塞的协程继续执行。虽然代码是异步执行，但写代码看起来像是同步的。支持协程的编程语言实现了协程的调度器，提供了 channel 机制进行协程间通信 （CSP模型中消息传递的实现）。基于 CSP 模型的协程方案，实现了无共享内存无锁的并发，可以匹配异步回调的性能。</p><p><strong>Swoole 的协程在底层实现上是单线程的</strong>，因此同一时间只有一个协程在工作，协程的执行是串行的，这与线程不同，多个线程会被操作系统调度到多个 CPU 并行执行。</p><p>一个协程正在运行时，其他协程会停止工作。当前协程执行阻塞 IO 操作时会挂起，底层调度器会进入事件循环。当有 IO 完成事件时，底层调度器恢复事件对应的协程的执行。</p><p>在 Swoole 中对 CPU 多核的利用，仍然依赖于 Swoole 引擎的多进程机制。</p><h3 id="协程的特性"><a href="#协程的特性" class="headerlink" title="协程的特性"></a>协程的特性</h3><p>协程极高的执行效率。因为子程序切换不是线程切换，而是由程序自身控制，因此，没有线程切换的开销。<br>不需要多进程的锁机制，因为只有一个线程，也不存在同时写变量冲突。（swoole 是开了一个线程，多个协程的机制）</p><h3 id="线程和协程的适用场景"><a href="#线程和协程的适用场景" class="headerlink" title="线程和协程的适用场景"></a>线程和协程的适用场景</h3><p>协程（协同程序），同一时间只能执行某个协程。开辟多个协程开销不大，协程适合对某任务进行分时处理。<strong>IO密集型</strong><br>线程，同一时间可以同时执行多个线程。开辟多条线程开销很大。线程适合多任务同时处理。 <strong>CPU密集型</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Swoole </tag>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Swoole 的底层架构及运行原理</title>
+      <link href="posts/84212e0c.html"/>
+      <url>posts/84212e0c.html</url>
+      
+        <content type="html"><![CDATA[<p>先看这张底层架构图</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-176c45bba608fa9a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Swoole 的底层架构及运行原理图"></p><p>我们可以看到，Swoole 主要包含以下组件：</p><ul><li><strong>Master：</strong> 当我们运行启动 Swoole 的 PHP 脚本时，首先会创建该进程（它是整个应用的 root 进程），然后由该进程 fork 出 Reactor 线程和 Manager 进程。</li><li><strong>Reactor：</strong> Reactor 是包含在 Master 进程中的多线程程序，用来处理 TCP 连接和数据收发（异步非阻塞方式）。Reactor 主线程在 Accept 新的连接后，会将这个连接分配给一个固定的 Reactor 线程，并由这个线程负责监听此 socket。在 socket 可读时读取数据，并进行协议解析，将请求投递到 Worker 进程；在 socket 可写时将数据发送给 TCP 客户端。</li><li><strong>Manager：</strong> Manager 进程负责 fork 并维护多个 Worker 子进程。当有 Worker 子进程中止时，Manager 负责回收并创建新的 Worker 子进程，以便保持 Worker 进程总数不变；当服务器关闭时，Manager 将发送信号给所有 Worker 子进程，通知其关闭服务。</li><li><strong>Worker：</strong> 以多进程方式运行，每个子进程负责接受由 Reactor 线程投递的请求数据包，并执行 PHP 回调函数处理数据，然后生成响应数据并发给 Reactor 线程，由 Reactor 线程发送给 TCP 客户端。所有请求的处理逻辑都是在 Worker 子进程中完成，这是我们编写业务代码时真正要关心的部分。</li><li><strong>Task Worker：</strong> 功能和 Worker 进程类似，同样以多进程方式运行，但仅用于任务分发，当 Worker 进程将任务异步分发到任务队列时，Task Worker 负责从队列中消费这些任务（同步阻塞方式处理），处理完成后将结果返回给 Worker 进程。</li></ul><p>Swoole 官方对 Reactor、Worker、Task Worker有一个形象的比喻，如果把基于 Swoole 的 Web 服务器比作一个工厂，那么 Reactor 就是这个工厂的销售员，Worker 是负责生产的工人，销售员负责接订单，然后交给工人生产，而 Task Worker 可以理解为行政人员，负责替工人处理生产以外的杂事，比如订盒饭、收快递，让工人可以安心生产。</p><h1 id="Swoole-的生命周期回调函数"><a href="#Swoole-的生命周期回调函数" class="headerlink" title="Swoole 的生命周期回调函数"></a>Swoole 的生命周期回调函数</h1><p>当 Master 主进程启动或关闭时会触发下面这两个回调函数：</p><ul><li>onStart</li><li>onShutdown</li></ul><p>而 Manager 管理进程启动或关闭时会触发下面这两个回调函数：</p><ul><li>onManagerStart</li><li>onManagerStop</li></ul><p>Worker 进程的生命周期中，有多个回调函数：</p><ul><li>onWorkerStart：Worker 进程启动时</li><li>onWorkerStop： Worker 进程关闭时</li><li>onConnect：连接建立时</li><li>onClose：连接关闭时</li><li>onReceive：收到请求数据时</li><li>onFinish：投递的任务处理完成时</li></ul><p>Task Worker 进程也有两个回调函数，分别在</p><ul><li>onTask：由新任务投递过来时</li><li>onWorkerStart：Task Worker 进程启动时也会触发</li></ul><p>我们日常开发中主要关注的是 Worker 进程的回调函数，只需要在服务器实例上监听相应的事件，并编写对应的回调函数来处理相应的业务逻辑即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Swoole </tag>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>swoole环境搭建</title>
       <link href="posts/59727fb0.html"/>
       <url>posts/59727fb0.html</url>
@@ -74,9 +128,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -103,9 +157,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -132,9 +186,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -161,9 +215,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2603,9 +2657,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2634,9 +2688,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2663,9 +2717,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2692,9 +2746,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2912,9 +2966,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -3151,9 +3205,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -3180,9 +3234,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             

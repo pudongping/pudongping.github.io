@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-03-17T05:04:37.260Z</updated>
+  <updated>2024-03-17T06:12:56.531Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一文弄懂 Swoole 进程、线程、协程到底是什么？</title>
+    <link href="https://pudongping.github.io/posts/289a4dbc.html"/>
+    <id>https://pudongping.github.io/posts/289a4dbc.html</id>
+    <published>2024-03-17T06:10:22.000Z</published>
+    <updated>2024-03-17T06:12:56.531Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;swoole-和-workerman-的区别&quot;&gt;&lt;a href=&quot;#swoole-和-workerman-的区别&quot; class=&quot;headerlink&quot; title=&quot;swoole 和 workerman 的区别&quot;&gt;&lt;/a&gt;swoole 和 workerman</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Swoole 的底层架构及运行原理</title>
+    <link href="https://pudongping.github.io/posts/84212e0c.html"/>
+    <id>https://pudongping.github.io/posts/84212e0c.html</id>
+    <published>2024-03-17T05:43:05.000Z</published>
+    <updated>2024-03-17T06:33:09.994Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;先看这张底层架构图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/loading.gif&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>swoole环境搭建</title>
     <link href="https://pudongping.github.io/posts/59727fb0.html"/>
     <id>https://pudongping.github.io/posts/59727fb0.html</id>
     <published>2024-03-17T04:48:05.000Z</published>
-    <updated>2024-03-17T05:04:37.260Z</updated>
+    <updated>2024-03-17T05:39:03.674Z</updated>
     
     
       
@@ -94,9 +149,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -123,9 +178,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -152,9 +207,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -182,9 +237,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -500,67 +555,6 @@
     <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis 高频常用命令列表</title>
-    <link href="https://pudongping.github.io/posts/d7e52b6f.html"/>
-    <id>https://pudongping.github.io/posts/d7e52b6f.html</id>
-    <published>2023-12-08T16:55:25.000Z</published>
-    <updated>2023-12-08T16:57:20.026Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Redis-的数据类型&quot;&gt;&lt;a href=&quot;#Redis-的数据类型&quot; class=&quot;headerlink&quot; title=&quot;Redis 的数据类型&quot;&gt;&lt;/a&gt;Redis 的数据类型&lt;/h1&gt;&lt;h2 id=&quot;redis-cli-命令&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>M1 安装 Homebrew 和 php 开发环境</title>
-    <link href="https://pudongping.github.io/posts/b12a8007.html"/>
-    <id>https://pudongping.github.io/posts/b12a8007.html</id>
-    <published>2023-11-27T14:22:13.000Z</published>
-    <updated>2023-11-27T15:04:04.032Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;先安装 homebrew 方便下载软件。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果使用官网推荐的方式下载时提示以下错误信息时，则表示网络超时，建议直接使用源码包的形式安装&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;错误信息如下所示：&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="Homebrew" scheme="https://pudongping.github.io/tags/Homebrew/"/>
     
   </entry>
   
