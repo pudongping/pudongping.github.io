@@ -20,7 +20,9 @@ summary:
 
 先看这张底层架构图
 
-![Swoole 的底层架构及运行原理图](https://laravel.gstatics.cn/wp-content/uploads/2019/07/c6b0f1f7dadffaa5be4f7b6b869acd67.jpg)
+[//]: # (![Swoole 的底层架构及运行原理图]&#40;https://laravel.gstatics.cn/wp-content/uploads/2019/07/c6b0f1f7dadffaa5be4f7b6b869acd67.jpg&#41;)
+
+![Swoole 的底层架构及运行原理图](https://upload-images.jianshu.io/upload_images/14623749-176c45bba608fa9a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 我们可以看到，Swoole 主要包含以下组件：
 
