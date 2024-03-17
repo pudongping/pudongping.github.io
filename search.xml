@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>swoole环境搭建</title>
+      <link href="posts/59727fb0.html"/>
+      <url>posts/59727fb0.html</url>
+      
+        <content type="html"><![CDATA[<p>PHP Swoole 扩展的安装方式有很多，这完全取决于你的使用环境，本文大致介绍几种常见的安装方式，且以在 M1 芯片上的 Mac 环境作为示例。</p><h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 编译安装 php 的时候直接编译进去</span>--enable-swoole <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pecl <span class="token function">install</span> swoole<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="第三种"><a href="#第三种" class="headerlink" title="第三种"></a>第三种</h2><p>docker 安装</p><h2 id="第四种"><a href="#第四种" class="headerlink" title="第四种"></a>第四种</h2><p>源码编译安装</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 从官方扩展网站中下载 swoole 源码安装包，这里下载的版本为 4.4.3</span><span class="token function">wget</span> http://pecl.php.net/get/swoole-4.4.3.tgz<span class="token comment"># 安装 4.6.4 版本的 swoole</span><span class="token function">wget</span> https://github.com/swoole/swoole-src/archive/v4.6.4.tar.gz<span class="token comment"># 解压安装包并进入</span><span class="token function">tar</span> <span class="token parameter variable">-xzvf</span> swoole-4.4.3.tgz <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> swoole-4.4.3<span class="token comment"># 查找 phpize 所在目录</span><span class="token function">which</span> phpize<span class="token comment"># 使用 phpize 生成 configure 文件</span>/usr/local/php/bin/phpize./configure --with-php-config<span class="token operator">=</span>/usr/local/php/bin/php-config --enable-openssl --enable-http2 --enable-sockets --enable-mysqlnd<span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span><span class="token comment"># 在 php.ini 配置文件中开启 swoole 扩展</span><span class="token assign-left variable">extension</span><span class="token operator">=</span>swoole.so<span class="token comment"># 重启 php</span>/etc/init.d/php-fpm restart<span class="token comment"># 查看扩展是否已经开启</span>php <span class="token parameter variable">-m</span>  php <span class="token parameter variable">--ri</span> swoole<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="M1-芯片-MacOS-上安装-swoole"><a href="#M1-芯片-MacOS-上安装-swoole" class="headerlink" title="M1 芯片 MacOS 上安装 swoole"></a>M1 芯片 MacOS 上安装 swoole</h2><h3 id="下载-swoole-源码"><a href="#下载-swoole-源码" class="headerlink" title="下载 swoole 源码"></a>下载 swoole 源码</h3><pre class="line-numbers language-none"><code class="language-none"># 下载 swoole 源码wget https://github.com/swoole/swoole-src/archive/refs/tags/v4.8.1.zip# 解压缩 swoole 源码unzip v4.8.1.zip# 切换到源码目录中cd swoole-src-4.8.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="安装前准备"><a href="#安装前准备" class="headerlink" title="安装前准备"></a>安装前准备</h3><pre class="line-numbers language-none"><code class="language-none"># 查看 php 安装目录which php# 比如我的 php 目录如下所示：# /opt/homebrew/opt/php@7.4/bin/php# 查看 php-config 目录which php-config# 比如我的 php-config 目录如下所示：# /opt/homebrew/opt/php@7.4/bin/php-config# 查看 phpize 安装目录which phpize# 比如我的 phpize 目录如下所示：# /opt/homebrew/opt/php@7.4/bin/phpize# 查看 openssl 安装路径brew info openssl# 如果出现如下所示：# export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"# 如果没有安装 openssl 的话，则执行 `brew install openssl` 进行安装<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="编译安装-swoole"><a href="#编译安装-swoole" class="headerlink" title="编译安装 swoole"></a>编译安装 swoole</h3><pre class="line-numbers language-none"><code class="language-none"># 使用 phpize 创建 php 编译检测脚本 ./configure# 在 swoole 源码目录中执行如下命令# 注意：需要选择 php 对应版本的 phpize，这里使用的是绝对路径，否则编译安装无法生效sudo /opt/homebrew/opt/php@7.4/bin/phpize# 会直接在 swoole 源码目录中生成 configure 执行文件# 创建编译文件# 开启了 swoole 的 ssl 功能# 开启了 swoole 支持 http2 相关的功能# m1 内核下需要开启 --enable-thread-contextsudo ./configure \--with-php-config=/opt/homebrew/opt/php@7.4/bin/php-config \--with-openssl-dir=/opt/homebrew/opt/openssl \--enable-openssl \--enable-http2 \--enable-thread-context# 编译 swoolesudo make &amp;&amp; make install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="将-swoole-so-添加到-php-ini-配置文件中"><a href="#将-swoole-so-添加到-php-ini-配置文件中" class="headerlink" title="将 swoole.so 添加到 php.ini 配置文件中"></a>将 swoole.so 添加到 php.ini 配置文件中</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 查看 php 扩展安装目录</span><span class="token comment"># 比如我的路径为</span><span class="token comment"># extension_dir =&gt; /opt/homebrew/lib/php/pecl/20190902 =&gt; /opt/homebrew/lib/php/pecl/20190902</span>php <span class="token parameter variable">-i</span> <span class="token operator">|</span> <span class="token function">grep</span> extension_dir<span class="token comment"># 查看自己的 php 扩展目录下是否有 `swoole.so` 文件</span><span class="token comment"># 比如我这里</span><span class="token builtin class-name">cd</span> /opt/homebrew/lib/php/pecl/20190902<span class="token comment"># 如果没有时，则需要将编译好的 `swoole.so` 文件复制到 php 的扩展目录中，比如我这里</span><span class="token function">cp</span> swoole-src-4.8.1/.libs/swoole.so /opt/homebrew/lib/php/pecl/20190902<span class="token comment"># 查看 php.ini 配置文件路径</span>php <span class="token parameter variable">--ini</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'Loaded Configuration File:'</span><span class="token comment"># 比如我这里</span><span class="token comment"># Loaded Configuration File:         /opt/homebrew/etc/php/7.4/php.ini</span><span class="token comment"># 在 php.ini 配置文件中最后一行添加 `extension="swoole.so"`</span><span class="token comment"># 比如我这里</span><span class="token comment"># vim /opt/homebrew/etc/php/7.4/php.ini</span><span class="token comment"># 查看 swoole 扩展详情</span>php <span class="token parameter variable">--ri</span> swoole<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Swoole </tag>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何编写Dockerfile</title>
       <link href="posts/1a6d22ba.html"/>
       <url>posts/1a6d22ba.html</url>
@@ -47,9 +74,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -76,9 +103,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -105,9 +132,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -134,9 +161,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2576,9 +2603,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2607,9 +2634,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2636,9 +2663,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2665,9 +2692,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2885,9 +2912,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
         </tags>
       
@@ -3124,9 +3151,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -3153,9 +3180,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
