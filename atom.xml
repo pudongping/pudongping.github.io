@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-03-17T06:12:56.531Z</updated>
+  <updated>2024-03-18T16:08:53.879Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Consul，一个服务发现神器</title>
+    <link href="https://pudongping.github.io/posts/74705a17.html"/>
+    <id>https://pudongping.github.io/posts/74705a17.html</id>
+    <published>2024-03-18T16:08:05.000Z</published>
+    <updated>2024-03-18T16:08:53.879Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在使用微服务的架构中，Consul 是一个不可或缺的工具。它由 HashiCorp 公司开发，Consul 提供了服务发现、健康检查、配置管理和服务网格功能，使得在复杂的分布式系统中管理和配置服务变得简单高效。&lt;/p&gt;
+&lt;h2 id=&quot;服务发现：解决微服务寻址难题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="分布式系统" scheme="https://pudongping.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="分布式系统" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一文弄懂 Swoole 进程、线程、协程到底是什么？</title>
     <link href="https://pudongping.github.io/posts/289a4dbc.html"/>
     <id>https://pudongping.github.io/posts/289a4dbc.html</id>
     <published>2024-03-17T06:10:22.000Z</published>
-    <updated>2024-03-17T06:12:56.531Z</updated>
+    <updated>2024-03-17T06:33:26.394Z</updated>
     
     
       
@@ -525,36 +553,6 @@
     
     
     <category term="生活" scheme="https://pudongping.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手摸手教你安装 Redis</title>
-    <link href="https://pudongping.github.io/posts/b76f1d2.html"/>
-    <id>https://pudongping.github.io/posts/b76f1d2.html</id>
-    <published>2023-12-08T17:02:44.000Z</published>
-    <updated>2023-12-08T17:04:12.217Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;安装-Redis&quot;&gt;&lt;a href=&quot;#安装-Redis&quot; class=&quot;headerlink&quot; title=&quot;安装 Redis&quot;&gt;&lt;/a&gt;安装 Redis&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
