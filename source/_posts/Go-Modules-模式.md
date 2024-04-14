@@ -1,7 +1,7 @@
 ---
 title: Go Modules 模式
 author: Alex
-top: false
+top: true
 hide: false
 cover: false
 toc: true

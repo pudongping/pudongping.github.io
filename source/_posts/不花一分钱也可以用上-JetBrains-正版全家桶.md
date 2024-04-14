@@ -1,7 +1,7 @@
 ---
 title: 不花一分钱也可以用上 JetBrains 正版全家桶
 author: Alex
-top: false
+top: true
 hide: false
 cover: false
 toc: true

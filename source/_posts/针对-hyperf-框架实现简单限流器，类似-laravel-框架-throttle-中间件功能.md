@@ -3,7 +3,7 @@ title: 针对 hyperf 框架实现简单限流器，类似 laravel 框架 throttl
 author: Alex
 top: false
 hide: false
-cover: false
+cover: true
 toc: true
 mathjax: false
 categories: PHP

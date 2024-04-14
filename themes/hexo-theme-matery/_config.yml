@@ -209,7 +209,7 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Software Engineer | Programming Geeker | Artisan, Backend Developer & Overall Web Enthusiast
-  introduction: 姓名：蒲东平，英文名：Alex，网名：南山竹，微信公众号：蒲东平。坐标上海，从事后端开发 6 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的宁静与乐趣，相信编程是一门艺术，编程丰富生活。
+  introduction: 姓名：蒲东平，英文名：Alex，网名：南山竹，微信公众号：浅墨觅尘往。坐标上海，从事后端开发 6 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的宁静与乐趣，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
