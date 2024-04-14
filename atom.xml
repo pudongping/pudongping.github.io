@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-03-18T16:08:53.879Z</updated>
+  <updated>2024-04-14T11:36:42.864Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Golang中遇到“note module requires Go xxx”后的解决方案，不升级Go版本！</title>
+    <link href="https://pudongping.github.io/posts/1c839b10.html"/>
+    <id>https://pudongping.github.io/posts/1c839b10.html</id>
+    <published>2024-04-14T11:27:26.000Z</published>
+    <updated>2024-04-14T11:36:42.864Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前几天，需要对一个两年前写的项目添加点儿新功能，需要用到一个 Http 客户端包，于是就用了 &lt;code&gt;https://github.com/go-resty/resty&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Consul，一个服务发现神器</title>
     <link href="https://pudongping.github.io/posts/74705a17.html"/>
     <id>https://pudongping.github.io/posts/74705a17.html</id>
     <published>2024-03-18T16:08:05.000Z</published>
-    <updated>2024-03-18T16:08:53.879Z</updated>
+    <updated>2024-03-18T16:09:40.948Z</updated>
     
     
       
@@ -528,31 +555,6 @@
     
     
     <category term="Vim" scheme="https://pudongping.github.io/tags/Vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown：解放排版，简洁高效的文字创作神器！</title>
-    <link href="https://pudongping.github.io/posts/23b678b6.html"/>
-    <id>https://pudongping.github.io/posts/23b678b6.html</id>
-    <published>2023-12-11T09:01:43.000Z</published>
-    <updated>2024-02-26T14:42:15.030Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Markdown 是一种轻量级的标记语言，它允许人们使用&lt;strong&gt;易读易写&lt;/strong&gt;的纯文本格式编写文档，借助可实现快速排版且转换成格式丰富的 HTML</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://pudongping.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://pudongping.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
