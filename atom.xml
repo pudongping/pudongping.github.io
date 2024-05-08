@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T17:25:59.229Z</updated>
+  <updated>2024-05-08T17:44:00.802Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>推荐几个好用的GRPC调试工具</title>
+    <link href="https://pudongping.github.io/posts/47f9e31c.html"/>
+    <id>https://pudongping.github.io/posts/47f9e31c.html</id>
+    <published>2024-05-08T17:41:44.000Z</published>
+    <updated>2024-05-08T17:44:00.802Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GRPC-调试工具&quot;&gt;&lt;a href=&quot;#GRPC-调试工具&quot; class=&quot;headerlink&quot; title=&quot;GRPC 调试工具&quot;&gt;&lt;/a&gt;GRPC 调试工具&lt;/h1&gt;&lt;h2 id=&quot;1-grpcui&quot;&gt;&lt;a href=&quot;#1-grpcui&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="RPC" scheme="https://pudongping.github.io/categories/RPC/"/>
+    
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go 基础数据类型</title>
     <link href="https://pudongping.github.io/posts/1308b152.html"/>
     <id>https://pudongping.github.io/posts/1308b152.html</id>
     <published>2024-05-08T17:25:27.000Z</published>
-    <updated>2024-05-08T17:25:59.229Z</updated>
+    <updated>2024-05-08T17:26:08.280Z</updated>
     
     
       
@@ -534,34 +561,6 @@
     
     
     <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建 GitLab Git 服务器</title>
-    <link href="https://pudongping.github.io/posts/34b62620.html"/>
-    <id>https://pudongping.github.io/posts/34b62620.html</id>
-    <published>2024-01-15T06:00:58.000Z</published>
-    <updated>2024-02-26T14:42:15.032Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-    <category term="Git 服务器" scheme="https://pudongping.github.io/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
