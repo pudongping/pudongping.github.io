@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T17:11:37.203Z</updated>
+  <updated>2024-05-08T17:20:28.421Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中init 函数、变量、常量的执行顺序</title>
+    <link href="https://pudongping.github.io/posts/40b0fc5c.html"/>
+    <id>https://pudongping.github.io/posts/40b0fc5c.html</id>
+    <published>2024-05-08T17:19:47.000Z</published>
+    <updated>2024-05-08T17:20:28.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;init-函数、变量、常量的执行顺序&quot;&gt;&lt;a href=&quot;#init-函数、变量、常量的执行顺序&quot; class=&quot;headerlink&quot; title=&quot;init 函数、变量、常量的执行顺序&quot;&gt;&lt;/a&gt;init 函数、变量、常量的执行顺序&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>分享几个Go Slice 技巧，大大提高工作效率！</title>
     <link href="https://pudongping.github.io/posts/669a361f.html"/>
     <id>https://pudongping.github.io/posts/669a361f.html</id>
     <published>2024-05-08T17:10:56.000Z</published>
-    <updated>2024-05-08T17:11:37.203Z</updated>
+    <updated>2024-05-08T17:12:13.397Z</updated>
     
     
       
@@ -536,31 +563,6 @@
     <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何运用 systemd 管理 Linux 中的服务</title>
-    <link href="https://pudongping.github.io/posts/ad8a576e.html"/>
-    <id>https://pudongping.github.io/posts/ad8a576e.html</id>
-    <published>2024-01-15T02:05:49.000Z</published>
-    <updated>2024-02-26T14:42:15.032Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;什么是-systemd&quot;&gt;&lt;a href=&quot;#什么是-systemd&quot; class=&quot;headerlink&quot; title=&quot;什么是 systemd&quot;&gt;&lt;/a&gt;什么是 systemd&lt;/h2&gt;&lt;p&gt;&lt;code&gt;systemd&lt;/code&gt; 是 Linux</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
   </entry>
   

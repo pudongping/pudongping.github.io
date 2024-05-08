@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Go语言中init 函数、变量、常量的执行顺序</title>
+      <link href="posts/40b0fc5c.html"/>
+      <url>posts/40b0fc5c.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="init-函数、变量、常量的执行顺序"><a href="#init-函数、变量、常量的执行顺序" class="headerlink" title="init 函数、变量、常量的执行顺序"></a>init 函数、变量、常量的执行顺序</h1><p><img src="/medias/loading.gif" data-original="https://cdn.learnku.com/uploads/images/202011/11/1/ipbtiTb7Fd.png!large" alt="img"></p><ul><li>假如 main 引入了 pkg1 最终依赖于 pkg3，pkg3 中的 init() 方法会优先被执行；</li><li>同一个包里，单文件的情况，init() 优先于其他方法执行，包括 main()；</li><li>同一个包里的常量和变量声明会优先于 init() 方法执行；</li><li>同一个文件里允许多个 init() 存在，会按照自上而下的顺序执行；</li><li>同一个包，多个文件里存在 init() 的情况，执行顺序是按文件名的字母排序执行。</li></ul><h2 id="包导入路径优先级"><a href="#包导入路径优先级" class="headerlink" title="包导入路径优先级"></a>包导入路径优先级</h2><h3 id="如果使用-govendor-时"><a href="#如果使用-govendor-时" class="headerlink" title="如果使用 govendor 时"></a>如果使用 <code>govendor</code> 时</h3><ol><li>先从项目根目录的 <code>vendor</code> 目录下查找</li><li>然后从 $GOROOT/src 目录下查找</li><li>然后从 $GOPATH/src 目录下查找</li><li>都找不到时，报错</li></ol><h3 id="如果使用-go-modules-时"><a href="#如果使用-go-modules-时" class="headerlink" title="如果使用 go modules 时"></a>如果使用 <code>go modules</code> 时</h3><ol><li>如果导入的包有域名，则都会在 $GOPATH/pkg/mod 下查找，找不到就去域名对应的网站下寻找，找不到或者找到的不是一个包，则报错</li><li>如果导入的包没有域名，比如 <code>fmt</code> 包，则就去 $GOROOT 下找</li><li>如果项目根目录下存在 <code>vendor</code> 目录，则不管导入的包有没有域名，都只会在 <code>vendor</code> 目录中查找</li></ol><blockquote><p>通常 <code>vendor</code> 目录是通过执行 <code>go mod vendor</code> 命令生成的。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分享几个Go Slice 技巧，大大提高工作效率！</title>
       <link href="posts/669a361f.html"/>
       <url>posts/669a361f.html</url>
