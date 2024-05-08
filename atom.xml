@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T16:57:46.091Z</updated>
+  <updated>2024-05-08T17:11:37.203Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>分享几个Go Slice 技巧，大大提高工作效率！</title>
+    <link href="https://pudongping.github.io/posts/669a361f.html"/>
+    <id>https://pudongping.github.io/posts/669a361f.html</id>
+    <published>2024-05-08T17:10:56.000Z</published>
+    <updated>2024-05-08T17:11:37.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;声明一个数组&quot;&gt;&lt;a href=&quot;#声明一个数组&quot; class=&quot;headerlink&quot; title=&quot;声明一个数组&quot;&gt;&lt;/a&gt;声明一个数组&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-go&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一起来看看如何在Go中使用Swagger？</title>
     <link href="https://pudongping.github.io/posts/53c8a188.html"/>
     <id>https://pudongping.github.io/posts/53c8a188.html</id>
     <published>2024-05-08T16:57:07.000Z</published>
-    <updated>2024-05-08T16:57:46.091Z</updated>
+    <updated>2024-05-08T17:01:01.075Z</updated>
     
     
       
@@ -534,31 +561,6 @@
     
     
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一文讲懂 HTTP 协议知识</title>
-    <link href="https://pudongping.github.io/posts/d8b21c9b.html"/>
-    <id>https://pudongping.github.io/posts/d8b21c9b.html</id>
-    <published>2023-12-19T08:34:20.000Z</published>
-    <updated>2024-02-26T14:42:15.031Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;h2 id=&quot;HTTP是什么？&quot;&gt;&lt;a href=&quot;#HTTP是什么？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
     
   </entry>
   
