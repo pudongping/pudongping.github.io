@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T16:40:43.660Z</updated>
+  <updated>2024-05-08T16:57:46.091Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一起来看看如何在Go中使用Swagger？</title>
+    <link href="https://pudongping.github.io/posts/53c8a188.html"/>
+    <id>https://pudongping.github.io/posts/53c8a188.html</id>
+    <published>2024-05-08T16:57:07.000Z</published>
+    <updated>2024-05-08T16:57:46.091Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Swagger-go-的使用&quot;&gt;&lt;a href=&quot;#Swagger-go-的使用&quot; class=&quot;headerlink&quot; title=&quot;Swagger go 的使用&quot;&gt;&lt;/a&gt;Swagger go 的使用&lt;/h1&gt;&lt;h2 id=&quot;http-服务&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何同时安装多个不同版本的Go？GVM就可以！</title>
     <link href="https://pudongping.github.io/posts/c10fde57.html"/>
     <id>https://pudongping.github.io/posts/c10fde57.html</id>
     <published>2024-05-08T16:39:39.000Z</published>
-    <updated>2024-05-08T16:40:43.660Z</updated>
+    <updated>2024-05-08T16:41:14.997Z</updated>
     
     
       
@@ -532,31 +559,6 @@
     
     
     <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 用户、用户组、权限</title>
-    <link href="https://pudongping.github.io/posts/41bc9f3e.html"/>
-    <id>https://pudongping.github.io/posts/41bc9f3e.html</id>
-    <published>2023-12-19T07:43:10.000Z</published>
-    <updated>2024-02-26T14:42:15.030Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Linux-用户、用户组、权限&quot;&gt;&lt;a href=&quot;#Linux-用户、用户组、权限&quot; class=&quot;headerlink&quot; title=&quot;Linux 用户、用户组、权限&quot;&gt;&lt;/a&gt;Linux 用户、用户组、权限&lt;/h1&gt;&lt;h2 id=&quot;用户&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
   </entry>
   
