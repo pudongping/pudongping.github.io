@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T17:20:28.421Z</updated>
+  <updated>2024-05-08T17:25:59.229Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 基础数据类型</title>
+    <link href="https://pudongping.github.io/posts/1308b152.html"/>
+    <id>https://pudongping.github.io/posts/1308b152.html</id>
+    <published>2024-05-08T17:25:27.000Z</published>
+    <updated>2024-05-08T17:25:59.229Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Go-基础数据类型&quot;&gt;&lt;a href=&quot;#Go-基础数据类型&quot; class=&quot;headerlink&quot; title=&quot;Go 基础数据类型&quot;&gt;&lt;/a&gt;Go 基础数据类型&lt;/h1&gt;&lt;p&gt;对于浮点类型需要被自动推导的变量，其类型将被自动设置为</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中init 函数、变量、常量的执行顺序</title>
     <link href="https://pudongping.github.io/posts/40b0fc5c.html"/>
     <id>https://pudongping.github.io/posts/40b0fc5c.html</id>
     <published>2024-05-08T17:19:47.000Z</published>
-    <updated>2024-05-08T17:20:28.421Z</updated>
+    <updated>2024-05-08T17:20:38.841Z</updated>
     
     
       
@@ -535,34 +562,6 @@
     <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
     
     <category term="Git 服务器" scheme="https://pudongping.github.io/tags/Git-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用 Docker 安装 Gitlab</title>
-    <link href="https://pudongping.github.io/posts/bd835025.html"/>
-    <id>https://pudongping.github.io/posts/bd835025.html</id>
-    <published>2024-01-15T03:51:08.000Z</published>
-    <updated>2024-02-26T14:42:15.031Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/gitlab/gitlab-ce&quot;&gt;Gitlab 官方 docker&lt;/a&gt;&lt;br&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
   </entry>
   

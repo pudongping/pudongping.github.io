@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Go 基础数据类型</title>
+      <link href="posts/1308b152.html"/>
+      <url>posts/1308b152.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Go-基础数据类型"><a href="#Go-基础数据类型" class="headerlink" title="Go 基础数据类型"></a>Go 基础数据类型</h1><p>对于浮点类型需要被自动推导的变量，其类型将被自动设置为 float64，而不管赋值给它的数字是否是用 32 位长度表示的<br>在实际开发中，应该尽可能地使用 float64 类型，因为 math 包中所有有关数学运算的函数都会要求接收这个类型。</p><h2 id="Go-支持的数据类型"><a href="#Go-支持的数据类型" class="headerlink" title="Go 支持的数据类型"></a>Go 支持的数据类型</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><ul><li>布尔类型：bool</li><li>整型： int8、byte、int16、int、uint、uintptr 等</li><li>浮点类型：float32（单精度浮点数，可以精确到小数点后 7 位）、float64（双精度浮点数，可以精确到小数点后 15 位）</li><li>复数类型：complex64、complex128</li><li>字符串：string</li><li>字符类型：rune</li><li>错误类型：error</li></ul><h3 id="复合类型"><a href="#复合类型" class="headerlink" title="复合类型"></a>复合类型</h3><ul><li>指针：pointer</li><li>数组：array</li><li>切片：slice <a href="https://ueokande.github.io/go-slice-tricks/">切片动态操作图片示例</a></li><li>字典：map</li><li>通道：chan</li><li>结构体：struct</li><li>接口：interface</li></ul><h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><table><thead><tr><th>类型</th><th>长度（单位：字节）</th><th>说明</th><th>值范围</th><th>默认值</th></tr></thead><tbody><tr><td>int8</td><td>1</td><td>带符号8位整型</td><td>-128~127</td><td>0</td></tr><tr><td>uint8</td><td>1</td><td>无符号8位整型，与 byte 类型等价</td><td>0~255</td><td>0</td></tr><tr><td>int16</td><td>2</td><td>带符号16位整型</td><td>-32768~32767</td><td>0</td></tr><tr><td>uint16</td><td>2</td><td>无符号16位整型</td><td>0~65535</td><td>0</td></tr><tr><td>int32</td><td>4</td><td>带符号32位整型，与 rune 类型等价</td><td>-2147483648~2147483647</td><td>0</td></tr><tr><td>uint32</td><td>4</td><td>无符号32位整型</td><td>0~4294967295</td><td>0</td></tr><tr><td>int64</td><td>8</td><td>带符号64位整型</td><td>-9223372036854775808~9223372036854775807</td><td>0</td></tr><tr><td>uint64</td><td>8</td><td>无符号64位整型</td><td>0~18446744073709551615</td><td>0</td></tr><tr><td>int</td><td>32位或64位</td><td>根据宿主机的机器字长决定（int 和 uint 是一样的大小）</td><td>32 位的机器就是 int32，64 位就是 int64</td><td>0</td></tr><tr><td>uint</td><td>32位或64位</td><td>根据宿主机的机器字长决定（int 和 uint 是一样的大小）</td><td>32 位的机器就是 int32，64 位就是 int64</td><td>0</td></tr><tr><td>uintptr</td><td>与对应指针相同</td><td>无符号整型，足以存储指针值的未解释位</td><td>32位平台下为4字节，64位平台下为8字节</td><td>0</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言中init 函数、变量、常量的执行顺序</title>
       <link href="posts/40b0fc5c.html"/>
       <url>posts/40b0fc5c.html</url>
