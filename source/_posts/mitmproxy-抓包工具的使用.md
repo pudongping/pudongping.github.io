@@ -6,7 +6,7 @@ hide: false
 cover: false
 toc: true
 mathjax: false
-categories: mitmproxy
+categories: 抓包工具
 tags:
   - mitmproxy
   - Linux
