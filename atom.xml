@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-05-08T17:44:00.802Z</updated>
+  <updated>2024-06-12T10:09:10.917Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Charles抓包神器的使用，完美解决抓取HTTPS请求unknown问题</title>
+    <link href="https://pudongping.github.io/posts/1eac0236.html"/>
+    <id>https://pudongping.github.io/posts/1eac0236.html</id>
+    <published>2024-06-12T10:06:34.000Z</published>
+    <updated>2024-06-12T10:09:10.917Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Windows 上可能比较好用的抓包工具是 fidder，当然，在 Mac 上也有一款抓包神器不输 fiddler，那就是今天的主角——</summary>
+        
+      
+    
+    
+    
+    <category term="抓包工具" scheme="https://pudongping.github.io/categories/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="抓包工具" scheme="https://pudongping.github.io/tags/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="MacOS" scheme="https://pudongping.github.io/tags/MacOS/"/>
+    
+    <category term="Charles" scheme="https://pudongping.github.io/tags/Charles/"/>
+    
+  </entry>
+  
+  <entry>
     <title>推荐几个好用的GRPC调试工具</title>
     <link href="https://pudongping.github.io/posts/47f9e31c.html"/>
     <id>https://pudongping.github.io/posts/47f9e31c.html</id>
     <published>2024-05-08T17:41:44.000Z</published>
-    <updated>2024-05-08T17:44:00.802Z</updated>
+    <updated>2024-05-08T17:44:00.000Z</updated>
     
     
       
@@ -48,7 +77,7 @@
     <link href="https://pudongping.github.io/posts/1308b152.html"/>
     <id>https://pudongping.github.io/posts/1308b152.html</id>
     <published>2024-05-08T17:25:27.000Z</published>
-    <updated>2024-05-08T17:26:08.280Z</updated>
+    <updated>2024-05-08T17:26:08.000Z</updated>
     
     
       
@@ -75,7 +104,7 @@
     <link href="https://pudongping.github.io/posts/40b0fc5c.html"/>
     <id>https://pudongping.github.io/posts/40b0fc5c.html</id>
     <published>2024-05-08T17:19:47.000Z</published>
-    <updated>2024-05-08T17:20:38.841Z</updated>
+    <updated>2024-05-08T17:20:38.000Z</updated>
     
     
       
@@ -102,7 +131,7 @@
     <link href="https://pudongping.github.io/posts/669a361f.html"/>
     <id>https://pudongping.github.io/posts/669a361f.html</id>
     <published>2024-05-08T17:10:56.000Z</published>
-    <updated>2024-05-08T17:12:13.397Z</updated>
+    <updated>2024-05-08T17:12:13.000Z</updated>
     
     
       
@@ -129,7 +158,7 @@
     <link href="https://pudongping.github.io/posts/53c8a188.html"/>
     <id>https://pudongping.github.io/posts/53c8a188.html</id>
     <published>2024-05-08T16:57:07.000Z</published>
-    <updated>2024-05-08T17:01:01.075Z</updated>
+    <updated>2024-05-08T17:01:01.000Z</updated>
     
     
       
@@ -156,7 +185,7 @@
     <link href="https://pudongping.github.io/posts/c10fde57.html"/>
     <id>https://pudongping.github.io/posts/c10fde57.html</id>
     <published>2024-05-08T16:39:39.000Z</published>
-    <updated>2024-05-08T16:41:14.997Z</updated>
+    <updated>2024-05-08T16:41:14.000Z</updated>
     
     
       
@@ -183,7 +212,7 @@
     <link href="https://pudongping.github.io/posts/1c839b10.html"/>
     <id>https://pudongping.github.io/posts/1c839b10.html</id>
     <published>2024-04-14T11:27:26.000Z</published>
-    <updated>2024-04-14T11:36:42.864Z</updated>
+    <updated>2024-04-14T11:36:42.000Z</updated>
     
     
       
@@ -210,7 +239,7 @@
     <link href="https://pudongping.github.io/posts/74705a17.html"/>
     <id>https://pudongping.github.io/posts/74705a17.html</id>
     <published>2024-03-18T16:08:05.000Z</published>
-    <updated>2024-03-18T16:09:40.948Z</updated>
+    <updated>2024-03-18T16:09:40.000Z</updated>
     
     
       
@@ -238,7 +267,7 @@
     <link href="https://pudongping.github.io/posts/289a4dbc.html"/>
     <id>https://pudongping.github.io/posts/289a4dbc.html</id>
     <published>2024-03-17T06:10:22.000Z</published>
-    <updated>2024-03-17T06:33:26.394Z</updated>
+    <updated>2024-03-17T06:33:26.000Z</updated>
     
     
       
@@ -265,7 +294,7 @@
     <link href="https://pudongping.github.io/posts/84212e0c.html"/>
     <id>https://pudongping.github.io/posts/84212e0c.html</id>
     <published>2024-03-17T05:43:05.000Z</published>
-    <updated>2024-03-17T06:33:09.994Z</updated>
+    <updated>2024-03-17T06:33:09.000Z</updated>
     
     
       
@@ -293,7 +322,7 @@
     <link href="https://pudongping.github.io/posts/59727fb0.html"/>
     <id>https://pudongping.github.io/posts/59727fb0.html</id>
     <published>2024-03-17T04:48:05.000Z</published>
-    <updated>2024-03-17T05:39:03.674Z</updated>
+    <updated>2024-03-17T05:39:03.000Z</updated>
     
     
       
@@ -321,7 +350,7 @@
     <link href="https://pudongping.github.io/posts/1a6d22ba.html"/>
     <id>https://pudongping.github.io/posts/1a6d22ba.html</id>
     <published>2024-02-26T15:45:27.000Z</published>
-    <updated>2024-02-26T15:46:46.363Z</updated>
+    <updated>2024-02-26T15:46:46.000Z</updated>
     
     
       
@@ -348,7 +377,7 @@
     <link href="https://pudongping.github.io/posts/e7d57128.html"/>
     <id>https://pudongping.github.io/posts/e7d57128.html</id>
     <published>2024-02-26T15:30:05.000Z</published>
-    <updated>2024-02-26T15:30:57.829Z</updated>
+    <updated>2024-02-26T15:30:57.000Z</updated>
     
     
       
@@ -366,9 +395,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -379,7 +408,7 @@
     <link href="https://pudongping.github.io/posts/f085ffcd.html"/>
     <id>https://pudongping.github.io/posts/f085ffcd.html</id>
     <published>2024-02-26T15:06:19.000Z</published>
-    <updated>2024-02-26T15:07:49.689Z</updated>
+    <updated>2024-02-26T15:07:49.000Z</updated>
     
     
       
@@ -395,9 +424,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -408,7 +437,7 @@
     <link href="https://pudongping.github.io/posts/775a3bbf.html"/>
     <id>https://pudongping.github.io/posts/775a3bbf.html</id>
     <published>2024-02-26T14:52:55.000Z</published>
-    <updated>2024-02-26T14:54:12.445Z</updated>
+    <updated>2024-02-26T14:54:12.000Z</updated>
     
     
       
@@ -424,9 +453,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -437,7 +466,7 @@
     <link href="https://pudongping.github.io/posts/2d05cf8b.html"/>
     <id>https://pudongping.github.io/posts/2d05cf8b.html</id>
     <published>2024-02-26T14:43:52.000Z</published>
-    <updated>2024-02-26T14:45:29.485Z</updated>
+    <updated>2024-02-26T14:45:29.000Z</updated>
     
     
       
@@ -454,9 +483,9 @@
     <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
     
     
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
@@ -467,7 +496,7 @@
     <link href="https://pudongping.github.io/posts/25480f12.html"/>
     <id>https://pudongping.github.io/posts/25480f12.html</id>
     <published>2024-02-02T09:04:39.000Z</published>
-    <updated>2024-02-26T14:42:15.029Z</updated>
+    <updated>2024-02-26T14:42:15.000Z</updated>
     
     
       
@@ -492,7 +521,7 @@
     <link href="https://pudongping.github.io/posts/65a50e61.html"/>
     <id>https://pudongping.github.io/posts/65a50e61.html</id>
     <published>2024-02-02T08:55:14.000Z</published>
-    <updated>2024-02-26T14:42:15.029Z</updated>
+    <updated>2024-02-26T14:42:15.000Z</updated>
     
     
       
@@ -517,7 +546,7 @@
     <link href="https://pudongping.github.io/posts/9fc3a49a.html"/>
     <id>https://pudongping.github.io/posts/9fc3a49a.html</id>
     <published>2024-01-15T06:23:50.000Z</published>
-    <updated>2024-02-26T14:42:15.031Z</updated>
+    <updated>2024-02-26T14:42:15.000Z</updated>
     
     
       
@@ -535,32 +564,6 @@
     
     
     <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git bug 分支</title>
-    <link href="https://pudongping.github.io/posts/56cac605.html"/>
-    <id>https://pudongping.github.io/posts/56cac605.html</id>
-    <published>2024-01-15T06:15:19.000Z</published>
-    <updated>2024-02-26T14:42:15.030Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git-bug-分支&quot;&gt;&lt;a href=&quot;#Git-bug-分支&quot; class=&quot;headerlink&quot; title=&quot;Git bug 分支&quot;&gt;&lt;/a&gt;Git bug 分支&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;修复 bug 时，我们会通过创建新的 bug</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
     
   </entry>
   
