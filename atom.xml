@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-12T10:09:22.767Z</updated>
+  <updated>2024-06-14T14:54:33.777Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shell 数学计算：轻松掌握算术运算基本功</title>
+    <link href="https://pudongping.github.io/posts/fc80fc40.html"/>
+    <id>https://pudongping.github.io/posts/fc80fc40.html</id>
+    <published>2024-06-14T14:50:31.000Z</published>
+    <updated>2024-06-14T14:54:33.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的 Shell 脚本编写中，我们经常会遇到需要进行数学计算的场景。相较于其他编程语言直接支持算数运算，Shell 本身并不直接支持复杂的数学计算，因为它并不如 Python 那样直接支持简单的数学表达式。&lt;/p&gt;
+&lt;p&gt;不过，别担心，通过本文，你将学会如何在</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 数组：灵活操作的秘诀</title>
+    <link href="https://pudongping.github.io/posts/1ddd131d.html"/>
+    <id>https://pudongping.github.io/posts/1ddd131d.html</id>
+    <published>2024-06-14T14:38:10.000Z</published>
+    <updated>2024-06-14T14:38:50.408Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;进入编程世界，无论是初学者还是有一定经验的开发者，都会接触到各种各样的数据结构，而数组无疑是其中最基础也是最重要的一种。在 Shell 编程中，数组的使用同样占据了极其重要的地位。&lt;/p&gt;
+&lt;p&gt;本文将通过简单易懂的语言和例子，帮助你快速掌握 Shell</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 字符串操作：让你的脚本语言更加灵活</title>
+    <link href="https://pudongping.github.io/posts/68372f77.html"/>
+    <id>https://pudongping.github.io/posts/68372f77.html</id>
+    <published>2024-06-14T10:51:44.000Z</published>
+    <updated>2024-06-14T10:52:27.824Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;字符串在编程中扮演着至关重要的角色，尤其是在 Shell 脚本编程中。无论是处理文件路径、生成动态消息还是执行复杂的文本分析，掌握字符串操作无疑会让你的脚本更加强大且灵活。&lt;/p&gt;
+&lt;p&gt;今天，我们就来深入了解一些基础而且实用的 Shell</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
   
   <entry>
     <title>Charles抓包神器的使用，完美解决抓取HTTPS请求unknown问题</title>
@@ -488,82 +572,6 @@
     <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
     
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ElasticSearch 聚合查询</title>
-    <link href="https://pudongping.github.io/posts/25480f12.html"/>
-    <id>https://pudongping.github.io/posts/25480f12.html</id>
-    <published>2024-02-02T09:04:39.000Z</published>
-    <updated>2024-02-26T14:42:15.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;聚合的基本语法结构&quot;&gt;&lt;a href=&quot;#聚合的基本语法结构&quot; class=&quot;headerlink&quot; title=&quot;聚合的基本语法结构&quot;&gt;&lt;/a&gt;聚合的基本语法结构&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-json&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ElasticSearch 查询语法</title>
-    <link href="https://pudongping.github.io/posts/65a50e61.html"/>
-    <id>https://pudongping.github.io/posts/65a50e61.html</id>
-    <published>2024-02-02T08:55:14.000Z</published>
-    <updated>2024-02-26T14:42:15.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;查询的基本语法结构&quot;&gt;&lt;a href=&quot;#查询的基本语法结构&quot; class=&quot;headerlink&quot; title=&quot;查询的基本语法结构&quot;&gt;&lt;/a&gt;查询的基本语法结构&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-json&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/categories/ElasticSearch/"/>
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 pyenv 管理多个版本 Python</title>
-    <link href="https://pudongping.github.io/posts/9fc3a49a.html"/>
-    <id>https://pudongping.github.io/posts/9fc3a49a.html</id>
-    <published>2024-01-15T06:23:50.000Z</published>
-    <updated>2024-02-26T14:42:15.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;pyenv&lt;/a&gt; 是 Python 的版本管理工具，利用它可以在同一台电脑上安装多个版本的 Python。&lt;/p&gt;
-&lt;h2 id=&quot;安装方式&quot;&gt;&lt;a href=&quot;#安装方式&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
-    
-    
-    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
     
   </entry>
   
