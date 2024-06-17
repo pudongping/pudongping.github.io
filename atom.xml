@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-14T14:54:33.777Z</updated>
+  <updated>2024-06-17T06:30:19.097Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Shell [[]] 命令：条件判断的升级版</title>
+    <link href="https://pudongping.github.io/posts/adfce4b0.html"/>
+    <id>https://pudongping.github.io/posts/adfce4b0.html</id>
+    <published>2024-06-17T06:29:48.000Z</published>
+    <updated>2024-06-17T06:30:19.097Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家好，今天我们来聊聊 Shell 脚本中的条件判断加强版——&lt;code&gt;[[ ]]&lt;/code&gt; 命令。如果你对基本的 &lt;code&gt;[]&lt;/code&gt; 命令已经熟悉，那么 &lt;code&gt;[[ ]]&lt;/code&gt; 将是你的下一个升级技能点。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell test [] 命令：条件判断的艺术</title>
+    <link href="https://pudongping.github.io/posts/8deddbf7.html"/>
+    <id>https://pudongping.github.io/posts/8deddbf7.html</id>
+    <published>2024-06-17T06:23:46.000Z</published>
+    <updated>2024-06-17T06:24:28.724Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在编程世界里，&lt;code&gt;shell&lt;/code&gt; 脚本是一种强大而又灵活的方式，用于处理文件、执行命令以及进行自动化操作。&lt;/p&gt;
+&lt;p&gt;今天，我们将深入探讨 Shell 脚本中的 &lt;code&gt;test&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Shell 数学计算：轻松掌握算术运算基本功</title>
     <link href="https://pudongping.github.io/posts/fc80fc40.html"/>
     <id>https://pudongping.github.io/posts/fc80fc40.html</id>
     <published>2024-06-14T14:50:31.000Z</published>
-    <updated>2024-06-14T14:54:33.777Z</updated>
+    <updated>2024-06-14T14:58:22.184Z</updated>
     
     
       
@@ -49,7 +105,7 @@
     <link href="https://pudongping.github.io/posts/1ddd131d.html"/>
     <id>https://pudongping.github.io/posts/1ddd131d.html</id>
     <published>2024-06-14T14:38:10.000Z</published>
-    <updated>2024-06-14T14:38:50.408Z</updated>
+    <updated>2024-06-14T14:58:22.184Z</updated>
     
     
       
@@ -77,7 +133,7 @@
     <link href="https://pudongping.github.io/posts/68372f77.html"/>
     <id>https://pudongping.github.io/posts/68372f77.html</id>
     <published>2024-06-14T10:51:44.000Z</published>
-    <updated>2024-06-14T10:52:27.824Z</updated>
+    <updated>2024-06-14T14:58:22.183Z</updated>
     
     
       
@@ -500,65 +556,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;docker-容器内服务访问宿主机中的服务&quot;&gt;&lt;a href=&quot;#docker-容器内服务访问宿主机中的服务&quot; class=&quot;headerlink&quot; title=&quot;docker 容器内服务访问宿主机中的服务&quot;&gt;&lt;/a&gt;docker</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 容器关联的几种方式</title>
-    <link href="https://pudongping.github.io/posts/775a3bbf.html"/>
-    <id>https://pudongping.github.io/posts/775a3bbf.html</id>
-    <published>2024-02-26T14:52:55.000Z</published>
-    <updated>2024-02-26T14:54:12.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-通过-link-容器关联&quot;&gt;&lt;a href=&quot;#1-通过-link-容器关联&quot; class=&quot;headerlink&quot; title=&quot;1. 通过 link 容器关联&quot;&gt;&lt;/a&gt;1. 通过 link 容器关联&lt;/h2&gt;&lt;p&gt;通过</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一起来了解下Docker-compose</title>
-    <link href="https://pudongping.github.io/posts/2d05cf8b.html"/>
-    <id>https://pudongping.github.io/posts/2d05cf8b.html</id>
-    <published>2024-02-26T14:43:52.000Z</published>
-    <updated>2024-02-26T14:45:29.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Docker Compose是一个用于定义和运行多容器Docker应用程序的工具。通过Compose，你可以使用 YAML 文件来配置应用程序的服务。然后，只需一个简单的命令，就可以创建并启动配置中的所有服务。这使得部署多容器应用变得简单快捷。&lt;/p&gt;
-&lt;h3</summary>
         
       
     
