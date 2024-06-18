@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-17T06:30:19.097Z</updated>
+  <updated>2024-06-18T06:40:43.231Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Shell 循环语句：重复任务的自动化利器</title>
+    <link href="https://pudongping.github.io/posts/33c4223c.html"/>
+    <id>https://pudongping.github.io/posts/33c4223c.html</id>
+    <published>2024-06-18T06:28:06.000Z</published>
+    <updated>2024-06-18T06:40:43.231Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日复一日的脚本编程中，循环语句无疑是我们最好的朋友。通过循环，我们可以执行重复的任务，无论是遍历文件列表，处理文本数据，还是简单的数学运算。&lt;/p&gt;
+&lt;p&gt;今天，我们就来聊聊 shell 脚本中的几种循环语句，它们将如何帮助我们简化编程任务。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 判断语句：决策的艺术</title>
+    <link href="https://pudongping.github.io/posts/43dbd7ab.html"/>
+    <id>https://pudongping.github.io/posts/43dbd7ab.html</id>
+    <published>2024-06-18T06:18:13.000Z</published>
+    <updated>2024-06-18T06:40:43.230Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;编写 Shell 脚本时，了解如何根据不同条件执行不同的命令是至关重要的。本文旨在以简单易懂的语言，介绍 Shell 脚本中的选择结构——if 语句和 case in 语句，帮助初学者和有经验的开发者深入理解。&lt;/p&gt;
+&lt;h2 id=&quot;if-语句&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Shell [[]] 命令：条件判断的升级版</title>
     <link href="https://pudongping.github.io/posts/adfce4b0.html"/>
     <id>https://pudongping.github.io/posts/adfce4b0.html</id>
     <published>2024-06-17T06:29:48.000Z</published>
-    <updated>2024-06-17T06:30:19.097Z</updated>
+    <updated>2024-06-17T07:21:47.078Z</updated>
     
     
       
@@ -49,7 +106,7 @@
     <link href="https://pudongping.github.io/posts/8deddbf7.html"/>
     <id>https://pudongping.github.io/posts/8deddbf7.html</id>
     <published>2024-06-17T06:23:46.000Z</published>
-    <updated>2024-06-17T06:24:28.724Z</updated>
+    <updated>2024-06-17T07:21:47.075Z</updated>
     
     
       
@@ -509,66 +566,6 @@
     <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
     <category term="Dockerfile" scheme="https://pudongping.github.io/tags/Dockerfile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker alpine linux 修改时区</title>
-    <link href="https://pudongping.github.io/posts/e7d57128.html"/>
-    <id>https://pudongping.github.io/posts/e7d57128.html</id>
-    <published>2024-02-26T15:30:05.000Z</published>
-    <updated>2024-02-26T15:30:57.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Docker alpine Linux 中修改时区&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://wiki.alpinelinux.org/wiki/Setting_the_timezone&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 容器内服务访问宿主机中的服务</title>
-    <link href="https://pudongping.github.io/posts/f085ffcd.html"/>
-    <id>https://pudongping.github.io/posts/f085ffcd.html</id>
-    <published>2024-02-26T15:06:19.000Z</published>
-    <updated>2024-02-26T15:07:49.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;docker-容器内服务访问宿主机中的服务&quot;&gt;&lt;a href=&quot;#docker-容器内服务访问宿主机中的服务&quot; class=&quot;headerlink&quot; title=&quot;docker 容器内服务访问宿主机中的服务&quot;&gt;&lt;/a&gt;docker</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://pudongping.github.io/tags/CentOS/"/>
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
     
   </entry>
   
