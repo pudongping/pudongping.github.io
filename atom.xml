@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-18T06:40:43.231Z</updated>
+  <updated>2024-06-19T14:40:20.282Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shell 函数深入解析与实践</title>
+    <link href="https://pudongping.github.io/posts/9d11e5.html"/>
+    <id>https://pudongping.github.io/posts/9d11e5.html</id>
+    <published>2024-06-19T14:39:41.000Z</published>
+    <updated>2024-06-19T14:40:20.282Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在本文中，我们将深入探讨 Shell 函数的定义、参数传递、以及如何正确获取函数运算结果。&lt;/p&gt;
+&lt;p&gt;本教程旨在为刚入门的新手提供明晰的指南，同时也为有一定编程基础的开发者提供深入理解 shell</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 变量详解：如何定义、使用和管理</title>
+    <link href="https://pudongping.github.io/posts/c60e5e2c.html"/>
+    <id>https://pudongping.github.io/posts/c60e5e2c.html</id>
+    <published>2024-06-19T14:38:54.000Z</published>
+    <updated>2024-06-19T14:39:25.013Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在编写 Shell 脚本时，变量扮演着极为重要的角色。它们使我们能够临时保存数据，以便在脚本的其他部分中使用。&lt;/p&gt;
+&lt;p&gt;本文将通过简单的语言和清晰的示例，帮助你掌握 Shell</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
   
   <entry>
     <title>Shell 循环语句：重复任务的自动化利器</title>
@@ -74,11 +130,11 @@
   </entry>
   
   <entry>
-    <title>Shell [[]] 命令：条件判断的升级版</title>
+    <title>Shell &quot;[[]]&quot; 命令：条件判断的升级版</title>
     <link href="https://pudongping.github.io/posts/adfce4b0.html"/>
     <id>https://pudongping.github.io/posts/adfce4b0.html</id>
     <published>2024-06-17T06:29:48.000Z</published>
-    <updated>2024-06-17T07:21:47.078Z</updated>
+    <updated>2024-06-19T14:36:13.853Z</updated>
     
     
       
@@ -511,61 +567,6 @@
     <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
     
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>swoole环境搭建</title>
-    <link href="https://pudongping.github.io/posts/59727fb0.html"/>
-    <id>https://pudongping.github.io/posts/59727fb0.html</id>
-    <published>2024-03-17T04:48:05.000Z</published>
-    <updated>2024-03-17T05:39:03.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;PHP Swoole 扩展的安装方式有很多，这完全取决于你的使用环境，本文大致介绍几种常见的安装方式，且以在 M1 芯片上的 Mac 环境作为示例。&lt;/p&gt;
-&lt;h2 id=&quot;第一种&quot;&gt;&lt;a href=&quot;#第一种&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何编写Dockerfile</title>
-    <link href="https://pudongping.github.io/posts/1a6d22ba.html"/>
-    <id>https://pudongping.github.io/posts/1a6d22ba.html</id>
-    <published>2024-02-26T15:45:27.000Z</published>
-    <updated>2024-02-26T15:46:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;编写-dockerfile&quot;&gt;&lt;a href=&quot;#编写-dockerfile&quot; class=&quot;headerlink&quot; title=&quot;编写 dockerfile&quot;&gt;&lt;/a&gt;编写 dockerfile&lt;/h1&gt;&lt;p&gt;Dockerfile 文件是用于定义 Docker</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-    <category term="Dockerfile" scheme="https://pudongping.github.io/tags/Dockerfile/"/>
     
   </entry>
   
