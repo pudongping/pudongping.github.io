@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-19T14:40:20.282Z</updated>
+  <updated>2024-06-20T14:46:31.405Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Shell 重定向：控制数据流向的艺术</title>
+    <link href="https://pudongping.github.io/posts/8af44f1b.html"/>
+    <id>https://pudongping.github.io/posts/8af44f1b.html</id>
+    <published>2024-06-20T14:45:59.000Z</published>
+    <updated>2024-06-20T14:46:31.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Unix 或 Linux 系统中，我们通常会使用 Shell 来与操作系统交互。在这个过程中，数据的输入和输出是两个非常基础且重要的操作。&lt;/p&gt;
+&lt;p&gt;理解和掌握输入输出重定向是提高 Shell 使用效率的关键。本文旨在用简单易懂的语言，为你揭开 Shell</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 内建命令：Shell 的内在魔力</title>
+    <link href="https://pudongping.github.io/posts/a915d50b.html"/>
+    <id>https://pudongping.github.io/posts/a915d50b.html</id>
+    <published>2024-06-20T14:44:56.000Z</published>
+    <updated>2024-06-20T14:45:45.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;shell-内建命令（内置命令）&quot;&gt;&lt;a href=&quot;#shell-内建命令（内置命令）&quot; class=&quot;headerlink&quot; title=&quot;shell 内建命令（内置命令）&quot;&gt;&lt;/a&gt;shell 内建命令（内置命令）&lt;/h1&gt;&lt;p&gt;今天我们来深入挖掘一下</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Shell 函数深入解析与实践</title>
     <link href="https://pudongping.github.io/posts/9d11e5.html"/>
     <id>https://pudongping.github.io/posts/9d11e5.html</id>
     <published>2024-06-19T14:39:41.000Z</published>
-    <updated>2024-06-19T14:40:20.282Z</updated>
+    <updated>2024-06-19T14:40:31.413Z</updated>
     
     
       
@@ -49,7 +104,7 @@
     <link href="https://pudongping.github.io/posts/c60e5e2c.html"/>
     <id>https://pudongping.github.io/posts/c60e5e2c.html</id>
     <published>2024-06-19T14:38:54.000Z</published>
-    <updated>2024-06-19T14:39:25.013Z</updated>
+    <updated>2024-06-19T14:40:31.414Z</updated>
     
     
       
@@ -512,61 +567,6 @@
     <category term="分布式系统" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一文弄懂 Swoole 进程、线程、协程到底是什么？</title>
-    <link href="https://pudongping.github.io/posts/289a4dbc.html"/>
-    <id>https://pudongping.github.io/posts/289a4dbc.html</id>
-    <published>2024-03-17T06:10:22.000Z</published>
-    <updated>2024-03-17T06:33:26.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;swoole-和-workerman-的区别&quot;&gt;&lt;a href=&quot;#swoole-和-workerman-的区别&quot; class=&quot;headerlink&quot; title=&quot;swoole 和 workerman 的区别&quot;&gt;&lt;/a&gt;swoole 和 workerman</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swoole 的底层架构及运行原理</title>
-    <link href="https://pudongping.github.io/posts/84212e0c.html"/>
-    <id>https://pudongping.github.io/posts/84212e0c.html</id>
-    <published>2024-03-17T05:43:05.000Z</published>
-    <updated>2024-03-17T06:33:09.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;先看这张底层架构图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/loading.gif&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Swoole" scheme="https://pudongping.github.io/tags/Swoole/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
     
   </entry>
   

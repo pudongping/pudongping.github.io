@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>Shell 重定向：控制数据流向的艺术</title>
+      <link href="posts/8af44f1b.html"/>
+      <url>posts/8af44f1b.html</url>
+      
+        <content type="html"><![CDATA[<p>在 Unix 或 Linux 系统中，我们通常会使用 Shell 来与操作系统交互。在这个过程中，数据的输入和输出是两个非常基础且重要的操作。</p><p>理解和掌握输入输出重定向是提高 Shell 使用效率的关键。本文旨在用简单易懂的语言，为你揭开 Shell 重定向的神秘面纱。</p><h2 id="标准的输入与输出"><a href="#标准的输入与输出" class="headerlink" title="标准的输入与输出"></a>标准的输入与输出</h2><p>在 Shell 中，默认情况下，程序的输入来源于键盘，输出则显示在屏幕上。这种默认的行为对我们日常的使用来说是非常方便的。但有时候，我们需要更灵活地控制数据的流向，这时候就需要用到输入输出重定向的技术了。</p><h2 id="输入输出重定向简介"><a href="#输入输出重定向简介" class="headerlink" title="输入输出重定向简介"></a>输入输出重定向简介</h2><h3 id="输入重定向"><a href="#输入重定向" class="headerlink" title="输入重定向"></a>输入重定向</h3><p>输入重定向允许我们将程序的输入从键盘改为来自于文件或其他数据源。这意味着程序会从我们指定的文件中读取输入，而不是等待我们通过键盘输入。</p><h3 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h3><p>与输入重定向相反，输出重定向让我们可以将程序的输出发送到除了终端显示器外的其他位置，比如文件中。这在我们需要保存输出结果以供后续处理时非常有用。</p><h2 id="与输入输出有关的文件描述符"><a href="#与输入输出有关的文件描述符" class="headerlink" title="与输入输出有关的文件描述符"></a>与输入输出有关的文件描述符</h2><p>在深入理解输入输出重定向之前，我们需要先明白文件描述符的概念。文件描述符是一个数字，它代表着一个打开文件的引用。在 Shell 中，有三个基本的文件描述符：</p><ul><li><strong>0</strong> - 标准输入（<code>stdin</code>），默认从键盘读取</li><li><strong>1</strong> - 标准输出（<code>stdout</code>），默认输出到显示器</li><li><strong>2</strong> - 标准错误输出（<code>stderr</code>），默认也是输出到显示器</li></ul><p>了解这三个文件描述符对于理解接下来的内容至关重要。</p><h2 id="输出重定向-1"><a href="#输出重定向-1" class="headerlink" title="输出重定向"></a>输出重定向</h2><p>输出重定向允许我们将命令的输出结果从标准输出（通常是屏幕）重定向到文件中。这对于保存命令的执行结果非常有用。</p><h3 id="Bash-支持的输出重定向符号"><a href="#Bash-支持的输出重定向符号" class="headerlink" title="Bash 支持的输出重定向符号"></a>Bash 支持的输出重定向符号</h3><h4 id="标准输出重定向"><a href="#标准输出重定向" class="headerlink" title="标准输出重定向"></a>标准输出重定向</h4><ul><li><code>&gt;</code> 用于将命令的正确输出重定向到文件中，如果文件已存在，则覆盖。</li><li><code>&gt;&gt;</code> 用于将命令的正确输出重定向到文件中，如果文件已存在，则追加。</li></ul><p>例如，将 <code>echo</code> 命令的输出保存到文件中：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token comment"># 标准输出重定向</span><span class="token function">ls</span> <span class="token parameter variable">-l</span> <span class="token operator">&gt;</span> output.txt<span class="token comment"># 追加到文件</span><span class="token builtin class-name">echo</span> <span class="token string">"追加到文件末尾"</span> <span class="token operator">&gt;&gt;</span> output.txt<span class="token comment"># 错误输出重定向</span><span class="token function">ls</span> not_exists <span class="token operator"><span class="token file-descriptor important">2</span>&gt;&gt;</span> error.log<span class="token comment"># 同时保存输出和错误信息</span>./your_script.sh <span class="token operator">&gt;</span> output.txt <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, World!"</span> <span class="token operator">&gt;</span> hello.txt  <span class="token comment"># 创建或覆盖 hello.txt 文件</span><span class="token builtin class-name">echo</span> <span class="token string">"Another line."</span> <span class="token operator">&gt;&gt;</span> hello.txt  <span class="token comment"># 追加内容到 hello.txt 文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="标准错误输出重定向"><a href="#标准错误输出重定向" class="headerlink" title="标准错误输出重定向"></a>标准错误输出重定向</h4><ul><li><code>2&gt;</code> 用于将命令的错误输出重定向到文件中，如果文件已存在，则覆盖。</li><li><code>2&gt;&gt;</code> 用于将命令的错误输出重定向到文件中，如果文件已存在，则追加。</li></ul><h4 id="正确输出和错误信息同时保存"><a href="#正确输出和错误信息同时保存" class="headerlink" title="正确输出和错误信息同时保存"></a>正确输出和错误信息同时保存</h4><ul><li><code>command &gt;file 2&gt;&amp;1</code> 将标准输出和错误输出都重定向到同一个文件中，覆盖模式。</li><li><code>command &gt;&gt;file 2&gt;&amp;1</code> 同上，追加模式。</li><li><code>command &gt;file1 2&gt;file2</code> 将标准输出和错误输出分别重定向到两个不同的文件中，覆盖模式。</li></ul><h3 id="输入重定向-1"><a href="#输入重定向-1" class="headerlink" title="输入重定向"></a>输入重定向</h3><p>输入重定向使我们能够改变命令的输入来源，不再限于键盘输入。这意味着我们可以从文件中读取输入。</p><h4 id="Bash-支持的输入重定向符号"><a href="#Bash-支持的输入重定向符号" class="headerlink" title="Bash 支持的输入重定向符号"></a>Bash 支持的输入重定向符号</h4><ul><li><code>&lt;</code> 用于将文件内容作为命令的输入。</li><li><code>&lt;&lt;END</code> 从标准输入（键盘）读取数据，直到遇到<code>END</code>标记为止，<code>END</code>是自定义的终止字符串。</li></ul><p>例如，使用 <code>cat</code> 命令读取文件内容：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token comment"># 使用自定义的分界符进行输入</span><span class="token function">cat</span> <span class="token operator">&lt;&lt;</span><span class="token string">END这是一个多行文本输入示例。END</span><span class="token function">cat</span> <span class="token operator">&lt;</span> hello.txt  <span class="token comment"># 使用文件 hello.txt 的内容作为 cat 命令的输入</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>利用输入输出重定向，我们可以实现数据在程序、文件和终端之间灵活流动。掌握这些技巧后，你就可以更加高效地使用 Shell 进行各种任务处理了。</p><p>希望本文能帮助你理解和应用 Shell 输入输出重定向的基本概念和技巧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shell </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Shell 内建命令：Shell 的内在魔力</title>
+      <link href="posts/a915d50b.html"/>
+      <url>posts/a915d50b.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="shell-内建命令（内置命令）"><a href="#shell-内建命令（内置命令）" class="headerlink" title="shell 内建命令（内置命令）"></a>shell 内建命令（内置命令）</h1><p>今天我们来深入挖掘一下 Shell 的内在魔力——内建命令。</p><p>通常来说，内建命令会比外部命令执行得更快，执行外部命令时不但会触发磁盘 I/O，还需要 fork 出一个单独的进程来执行，执行完成后再退出。而执行内建命令相当于调用当前 Shell 进程的一个函数。</p><h2 id="检查一个命令是否是内建命令"><a href="#检查一个命令是否是内建命令" class="headerlink" title="检查一个命令是否是内建命令"></a>检查一个命令是否是内建命令</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># cd 是一个内建命令</span><span class="token builtin class-name">type</span> <span class="token builtin class-name">cd</span><span class="token comment"># cd is a shell builtin</span><span class="token comment"># 可见 ifconfig 是一个外部文件，它的位置时 /sbin/ifconfig</span><span class="token builtin class-name">type</span> <span class="token function">ifconfig</span><span class="token comment"># ifconfig is /sbin/ifconfig</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Bash-Shell-内建命令"><a href="#Bash-Shell-内建命令" class="headerlink" title="Bash Shell 内建命令"></a>Bash Shell 内建命令</h2><table><thead><tr><th>命令</th><th>说明</th></tr></thead><tbody><tr><td>:</td><td>扩展参数列表，执行重定向操作</td></tr><tr><td>.</td><td>读取并执行指定文件中的命令（在当前 shell 环境中）</td></tr><tr><td>alias</td><td>为指定命令定义一个别名</td></tr><tr><td>bg</td><td>将作业以后台模式运行</td></tr><tr><td>bind</td><td>将键盘序列绑定到一个 readline 函数或宏</td></tr><tr><td>break</td><td>退出 for、while、select 或 until 循环</td></tr><tr><td>builtin</td><td>执行指定的 shell 内建命令</td></tr><tr><td>caller</td><td>返回活动子函数调用的上下文</td></tr><tr><td>cd</td><td>将当前目录切换为指定的目录</td></tr><tr><td>command</td><td>执行指定的命令，无需进行通常的 shell 查找</td></tr><tr><td>compgen</td><td>为指定单词生成可能的补全匹配</td></tr><tr><td>complete</td><td>显示指定的单词是如何补全的</td></tr><tr><td>compopt</td><td>修改指定单词的补全选项</td></tr><tr><td>continue</td><td>继续执行 for、while、select 或 until 循环的下一次迭代</td></tr><tr><td>declare</td><td>声明一个变量或变量类型。</td></tr><tr><td>dirs</td><td>显示当前存储目录的列表</td></tr><tr><td>disown</td><td>从进程作业表中刪除指定的作业</td></tr><tr><td>echo</td><td>将指定字符串输出到 STDOUT</td></tr><tr><td>enable</td><td>启用或禁用指定的内建shell命令</td></tr><tr><td>eval</td><td>将指定的参数拼接成一个命令，然后执行该命令</td></tr><tr><td>exec</td><td>用指定命令替换 shell 进程</td></tr><tr><td>exit</td><td>强制 shell 以指定的退出状态码退出</td></tr><tr><td>export</td><td>设置子 shell 进程可用的变量</td></tr><tr><td>fc</td><td>从历史记录中选择命令列表</td></tr><tr><td>fg</td><td>将作业以前台模式运行</td></tr><tr><td>getopts</td><td>分析指定的位置参数</td></tr><tr><td>hash</td><td>查找并记住指定命令的全路径名</td></tr><tr><td>help</td><td>显示帮助文件</td></tr><tr><td>history</td><td>显示命令历史记录</td></tr><tr><td>jobs</td><td>列出活动作业</td></tr><tr><td>kill</td><td>向指定的进程 ID(PID) 发送一个系统信号</td></tr><tr><td>let</td><td>计算一个数学表达式中的每个参数</td></tr><tr><td>local</td><td>在函数中创建一个作用域受限的变量</td></tr><tr><td>logout</td><td>退出登录 shell</td></tr><tr><td>mapfile</td><td>从 STDIN 读取数据行，并将其加入索引数组</td></tr><tr><td>popd</td><td>从目录栈中删除记录</td></tr><tr><td>printf</td><td>使用格式化字符串显示文本</td></tr><tr><td>pushd</td><td>向目录栈添加一个目录</td></tr><tr><td>pwd</td><td>显示当前工作目录的路径名</td></tr><tr><td>read</td><td>从 STDIN 读取一行数据并将其赋给一个变量</td></tr><tr><td>readarray</td><td>从 STDIN 读取数据行并将其放入索引数组</td></tr><tr><td>readonly</td><td>从 STDIN 读取一行数据并将其赋给一个不可修改的变量</td></tr><tr><td>return</td><td>强制函数以某个值退出，这个值可以被调用脚本提取</td></tr><tr><td>set</td><td>设置并显示环境变量的值和 shell 属性</td></tr><tr><td>shift</td><td>将位置参数依次向下降一个位置</td></tr><tr><td>shopt</td><td>打开/关闭控制 shell 可选行为的变量值</td></tr><tr><td>source</td><td>读取并执行指定文件中的命令（在当前 shell 环境中）</td></tr><tr><td>suspend</td><td>暂停 Shell 的执行，直到收到一个 SIGCONT 信号</td></tr><tr><td>test</td><td>基于指定条件返回退出状态码 0 或 1</td></tr><tr><td>times</td><td>显示累计的用户和系统时间</td></tr><tr><td>trap</td><td>如果收到了指定的系统信号，执行指定的命令</td></tr><tr><td>type</td><td>显示指定的单词如果作为命令将会如何被解释</td></tr><tr><td>typeset</td><td>声明一个变量或变量类型。</td></tr><tr><td>ulimit</td><td>为系统用户设置指定的资源的上限</td></tr><tr><td>umask</td><td>为新建的文件和目录设置默认权限</td></tr><tr><td>unalias</td><td>刪除指定的别名</td></tr><tr><td>unset</td><td>刪除指定的环境变量或 shell 属性</td></tr><tr><td>wait</td><td>等待指定的进程完成，并返回退出状态码</td></tr></tbody></table><h2 id="alias-给命令创建别名"><a href="#alias-给命令创建别名" class="headerlink" title="alias 给命令创建别名"></a>alias 给命令创建别名</h2><h3 id="查看所有别名"><a href="#查看所有别名" class="headerlink" title="查看所有别名"></a>查看所有别名</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 不带任何参数，则列出当前 shell 进程中所有别名</span><span class="token builtin class-name">alias</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="设置别名"><a href="#设置别名" class="headerlink" title="设置别名"></a>设置别名</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 为获取当前的 unix 时间戳设置别名 timestamp</span><span class="token builtin class-name">alias</span> <span class="token assign-left variable">timestamp</span><span class="token operator">=</span><span class="token string">'date +%s'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="删除别名"><a href="#删除别名" class="headerlink" title="删除别名"></a>删除别名</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 删除 timestamp 别名</span><span class="token builtin class-name">unalias</span> timestamp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="echo-用于在终端输出字符串"><a href="#echo-用于在终端输出字符串" class="headerlink" title="echo 用于在终端输出字符串"></a>echo 用于在终端输出字符串</h2><p>默认在末尾加上了换行符</p><h3 id="不换行"><a href="#不换行" class="headerlink" title="不换行"></a>不换行</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"Alex"</span><span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">26</span><span class="token assign-left variable">height</span><span class="token operator">=</span><span class="token number">168</span><span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">62</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${name}</span> is <span class="token variable">${age}</span> years old, "</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${height}</span>cm in height "</span><span class="token builtin class-name">echo</span> <span class="token string">"and <span class="token variable">${weight}</span>kg in weight."</span><span class="token builtin class-name">echo</span> <span class="token string">"Thank you!"</span><span class="token comment"># Alex is 26 years old, 168cm in height and 62kg in weight.</span><span class="token comment"># Thank you!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="输出转义字符"><a href="#输出转义字符" class="headerlink" title="输出转义字符"></a>输出转义字符</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"Alex"</span><span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">26</span><span class="token assign-left variable">height</span><span class="token operator">=</span><span class="token number">168</span><span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">62</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${name}</span> is <span class="token variable">${age}</span> years old,<span class="token entity" title="\n">\n</span> "</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${height}</span>cm in height "</span><span class="token builtin class-name">echo</span> <span class="token string">"and <span class="token variable">${weight}</span>kg in weight."</span><span class="token builtin class-name">echo</span> <span class="token string">"Thank you!"</span><span class="token comment"># Alex is 26 years old,</span><span class="token comment">#</span><span class="token comment"># 168cm in height and 62kg in weight.</span><span class="token comment"># Thank you!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="强制不换行"><a href="#强制不换行" class="headerlink" title="强制不换行"></a>强制不换行</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"Alex"</span><span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">26</span><span class="token assign-left variable">height</span><span class="token operator">=</span><span class="token number">168</span><span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">62</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${name}</span> is <span class="token variable">${age}</span> years old,<span class="token entity" title="\c">\c</span> "</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${height}</span>cm in height "</span><span class="token builtin class-name">echo</span> <span class="token string">"and <span class="token variable">${weight}</span>kg in weight."</span><span class="token builtin class-name">echo</span> <span class="token string">"Thank you!"</span><span class="token comment"># Alex is 26 years old,168cm in height</span><span class="token comment"># and 62kg in weight.</span><span class="token comment"># Thank you!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="printf"><a href="#printf" class="headerlink" title="printf"></a>printf</h2><table><thead><tr><th>格式替代符</th><th>含义</th></tr></thead><tbody><tr><td>%s</td><td>输出一个字符串</td></tr><tr><td>%d</td><td>输出一个整型</td></tr><tr><td>%c</td><td>输出一个字符</td></tr><tr><td>%f</td><td>输出一个小数</td></tr><tr><td>%-10s</td><td>指一个宽度为 10 个字符（-表示左对齐，没有则表示右对齐），任何字符都会被显示在 10 个字符宽的字符内，如果不足则自动以空格填充，超过也会将内容全部显示出来。</td></tr><tr><td>%-4.2f</td><td>格式化为小数，其中 <code>.2</code> 指保留 2 位小数</td></tr></tbody></table><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token builtin class-name">printf</span> <span class="token string">"%-10s %-8s %-4s<span class="token entity" title="\n">\n</span>"</span> 姓名 性别 体重kg<span class="token builtin class-name">printf</span> <span class="token string">"%-10s %-8s %-4.2f<span class="token entity" title="\n">\n</span>"</span> alex 男 <span class="token number">62.3452</span><span class="token comment"># 姓名     性别   体重kg</span><span class="token comment"># alex       男      62.35</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="read-用来从标准输入中读取数据并赋值给变量"><a href="#read-用来从标准输入中读取数据并赋值给变量" class="headerlink" title="read 用来从标准输入中读取数据并赋值给变量"></a>read 用来从标准输入中读取数据并赋值给变量</h2><blockquote><p>如果没有进行重定向，默认就是从键盘读取用户输入的数据；如果进行了重定向，那么可以从文件中读取数据。</p></blockquote><p>read 命令的用法为：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># options 表示选项</span><span class="token comment"># variables 表示用来存储数据的变量，可以有一个，也可以有多个</span><span class="token builtin class-name">read</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token punctuation">[</span>variables<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>options 支持的选项有：</p><table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td>-a new_array</td><td>把读取的数据赋值给数组 new_array，从下标 0 开始。</td></tr><tr><td>-d delimiter</td><td>用字符串 delimiter 指定读取结束的位置，而不是一个换行符（读取到的数据不包括 delimiter）。</td></tr><tr><td>-e</td><td>在获取用户输入的时候，对功能键进行编码转换，不会直接显式功能键对应的字符。</td></tr><tr><td>-n num</td><td>读取 num 个字符，而不是整行字符。</td></tr><tr><td>-p prompt</td><td>显示提示信息，提示内容为 prompt。</td></tr><tr><td>-r</td><td>原样读取（Raw mode），不把反斜杠字符解释为转义字符。</td></tr><tr><td>-s</td><td>静默模式（Silent mode），不会在屏幕上显示输入的字符。当输入密码和其它确认信息的时候，这是很有必要的。</td></tr><tr><td>-t seconds</td><td>设置超时时间，单位为秒。如果用户没有在指定时间内输入完成，那么 read 将会返回一个非 0 的退出状态，表示读取失败。</td></tr><tr><td>-u fd</td><td>使用文件描述符 fd 作为输入源，而不是标准输入，类似于重定向。</td></tr></tbody></table><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token comment"># 使用 read 命令给多个变量赋值</span><span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"Enter your name, age and city ===&gt; "</span> name age city<span class="token builtin class-name">echo</span> <span class="token string">"你的名字为：<span class="token variable">${name}</span>"</span><span class="token builtin class-name">echo</span> <span class="token string">"你的年龄为：<span class="token variable">${age}</span>"</span><span class="token builtin class-name">echo</span> <span class="token string">"你所在的城市为：<span class="token variable">${city}</span>"</span><span class="token comment"># Enter your name, age and city ===&gt; alex 26 Shanghai</span><span class="token comment"># 你的名字为：alex</span><span class="token comment"># 你的年龄为：26</span><span class="token comment"># 你所在的城市为：Shanghai</span><span class="token comment">#########################################################</span><span class="token comment">#!/bin/bash</span><span class="token comment"># 在指定时间内输入密码</span><span class="token keyword">if</span>    <span class="token builtin class-name">read</span> <span class="token parameter variable">-t</span> <span class="token number">20</span> <span class="token parameter variable">-sp</span> <span class="token string">"Enter password in 20 seconds(once) ====&gt; "</span> pass1 <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">printf</span> <span class="token string">"<span class="token entity" title="\n">\n</span>"</span> <span class="token operator">&amp;&amp;</span> <span class="token comment"># 第一次输入密码</span>    <span class="token builtin class-name">read</span> <span class="token parameter variable">-t</span> <span class="token number">20</span> <span class="token parameter variable">-sp</span> <span class="token string">"Please confirm your password again in 20 seconds ====&gt; "</span> pass2 <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">printf</span> <span class="token string">"<span class="token entity" title="\n">\n</span>"</span> <span class="token operator">&amp;&amp;</span> <span class="token comment"># 确认密码</span>    <span class="token punctuation">[</span> <span class="token variable">$pass1</span> <span class="token operator">==</span> <span class="token variable">$pass2</span> <span class="token punctuation">]</span>  <span class="token comment"># 判断两次输入的密码是否相等</span><span class="token keyword">then</span>    <span class="token builtin class-name">echo</span> <span class="token string">"your password is ok!"</span><span class="token keyword">else</span>    <span class="token builtin class-name">echo</span> <span class="token string">"Invalid password"</span><span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="exit-用来退出当前-shell-进程，并返回一个退出状态"><a href="#exit-用来退出当前-shell-进程，并返回一个退出状态" class="headerlink" title="exit 用来退出当前 shell 进程，并返回一个退出状态"></a>exit 用来退出当前 shell 进程，并返回一个退出状态</h2><ul><li>可以使用 <code>$?</code> 接收这个退出状态</li><li>可以接受一个整数值作为参数，代表退出状态，如果不指定，默认状态值是 0</li><li>退出状态为 0 表示成功，退出状态非 0 表示执行出错或失败</li><li>退出状态只能是一个介于 <code>0~255</code> 之间的整数，其中只有 0 表示成功，其他值都表示失败</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token builtin class-name">echo</span> <span class="token string">"before exit"</span>  <span class="token comment"># 只会输出 before exit</span><span class="token builtin class-name">exit</span> <span class="token number">1</span><span class="token builtin class-name">echo</span> <span class="token string">"after exit"</span>  <span class="token comment"># 不会输出</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="declare-和-typeset-用来设置变量属性"><a href="#declare-和-typeset-用来设置变量属性" class="headerlink" title="declare 和 typeset 用来设置变量属性"></a>declare 和 typeset 用来设置变量属性</h2><blockquote><p>typeset 已经被废弃，建议使用 declare</p></blockquote><p>declare 的用法为：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># - 表示设置属性</span><span class="token comment"># + 表示取消属性</span><span class="token comment"># aAfFgilprtux 表示具体的选项</span><span class="token builtin class-name">declare</span> <span class="token punctuation">[</span>+/-<span class="token punctuation">]</span> <span class="token punctuation">[</span>aAfFgilprtux<span class="token punctuation">]</span> <span class="token punctuation">[</span>变量名<span class="token operator">=</span>变量值<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>aAfFgilprtux 支持的选项有：</p><table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td>-f [name]</td><td>列出之前由用户在脚本中定义的函数名称和函数体。</td></tr><tr><td>-F [name]</td><td>仅列出自定义函数名称。</td></tr><tr><td>-g name</td><td>在 Shell 函数内部创建全局变量。</td></tr><tr><td>-p [name]</td><td>显示指定变量的属性和值。</td></tr><tr><td>-a name</td><td>声明变量为普通数组。</td></tr><tr><td>-A name</td><td>声明变量为关联数组（支持索引下标为字符串）。</td></tr><tr><td>-i name</td><td>将变量定义为整数型。</td></tr><tr><td>-r name[=value]</td><td>将变量定义为只读（不可修改和删除），等价于 readonly name。</td></tr><tr><td>-x name[=value]</td><td>将变量设置为环境变量，等价于 export name[=value]。</td></tr></tbody></table><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#!/bin/bash</span><span class="token comment"># 将变量声明为整数并进行计算</span><span class="token builtin class-name">declare</span> <span class="token parameter variable">-i</span> x y ret<span class="token assign-left variable">x</span><span class="token operator">=</span><span class="token number">11</span><span class="token assign-left variable">y</span><span class="token operator">=</span><span class="token number">22</span><span class="token assign-left variable">ret</span><span class="token operator">=</span><span class="token variable">$x</span>+<span class="token variable">$y</span><span class="token builtin class-name">echo</span> <span class="token variable">$ret</span>  <span class="token comment"># 33</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>内建命令是 Shell 的核心功能，它们提供了快速且强大的工具来处理日常任务。掌握这些内建命令，可以帮助你更高效地编写 Shell 脚本和命令行程序。</p><p>希望这篇文章能够帮助你更好地理解和使用 Shell 内建命令。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shell </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Shell 函数深入解析与实践</title>
       <link href="posts/9d11e5.html"/>
       <url>posts/9d11e5.html</url>
@@ -616,9 +670,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -645,9 +699,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -674,9 +728,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -703,9 +757,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -3145,9 +3199,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -3176,9 +3230,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -3205,9 +3259,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -3234,9 +3288,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -3454,9 +3508,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -3693,9 +3747,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -3722,9 +3776,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
