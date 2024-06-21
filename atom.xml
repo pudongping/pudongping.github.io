@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-20T14:46:31.405Z</updated>
+  <updated>2024-06-21T15:13:16.989Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>自动化脚本：提升运维效率的秘诀</title>
+    <link href="https://pudongping.github.io/posts/19ab69b8.html"/>
+    <id>https://pudongping.github.io/posts/19ab69b8.html</id>
+    <published>2024-06-21T15:12:37.000Z</published>
+    <updated>2024-06-21T15:13:16.989Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当我们谈论服务器管理时，自动化脚本就像是一位无声的英雄，它默默在幕后保持着我们的服务器运行顺畅，确保数据安全，同时还能有效防范网络攻击。&lt;/p&gt;
+&lt;p&gt;今天，我将和大家分享几个实用的自动化脚本，涵盖了数据库备份、防范Dos攻击、监控网卡流量、发送系统告警以及日志管理等方面。</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim 编辑器：高效文本编辑的瑞士军刀</title>
+    <link href="https://pudongping.github.io/posts/3325b0d1.html"/>
+    <id>https://pudongping.github.io/posts/3325b0d1.html</id>
+    <published>2024-06-21T15:11:32.000Z</published>
+    <updated>2024-06-21T15:12:22.454Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Vim，作为编程和系统管理中的强大工具，以其丰富的功能和高度可定制性著称。&lt;/p&gt;
+&lt;p&gt;在这篇文章中，我们将探索 Vim 的一些高效使用技巧，从打开文件的快捷方法到文本编辑、查找、替换、删除和复制的高级技巧，再到 Vim 配置和插件安装，帮助你提升 Vim</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Vim" scheme="https://pudongping.github.io/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Shell 重定向：控制数据流向的艺术</title>
     <link href="https://pudongping.github.io/posts/8af44f1b.html"/>
     <id>https://pudongping.github.io/posts/8af44f1b.html</id>
     <published>2024-06-20T14:45:59.000Z</published>
-    <updated>2024-06-20T14:46:31.405Z</updated>
+    <updated>2024-06-20T14:46:45.338Z</updated>
     
     
       
@@ -49,7 +105,7 @@
     <link href="https://pudongping.github.io/posts/a915d50b.html"/>
     <id>https://pudongping.github.io/posts/a915d50b.html</id>
     <published>2024-06-20T14:44:56.000Z</published>
-    <updated>2024-06-20T14:45:45.070Z</updated>
+    <updated>2024-06-20T14:46:45.336Z</updated>
     
     
       
@@ -512,61 +568,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golang中遇到“note module requires Go xxx”后的解决方案，不升级Go版本！</title>
-    <link href="https://pudongping.github.io/posts/1c839b10.html"/>
-    <id>https://pudongping.github.io/posts/1c839b10.html</id>
-    <published>2024-04-14T11:27:26.000Z</published>
-    <updated>2024-04-14T11:36:42.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;前几天，需要对一个两年前写的项目添加点儿新功能，需要用到一个 Http 客户端包，于是就用了 &lt;code&gt;https://github.com/go-resty/resty&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Consul，一个服务发现神器</title>
-    <link href="https://pudongping.github.io/posts/74705a17.html"/>
-    <id>https://pudongping.github.io/posts/74705a17.html</id>
-    <published>2024-03-18T16:08:05.000Z</published>
-    <updated>2024-03-18T16:09:40.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在使用微服务的架构中，Consul 是一个不可或缺的工具。它由 HashiCorp 公司开发，Consul 提供了服务发现、健康检查、配置管理和服务网格功能，使得在复杂的分布式系统中管理和配置服务变得简单高效。&lt;/p&gt;
-&lt;h2 id=&quot;服务发现：解决微服务寻址难题&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="分布式系统" scheme="https://pudongping.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="分布式系统" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
     
   </entry>
   
