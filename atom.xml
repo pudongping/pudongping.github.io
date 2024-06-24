@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-21T15:13:16.989Z</updated>
+  <updated>2024-06-24T07:36:10.262Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>curl 使用：命令行中的 HTTP 客户端</title>
+    <link href="https://pudongping.github.io/posts/9f801236.html"/>
+    <id>https://pudongping.github.io/posts/9f801236.html</id>
+    <published>2024-06-24T07:35:45.000Z</published>
+    <updated>2024-06-24T07:36:10.262Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的软件开发和网络管理工作中，&lt;code&gt;curl&lt;/code&gt; 是一个我们经常会使用到的命令行工具。它支持多种协议，包括 HTTP、HTTPS、FTP 等，用于发送和接收数据。&lt;/p&gt;
+&lt;p&gt;本文将通过简单易懂的语言，带你快速掌握 curl</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 软件安装与卸载</title>
+    <link href="https://pudongping.github.io/posts/dc4fc28a.html"/>
+    <id>https://pudongping.github.io/posts/dc4fc28a.html</id>
+    <published>2024-06-24T07:34:51.000Z</published>
+    <updated>2024-06-24T07:35:19.643Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Linux 的世界里，安装和卸载软件是每个使用者都需掌握的基本技能。&lt;/p&gt;
+&lt;p&gt;通过这篇文章，我们将以简明易懂的语言风格，一步步引导你学会如何在 Linux 上安装和卸载软件。&lt;/p&gt;
+&lt;h2 id=&quot;以-iftop-的安装为例子&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化脚本：提升运维效率的秘诀</title>
     <link href="https://pudongping.github.io/posts/19ab69b8.html"/>
     <id>https://pudongping.github.io/posts/19ab69b8.html</id>
     <published>2024-06-21T15:12:37.000Z</published>
-    <updated>2024-06-21T15:13:16.989Z</updated>
+    <updated>2024-06-21T15:13:24.578Z</updated>
     
     
       
@@ -49,7 +102,7 @@
     <link href="https://pudongping.github.io/posts/3325b0d1.html"/>
     <id>https://pudongping.github.io/posts/3325b0d1.html</id>
     <published>2024-06-21T15:11:32.000Z</published>
-    <updated>2024-06-21T15:12:22.454Z</updated>
+    <updated>2024-06-21T15:13:24.575Z</updated>
     
     
       
@@ -503,60 +556,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;声明一个数组&quot;&gt;&lt;a href=&quot;#声明一个数组&quot; class=&quot;headerlink&quot; title=&quot;声明一个数组&quot;&gt;&lt;/a&gt;声明一个数组&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-go&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一起来看看如何在Go中使用Swagger？</title>
-    <link href="https://pudongping.github.io/posts/53c8a188.html"/>
-    <id>https://pudongping.github.io/posts/53c8a188.html</id>
-    <published>2024-05-08T16:57:07.000Z</published>
-    <updated>2024-05-08T17:01:01.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Swagger-go-的使用&quot;&gt;&lt;a href=&quot;#Swagger-go-的使用&quot; class=&quot;headerlink&quot; title=&quot;Swagger go 的使用&quot;&gt;&lt;/a&gt;Swagger go 的使用&lt;/h1&gt;&lt;h2 id=&quot;http-服务&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何同时安装多个不同版本的Go？GVM就可以！</title>
-    <link href="https://pudongping.github.io/posts/c10fde57.html"/>
-    <id>https://pudongping.github.io/posts/c10fde57.html</id>
-    <published>2024-05-08T16:39:39.000Z</published>
-    <updated>2024-05-08T16:41:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GVM&quot;&gt;&lt;a href=&quot;#GVM&quot; class=&quot;headerlink&quot; title=&quot;GVM&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
