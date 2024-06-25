@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux 文件传输利器：SCP 和 LRZSZ</title>
+      <link href="posts/65525c46.html"/>
+      <url>posts/65525c46.html</url>
+      
+        <content type="html"><![CDATA[<p>在日常的软件开发和服务器管理工作中，我们经常需要在本机与远程服务器之间传输文件或文件夹。</p><p>本文将向您介绍两种高效的文件传输工具：<code>scp</code> 和 <code>lrzsz</code>，并提供简单易懂的使用指南。</p><h2 id="使用-scp-进行远程拷贝"><a href="#使用-scp-进行远程拷贝" class="headerlink" title="使用 scp 进行远程拷贝"></a>使用 scp 进行远程拷贝</h2><p><code>scp</code> 命令是 Secure Copy Protocol 的缩写，它基于 SSH (Secure Shell) 协议为用户提供在本地和远程机器之间安全传输文件的能力。</p><h3 id="1-从远程拷贝到本地"><a href="#1-从远程拷贝到本地" class="headerlink" title="1. 从远程拷贝到本地"></a>1. 从远程拷贝到本地</h3><p>当我们需要将远程服务器上的文件或文件夹拷贝到本地时，可以使用以下命令格式：</p><ul><li><strong>拷贝文件</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 将远程 /root/alex.sql 文件拷贝到本机 /home/hello/ 目录下</span><span class="token function">scp</span> root@192.168.0.102:/root/alex.sql /home/hello/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li><strong>拷贝文件夹</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 将远程 /root/test 文件夹下的所有文件（包括 test 文件夹本身）拷贝到本机 /home/hello/ 目录下</span><span class="token function">scp</span> <span class="token parameter variable">-r</span> root@192.168.0.102:/root/test /home/hello/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="2-从本地拷贝到远程"><a href="#2-从本地拷贝到远程" class="headerlink" title="2. 从本地拷贝到远程"></a>2. 从本地拷贝到远程</h3><p>相反地，如果我们想要把本地的文件或文件夹上传到远程服务器，可以按照下面的命令格式操作：</p><ul><li><strong>拷贝文件</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 将本地文件 /home/hello/test.php 拷贝到远程机 /root/ 目录下</span><span class="token function">scp</span> /home/hello/test.php root@192.168.0.102:/root/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li><strong>拷贝文件夹</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 将本地 /home/hello/test 目录（和目录中的所有文件）拷贝到远程 /root/ 目录下</span><span class="token function">scp</span> <span class="token parameter variable">-r</span> /home/hello/test root@192.168.0.102:/root/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项"></a>使用注意事项</h3><ul><li>运行上述命令后，系统会要求输入远程服务器的密码。</li><li>确保你具备远程服务器上相应目录的读写权限。</li><li><code>-r</code> 选项表示递归地拷贝文件夹，不加此选项时只能拷贝单个文件。</li></ul><h2 id="使用-lrzsz-进行文件传输"><a href="#使用-lrzsz-进行文件传输" class="headerlink" title="使用 lrzsz 进行文件传输"></a>使用 lrzsz 进行文件传输</h2><p><code>lrzsz</code> 是 Linux/Unix 环境下的一个免费文件传输工具，允许我们通过串行端口或安全壳（SSH）连接进行文件的上传和下载操作。</p><p>lrzsz 是 rz 和 sz 两个命令的集合，分别用于从本地到远程的文件上传和从远程到本地的文件下载。</p><h3 id="安装-lrzsz"><a href="#安装-lrzsz" class="headerlink" title="安装 lrzsz"></a>安装 lrzsz</h3><ul><li><strong>Ubuntu/Debian 系统</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> lrzsz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li><strong>CentOS/RHEL 系统</strong></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yum <span class="token parameter variable">-y</span> <span class="token function">install</span> lrzsy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h3><ul><li><strong>上传文件到远程服务器</strong></li></ul><p>在远程服务器的终端输入 <code>rz</code> 命令后，一个文件选择窗口会出现在本地机器上，选择你希望上传的文件即可开始上传过程。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">rz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li><strong>从远程服务器下载文件</strong></li></ul><p>在远程服务器的终端输入 <code>sz 文件名</code> 命令时，系统会自动开始将指定的文件下载到本地机器上。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sz filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="使用注意事项-1"><a href="#使用注意事项-1" class="headerlink" title="使用注意事项"></a>使用注意事项</h3><ul><li>使用 <code>lrzsz</code> 进行文件传输时，确保你的 SSH 客户端支持 ZModem 协议。例如，使用 SecureCRT 或者 iTerm2 作为终端工具时，这些都原生支持 <code>lrzsz</code> 命令。</li><li><code>rz</code> 命令适用于上传文件，而 <code>sz</code> 命令用于下载文件。</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>scp 和 lrzsz 是 Linux 系统中两个非常有用的文件传输工具。scp 提供了加密的文件传输能力，适合在不同服务器间安全地传输文件。而 lrzsz 则以其简单的操作，方便了文件的上传和下载。</p><p>随着 <code>scp</code> 和 <code>lrzsz</code> 的帮助，无论是从本地向远程服务器上传文件，还是从远程服务器下载文件到本地，都变得简单快捷。</p><p>希望本文能够帮助大家更高效地进行文件传输操作。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux 三剑客 grep、sed、awk</title>
+      <link href="posts/5ffd9f1c.html"/>
+      <url>posts/5ffd9f1c.html</url>
+      
+        <content type="html"><![CDATA[<p>在 Linux 的命令行世界里，有三个强大的文本处理工具：<code>grep</code>、<code>sed</code> 和 <code>awk</code>。它们被统称为 “Linux 三剑客”，它们各自拥有独特的功能，可以帮助我们高效地进行各种文本处理任务。让我们一一了解它们。</p><h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p><code>grep</code> 的全称为 “global regular expression print”，意味着它可以通过正则表达式来搜索文本，并把匹配的行打印出来。</p><h3 id="grep-命令常用选项及含义"><a href="#grep-命令常用选项及含义" class="headerlink" title="grep 命令常用选项及含义"></a>grep 命令常用选项及含义</h3><table><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>-c</td><td>仅列出文件中包含匹配模式的行数</td></tr><tr><td>-i</td><td>忽略模式中的字母大小写</td></tr><tr><td>-l</td><td>列出包含匹配行的文件名</td></tr><tr><td>-n</td><td>在每一行的最前面列出行号</td></tr><tr><td>-v</td><td>列出不匹配模式的行</td></tr><tr><td>-w</td><td>仅匹配整个单词，忽略部分匹配的行</td></tr></tbody></table><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 查找 demo.txt 文件中含有 "alex" 字符串的行</span><span class="token function">grep</span> <span class="token string">"alex"</span> demo.txt<span class="token comment"># 查找 demo.txt 文件中有多少行出现了 "alex" 字符串</span><span class="token function">grep</span> <span class="token parameter variable">-c</span> <span class="token string">"alex"</span> demo.txt<span class="token comment"># 假设输出是 50</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>sed</code>（stream editor）是一种强大的流式文本编辑器。它可以根据脚本命令来处理文本文件中的数据。这些命令可以直接在命令行中输入，也可以存储在一个脚本文件中。</p><h3 id="sed-使用方式"><a href="#sed-使用方式" class="headerlink" title="sed 使用方式"></a>sed 使用方式</h3><ol><li>每次仅读取一行内容；</li><li>根据提供的规则命令匹配并修改数据。注意，<code>sed</code> 默认不会直接修改源文件数据，而是会将数据复制到缓冲区中，修改也仅在缓冲区中进行；</li><li>输出执行结果。</li></ol><p>当一行数据匹配并处理完成后，<code>sed</code> 会继续读取下一行数据，并重复这个过程，直到将文件中所有数据处理完毕。</p><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><h4 id="清空掉文件中所有的内容"><a href="#清空掉文件中所有的内容" class="headerlink" title="清空掉文件中所有的内容"></a>清空掉文件中所有的内容</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 不会直接修改源文件 demo.txt，而是在终端显示修改后的结果，即不显示任何内容，因为所有行都被删除了</span><span class="token function">sed</span> <span class="token string">'d'</span> demo.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h2><p><code>awk</code> 是一个用于文本分析的编程语言和工具。它非常擅长列出数据和报表，而且它的语法十分灵活，功能强大。</p><h3 id="awk-的基本使用"><a href="#awk-的基本使用" class="headerlink" title="awk 的基本使用"></a>awk 的基本使用</h3><p><code>awk</code> 通过对数据进行模式扫描和处理来达到文本处理的目的。它默认以空格为字段分隔符，将一行划分为多个字段。</p><h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><h4 id="输出文件的每一行的第二个字段"><a href="#输出文件的每一行的第二个字段" class="headerlink" title="输出文件的每一行的第二个字段"></a>输出文件的每一行的第二个字段</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 假设 demo.txt 是以空格分隔的字段的文本文件</span><span class="token function">awk</span> <span class="token string">'{print $2}'</span> demo.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="分析日志文件并汇总信息"><a href="#分析日志文件并汇总信息" class="headerlink" title="分析日志文件并汇总信息"></a>分析日志文件并汇总信息</h4><p>假设有一个日志文件 <code>access.log</code>，记录了网站的访问信息。我们想要统计出现次数最多的 IP 地址。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">awk</span> <span class="token string">'{print $1}'</span> access.log <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token parameter variable">-c</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token parameter variable">-nr</span> <span class="token operator">|</span> <span class="token function">head</span> <span class="token parameter variable">-n</span> <span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>解释：</p><ul><li><code>awk '{print $1}' access.log</code>：使用 awk 打印出日志中每行的第一个字段（一般是 IP 地址）。</li><li><code>sort</code>：对 IP 地址进行排序。</li><li><code>uniq -c</code>：压缩连续重复的行并计数。</li><li><code>sort -nr</code>：根据次数逆序排序。</li><li><code>head -n 10</code>：展示前 10 行。</li></ul><p>grep、sed 和 awk 是 Linux 系统中文本处理的三大法宝。grep 用于搜索文本，sed 用于编辑文本，而 awk 则用于更复杂的文本分析和处理。</p><p>通过组合使用 <code>grep</code>、<code>sed</code> 和 <code>awk</code>，我们可以轻松地处理复杂的文本数据，有效提高我们的工作效率。</p><p>希望本文能帮助你入门并熟练掌握这些工具。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>curl 使用：命令行中的 HTTP 客户端</title>
       <link href="posts/9f801236.html"/>
       <url>posts/9f801236.html</url>

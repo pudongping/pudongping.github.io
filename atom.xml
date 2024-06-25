@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-24T07:36:10.262Z</updated>
+  <updated>2024-06-25T03:06:01.956Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 文件传输利器：SCP 和 LRZSZ</title>
+    <link href="https://pudongping.github.io/posts/65525c46.html"/>
+    <id>https://pudongping.github.io/posts/65525c46.html</id>
+    <published>2024-06-25T03:05:39.000Z</published>
+    <updated>2024-06-25T03:06:01.956Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的软件开发和服务器管理工作中，我们经常需要在本机与远程服务器之间传输文件或文件夹。&lt;/p&gt;
+&lt;p&gt;本文将向您介绍两种高效的文件传输工具：&lt;code&gt;scp&lt;/code&gt; 和 &lt;code&gt;lrzsz&lt;/code&gt;，并提供简单易懂的使用指南。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 三剑客 grep、sed、awk</title>
+    <link href="https://pudongping.github.io/posts/5ffd9f1c.html"/>
+    <id>https://pudongping.github.io/posts/5ffd9f1c.html</id>
+    <published>2024-06-25T03:04:58.000Z</published>
+    <updated>2024-06-25T03:05:22.869Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Linux 的命令行世界里，有三个强大的文本处理工具：&lt;code&gt;grep&lt;/code&gt;、&lt;code&gt;sed&lt;/code&gt; 和 &lt;code&gt;awk&lt;/code&gt;。它们被统称为 “Linux</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>curl 使用：命令行中的 HTTP 客户端</title>
     <link href="https://pudongping.github.io/posts/9f801236.html"/>
     <id>https://pudongping.github.io/posts/9f801236.html</id>
     <published>2024-06-24T07:35:45.000Z</published>
-    <updated>2024-06-24T07:36:10.262Z</updated>
+    <updated>2024-06-24T07:43:30.278Z</updated>
     
     
       
@@ -47,7 +99,7 @@
     <link href="https://pudongping.github.io/posts/dc4fc28a.html"/>
     <id>https://pudongping.github.io/posts/dc4fc28a.html</id>
     <published>2024-06-24T07:34:51.000Z</published>
-    <updated>2024-06-24T07:35:19.643Z</updated>
+    <updated>2024-06-24T07:43:30.277Z</updated>
     
     
       
@@ -502,60 +554,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;Go-基础数据类型&quot;&gt;&lt;a href=&quot;#Go-基础数据类型&quot; class=&quot;headerlink&quot; title=&quot;Go 基础数据类型&quot;&gt;&lt;/a&gt;Go 基础数据类型&lt;/h1&gt;&lt;p&gt;对于浮点类型需要被自动推导的变量，其类型将被自动设置为</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中init 函数、变量、常量的执行顺序</title>
-    <link href="https://pudongping.github.io/posts/40b0fc5c.html"/>
-    <id>https://pudongping.github.io/posts/40b0fc5c.html</id>
-    <published>2024-05-08T17:19:47.000Z</published>
-    <updated>2024-05-08T17:20:38.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;init-函数、变量、常量的执行顺序&quot;&gt;&lt;a href=&quot;#init-函数、变量、常量的执行顺序&quot; class=&quot;headerlink&quot; title=&quot;init 函数、变量、常量的执行顺序&quot;&gt;&lt;/a&gt;init 函数、变量、常量的执行顺序&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分享几个Go Slice 技巧，大大提高工作效率！</title>
-    <link href="https://pudongping.github.io/posts/669a361f.html"/>
-    <id>https://pudongping.github.io/posts/669a361f.html</id>
-    <published>2024-05-08T17:10:56.000Z</published>
-    <updated>2024-05-08T17:12:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;声明一个数组&quot;&gt;&lt;a href=&quot;#声明一个数组&quot; class=&quot;headerlink&quot; title=&quot;声明一个数组&quot;&gt;&lt;/a&gt;声明一个数组&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-go&quot;</summary>
         
       
     
