@@ -1,0 +1,717 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="PHP中常用的设计模式, 技术博客 PHP Go Python Node.js Vue 编程爱好者"><meta name="description" content="致力于提供个人所学所想，为开源做一点贡献。"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="referrer" content="never"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>PHP中常用的设计模式 | 热浪编程</title><link rel="icon" type="image/png" href="/medias/favicon.png"><link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css"><link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css"><link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" type="text/css" href="/css/matery.css"><link rel="stylesheet" type="text/css" href="/css/my.css"><script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><meta name="generator" content="Hexo 5.4.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="热浪编程" type="application/atom+xml"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">热浪编程</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/menu" class="waves-effect waves-light"><i class="fas fa-bars" style="zoom:.6"></i> <span>文章目录</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于我</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言板</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">热浪编程</div><div class="logo-desc">致力于提供个人所学所想，为开源做一点贡献。</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/menu" class="waves-effect waves-light"><i class="fa-fw fas fa-bars"></i> Menu</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于我</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言板</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li><li><div class="divider"></div></li><li><a href="https://github.com/pudongping" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i>Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/pudongping" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><script src="/libs/cryptojs/crypto-js.min.js"></script><script></script><div class="bg-cover pd-header post-cover" style="background-image:url(/medias/featureimages/6.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">PHP中常用的设计模式</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/PHP/"><span class="chip bg-color">PHP</span> </a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"><span class="chip bg-color">设计模式</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/PHP/" class="post-category">PHP</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp; 2024-06-26</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp; 3.4k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp; 15 分钟</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><link rel="stylesheet" href="/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><ol><li>创建型模式<br>单例模式、工厂模式、简单工厂模式、抽象工厂模式、建造者模式、原型模式</li><li>结构型模式<br>适配器模式、组合模式、代理模式、外观模式、装饰器模式、桥接模式、享元模式</li><li>行为型模式<br>观察者模式、迭代子模式、策略模式、命令模式、模板方法模式、责任链模式、备忘录模式、状态模式、访问者模式、中介者模式、注册模式</li></ol><h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><ul><li>什么是单例模式？<br>单例模式通俗定义，一个类只有一个实例。而且是内部自行实例化并向整个系统全局地提供这个实例。它不会创建实例副本，而是返回单例类内部存储的实例一个引用。</li></ul><blockquote><p>上面的代码用静态变量 实现了单例模式和创建单例的静态方法 getInstance(). 请注意以下几点：</p><ul><li>构造函数 __construct() 被声明为 protected 是为了防止用 new 操作符在这个类之外创建新的实例。</li><li>魔术方法 __clone() 被声明为 private 是为了防止用 clone 操作符克隆出新的实例.</li><li>魔术方法 __wakeup() 被声明为 private 是为了防止通过全局函数 unserialize() 反序列化这个类的实例。</li><li>新的实例是用过静态方法 getInstance() 使用后期静态绑定生成的。这允许我们对 Singleton 类进行继承，并且在取得 SingletonChild 的单例时不会出现问题。<br>单例模式是非常有用的，特别是我们需要确保在整个请求的声明周期内只有一个实例存在。典型的应用场景是，当我们有一个全局的对象（比如配置类）或一个共享的资源（比如事件队列）时。</li></ul><p>你应该非常小心地使用单例模式，因为它非常自然地引入了全局状态到你的应用中，降低了可测试性。 在大多数情况下，依赖注入可以（并且应该）代替单例类。 使用依赖注入意味着我们不会在设计应用时引入不必要的耦合，因为对象使用共享的或全局的资源，不再需要耦合具体的类。</p></blockquote><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ *  我们如何来写一个属于自己的单例类呢？
+ *  写一个单例类是否有什么规则可寻？
+ *  1.有一个静态成员变量来保存类的唯一实例
+ *  2.构造函数和克隆函数必须申明为私有的（防止外部程序能通过 new 关键字进行创建对象）
+ *  3.公共的静态方法可以访问类的实例作为一个引用返回
+ *  4.只能实例化一次
+ */</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Obj</span>
+<span class="token punctuation">{</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token variable">$_Ins</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token variable">$str</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">str</span> <span class="token operator">=</span> <span class="token function">mt_rand</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">__clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span><span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$_Ins</span> <span class="token keyword">instanceof</span> <span class="token keyword">self</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$_Ins</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">self</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$_Ins</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+
+<span class="token variable">$a</span> <span class="token operator">=</span> <span class="token class-name static-context">Obj</span><span class="token operator">::</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token class-name static-context">Obj</span><span class="token operator">::</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;&lt;hr/&gt;'</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$b</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;&lt;hr/&gt;'</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token operator">===</span> <span class="token variable">$b</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+
+或者采用 ci 框架比较古老的单例方法
+
+<span class="token operator">&lt;</span><span class="token operator">?</span>php
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">ClassName</span>
+<span class="token punctuation">{</span>
+	
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token variable">$instance</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token comment">// 运用了 $this 因此下面调用的时候必须先实例化</span>
+		<span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$instance</span> <span class="token operator">=</span><span class="token operator">&amp;</span> <span class="token variable">$this</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token operator">&amp;</span><span class="token function">get_instance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$instance</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token variable">$aa</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClassName</span><span class="token punctuation">;</span>
+<span class="token variable">$bb</span> <span class="token operator">=</span> <span class="token class-name static-context">ClassName</span><span class="token operator">::</span><span class="token function">get_instance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$cc</span> <span class="token operator">=</span> <span class="token class-name static-context">ClassName</span><span class="token operator">::</span><span class="token function">get_instance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;pre&gt;'</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$aa</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;pre&gt;'</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$bb</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;pre&gt;'</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$cc</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a>策略模式</h3><ul><li>什么是策略模式？<br>定义了算法家族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化不会影响到使用算法的用户。使用策略模式可以实现 Ioc、依赖倒置、控制反转<pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * 策略模式
+ * 需求：同样一份数据需要导出不同的格式
+ */</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">DataModel</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token variable">$writer</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$writer</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">writer</span> <span class="token operator">=</span> <span class="token variable">$writer</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">export</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$data</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'This is first'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'This is second'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'This is third'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">writer</span><span class="token operator">-&gt;</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name-definition class-name">Writer</span> <span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$_file</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">_file</span> <span class="token operator">=</span> <span class="token variable">$file</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 强制要求子类定义 write 方法</span>
+    <span class="token keyword">abstract</span> <span class="token keyword">function</span> <span class="token function-definition function">write</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 以 CSV 格式写入数据
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CsvWriter</span> <span class="token keyword">extends</span> <span class="token class-name">Writer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">write</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$fp</span> <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">_file</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'w'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$data</span> <span class="token keyword">as</span> <span class="token variable">$row</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">fputcsv</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">,</span> <span class="token variable">$row</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">fclose</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 以 Html 格式写入数据
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">HtmlWriter</span> <span class="token keyword">extends</span> <span class="token class-name">Writer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">write</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$fp</span> <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">_file</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'w'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">fwrite</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'&lt;table&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$data</span> <span class="token keyword">as</span> <span class="token variable">$row</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">fwrite</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'&lt;tr&gt;&lt;td&gt;'</span> <span class="token operator">.</span> <span class="token function">implode</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'&lt;/td&gt;&lt;td&gt;'</span><span class="token punctuation">,</span> <span class="token variable">$row</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token string single-quoted-string">'&lt;/td&gt;&lt;/tr&gt;\n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">fwrite</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'&lt;/table&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">fclose</span><span class="token punctuation">(</span><span class="token variable">$fp</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token variable">$model</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DataModel</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">CsvWriter</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'D:\test.csv'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$model</span><span class="token operator">-&gt;</span><span class="token function">export</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><pre class="line-numbers language-php" data-language="php"><code class="language-php">/**
+ *
+ * 需求：假如一个电商网站系统，针对男性女性用户要各自跳转到不同的商品类目，并且所有广告位展示不同的广告
+ */
+ 
+ // UserStrategy.php 
+ <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">UserStrategy</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showAd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showCategory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// FemaleUserStrategy.php</span>
+<span class="token operator">&lt;</span><span class="token operator">?</span>php
+
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">FemaleUserStrategy</span> <span class="token keyword">implements</span> <span class="token class-name">UserStrategy</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showAd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'2014新款女装'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showCategory</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'女装'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// MaleUserStrategy.php</span>
+<span class="token operator">&lt;</span><span class="token operator">?</span>php
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">MaleUserStrategy</span> <span class="token keyword">implements</span> <span class="token class-name">UserStrategy</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showAd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'2014男装秀'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">showCategory</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'男装'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 调用</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Page</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">protected</span> <span class="token variable">$strategy</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">index</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'AD:'</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">strategy</span><span class="token operator">-&gt;</span><span class="token function">showAd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'Category:'</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">strategy</span><span class="token operator">-&gt;</span><span class="token function">showCategory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">setStrategy</span> <span class="token punctuation">(</span><span class="token class-name class-name-fully-qualified type-declaration"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>UserStrategy</span> <span class="token variable">$strategy</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">strategy</span> <span class="token operator">=</span> <span class="token variable">$strategy</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+
+<span class="token variable">$page</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Page</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'female'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$strategy</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>FemaleUserStrategy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token variable">$strategy</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>MaleUserStrategy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$page</span><span class="token operator">-&gt;</span><span class="token function">setStrategy</span><span class="token punctuation">(</span><span class="token variable">$strategy</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$page</span><span class="token operator">-&gt;</span><span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h3><ul><li>什么是观察者模式？<br>定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。</li></ul><p>应用场景：一个事件发生后，要执行一连串更新操作。传统的编程方式，就是在事件的代码之后直接加入处理逻辑。当更新的逻辑增多之后，代码会变得难以维护。这种方式是耦合的，侵入式的，增加新的逻辑需要修改事件主体的代码。</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">// EventGenerator.php 中
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name-definition class-name">EventGenerator</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token variable">$observers</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 添加观察者</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">addObserver</span> <span class="token punctuation">(</span><span class="token class-name type-declaration">Observer</span> <span class="token variable">$observer</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">observers</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$observer</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 调用每一个观察者的 update 方法</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">notify</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">observers</span> <span class="token keyword">as</span> <span class="token variable">$observer</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token variable">$observer</span><span class="token operator">-&gt;</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Observer.php 中</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">Observer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">update</span> <span class="token punctuation">(</span><span class="token variable">$envent_info</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用观察者</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token keyword">class</span> <span class="token class-name-definition class-name">Event</span> <span class="token keyword">extends</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>EventGenerator</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">trigger</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 观察者1</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Observer1</span> <span class="token keyword">implements</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Observer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">update</span> <span class="token punctuation">(</span><span class="token variable">$event_info</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"逻辑1&lt;br /&gt; \n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 观察者2</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Observer2</span> <span class="token keyword">implements</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Observer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">update</span> <span class="token punctuation">(</span><span class="token variable">$event_info</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"逻辑2&lt;br /&gt; \n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token variable">$event</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Event</span><span class="token punctuation">;</span>
+<span class="token variable">$event</span><span class="token operator">-&gt;</span><span class="token function">addObserver</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Observer1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$event</span><span class="token operator">-&gt;</span><span class="token function">addObserver</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Observer2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$event</span><span class="token operator">-&gt;</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><ul><li>什么是工厂模式？<br>工厂方法或者类生成对象，而不是在代码中直接 new，好处在于改动一个类的名称或者参数时，只需要改动一个地方<pre class="line-numbers language-php" data-language="php"><code class="language-php">// Factory.php
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Factory</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">createDatabase</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 在这里 实例化需要用到的对象</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><p>外部调用时</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token class-name class-name-fully-qualified static-context">IMooc<span class="token punctuation">\</span>Factory</span><span class="token operator">::</span><span class="token function">createDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="注册树模式"><a href="#注册树模式" class="headerlink" title="注册树模式"></a>注册树模式</h3><ul><li>什么是注册树模式？<br>解决全局共享和交换对象</li></ul><pre class="line-numbers language-php" data-language="php"><code class="language-php">// Register.php
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Register</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token variable">$objects</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 注册实例
+     * @param [type] $alias  实例别名
+     * @param [type] $object 实例对象
+     */</span>
+    <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">set</span> <span class="token punctuation">(</span><span class="token variable">$alias</span><span class="token punctuation">,</span> <span class="token variable">$object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$objects</span><span class="token punctuation">[</span><span class="token variable">$alias</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$object</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 获取对象实例</span>
+    <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">get</span> <span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$objects</span><span class="token punctuation">[</span><span class="token variable">$name</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 删除对象实例</span>
+    <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">_unset</span> <span class="token punctuation">(</span><span class="token variable">$alias</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$objects</span><span class="token punctuation">[</span><span class="token variable">$alias</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>可以放在工厂文件中之后再在其他地方调用</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token comment">// Factory.php 中设置</span>
+<span class="token class-name static-context">Register</span><span class="token operator">::</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'db'</span><span class="token punctuation">,</span> <span class="token class-name static-context">Database</span><span class="token operator">::</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 其它文件中调用</span>
+<span class="token variable">$db</span> <span class="token operator">=</span> <span class="token class-name class-name-fully-qualified static-context"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Register</span><span class="token operator">::</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'db'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="适配器模式"><a href="#适配器模式" class="headerlink" title="适配器模式"></a>适配器模式</h3><ul><li>什么是适配器模式？</li></ul><ol><li>适配器模式，可以将截然不同的函数接口封装成统一的API；</li><li>实际应用举例，PHP的数据库操作有mysql，mysqli，pdo 3种，可以用适配器模式统一成一致。类似的场景还有 cache 适配器，将 memcache，redis，file，apc等不同的缓存函数，统一成一致。<pre class="line-numbers language-php" data-language="php"><code class="language-php">// Database.php 文件中
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">IDatabase</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">connect</span> <span class="token punctuation">(</span><span class="token variable">$host</span><span class="token punctuation">,</span> <span class="token variable">$user</span><span class="token punctuation">,</span> <span class="token variable">$passwd</span><span class="token punctuation">,</span> <span class="token variable">$dbname</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">query</span><span class="token punctuation">(</span><span class="token variable">$sql</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Database</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token variable">$db</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 获取对象实例</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span><span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$db</span> <span class="token keyword">instanceof</span> <span class="token keyword">self</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$db</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">self</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword static-context">self</span><span class="token operator">::</span><span class="token variable">$db</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">__clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">where</span><span class="token punctuation">(</span><span class="token variable">$where</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">order</span><span class="token punctuation">(</span><span class="token variable">$order</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">limit</span><span class="token punctuation">(</span><span class="token variable">$limit</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>IMooc\Database\PDO.php 文件中<pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc<span class="token punctuation">\</span>Database</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">IMooc<span class="token punctuation">\</span>IDatabase</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">PDO</span> <span class="token keyword">implements</span> <span class="token class-name">IDatabase</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">protected</span> <span class="token variable">$conn</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">connect</span> <span class="token punctuation">(</span><span class="token variable">$host</span><span class="token punctuation">,</span> <span class="token variable">$user</span><span class="token punctuation">,</span> <span class="token variable">$passwd</span><span class="token punctuation">,</span> <span class="token variable">$dbname</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">conn</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>PDO</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"mysql:host=<span class="token interpolation"><span class="token variable">$host</span></span>;dbname=<span class="token interpolation"><span class="token variable">$dbname</span></span>"</span><span class="token punctuation">,</span> <span class="token variable">$user</span><span class="token punctuation">,</span> <span class="token variable">$passwd</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">query</span> <span class="token punctuation">(</span><span class="token variable">$sql</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">conn</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token variable">$sql</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">close</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">conn</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>调用<pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token variable">$db</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">IMooc<span class="token punctuation">\</span>Database<span class="token punctuation">\</span>PDO</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'127.0.0.1'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'root'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'123456'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$res</span> <span class="token operator">=</span> <span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'show databases'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol><h3 id="数据对象映射模式"><a href="#数据对象映射模式" class="headerlink" title="数据对象映射模式"></a>数据对象映射模式</h3><ul><li>什么是数据对象映射模式？</li></ul><ol><li>数据对象映射模式，是将对象和数据存储映射起来，对一个对象的操作会映射为对数据存储的操作。</li></ol><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">User</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token variable">$id</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$phone</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$regtime</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">protected</span> <span class="token variable">$db</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span> <span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">db</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Database<span class="token punctuation">\</span>MySQLi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">db</span><span class="token operator">-&gt;</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'127.0.0.1'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'root'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'123456'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$res</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'select * from user limit 1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$data</span> <span class="token operator">=</span> <span class="token variable">$res</span><span class="token operator">-&gt;</span><span class="token function">fetch_assoc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">id</span> <span class="token operator">=</span> <span class="token variable">$id</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token variable">$data</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">phone</span> <span class="token operator">=</span> <span class="token variable">$data</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'phone'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">regtime</span> <span class="token operator">=</span> <span class="token variable">$data</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'regtime'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 运用析构函数的特性实现更新操作</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">__destruct</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"update user set name = '<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span><span class="token punctuation">}</span></span>',
+            phone = '<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">phone</span><span class="token punctuation">}</span></span>',regtime = '<span class="token interpolation"><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">regtime</span></span>'
+              where id = '<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">id</span><span class="token punctuation">}</span></span>' limit 1 "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token variable">$user</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>User</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token variable">$user</span><span class="token operator">-&gt;</span><span class="token property">phone</span> <span class="token operator">=</span> <span class="token number">18502728040</span><span class="token punctuation">;</span>
+<span class="token variable">$user</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'张三'</span><span class="token punctuation">;</span>
+<span class="token variable">$user</span><span class="token operator">-&gt;</span><span class="token property">regtime</span> <span class="token operator">=</span> <span class="token function">time</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h3><ul><li>什么是原型模式？</li></ul><ol><li>与工厂模式作用类似，都是用来创建对象。</li><li>与工厂模式的实现不同，原型模式是先创建好一个原型对象，然后通过 clone 原型对象来创建新的对象。这样就免去了类创建时重复的初始化操作。</li><li>原型模式适用于大对象的创建。创建一个大对象需要很大的开销，如果每次 new 就会消耗很大，原型模式仅需内存拷贝即可。</li></ol><p>传统写法</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token comment">// 实例化画布对象</span>
+<span class="token variable">$canvas1</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">IMooc<span class="token punctuation">\</span>Canvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 初始化画布操作</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 对画布1进行绘制</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// 实例化画布对象</span>
+<span class="token variable">$canvas2</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">IMooc<span class="token punctuation">\</span>Canvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 初始化画布操作</span>
+<span class="token variable">$canvas2</span><span class="token operator">-&gt;</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 对画布2进行绘制</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas2</span><span class="token operator">-&gt;</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>使用原型模式</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token comment">// 实例化画布对象</span>
+<span class="token variable">$prototype</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">IMooc<span class="token punctuation">\</span>Canvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 初始化画布操作</span>
+<span class="token variable">$prototype</span><span class="token operator">-&gt;</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token variable">$canvas1</span> <span class="token operator">=</span> <span class="token keyword">clone</span> <span class="token variable">$prototype</span><span class="token punctuation">;</span>
+<span class="token comment">// 对画布1进行绘制</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas1</span><span class="token operator">-&gt;</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$canvas2</span> <span class="token operator">=</span> <span class="token keyword">clone</span> <span class="token variable">$prototype</span><span class="token punctuation">;</span>
+<span class="token comment">// 对画布2进行绘制</span>
+<span class="token variable">$canvas2</span><span class="token operator">-&gt;</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas2</span><span class="token operator">-&gt;</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="装饰器模式"><a href="#装饰器模式" class="headerlink" title="装饰器模式"></a>装饰器模式</h3><ol><li>装饰器模式（Decorator），可以动态地添加修改类的功能。</li><li>一个类提供了一项功能，如果要在修改并添加额外的功能，传统的编程模式，需要写一个子类继承它，并重新实现类的方法。</li><li>使用装饰器模式，仅需要在运行时添加一个装饰器对象即可实现，可以实现最大的灵活性。</li></ol><p>IMooc\Canvas.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Canvas</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token variable">$data</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 保存装饰器
+     *
+     * @var array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$decorators</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 初始化画布
+     *
+     * @param int $width
+     * @param int $height
+     */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">init</span><span class="token punctuation">(</span><span class="token variable">$width</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token variable">$height</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$data</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;</span> <span class="token variable">$height</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$j</span> <span class="token operator">&lt;</span> <span class="token variable">$width</span><span class="token punctuation">;</span> <span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token variable">$data</span><span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'*'</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">data</span> <span class="token operator">=</span> <span class="token variable">$data</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 添加装饰器
+     *
+     * @param DrawDecorator $decorator
+     */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">addDecorator</span><span class="token punctuation">(</span><span class="token class-name type-declaration">DrawDecorator</span> <span class="token variable">$decorator</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">decorators</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$decorator</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 画画前的调用方法
+     */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">decorators</span> <span class="token keyword">as</span> <span class="token variable">$decorator</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token variable">$decorator</span><span class="token operator">-&gt;</span><span class="token function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 画画后的调用方法
+     */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 需要进行反转，beforeDraw 方法是先进，afterDraw 方法是先出  （先进先出，后进后出）</span>
+        <span class="token variable">$decorators</span> <span class="token operator">=</span> <span class="token function">array_reverse</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">decorators</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$decorators</span> <span class="token keyword">as</span> <span class="token variable">$decorator</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token variable">$decorator</span><span class="token operator">-&gt;</span><span class="token function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 画画
+     */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">data</span> <span class="token keyword">as</span> <span class="token variable">$line</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$line</span> <span class="token keyword">as</span> <span class="token variable">$char</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">echo</span> <span class="token variable">$char</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;br /&gt;\n"</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">rect</span><span class="token punctuation">(</span><span class="token variable">$a1</span><span class="token punctuation">,</span> <span class="token variable">$a2</span><span class="token punctuation">,</span> <span class="token variable">$b1</span><span class="token punctuation">,</span> <span class="token variable">$b2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">data</span> <span class="token keyword">as</span> <span class="token variable">$k1</span> <span class="token operator">=&gt;</span> <span class="token variable">$line</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$k1</span> <span class="token operator">&lt;</span> <span class="token variable">$a1</span> <span class="token keyword">or</span> <span class="token variable">$k1</span> <span class="token operator">&gt;</span> <span class="token variable">$a2</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$line</span> <span class="token keyword">as</span> <span class="token variable">$k2</span> <span class="token operator">=&gt;</span> <span class="token variable">$char</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$k2</span> <span class="token operator">&lt;</span> <span class="token variable">$b1</span> <span class="token keyword">or</span> <span class="token variable">$k2</span> <span class="token operator">&gt;</span> <span class="token variable">$b2</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+                <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">data</span><span class="token punctuation">[</span><span class="token variable">$k1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token variable">$k2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'&amp;nbsp;'</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>IMooc\DrawDecorator.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">DrawDecorator</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>IMooc\ColorDrawDecorator.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">ColorDrawDecorator</span> <span class="token keyword">implements</span> <span class="token class-name">DrawDecorator</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$color</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'red'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">color</span> <span class="token operator">=</span> <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;div style='color: <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">color</span><span class="token punctuation">}</span></span>;'&gt;"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;/div&gt;"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>IMooc\SizeDrawDecorator.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">SizeDrawDecorator</span> <span class="token keyword">implements</span> <span class="token class-name">DrawDecorator</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$size</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'14px'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">size</span> <span class="token operator">=</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">beforeDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;div style='font-size: <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">size</span><span class="token punctuation">}</span></span>;'&gt;"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">afterDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;/div&gt;"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token variable">$canvas</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Canvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas</span><span class="token operator">-&gt;</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas</span><span class="token operator">-&gt;</span><span class="token function">addDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>ColorDrawDecorator</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'green'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// $canvas-&gt;addDecorator(new \IMooc\SizeDrawDecorator('10px'));</span>
+<span class="token variable">$canvas</span><span class="token operator">-&gt;</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$canvas</span><span class="token operator">-&gt;</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="迭代器模式"><a href="#迭代器模式" class="headerlink" title="迭代器模式"></a>迭代器模式</h3><ol><li>迭代器模式，在不需要了解内部实现的前提下，遍历一个聚合对象的内部元素。</li><li>相比于传统的编程模式，迭代器模式可以隐藏遍历元素的所需的操作。</li></ol><p>IMooc\AllUser.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">AllUser</span> <span class="token keyword">implements</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>Iterator</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$ids</span><span class="token punctuation">;</span>
+    <span class="token keyword">protected</span> <span class="token variable">$data</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">protected</span> <span class="token variable">$index</span><span class="token punctuation">;</span>  <span class="token comment">// 迭代器的当前位置</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$db</span> <span class="token operator">=</span> <span class="token class-name static-context">Factory</span><span class="token operator">::</span><span class="token function">getDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"select id from user"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">ids</span> <span class="token operator">=</span> <span class="token variable">$result</span><span class="token operator">-&gt;</span><span class="token function">fetch_all</span><span class="token punctuation">(</span><span class="token constant">MYSQLI_ASSOC</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 当前元素</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">current</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$id</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">ids</span><span class="token punctuation">[</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">index</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">// 获取指定 id 的用户信息</span>
+        <span class="token keyword">return</span> <span class="token class-name static-context">Factory</span><span class="token operator">::</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 下一个元素</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">index</span> <span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 是否还有下一个元素</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">valid</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">index</span> <span class="token operator">&lt;</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">ids</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 重置迭代器</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">rewind</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">index</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 获取当前的位置</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">key</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">index</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token comment">// 所有的用户信息</span>
+<span class="token variable">$users</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>AllUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$users</span> <span class="token keyword">as</span> <span class="token variable">$user</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$user</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h3><ol><li>在客户端与实体之间建立一个代理对象 （proxy），客户端对实体进行操作全部委派给代理对象，隐藏实体的具体实现细节。</li><li>proxy 还可以与业务代码分离，部署到另外的服务器。业务代码中通过 RPC 来委派任务。</li></ol><p>IMooc\Proxy.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Proxy</span> <span class="token keyword">implements</span> <span class="token class-name">IUserProxy</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// 从数据库用于 读取 操作</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">getUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$db</span> <span class="token operator">=</span> <span class="token class-name static-context">Factory</span><span class="token operator">::</span><span class="token function">getDatabase</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'slave'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"select name from user where id =<span class="token interpolation"><span class="token variable">$id</span></span> limit 1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 主数据库用于 更新 操作</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">setUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">,</span> <span class="token variable">$name</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$db</span> <span class="token operator">=</span> <span class="token class-name static-context">Factory</span><span class="token operator">::</span><span class="token function">getDatabase</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'master'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$db</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"update user set name = <span class="token interpolation"><span class="token variable">$name</span></span> where id =<span class="token interpolation"><span class="token variable">$id</span></span> limit 1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>IMooc\IUserProxy.php</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">IMooc</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">IUserProxy</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">getUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">setUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">,</span> <span class="token variable">$name</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用</p><pre class="line-numbers language-php" data-language="php"><code class="language-php">
+<span class="token variable">$proxy</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>IMooc<span class="token punctuation">\</span>Proxy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$proxy</span><span class="token operator">-&gt;</span><span class="token function">getUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$proxy</span><span class="token operator">-&gt;</span><span class="token function">setUserName</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">,</span> <span class="token variable">$name</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者: </i></span><span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">Alex</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接: </i></span><span class="reprint-info"><a href="https://pudongping.github.io/posts/e0806fd7.html">https://pudongping.github.io/posts/e0806fd7.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明: </i></span><span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">Alex</a> !</span></div></div><script async defer>function navToReprintStatement(){$("html, body").animate({scrollTop:$("#reprint-statement").offset().top-80},800)}document.addEventListener("copy",function(t){M.toast({html:'<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>'})})</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/PHP/"><span class="chip bg-color">PHP</span> </a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"><span class="chip bg-color">设计模式</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div><style>#reward{margin:40px 0;text-align:center}#reward .reward-link{font-size:1.4rem;line-height:38px}#reward .btn-floating:hover{box-shadow:0 6px 12px rgba(0,0,0,.2),0 5px 15px rgba(0,0,0,.2)}#rewardModal{width:320px;height:350px}#rewardModal .reward-title{margin:15px auto;padding-bottom:5px}#rewardModal .modal-content{padding:10px}#rewardModal .close{position:absolute;right:15px;top:15px;color:rgba(0,0,0,.5);font-size:1.3rem;line-height:20px;cursor:pointer}#rewardModal .close:hover{color:#ef5350;transform:scale(1.3);-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3)}#rewardModal .reward-tabs{margin:0 auto;width:210px}.reward-tabs .tabs{height:38px;margin:10px auto;padding-left:0}.reward-content ul{padding-left:0!important}.reward-tabs .tabs .tab{height:38px;line-height:38px}.reward-tabs .tab a{color:#fff;background-color:#ccc}.reward-tabs .tab a:hover{background-color:#ccc;color:#fff}.reward-tabs .wechat-tab .active{color:#fff!important;background-color:#22ab38!important}.reward-tabs .alipay-tab .active{color:#fff!important;background-color:#019fe8!important}.reward-tabs .reward-img{width:210px;height:210px}</style><div id="reward"><a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a><div id="rewardModal" class="modal"><div class="modal-content"><a class="close modal-close"><i class="fas fa-times"></i></a><h4 class="reward-title">你的赏识是我前进的动力</h4><div class="reward-content"><div class="reward-tabs"><ul class="tabs row"><li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li><li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li></ul><div id="alipay"><img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码"></div><div id="wechat"><img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码"></div></div></div></div></div></div><script>$(function(){$(".tabs").tabs()})</script></div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"><link rel="stylesheet" href="/css/my-gitalk.css"><div class="card gitalk-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="gitalk-container" class="card-content"></div></div><script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script><script>let gitalk=new Gitalk({clientID:"736ff0a6e49d2f9bb2ee",clientSecret:"3e2997df5da9ff995b6f0354a0e6d783cf579801",repo:"pudongping.github.io",owner:"pudongping",admin:["pudongping"],id:"2024-06-26T11-30-42",distractionFreeMode:!1});gitalk.render("gitalk-container")</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="far fa-dot-circle"></i>&nbsp;本篇</div><div class="card"><a href="/posts/e0806fd7.html"><div class="card-image"><img src="/medias/featureimages/6.jpg" class="responsive-img" alt="PHP中常用的设计模式"> <span class="card-title">PHP中常用的设计模式</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2024-06-26 </span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/PHP/" class="post-category">PHP</a></span></div></div><div class="card-action article-tags"><a href="/tags/PHP/"><span class="chip bg-color">PHP</span> </a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"><span class="chip bg-color">设计模式</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/33277937.html"><div class="card-image"><img src="/medias/featureimages/33.jpg" class="responsive-img" alt="PHP 之道笔记整理：最佳实践与安全指南"> <span class="card-title">PHP 之道笔记整理：最佳实践与安全指南</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2024-06-26 </span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/PHP/" class="post-category">PHP</a></span></div></div><div class="card-action article-tags"><a href="/tags/PHP/"><span class="chip bg-color">PHP</span></a></div></div></div></div></article></div><script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script><script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script><script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script><script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff;overflow-y:scroll;height:400px"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function(){tocbot.init({tocSelector:"#toc-content",contentSelector:"#articleContent",headingsOffset:-(.4*$(window).height()-45),collapseDepth:Number("0"),headingSelector:"h1, h2, h3, h4, h5"});let t=0,e="toc-heading-";$("#toc-content a").each(function(){$(this).attr("href","#"+e+ ++t)}),t=0,$("#articleContent").children("h1, h2, h3, h4, h5").each(function(){$(this).attr("id",e+ ++t)});let n=parseInt(.4*$(window).height()-64),o=$(".toc-widget");$(window).scroll(function(){$(window).scrollTop()>n?o.addClass("toc-fixed"):o.removeClass("toc-fixed")});const i="expanded";let c=$("#toc-aside"),l=$("#main-content");$("#floating-toc-btn .btn-floating").click(function(){c.hasClass(i)?(c.removeClass(i).hide(),l.removeClass("l9")):(c.addClass(i).show(),l.addClass("l9")),function(t,e){let n=$("#"+t);if(0!==n.length){let t=n.width();450<=t?t+=21:350<=t&&t<450?t+=18:300<=t&&t<350?t+=16:t+=14,$("#"+e).width(t)}}("artDetail","prenext-posts")})})</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2018-2024</span> <a href="/about" target="_blank">Alex</a> |&nbsp;<span style="margin:0 5px;display:inline-block"><i class="fa fa-heart" style="color:#ff71a8"></i></span> Powered by <a href="/about" target="_blank">Alex</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">181.2k</span>&nbsp;字 <span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次 </span><span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2018",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),n=Date.UTC(o,"5","20","0","0","0"),i=Date.UTC(r,a,i,l,m,M)-n,l=Math.floor(i/31536e6),m=Math.floor(i/t-365*l),M=Math.floor((i-(365*l+m)*t)/e),n=Math.floor((i-(365*l+m)*t-M*e)/6e4),e=Math.floor((i-(365*l+m)*t-M*e-6e4*n)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+m+" 天 "+M+" 小时 "+n+" 分钟 "+e+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+l+" 年 "+m+" 天 "+M+" 小时 "+n+" 分钟 "+e+" 秒")}setInterval(siteTime,1e3)</script><br><span><a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备18004705号-2</a> </span>&nbsp; | &nbsp; <span id="icp"><img src="/medias/icp.png" style="vertical-align:text-bottom"> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42052802000032" target="_blank">鄂公网安备 42052802000032号</a></span></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/pudongping" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i> </a><a href="mailto:276558492@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i> </a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1414818093" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1414818093" data-position="top" data-delay="50"><i class="fab fa-qq"></i> </a><a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script type="text/javascript">$(function(){!function(t,r,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),t=document.getElementById(r),n=document.getElementById(s);t.addEventListener("input",function(){var o='<ul class="search-result-list">',h=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var n,e,r,s=!0,i=t.title.trim().toLowerCase(),l=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),a=0===(a=t.url).indexOf("/")?t.url:"/"+a,c=-1,u=-1;""!==i&&""!==l&&h.forEach(function(t,e){n=i.indexOf(t),c=l.indexOf(t),n<0&&c<0?s=!1:(c<0&&(c=0),0===e&&(u=c))}),s&&(o+="<li><a href='"+a+"' class='search-result-title'>"+i+"</a>",e=t.content.trim().replace(/<[^>]+>/g,""),0<=u&&(a=u+80,(a=0===(t=(t=u-20)<0?0:t)?100:a)>e.length&&(a=e.length),r=e.substr(t,a),h.forEach(function(t){var e=new RegExp(t,"gi");r=r.replace(e,'<em class="search-keyword">'+t+"</em>")}),o+='<p class="search-result">'+r+"...</p>"),o+="</li>")}),o+="</ul>",n.innerHTML=o)})}})}("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js"></script><script src="https://cdn.bootcss.com/masonry/4.2.2/masonry.pkgd.min.js"></script><script src="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js"></script><script src="https://cdn.bootcss.com/scrollprogress/3.0.2/scrollProgress.min.js"></script><script src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script type="text/javascript">var st,OriginTitile=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="看不见我🙈~看不见我🙈~",clearTimeout(st)):(document.title="(๑•̀ㅂ•́) ✧被发现了～",st=setTimeout(function(){document.title=OriginTitile},3e3))})</script><script type="text/javascript">768<$(window).width()&&document.write('<script type="text/javascript" src="/js/wordfloat.js"><\/script>')</script><script type="text/javascript">768<$(window).width()&&document.write('<script type="text/javascript" src="/js/snow.js"><\/script>')</script><script type="text/javascript" color="0,0,255" pointcolor="0,0,255" opacity="0.8" zindex="-1" count="99" src="/libs/background/canvas-nest.js"></script><script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async></script><script src="/libs/instantpage/instantpage.js" type="module"></script><script>window.imageLazyLoadSetting={isSPA:!1,preloadRatio:1,processImages:null}</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})})</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var e=r[a],t=e,n=function(){r=r.filter(function(t){return e!==t})},i=new Image,o=t.getAttribute("data-original");i.onload=function(){t.src=o,n()},t.src!==o&&(i.src=o)}()}o(),n.addEventListener("scroll",function(){var t=o,e=n;clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this)</script></body></html>

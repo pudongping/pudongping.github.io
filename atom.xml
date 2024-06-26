@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-25T03:06:01.956Z</updated>
+  <updated>2024-06-26T03:31:09.841Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PHP中常用的设计模式</title>
+    <link href="https://pudongping.github.io/posts/e0806fd7.html"/>
+    <id>https://pudongping.github.io/posts/e0806fd7.html</id>
+    <published>2024-06-26T03:30:42.000Z</published>
+    <updated>2024-06-26T03:31:09.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;创建型模式&lt;br&gt;单例模式、工厂模式、简单工厂模式、抽象工厂模式、建造者模式、原型模式&lt;/li&gt;
+&lt;li&gt;结构型模式&lt;br&gt;适配器模式、组合模式、代理模式、外观模式、装饰器模式、桥接模式、享元模式&lt;/li&gt;
+&lt;li&gt;行为型模式&lt;br&gt;观察者模式、迭代子模式、策略</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 之道笔记整理：最佳实践与安全指南</title>
+    <link href="https://pudongping.github.io/posts/33277937.html"/>
+    <id>https://pudongping.github.io/posts/33277937.html</id>
+    <published>2024-06-26T02:55:57.000Z</published>
+    <updated>2024-06-26T02:56:59.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在这篇文章中，我们将以简明易懂的语言探讨 PHP 最佳实践中的一些关键主题，包括使用当前稳定版本、日期和时间处理、UTF-8 编码以及确保 Web</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux 文件传输利器：SCP 和 LRZSZ</title>
     <link href="https://pudongping.github.io/posts/65525c46.html"/>
     <id>https://pudongping.github.io/posts/65525c46.html</id>
     <published>2024-06-25T03:05:39.000Z</published>
-    <updated>2024-06-25T03:06:01.956Z</updated>
+    <updated>2024-06-25T03:19:09.684Z</updated>
     
     
       
@@ -48,7 +103,7 @@
     <link href="https://pudongping.github.io/posts/5ffd9f1c.html"/>
     <id>https://pudongping.github.io/posts/5ffd9f1c.html</id>
     <published>2024-06-25T03:04:58.000Z</published>
-    <updated>2024-06-25T03:05:22.869Z</updated>
+    <updated>2024-06-25T03:19:09.683Z</updated>
     
     
       
@@ -511,60 +566,6 @@
     <category term="MacOS" scheme="https://pudongping.github.io/tags/MacOS/"/>
     
     <category term="Charles" scheme="https://pudongping.github.io/tags/Charles/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>推荐几个好用的GRPC调试工具</title>
-    <link href="https://pudongping.github.io/posts/47f9e31c.html"/>
-    <id>https://pudongping.github.io/posts/47f9e31c.html</id>
-    <published>2024-05-08T17:41:44.000Z</published>
-    <updated>2024-05-08T17:44:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GRPC-调试工具&quot;&gt;&lt;a href=&quot;#GRPC-调试工具&quot; class=&quot;headerlink&quot; title=&quot;GRPC 调试工具&quot;&gt;&lt;/a&gt;GRPC 调试工具&lt;/h1&gt;&lt;h2 id=&quot;1-grpcui&quot;&gt;&lt;a href=&quot;#1-grpcui&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="RPC" scheme="https://pudongping.github.io/categories/RPC/"/>
-    
-    
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
-    <category term="GRPC" scheme="https://pudongping.github.io/tags/GRPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 基础数据类型</title>
-    <link href="https://pudongping.github.io/posts/1308b152.html"/>
-    <id>https://pudongping.github.io/posts/1308b152.html</id>
-    <published>2024-05-08T17:25:27.000Z</published>
-    <updated>2024-05-08T17:26:08.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Go-基础数据类型&quot;&gt;&lt;a href=&quot;#Go-基础数据类型&quot; class=&quot;headerlink&quot; title=&quot;Go 基础数据类型&quot;&gt;&lt;/a&gt;Go 基础数据类型&lt;/h1&gt;&lt;p&gt;对于浮点类型需要被自动推导的变量，其类型将被自动设置为</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
