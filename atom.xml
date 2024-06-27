@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-26T03:31:09.841Z</updated>
+  <updated>2024-06-27T03:24:41.958Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SSH安全远程登录与端口转发</title>
+    <link href="https://pudongping.github.io/posts/af7eff68.html"/>
+    <id>https://pudongping.github.io/posts/af7eff68.html</id>
+    <published>2024-06-27T03:24:01.000Z</published>
+    <updated>2024-06-27T03:24:41.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在今天这个云计算盛行的时代，SSH（Secure Shell）几乎成了每个开发者必备技能之一。SSH 不仅可以让我们安全地远程登录到服务器，执行操作，还支持如文件传输、端口转发等高级功能。&lt;/p&gt;
+&lt;p&gt;本文将用浅显易懂的语言，带你深入了解 SSH</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="SSH" scheme="https://pudongping.github.io/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>知道这几个Linux组合命令，效率大大提升！</title>
+    <link href="https://pudongping.github.io/posts/d9e9c80b.html"/>
+    <id>https://pudongping.github.io/posts/d9e9c80b.html</id>
+    <published>2024-06-27T03:23:33.000Z</published>
+    <updated>2024-06-27T03:25:13.559Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的服务器管理和问题诊断过程中，Linux 命令行工具提供了强大的支持。本文通过几个常用的示例，介绍如何快速定位问题、监控服务器性能。&lt;/p&gt;
+&lt;p&gt;无论你是编程新手还是有一定经验的开发者，理解和掌握这些命令，都将在你的工作中大放异彩。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PHP中常用的设计模式</title>
     <link href="https://pudongping.github.io/posts/e0806fd7.html"/>
     <id>https://pudongping.github.io/posts/e0806fd7.html</id>
     <published>2024-06-26T03:30:42.000Z</published>
-    <updated>2024-06-26T03:31:09.841Z</updated>
+    <updated>2024-06-26T03:35:14.828Z</updated>
     
     
       
@@ -51,7 +106,7 @@
     <link href="https://pudongping.github.io/posts/33277937.html"/>
     <id>https://pudongping.github.io/posts/33277937.html</id>
     <published>2024-06-26T02:55:57.000Z</published>
-    <updated>2024-06-26T02:56:59.644Z</updated>
+    <updated>2024-06-26T03:35:14.827Z</updated>
     
     
       
@@ -509,63 +564,6 @@
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 字符串操作：让你的脚本语言更加灵活</title>
-    <link href="https://pudongping.github.io/posts/68372f77.html"/>
-    <id>https://pudongping.github.io/posts/68372f77.html</id>
-    <published>2024-06-14T10:51:44.000Z</published>
-    <updated>2024-06-14T14:58:22.183Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;字符串在编程中扮演着至关重要的角色，尤其是在 Shell 脚本编程中。无论是处理文件路径、生成动态消息还是执行复杂的文本分析，掌握字符串操作无疑会让你的脚本更加强大且灵活。&lt;/p&gt;
-&lt;p&gt;今天，我们就来深入了解一些基础而且实用的 Shell</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Charles抓包神器的使用，完美解决抓取HTTPS请求unknown问题</title>
-    <link href="https://pudongping.github.io/posts/1eac0236.html"/>
-    <id>https://pudongping.github.io/posts/1eac0236.html</id>
-    <published>2024-06-12T10:06:34.000Z</published>
-    <updated>2024-06-12T10:09:22.767Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Windows 上可能比较好用的抓包工具是 fidder，当然，在 Mac 上也有一款抓包神器不输 fiddler，那就是今天的主角——</summary>
-        
-      
-    
-    
-    
-    <category term="抓包工具" scheme="https://pudongping.github.io/categories/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="抓包工具" scheme="https://pudongping.github.io/tags/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="MacOS" scheme="https://pudongping.github.io/tags/MacOS/"/>
-    
-    <category term="Charles" scheme="https://pudongping.github.io/tags/Charles/"/>
     
   </entry>
   
