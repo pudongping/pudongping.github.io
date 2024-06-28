@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-27T03:24:41.958Z</updated>
+  <updated>2024-06-28T15:51:06.780Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 管理远程会话 screen：掌握终端的多任务操作</title>
+    <link href="https://pudongping.github.io/posts/1330f742.html"/>
+    <id>https://pudongping.github.io/posts/1330f742.html</id>
+    <published>2024-06-28T15:50:08.000Z</published>
+    <updated>2024-06-28T15:51:06.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常开发和服务器管理工作中，特别是当我们通过 SSH 连接到远程服务器时，通常需要同时执行多个任务。&lt;/p&gt;
+&lt;p&gt;Linux 的 &lt;code&gt;screen&lt;/code&gt; 命令为此提供了一种简便的解决方案。&lt;code&gt;screen&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="screen" scheme="https://pudongping.github.io/tags/screen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>expect自动交互脚本：简化你的自动化任务</title>
+    <link href="https://pudongping.github.io/posts/9f8553ef.html"/>
+    <id>https://pudongping.github.io/posts/9f8553ef.html</id>
+    <published>2024-06-28T15:49:53.000Z</published>
+    <updated>2024-06-28T15:50:37.111Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的 Linux 系统管理和自动化任务处理中，经常会遇到需要自动登录到服务器并执行一系列命令的情况，例如批量部署更新、监控日志等。手动操作不仅耗时耗力，而且效率低下，特别是当涉及到多台服务器时。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;expect&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="expect" scheme="https://pudongping.github.io/tags/expect/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSH安全远程登录与端口转发</title>
     <link href="https://pudongping.github.io/posts/af7eff68.html"/>
     <id>https://pudongping.github.io/posts/af7eff68.html</id>
     <published>2024-06-27T03:24:01.000Z</published>
-    <updated>2024-06-27T03:24:41.958Z</updated>
+    <updated>2024-06-27T03:25:31.927Z</updated>
     
     
       
@@ -49,7 +105,7 @@
     <link href="https://pudongping.github.io/posts/d9e9c80b.html"/>
     <id>https://pudongping.github.io/posts/d9e9c80b.html</id>
     <published>2024-06-27T03:23:33.000Z</published>
-    <updated>2024-06-27T03:25:13.559Z</updated>
+    <updated>2024-06-27T03:25:31.929Z</updated>
     
     
       
@@ -497,62 +553,6 @@
         
     <summary type="html">&lt;p&gt;在编程世界里，&lt;code&gt;shell&lt;/code&gt; 脚本是一种强大而又灵活的方式，用于处理文件、执行命令以及进行自动化操作。&lt;/p&gt;
 &lt;p&gt;今天，我们将深入探讨 Shell 脚本中的 &lt;code&gt;test&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 数学计算：轻松掌握算术运算基本功</title>
-    <link href="https://pudongping.github.io/posts/fc80fc40.html"/>
-    <id>https://pudongping.github.io/posts/fc80fc40.html</id>
-    <published>2024-06-14T14:50:31.000Z</published>
-    <updated>2024-06-14T14:58:22.184Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常的 Shell 脚本编写中，我们经常会遇到需要进行数学计算的场景。相较于其他编程语言直接支持算数运算，Shell 本身并不直接支持复杂的数学计算，因为它并不如 Python 那样直接支持简单的数学表达式。&lt;/p&gt;
-&lt;p&gt;不过，别担心，通过本文，你将学会如何在</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 数组：灵活操作的秘诀</title>
-    <link href="https://pudongping.github.io/posts/1ddd131d.html"/>
-    <id>https://pudongping.github.io/posts/1ddd131d.html</id>
-    <published>2024-06-14T14:38:10.000Z</published>
-    <updated>2024-06-14T14:58:22.184Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;进入编程世界，无论是初学者还是有一定经验的开发者，都会接触到各种各样的数据结构，而数组无疑是其中最基础也是最重要的一种。在 Shell 编程中，数组的使用同样占据了极其重要的地位。&lt;/p&gt;
-&lt;p&gt;本文将通过简单易懂的语言和例子，帮助你快速掌握 Shell</summary>
         
       
     
