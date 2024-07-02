@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-06-28T15:51:06.780Z</updated>
+  <updated>2024-07-02T07:31:59.873Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Tmux 快速入门：提高终端管理效率的必备技能</title>
+    <link href="https://pudongping.github.io/posts/bb0f40eb.html"/>
+    <id>https://pudongping.github.io/posts/bb0f40eb.html</id>
+    <published>2024-07-02T07:31:02.000Z</published>
+    <updated>2024-07-02T07:31:59.873Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的软件开发过程当中，程序员经常需要同时操作多个终端窗口。不论是编写代码、运行测试、监控日志，还是远程登录服务器，多个窗口的切换不仅繁琐，而且降低了工作效率。&lt;/p&gt;
+&lt;p&gt;此时，一个叫作 &lt;strong&gt;Tmux&lt;/strong&gt;（terminal</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Tmux" scheme="https://pudongping.github.io/tags/Tmux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux 管理远程会话 screen：掌握终端的多任务操作</title>
     <link href="https://pudongping.github.io/posts/1330f742.html"/>
     <id>https://pudongping.github.io/posts/1330f742.html</id>
     <published>2024-06-28T15:50:08.000Z</published>
-    <updated>2024-06-28T15:51:06.780Z</updated>
+    <updated>2024-06-28T15:51:16.954Z</updated>
     
     
       
@@ -49,7 +75,7 @@
     <link href="https://pudongping.github.io/posts/9f8553ef.html"/>
     <id>https://pudongping.github.io/posts/9f8553ef.html</id>
     <published>2024-06-28T15:49:53.000Z</published>
-    <updated>2024-06-28T15:50:37.111Z</updated>
+    <updated>2024-06-28T15:51:16.956Z</updated>
     
     
       
@@ -525,34 +551,6 @@
         
     <summary type="html">&lt;p&gt;大家好，今天我们来聊聊 Shell 脚本中的条件判断加强版——&lt;code&gt;[[ ]]&lt;/code&gt; 命令。如果你对基本的 &lt;code&gt;[]&lt;/code&gt; 命令已经熟悉，那么 &lt;code&gt;[[ ]]&lt;/code&gt; 将是你的下一个升级技能点。&lt;/p&gt;
 &lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell test [] 命令：条件判断的艺术</title>
-    <link href="https://pudongping.github.io/posts/8deddbf7.html"/>
-    <id>https://pudongping.github.io/posts/8deddbf7.html</id>
-    <published>2024-06-17T06:23:46.000Z</published>
-    <updated>2024-06-17T07:21:47.075Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在编程世界里，&lt;code&gt;shell&lt;/code&gt; 脚本是一种强大而又灵活的方式，用于处理文件、执行命令以及进行自动化操作。&lt;/p&gt;
-&lt;p&gt;今天，我们将深入探讨 Shell 脚本中的 &lt;code&gt;test&lt;/code&gt;</summary>
         
       
     
