@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-02T07:31:59.873Z</updated>
+  <updated>2024-07-03T03:07:52.595Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>手把手教你玩转 Nginx 配置</title>
+    <link href="https://pudongping.github.io/posts/40e3643a.html"/>
+    <id>https://pudongping.github.io/posts/40e3643a.html</id>
+    <published>2024-07-03T03:01:00.000Z</published>
+    <updated>2024-07-03T03:07:52.595Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代的互联网应用中，Nginx 已经成为了不可或缺的组成部分。无论是作为静态资源服务器、反向代理服务器、还是负载均衡器，Nginx 的高性能和灵活配置都让它备受青睐。&lt;/p&gt;
+&lt;p&gt;本文将以简单、易懂的语言和实例，详细介绍几种常见的 Nginx</summary>
+        
+      
+    
+    
+    
+    <category term="Nginx" scheme="https://pudongping.github.io/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多机部署：打造内网服务器集群</title>
+    <link href="https://pudongping.github.io/posts/9a124193.html"/>
+    <id>https://pudongping.github.io/posts/9a124193.html</id>
+    <published>2024-07-03T03:00:41.000Z</published>
+    <updated>2024-07-03T03:02:04.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在当今这个信息爆炸的时代，多机部署已经成为许多大型应用不可或缺的一部分。但是，对于很多刚刚接触服务器管理和网络部署的新手来说，多机部署可能听起来就像是一门深不可测的技术。&lt;/p&gt;
+&lt;p&gt;别担心，今天就让我带你一起轻松学习如何在同一内网的不同服务器之间进行连接。&lt;/p&gt;
+&lt;p</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="服务器集群" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Tmux 快速入门：提高终端管理效率的必备技能</title>
     <link href="https://pudongping.github.io/posts/bb0f40eb.html"/>
     <id>https://pudongping.github.io/posts/bb0f40eb.html</id>
     <published>2024-07-02T07:31:02.000Z</published>
-    <updated>2024-07-02T07:31:59.873Z</updated>
+    <updated>2024-07-02T07:32:09.837Z</updated>
     
     
       
@@ -494,62 +547,6 @@
         
     <summary type="html">&lt;p&gt;在日复一日的脚本编程中，循环语句无疑是我们最好的朋友。通过循环，我们可以执行重复的任务，无论是遍历文件列表，处理文本数据，还是简单的数学运算。&lt;/p&gt;
 &lt;p&gt;今天，我们就来聊聊 shell 脚本中的几种循环语句，它们将如何帮助我们简化编程任务。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 判断语句：决策的艺术</title>
-    <link href="https://pudongping.github.io/posts/43dbd7ab.html"/>
-    <id>https://pudongping.github.io/posts/43dbd7ab.html</id>
-    <published>2024-06-18T06:18:13.000Z</published>
-    <updated>2024-06-18T06:40:43.230Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写 Shell 脚本时，了解如何根据不同条件执行不同的命令是至关重要的。本文旨在以简单易懂的语言，介绍 Shell 脚本中的选择结构——if 语句和 case in 语句，帮助初学者和有经验的开发者深入理解。&lt;/p&gt;
-&lt;h2 id=&quot;if-语句&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell &quot;[[]]&quot; 命令：条件判断的升级版</title>
-    <link href="https://pudongping.github.io/posts/adfce4b0.html"/>
-    <id>https://pudongping.github.io/posts/adfce4b0.html</id>
-    <published>2024-06-17T06:29:48.000Z</published>
-    <updated>2024-06-19T14:36:13.853Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;大家好，今天我们来聊聊 Shell 脚本中的条件判断加强版——&lt;code&gt;[[ ]]&lt;/code&gt; 命令。如果你对基本的 &lt;code&gt;[]&lt;/code&gt; 命令已经熟悉，那么 &lt;code&gt;[[ ]]&lt;/code&gt; 将是你的下一个升级技能点。&lt;/p&gt;
 &lt;h2</summary>
         
       
