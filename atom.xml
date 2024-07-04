@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-03T03:07:52.595Z</updated>
+  <updated>2024-07-04T15:01:03.140Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何有效提升 API 接口的安全性？</title>
+    <link href="https://pudongping.github.io/posts/5edede5c.html"/>
+    <id>https://pudongping.github.io/posts/5edede5c.html</id>
+    <published>2024-07-04T15:00:08.000Z</published>
+    <updated>2024-07-04T15:01:03.140Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在如今的互联网应用中，API 接口的安全性已经成为了开发过程中不可忽视的一环。越来越多的应用服务通过 API 进行数据交换，而 API 的安全性直接关系到应用的数据安全与用户隐私。因此，我们需要采取一系列措施来确保 API 的安全。&lt;/p&gt;
+&lt;p&gt;本文将教你如何通过</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手把手教你玩转 Nginx 配置</title>
     <link href="https://pudongping.github.io/posts/40e3643a.html"/>
     <id>https://pudongping.github.io/posts/40e3643a.html</id>
     <published>2024-07-03T03:01:00.000Z</published>
-    <updated>2024-07-03T03:07:52.595Z</updated>
+    <updated>2024-07-03T03:12:31.040Z</updated>
     
     
       
@@ -47,7 +73,7 @@
     <link href="https://pudongping.github.io/posts/9a124193.html"/>
     <id>https://pudongping.github.io/posts/9a124193.html</id>
     <published>2024-07-03T03:00:41.000Z</published>
-    <updated>2024-07-03T03:02:04.099Z</updated>
+    <updated>2024-07-03T03:12:31.038Z</updated>
     
     
       
@@ -519,35 +545,6 @@
         
     <summary type="html">&lt;p&gt;在编写 Shell 脚本时，变量扮演着极为重要的角色。它们使我们能够临时保存数据，以便在脚本的其他部分中使用。&lt;/p&gt;
 &lt;p&gt;本文将通过简单的语言和清晰的示例，帮助你掌握 Shell</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 循环语句：重复任务的自动化利器</title>
-    <link href="https://pudongping.github.io/posts/33c4223c.html"/>
-    <id>https://pudongping.github.io/posts/33c4223c.html</id>
-    <published>2024-06-18T06:28:06.000Z</published>
-    <updated>2024-06-18T06:40:43.231Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日复一日的脚本编程中，循环语句无疑是我们最好的朋友。通过循环，我们可以执行重复的任务，无论是遍历文件列表，处理文本数据，还是简单的数学运算。&lt;/p&gt;
-&lt;p&gt;今天，我们就来聊聊 shell 脚本中的几种循环语句，它们将如何帮助我们简化编程任务。&lt;/p&gt;
-&lt;h2</summary>
         
       
     
