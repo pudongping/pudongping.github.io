@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-04T15:01:03.140Z</updated>
+  <updated>2024-07-05T08:14:13.655Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用 Makefile 管理和部署 Go 项目</title>
+    <link href="https://pudongping.github.io/posts/926b9d4b.html"/>
+    <id>https://pudongping.github.io/posts/926b9d4b.html</id>
+    <published>2024-07-05T08:13:17.000Z</published>
+    <updated>2024-07-05T08:14:13.655Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在软件开发的世界里，自动化是提升效率的关键。&lt;code&gt;Makefile&lt;/code&gt; 尽管是一个历史悠久的工具，但它在任务管理和自动化方面的能力依然不可小觑。&lt;/p&gt;
+&lt;p&gt;对于 &lt;code&gt;Go&lt;/code&gt; 语言项目来说，利用</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Makefile" scheme="https://pudongping.github.io/tags/Makefile/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何有效提升 API 接口的安全性？</title>
     <link href="https://pudongping.github.io/posts/5edede5c.html"/>
     <id>https://pudongping.github.io/posts/5edede5c.html</id>
     <published>2024-07-04T15:00:08.000Z</published>
-    <updated>2024-07-04T15:01:03.140Z</updated>
+    <updated>2024-07-04T15:01:11.543Z</updated>
     
     
       
@@ -517,34 +547,6 @@
         
     <summary type="html">&lt;p&gt;在本文中，我们将深入探讨 Shell 函数的定义、参数传递、以及如何正确获取函数运算结果。&lt;/p&gt;
 &lt;p&gt;本教程旨在为刚入门的新手提供明晰的指南，同时也为有一定编程基础的开发者提供深入理解 shell</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 变量详解：如何定义、使用和管理</title>
-    <link href="https://pudongping.github.io/posts/c60e5e2c.html"/>
-    <id>https://pudongping.github.io/posts/c60e5e2c.html</id>
-    <published>2024-06-19T14:38:54.000Z</published>
-    <updated>2024-06-19T14:40:31.414Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在编写 Shell 脚本时，变量扮演着极为重要的角色。它们使我们能够临时保存数据，以便在脚本的其他部分中使用。&lt;/p&gt;
-&lt;p&gt;本文将通过简单的语言和清晰的示例，帮助你掌握 Shell</summary>
         
       
     
