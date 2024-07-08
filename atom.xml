@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-05T08:14:13.655Z</updated>
+  <updated>2024-07-08T04:20:44.814Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>聊聊 Go 中的单例模式</title>
+    <link href="https://pudongping.github.io/posts/1b8de6f.html"/>
+    <id>https://pudongping.github.io/posts/1b8de6f.html</id>
+    <published>2024-07-08T04:10:43.000Z</published>
+    <updated>2024-07-08T04:20:44.814Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;单例模式在软件开发中是一种常见的设计模式，用于确保一个类在任何情况下都仅有一个实例，并提供一个访问它的全局访问点。&lt;/p&gt;
+&lt;p&gt;在 Go 语言中，实现单例模式通常有两种方式：&lt;strong&gt;饿汉式&lt;/strong&gt; 和</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 项目自动重载解决方案 —— Air 使用入门</title>
+    <link href="https://pudongping.github.io/posts/2968883c.html"/>
+    <id>https://pudongping.github.io/posts/2968883c.html</id>
+    <published>2024-07-08T04:09:33.000Z</published>
+    <updated>2024-07-08T04:20:58.488Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在开发 Go 应用程序时，我们经常需要重启应用来加载最新的代码更改。这个过程虽然简单，但重复的操作会降低我们的开发效率。&lt;/p&gt;
+&lt;p&gt;今天，我们要介绍的工具 —— &lt;strong&gt;Air&lt;/strong&gt;，</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 Makefile 管理和部署 Go 项目</title>
     <link href="https://pudongping.github.io/posts/926b9d4b.html"/>
     <id>https://pudongping.github.io/posts/926b9d4b.html</id>
     <published>2024-07-05T08:13:17.000Z</published>
-    <updated>2024-07-05T08:14:13.655Z</updated>
+    <updated>2024-07-05T08:14:24.926Z</updated>
     
     
       
@@ -492,61 +548,6 @@
         
     <summary type="html">&lt;p&gt;在 Unix 或 Linux 系统中，我们通常会使用 Shell 来与操作系统交互。在这个过程中，数据的输入和输出是两个非常基础且重要的操作。&lt;/p&gt;
 &lt;p&gt;理解和掌握输入输出重定向是提高 Shell 使用效率的关键。本文旨在用简单易懂的语言，为你揭开 Shell</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 内建命令：Shell 的内在魔力</title>
-    <link href="https://pudongping.github.io/posts/a915d50b.html"/>
-    <id>https://pudongping.github.io/posts/a915d50b.html</id>
-    <published>2024-06-20T14:44:56.000Z</published>
-    <updated>2024-06-20T14:46:45.336Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;shell-内建命令（内置命令）&quot;&gt;&lt;a href=&quot;#shell-内建命令（内置命令）&quot; class=&quot;headerlink&quot; title=&quot;shell 内建命令（内置命令）&quot;&gt;&lt;/a&gt;shell 内建命令（内置命令）&lt;/h1&gt;&lt;p&gt;今天我们来深入挖掘一下</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 函数深入解析与实践</title>
-    <link href="https://pudongping.github.io/posts/9d11e5.html"/>
-    <id>https://pudongping.github.io/posts/9d11e5.html</id>
-    <published>2024-06-19T14:39:41.000Z</published>
-    <updated>2024-06-19T14:40:31.413Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在本文中，我们将深入探讨 Shell 函数的定义、参数传递、以及如何正确获取函数运算结果。&lt;/p&gt;
-&lt;p&gt;本教程旨在为刚入门的新手提供明晰的指南，同时也为有一定编程基础的开发者提供深入理解 shell</summary>
         
       
     
