@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-08T04:20:44.814Z</updated>
+  <updated>2024-07-09T14:57:05.167Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言设计模式：使用Option模式简化类的初始化</title>
+    <link href="https://pudongping.github.io/posts/d24ea952.html"/>
+    <id>https://pudongping.github.io/posts/d24ea952.html</id>
+    <published>2024-07-09T14:56:04.000Z</published>
+    <updated>2024-07-09T14:57:05.167Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在面向对象编程中，当我们需要创建一个构造参数众多的类时，不仅使得代码难以阅读，而且在参数较多时，调用者需要记住每个参数的顺序和类型，这无疑增加了使用的复杂性，代码往往变得难以管理。&lt;/p&gt;
+&lt;p&gt;Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 语言性能优化技巧</title>
+    <link href="https://pudongping.github.io/posts/2a37659b.html"/>
+    <id>https://pudongping.github.io/posts/2a37659b.html</id>
+    <published>2024-07-09T14:55:36.000Z</published>
+    <updated>2024-07-09T14:56:50.415Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在软件开发中，性能往往是我们需要特别关注的方面之一。对于使用 Go 语言的开发者而言，如何编写高性能的代码是一个重要的考虑点。&lt;/p&gt;
+&lt;p&gt;今天，我将分享一些在 Go 语言开发中可以采取的性能优化策略，希望能帮助大家写出更高效的程序。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>聊聊 Go 中的单例模式</title>
     <link href="https://pudongping.github.io/posts/1b8de6f.html"/>
     <id>https://pudongping.github.io/posts/1b8de6f.html</id>
     <published>2024-07-08T04:10:43.000Z</published>
-    <updated>2024-07-08T04:20:44.814Z</updated>
+    <updated>2024-07-08T04:21:12.579Z</updated>
     
     
       
@@ -49,7 +106,7 @@
     <link href="https://pudongping.github.io/posts/2968883c.html"/>
     <id>https://pudongping.github.io/posts/2968883c.html</id>
     <published>2024-07-08T04:09:33.000Z</published>
-    <updated>2024-07-08T04:20:58.488Z</updated>
+    <updated>2024-07-08T04:21:12.577Z</updated>
     
     
       
@@ -498,62 +555,6 @@
     
     
     <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim 编辑器：高效文本编辑的瑞士军刀</title>
-    <link href="https://pudongping.github.io/posts/3325b0d1.html"/>
-    <id>https://pudongping.github.io/posts/3325b0d1.html</id>
-    <published>2024-06-21T15:11:32.000Z</published>
-    <updated>2024-06-21T15:13:24.575Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Vim，作为编程和系统管理中的强大工具，以其丰富的功能和高度可定制性著称。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我们将探索 Vim 的一些高效使用技巧，从打开文件的快捷方法到文本编辑、查找、替换、删除和复制的高级技巧，再到 Vim 配置和插件安装，帮助你提升 Vim</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Vim" scheme="https://pudongping.github.io/tags/Vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell 重定向：控制数据流向的艺术</title>
-    <link href="https://pudongping.github.io/posts/8af44f1b.html"/>
-    <id>https://pudongping.github.io/posts/8af44f1b.html</id>
-    <published>2024-06-20T14:45:59.000Z</published>
-    <updated>2024-06-20T14:46:45.338Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Unix 或 Linux 系统中，我们通常会使用 Shell 来与操作系统交互。在这个过程中，数据的输入和输出是两个非常基础且重要的操作。&lt;/p&gt;
-&lt;p&gt;理解和掌握输入输出重定向是提高 Shell 使用效率的关键。本文旨在用简单易懂的语言，为你揭开 Shell</summary>
-        
-      
-    
-    
-    
-    <category term="Shell" scheme="https://pudongping.github.io/categories/Shell/"/>
     
     
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
