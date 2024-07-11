@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-09T14:57:05.167Z</updated>
+  <updated>2024-07-11T16:53:57.141Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,181 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中的map为什么默认不是并发安全的？</title>
+    <link href="https://pudongping.github.io/posts/3761f660.html"/>
+    <id>https://pudongping.github.io/posts/3761f660.html</id>
+    <published>2024-07-11T16:51:29.000Z</published>
+    <updated>2024-07-11T16:53:57.141Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天我们聊一个 Go 语言中的 “热门” 话题——为什么 &lt;strong&gt;Go 语言中的 map 默认不是并发安全&lt;/strong&gt;的呢？&lt;/p&gt;
+&lt;p&gt;对于广大 Go 程序员来说，尤其是那些刚跨入 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言map并发安全，互斥锁和读写锁谁更优？</title>
+    <link href="https://pudongping.github.io/posts/35885ddd.html"/>
+    <id>https://pudongping.github.io/posts/35885ddd.html</id>
+    <published>2024-07-11T15:17:32.000Z</published>
+    <updated>2024-07-11T16:53:57.140Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;并发编程是 Go 语言的一大特色，合理地使用锁对于保证数据一致性和提高程序性能至关重要。&lt;/p&gt;
+&lt;p&gt;在处理并发控制时，&lt;code&gt;sync.Mutex&lt;/code&gt;（互斥锁）和</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="互斥锁" scheme="https://pudongping.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/"/>
+    
+    <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言map并发安全使用的正确姿势</title>
+    <link href="https://pudongping.github.io/posts/85f0ac00.html"/>
+    <id>https://pudongping.github.io/posts/85f0ac00.html</id>
+    <published>2024-07-11T15:17:15.000Z</published>
+    <updated>2024-07-11T16:53:57.139Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在并发编程的世界里，&lt;code&gt;map&lt;/code&gt; 的使用随处可见。然而，当多个 goroutine 同时读写 map 时，如果不加以控制，很容易导致程序崩溃。&lt;/p&gt;
+&lt;p&gt;在 Go 语言中，我们通常有几种方法来保证对 map</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入理解 Nginx 与 Kong 的配置与实践</title>
+    <link href="https://pudongping.github.io/posts/52ffe35e.html"/>
+    <id>https://pudongping.github.io/posts/52ffe35e.html</id>
+    <published>2024-07-11T15:16:54.000Z</published>
+    <updated>2024-07-11T16:53:57.143Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代的微服务架构中，服务之间的通信和负载坐标成为了关键环节。这篇文章将深入探讨如何通过 Nginx 配置实现服务的负载均衡，同时如何利用 Kong API</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="KONG" scheme="https://pudongping.github.io/tags/KONG/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 安装 KONG 带你玩转 API 网关</title>
+    <link href="https://pudongping.github.io/posts/b8eafe4f.html"/>
+    <id>https://pudongping.github.io/posts/b8eafe4f.html</id>
+    <published>2024-07-11T15:16:39.000Z</published>
+    <updated>2024-07-11T16:53:57.138Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在当今的软件开发中，API 网关已成为微服务架构中不可或缺的一环。它不仅简化了服务间的通信、提供了统一的入口，还能在安全、监控、限流等方面发挥巨大作用。&lt;/p&gt;
+&lt;p&gt;今天，我们就来聊聊如何通过 Docker 快速部署 KONG —— 一个流行的开源 API</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+    <category term="KONG" scheme="https://pudongping.github.io/tags/KONG/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Protobuf 实现高效数据交换</title>
+    <link href="https://pudongping.github.io/posts/7940debf.html"/>
+    <id>https://pudongping.github.io/posts/7940debf.html</id>
+    <published>2024-07-11T15:16:25.000Z</published>
+    <updated>2024-07-11T16:53:57.142Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在当今的软件开发领域，数据传输的效率和格式化方式尤为关键。Google 开发的 &lt;strong&gt;Protocol Buffers(Protobuf)&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="Protobuf" scheme="https://pudongping.github.io/tags/Protobuf/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言设计模式：使用Option模式简化类的初始化</title>
     <link href="https://pudongping.github.io/posts/d24ea952.html"/>
     <id>https://pudongping.github.io/posts/d24ea952.html</id>
     <published>2024-07-09T14:56:04.000Z</published>
-    <updated>2024-07-09T14:57:05.167Z</updated>
+    <updated>2024-07-09T15:11:36.548Z</updated>
     
     
       
@@ -49,7 +219,7 @@
     <link href="https://pudongping.github.io/posts/2a37659b.html"/>
     <id>https://pudongping.github.io/posts/2a37659b.html</id>
     <published>2024-07-09T14:55:36.000Z</published>
-    <updated>2024-07-09T14:56:50.415Z</updated>
+    <updated>2024-07-09T15:11:36.546Z</updated>
     
     
       
@@ -402,164 +572,6 @@
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
     
     <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 之道笔记整理：最佳实践与安全指南</title>
-    <link href="https://pudongping.github.io/posts/33277937.html"/>
-    <id>https://pudongping.github.io/posts/33277937.html</id>
-    <published>2024-06-26T02:55:57.000Z</published>
-    <updated>2024-06-26T03:35:14.827Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在这篇文章中，我们将以简明易懂的语言探讨 PHP 最佳实践中的一些关键主题，包括使用当前稳定版本、日期和时间处理、UTF-8 编码以及确保 Web</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 文件传输利器：SCP 和 LRZSZ</title>
-    <link href="https://pudongping.github.io/posts/65525c46.html"/>
-    <id>https://pudongping.github.io/posts/65525c46.html</id>
-    <published>2024-06-25T03:05:39.000Z</published>
-    <updated>2024-06-25T03:19:09.684Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常的软件开发和服务器管理工作中，我们经常需要在本机与远程服务器之间传输文件或文件夹。&lt;/p&gt;
-&lt;p&gt;本文将向您介绍两种高效的文件传输工具：&lt;code&gt;scp&lt;/code&gt; 和 &lt;code&gt;lrzsz&lt;/code&gt;，并提供简单易懂的使用指南。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 三剑客 grep、sed、awk</title>
-    <link href="https://pudongping.github.io/posts/5ffd9f1c.html"/>
-    <id>https://pudongping.github.io/posts/5ffd9f1c.html</id>
-    <published>2024-06-25T03:04:58.000Z</published>
-    <updated>2024-06-25T03:19:09.683Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Linux 的命令行世界里，有三个强大的文本处理工具：&lt;code&gt;grep&lt;/code&gt;、&lt;code&gt;sed&lt;/code&gt; 和 &lt;code&gt;awk&lt;/code&gt;。它们被统称为 “Linux</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>curl 使用：命令行中的 HTTP 客户端</title>
-    <link href="https://pudongping.github.io/posts/9f801236.html"/>
-    <id>https://pudongping.github.io/posts/9f801236.html</id>
-    <published>2024-06-24T07:35:45.000Z</published>
-    <updated>2024-06-24T07:43:30.278Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常的软件开发和网络管理工作中，&lt;code&gt;curl&lt;/code&gt; 是一个我们经常会使用到的命令行工具。它支持多种协议，包括 HTTP、HTTPS、FTP 等，用于发送和接收数据。&lt;/p&gt;
-&lt;p&gt;本文将通过简单易懂的语言，带你快速掌握 curl</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 软件安装与卸载</title>
-    <link href="https://pudongping.github.io/posts/dc4fc28a.html"/>
-    <id>https://pudongping.github.io/posts/dc4fc28a.html</id>
-    <published>2024-06-24T07:34:51.000Z</published>
-    <updated>2024-06-24T07:43:30.277Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Linux 的世界里，安装和卸载软件是每个使用者都需掌握的基本技能。&lt;/p&gt;
-&lt;p&gt;通过这篇文章，我们将以简明易懂的语言风格，一步步引导你学会如何在 Linux 上安装和卸载软件。&lt;/p&gt;
-&lt;h2 id=&quot;以-iftop-的安装为例子&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自动化脚本：提升运维效率的秘诀</title>
-    <link href="https://pudongping.github.io/posts/19ab69b8.html"/>
-    <id>https://pudongping.github.io/posts/19ab69b8.html</id>
-    <published>2024-06-21T15:12:37.000Z</published>
-    <updated>2024-06-21T15:13:24.578Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当我们谈论服务器管理时，自动化脚本就像是一位无声的英雄，它默默在幕后保持着我们的服务器运行顺畅，确保数据安全，同时还能有效防范网络攻击。&lt;/p&gt;
-&lt;p&gt;今天，我将和大家分享几个实用的自动化脚本，涵盖了数据库备份、防范Dos攻击、监控网卡流量、发送系统告警以及日志管理等方面。</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://pudongping.github.io/tags/Shell/"/>
     
   </entry>
   
