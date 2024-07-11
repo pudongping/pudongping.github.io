@@ -1628,9 +1628,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -1780,11 +1780,11 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
             
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -1809,11 +1809,11 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
             
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -3628,11 +3628,11 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
             
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -3657,11 +3657,11 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
             
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -3686,9 +3686,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 分布式集群 </tag>
             
@@ -3715,9 +3715,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
             <tag> Memcached </tag>
             
@@ -3744,9 +3744,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
             <tag> Memcached </tag>
             
@@ -3773,9 +3773,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
             <tag> Memcached </tag>
             
@@ -3804,9 +3804,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -3831,9 +3831,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
@@ -3858,9 +3858,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> 缓存 </tag>
+            
+            <tag> Cache </tag>
             
         </tags>
       
