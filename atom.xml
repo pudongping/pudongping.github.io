@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-02T06:20:01.328Z</updated>
+  <updated>2024-08-02T08:45:14.909Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一文弄懂Go语言的Context包，值得收藏！</title>
+    <link href="https://pudongping.github.io/posts/f5eba23a.html"/>
+    <id>https://pudongping.github.io/posts/f5eba23a.html</id>
+    <published>2024-08-02T08:44:26.000Z</published>
+    <updated>2024-08-02T08:45:14.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在开发高效且可维护的 Go 应用程序时，处理超时、取消操作和传递请求范围的数据变得至关重要。&lt;/p&gt;
+&lt;p&gt;这时，Go 标准库中的 &lt;code&gt;context&lt;/code&gt; 包就显得尤其重要了，它提供了在不同 API</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Context" scheme="https://pudongping.github.io/tags/Context/"/>
+    
+  </entry>
+  
+  <entry>
     <title>通过IMAP协议使用Go语言解析邮件</title>
     <link href="https://pudongping.github.io/posts/60016311.html"/>
     <id>https://pudongping.github.io/posts/60016311.html</id>
     <published>2024-08-02T06:18:46.000Z</published>
-    <updated>2024-08-02T06:20:01.328Z</updated>
+    <updated>2024-08-02T06:20:18.906Z</updated>
     
     
       
@@ -553,34 +583,6 @@
     
     
     <category term="Tmux" scheme="https://pudongping.github.io/tags/Tmux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 管理远程会话 screen：掌握终端的多任务操作</title>
-    <link href="https://pudongping.github.io/posts/1330f742.html"/>
-    <id>https://pudongping.github.io/posts/1330f742.html</id>
-    <published>2024-06-28T15:50:08.000Z</published>
-    <updated>2024-06-28T15:51:16.954Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常开发和服务器管理工作中，特别是当我们通过 SSH 连接到远程服务器时，通常需要同时执行多个任务。&lt;/p&gt;
-&lt;p&gt;Linux 的 &lt;code&gt;screen&lt;/code&gt; 命令为此提供了一种简便的解决方案。&lt;code&gt;screen&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="screen" scheme="https://pudongping.github.io/tags/screen/"/>
     
   </entry>
   
