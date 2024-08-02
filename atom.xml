@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-07-18T10:24:45.077Z</updated>
+  <updated>2024-08-02T06:20:01.328Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过IMAP协议使用Go语言解析邮件</title>
+    <link href="https://pudongping.github.io/posts/60016311.html"/>
+    <id>https://pudongping.github.io/posts/60016311.html</id>
+    <published>2024-08-02T06:18:46.000Z</published>
+    <updated>2024-08-02T06:20:01.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;电子邮件在现代通信中依然扮演着重要的角色。为了提升邮件处理的效率，使用编程语言进行自动化处理变得尤为重要。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍如何使用 Go 语言从 IMAP</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="IMAP" scheme="https://pudongping.github.io/tags/IMAP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何借助Redis巧妙的管理用户签到？——Bitmap篇</title>
     <link href="https://pudongping.github.io/posts/fe86d4b2.html"/>
     <id>https://pudongping.github.io/posts/fe86d4b2.html</id>
     <published>2024-07-18T10:23:06.000Z</published>
-    <updated>2024-07-18T10:24:45.077Z</updated>
+    <updated>2024-07-18T10:25:01.550Z</updated>
     
     
       
@@ -52,7 +82,7 @@
     <link href="https://pudongping.github.io/posts/ceb09f0b.html"/>
     <id>https://pudongping.github.io/posts/ceb09f0b.html</id>
     <published>2024-07-18T10:22:51.000Z</published>
-    <updated>2024-07-18T10:24:31.497Z</updated>
+    <updated>2024-07-18T10:25:01.552Z</updated>
     
     
       
@@ -82,7 +112,7 @@
     <link href="https://pudongping.github.io/posts/9c96a9d2.html"/>
     <id>https://pudongping.github.io/posts/9c96a9d2.html</id>
     <published>2024-07-18T10:22:22.000Z</published>
-    <updated>2024-07-18T10:23:56.666Z</updated>
+    <updated>2024-07-18T10:25:01.555Z</updated>
     
     
       
@@ -551,34 +581,6 @@
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="screen" scheme="https://pudongping.github.io/tags/screen/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>expect自动交互脚本：简化你的自动化任务</title>
-    <link href="https://pudongping.github.io/posts/9f8553ef.html"/>
-    <id>https://pudongping.github.io/posts/9f8553ef.html</id>
-    <published>2024-06-28T15:49:53.000Z</published>
-    <updated>2024-06-28T15:51:16.956Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常的 Linux 系统管理和自动化任务处理中，经常会遇到需要自动登录到服务器并执行一系列命令的情况，例如批量部署更新、监控日志等。手动操作不仅耗时耗力，而且效率低下，特别是当涉及到多台服务器时。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;expect&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="expect" scheme="https://pudongping.github.io/tags/expect/"/>
     
   </entry>
   
