@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-02T08:45:14.909Z</updated>
+  <updated>2024-08-08T17:11:26.703Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中如何连接 MySQL，基础必备！</title>
+    <link href="https://pudongping.github.io/posts/48b3e862.html"/>
+    <id>https://pudongping.github.io/posts/48b3e862.html</id>
+    <published>2024-08-08T17:10:47.000Z</published>
+    <updated>2024-08-08T17:11:26.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代应用中，数据库操作是必不可少的一部分，而 Go 语言凭借其高效性和并发处理能力，成为了越来越多开发者的选择。&lt;/p&gt;
+&lt;p&gt;在本教程中，我们将学习如何使用 Go 语言与 MySQL 数据库进行基本的 CRUD（创建、读取、更新、删除）操作。我们将使用</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一文弄懂Go语言的Context包，值得收藏！</title>
     <link href="https://pudongping.github.io/posts/f5eba23a.html"/>
     <id>https://pudongping.github.io/posts/f5eba23a.html</id>
     <published>2024-08-02T08:44:26.000Z</published>
-    <updated>2024-08-02T08:45:14.909Z</updated>
+    <updated>2024-08-02T08:45:20.149Z</updated>
     
     
       
@@ -557,32 +585,6 @@
     
     
     <category term="服务器集群" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tmux 快速入门：提高终端管理效率的必备技能</title>
-    <link href="https://pudongping.github.io/posts/bb0f40eb.html"/>
-    <id>https://pudongping.github.io/posts/bb0f40eb.html</id>
-    <published>2024-07-02T07:31:02.000Z</published>
-    <updated>2024-07-02T07:32:09.837Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常的软件开发过程当中，程序员经常需要同时操作多个终端窗口。不论是编写代码、运行测试、监控日志，还是远程登录服务器，多个窗口的切换不仅繁琐，而且降低了工作效率。&lt;/p&gt;
-&lt;p&gt;此时，一个叫作 &lt;strong&gt;Tmux&lt;/strong&gt;（terminal</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Tmux" scheme="https://pudongping.github.io/tags/Tmux/"/>
     
   </entry>
   
