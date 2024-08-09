@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-08T17:11:26.703Z</updated>
+  <updated>2024-08-09T04:15:21.776Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>手摸手教你，从0到1开发一个Chrome浏览器插件</title>
+    <link href="https://pudongping.github.io/posts/2980e851.html"/>
+    <id>https://pudongping.github.io/posts/2980e851.html</id>
+    <published>2024-08-09T04:13:02.000Z</published>
+    <updated>2024-08-09T04:15:21.776Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;开发 Chrome 浏览器插件（也称为扩展）是一段有趣且有成就感的过程。在本教程中，我将引导你从零开始，逐步创建一个简单的 Chrome 插件。无论你是编程新手还是有一定基础的用户，我们都将以简单易懂的方式介绍整个过程。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://pudongping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Chrome" scheme="https://pudongping.github.io/tags/Chrome/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中如何连接 MySQL，基础必备！</title>
     <link href="https://pudongping.github.io/posts/48b3e862.html"/>
     <id>https://pudongping.github.io/posts/48b3e862.html</id>
     <published>2024-08-08T17:10:47.000Z</published>
-    <updated>2024-08-08T17:11:26.703Z</updated>
+    <updated>2024-08-08T17:11:34.804Z</updated>
     
     
       
@@ -558,33 +586,6 @@
     
     
     <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多机部署：打造内网服务器集群</title>
-    <link href="https://pudongping.github.io/posts/9a124193.html"/>
-    <id>https://pudongping.github.io/posts/9a124193.html</id>
-    <published>2024-07-03T03:00:41.000Z</published>
-    <updated>2024-07-03T03:12:31.038Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在当今这个信息爆炸的时代，多机部署已经成为许多大型应用不可或缺的一部分。但是，对于很多刚刚接触服务器管理和网络部署的新手来说，多机部署可能听起来就像是一门深不可测的技术。&lt;/p&gt;
-&lt;p&gt;别担心，今天就让我带你一起轻松学习如何在同一内网的不同服务器之间进行连接。&lt;/p&gt;
-&lt;p</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="服务器集群" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4/"/>
     
   </entry>
   

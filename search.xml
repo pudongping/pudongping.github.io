@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>手摸手教你，从0到1开发一个Chrome浏览器插件</title>
+      <link href="posts/2980e851.html"/>
+      <url>posts/2980e851.html</url>
+      
+        <content type="html"><![CDATA[<p>开发 Chrome 浏览器插件（也称为扩展）是一段有趣且有成就感的过程。在本教程中，我将引导你从零开始，逐步创建一个简单的 Chrome 插件。无论你是编程新手还是有一定基础的用户，我们都将以简单易懂的方式介绍整个过程。</p><h2 id="1-什么是-Chrome-插件？"><a href="#1-什么是-Chrome-插件？" class="headerlink" title="1. 什么是 Chrome 插件？"></a>1. 什么是 Chrome 插件？</h2><p>Chrome 插件是可以添加到 Google Chrome 浏览器中的小程序，旨在增强浏览器的功能。它们可以改变网页的外观、增加新的功能、与用户交互等。</p><p>我们先从一个最简单的 Chrome 扩展开始，你也可以参照我写的这个微信公众号小助手插件 <code>https://github.com/pudongping/mp-vx-insight</code> 来学习，好了，话不多说，直接开撸。</p><h2 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2. 准备工作"></a>2. 准备工作</h2><p>在开始之前，你需要确保：</p><ul><li>已安装 Google Chrome 浏览器。</li><li>有一个简单的文本编辑器（如 Notepad、VS Code、Sublime Text）。</li><li>对 HTML、CSS 和 JavaScript 有基本了解。</li></ul><h2 id="3-插件的基本结构"><a href="#3-插件的基本结构" class="headerlink" title="3. 插件的基本结构"></a>3. 插件的基本结构</h2><p>一个 Chrome 插件通常由以下几个基本文件组成：</p><ul><li><code>manifest.json</code>：插件的配置文件，定义插件的基本信息和权限。</li><li><code>background.js</code>：插件的后台脚本，负责执行后台任务。</li><li><code>popup.html</code>：用户点击插件图标时显示的界面。</li><li><code>style.css</code>：用于美化插件界面的样式表。</li></ul><h2 id="4-创建你的第一个插件"><a href="#4-创建你的第一个插件" class="headerlink" title="4. 创建你的第一个插件"></a>4. 创建你的第一个插件</h2><h3 id="步骤-1：创建项目文件夹"><a href="#步骤-1：创建项目文件夹" class="headerlink" title="步骤 1：创建项目文件夹"></a>步骤 1：创建项目文件夹</h3><p>在你的计算机上创建一个新的文件夹，例如 <code>my_first_extension</code>。</p><h3 id="步骤-2：创建-manifest-json-文件"><a href="#步骤-2：创建-manifest-json-文件" class="headerlink" title="步骤 2：创建 manifest.json 文件"></a>步骤 2：创建 manifest.json 文件</h3><p>在项目文件夹中创建一个文件 <code>manifest.json</code>，并复制以下内容：</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>  <span class="token property">"manifest_version"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"My First Extension"</span><span class="token punctuation">,</span>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0"</span><span class="token punctuation">,</span>  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"This is my first Chrome extension!"</span><span class="token punctuation">,</span>  <span class="token property">"action"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"default_popup"</span><span class="token operator">:</span> <span class="token string">"popup.html"</span><span class="token punctuation">,</span>    <span class="token property">"default_icon"</span><span class="token operator">:</span> <span class="token punctuation">{</span>      <span class="token property">"16"</span><span class="token operator">:</span> <span class="token string">"icon16.png"</span><span class="token punctuation">,</span>      <span class="token property">"48"</span><span class="token operator">:</span> <span class="token string">"icon48.png"</span><span class="token punctuation">,</span>      <span class="token property">"128"</span><span class="token operator">:</span> <span class="token string">"icon128.png"</span>    <span class="token punctuation">}</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"background"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"service_worker"</span><span class="token operator">:</span> <span class="token string">"background.js"</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"permissions"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"activeTab"</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="步骤-3：添加-Popup-界面"><a href="#步骤-3：添加-Popup-界面" class="headerlink" title="步骤 3：添加 Popup 界面"></a>步骤 3：添加 Popup 界面</h3><p>在同一文件夹中，创建 <code>popup.html</code> 文件并添加以下代码：</p><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>My First Extension<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello, Chrome!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>clickMe<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Click Me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popup.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="步骤-4：创建样式文件"><a href="#步骤-4：创建样式文件" class="headerlink" title="步骤 4：创建样式文件"></a>步骤 4：创建样式文件</h3><p>在同一文件夹中，创建 <code>style.css</code> 文件，添加如下内容：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span>    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">h1</span> <span class="token punctuation">{</span>    <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>    <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">button</span> <span class="token punctuation">{</span>    <span class="token property">padding</span><span class="token punctuation">:</span> 10px 15px<span class="token punctuation">;</span>    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="步骤-5：添加-JavaScript-功能"><a href="#步骤-5：添加-JavaScript-功能" class="headerlink" title="步骤 5：添加 JavaScript 功能"></a>步骤 5：添加 JavaScript 功能</h3><p>接下来，创建 <code>popup.js</code> 文件，实现按钮的点击事件：</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'clickMe'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Button clicked!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="步骤-6：添加后台脚本"><a href="#步骤-6：添加后台脚本" class="headerlink" title="步骤 6：添加后台脚本"></a>步骤 6：添加后台脚本</h3><p>为了展示后台功能，创建一个 <code>background.js</code> 文件，内容可以是简单的 console.log：</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Background service worker running!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="步骤-7：添加图标"><a href="#步骤-7：添加图标" class="headerlink" title="步骤 7：添加图标"></a>步骤 7：添加图标</h3><p>为了使你的插件更美观，我们需要为其添加图标。在项目文件夹中添加三种不同尺寸的图标：<code>icon16.png</code>、<code>icon48.png</code> 和 <code>icon128.png</code>。你可以使用在线图标生成器生成图标，或从网络下载适合的图标。</p><h2 id="5-在-Chrome-中加载扩展"><a href="#5-在-Chrome-中加载扩展" class="headerlink" title="5. 在 Chrome 中加载扩展"></a>5. 在 Chrome 中加载扩展</h2><ol><li>打开 Chrome 浏览器，输入 <code>chrome://extensions/</code> 并按回车。</li><li>在右上角启用开发者模式。<strong>一定要开启</strong></li><li>点击 “加载已解压的扩展”，选择你的项目文件夹（<code>my_first_extension</code>）。</li><li>你会在扩展列表中看到你的插件。</li></ol><h2 id="6-测试插件"><a href="#6-测试插件" class="headerlink" title="6. 测试插件"></a>6. 测试插件</h2><p>点击浏览器工具栏中的插件图标，会弹出你定义的 Popup 界面。点击按钮，你应该会看到提示框弹出，显示 “Button clicked!”。</p><p>现在，你已经成功创建了一个简单的 Chrome 插件！是不是非常简单呢？当然还有更多的一些特性由于篇幅的原因就不细讲了，强烈建议你可以直接找一个 Chrome 插件源码看看，比如我写的这个微信公众号小助手 Chrome 扩展 <code>https://github.com/pudongping/mp-vx-insight</code> 这样可以学得更快！</p><h2 id="7-总结"><a href="#7-总结" class="headerlink" title="7. 总结"></a>7. 总结</h2><p>通过这个简单的教程，你已经了解了如何从零开始开发一个基本的 Chrome 插件。插件的开发不仅能提升你的编程技能，更能让你在日常浏览中享受到便利。希望你在这个过程中感受到乐趣。</p><p>如需进一步学习，可以参考 <a href="https://developer.chrome.com/docs/extensions/mv3/getstarted/">Chrome 扩展文档</a>，深入了解不同的 API 和功能。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> Chrome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言中如何连接 MySQL，基础必备！</title>
       <link href="posts/48b3e862.html"/>
       <url>posts/48b3e862.html</url>
@@ -1557,9 +1584,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1586,9 +1613,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1615,9 +1642,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1644,9 +1671,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4086,9 +4113,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4117,9 +4144,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4146,9 +4173,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4175,9 +4202,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4395,9 +4422,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -4634,9 +4661,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -4663,9 +4690,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
