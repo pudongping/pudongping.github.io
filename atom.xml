@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-09T04:15:21.776Z</updated>
+  <updated>2024-08-12T14:38:08.734Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中进行MySQL预处理和SQL注入防护</title>
+    <link href="https://pudongping.github.io/posts/cd962b5b.html"/>
+    <id>https://pudongping.github.io/posts/cd962b5b.html</id>
+    <published>2024-08-12T14:37:32.000Z</published>
+    <updated>2024-08-12T14:38:08.734Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代 web 应用开发中，安全性是我们必须重视的一个方面。SQL 注入是常见的攻击手法之一，它允许攻击者通过构造特殊的 SQL 查询来访问、修改数据库中的数据。&lt;/p&gt;
+&lt;p&gt;在这篇文章中，我们将探讨如何在 Go 语言中进行 MySQL 数据库的预处理操作，以有效防止</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手摸手教你，从0到1开发一个Chrome浏览器插件</title>
     <link href="https://pudongping.github.io/posts/2980e851.html"/>
     <id>https://pudongping.github.io/posts/2980e851.html</id>
     <published>2024-08-09T04:13:02.000Z</published>
-    <updated>2024-08-09T04:15:21.776Z</updated>
+    <updated>2024-08-09T04:15:31.195Z</updated>
     
     
       
@@ -560,32 +590,6 @@
     
     
     <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手把手教你玩转 Nginx 配置</title>
-    <link href="https://pudongping.github.io/posts/40e3643a.html"/>
-    <id>https://pudongping.github.io/posts/40e3643a.html</id>
-    <published>2024-07-03T03:01:00.000Z</published>
-    <updated>2024-07-03T03:12:31.040Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代的互联网应用中，Nginx 已经成为了不可或缺的组成部分。无论是作为静态资源服务器、反向代理服务器、还是负载均衡器，Nginx 的高性能和灵活配置都让它备受青睐。&lt;/p&gt;
-&lt;p&gt;本文将以简单、易懂的语言和实例，详细介绍几种常见的 Nginx</summary>
-        
-      
-    
-    
-    
-    <category term="Nginx" scheme="https://pudongping.github.io/categories/Nginx/"/>
-    
-    
-    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
     
   </entry>
   
