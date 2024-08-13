@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-12T14:38:08.734Z</updated>
+  <updated>2024-08-13T08:34:28.063Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 语言中的 MySQL 事务操作</title>
+    <link href="https://pudongping.github.io/posts/50c9af33.html"/>
+    <id>https://pudongping.github.io/posts/50c9af33.html</id>
+    <published>2024-08-13T08:33:53.000Z</published>
+    <updated>2024-08-13T08:34:28.063Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代应用程序中，数据的完整性和一致性至关重要。MySQL 的事务功能提供了一种确保操作安全且可靠的机制。&lt;/p&gt;
+&lt;p&gt;在这篇文章中，我将介绍什么是事务，如何在 Go 语言中进行 MySQL 事务操作。&lt;/p&gt;
+&lt;h2 id=&quot;一、什么是事务？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中进行MySQL预处理和SQL注入防护</title>
     <link href="https://pudongping.github.io/posts/cd962b5b.html"/>
     <id>https://pudongping.github.io/posts/cd962b5b.html</id>
     <published>2024-08-12T14:37:32.000Z</published>
-    <updated>2024-08-12T14:38:08.734Z</updated>
+    <updated>2024-08-12T14:38:15.682Z</updated>
     
     
       
@@ -564,32 +595,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="Makefile" scheme="https://pudongping.github.io/tags/Makefile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何有效提升 API 接口的安全性？</title>
-    <link href="https://pudongping.github.io/posts/5edede5c.html"/>
-    <id>https://pudongping.github.io/posts/5edede5c.html</id>
-    <published>2024-07-04T15:00:08.000Z</published>
-    <updated>2024-07-04T15:01:11.543Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在如今的互联网应用中，API 接口的安全性已经成为了开发过程中不可忽视的一环。越来越多的应用服务通过 API 进行数据交换，而 API 的安全性直接关系到应用的数据安全与用户隐私。因此，我们需要采取一系列措施来确保 API 的安全。&lt;/p&gt;
-&lt;p&gt;本文将教你如何通过</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
