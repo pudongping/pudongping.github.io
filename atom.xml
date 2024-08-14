@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-13T08:34:28.063Z</updated>
+  <updated>2024-08-14T06:05:06.462Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中使用 sqlx 来操作 MySQL</title>
+    <link href="https://pudongping.github.io/posts/4390abbe.html"/>
+    <id>https://pudongping.github.io/posts/4390abbe.html</id>
+    <published>2024-08-14T06:04:14.000Z</published>
+    <updated>2024-08-14T06:05:06.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Go 语言以其高效和简洁的语法逐渐受到开发者的青睐。在实际开发中，数据库操作是不可避免的任务之一。虽然标准库提供了 &lt;code&gt;database/sql&lt;/code&gt; 包来支持数据库操作，但使用起来略显繁琐。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sqlx&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
+    
+    <category term="sqlx" scheme="https://pudongping.github.io/tags/sqlx/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go 语言中的 MySQL 事务操作</title>
     <link href="https://pudongping.github.io/posts/50c9af33.html"/>
     <id>https://pudongping.github.io/posts/50c9af33.html</id>
     <published>2024-08-13T08:33:53.000Z</published>
-    <updated>2024-08-13T08:34:28.063Z</updated>
+    <updated>2024-08-13T08:34:35.269Z</updated>
     
     
       
@@ -565,36 +597,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Makefile 管理和部署 Go 项目</title>
-    <link href="https://pudongping.github.io/posts/926b9d4b.html"/>
-    <id>https://pudongping.github.io/posts/926b9d4b.html</id>
-    <published>2024-07-05T08:13:17.000Z</published>
-    <updated>2024-07-05T08:14:24.926Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在软件开发的世界里，自动化是提升效率的关键。&lt;code&gt;Makefile&lt;/code&gt; 尽管是一个历史悠久的工具，但它在任务管理和自动化方面的能力依然不可小觑。&lt;/p&gt;
-&lt;p&gt;对于 &lt;code&gt;Go&lt;/code&gt; 语言项目来说，利用</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Makefile" scheme="https://pudongping.github.io/tags/Makefile/"/>
     
   </entry>
   
