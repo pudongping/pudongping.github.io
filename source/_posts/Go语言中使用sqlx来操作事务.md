@@ -6,17 +6,18 @@ hide: false
 cover: false
 toc: true
 mathjax: false
-date: 2024-08-15 15:10:30
-img:
-coverImg:
-password:
-summary:
 categories: Go
 tags:
   - Go
   - Golang
   - sqlx
   - MySQL
+abbrlink: 1ffc0233
+date: 2024-08-15 15:10:30
+img:
+coverImg:
+password:
+summary:
 ---
 
 在应用程序中，数据库事务的使用至关重要。它可以确保操作的原子性、一致性、隔离性和持久性（ACID）。`github.com/jmoiron/sqlx` 包提供了一个便利的方法来简化对数据库的操作。
