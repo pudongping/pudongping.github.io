@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-14T06:05:06.462Z</updated>
+  <updated>2024-08-15T07:11:06.903Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中使用sqlx来操作事务</title>
+    <link href="https://pudongping.github.io/posts/1ffc0233.html"/>
+    <id>https://pudongping.github.io/posts/1ffc0233.html</id>
+    <published>2024-08-15T07:10:30.000Z</published>
+    <updated>2024-08-15T07:11:06.903Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在应用程序中，数据库事务的使用至关重要。它可以确保操作的原子性、一致性、隔离性和持久性（ACID）。&lt;code&gt;github.com/jmoiron/sqlx&lt;/code&gt; 包提供了一个便利的方法来简化对数据库的操作。&lt;/p&gt;
+&lt;p&gt;本文将介绍如何使用</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
+    
+    <category term="sqlx" scheme="https://pudongping.github.io/tags/sqlx/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中使用 sqlx 来操作 MySQL</title>
     <link href="https://pudongping.github.io/posts/4390abbe.html"/>
     <id>https://pudongping.github.io/posts/4390abbe.html</id>
     <published>2024-08-14T06:04:14.000Z</published>
-    <updated>2024-08-14T06:05:06.462Z</updated>
+    <updated>2024-08-14T06:05:13.277Z</updated>
     
     
       
@@ -558,34 +590,6 @@
         
     <summary type="html">&lt;p&gt;单例模式在软件开发中是一种常见的设计模式，用于确保一个类在任何情况下都仅有一个实例，并提供一个访问它的全局访问点。&lt;/p&gt;
 &lt;p&gt;在 Go 语言中，实现单例模式通常有两种方式：&lt;strong&gt;饿汉式&lt;/strong&gt; 和</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 项目自动重载解决方案 —— Air 使用入门</title>
-    <link href="https://pudongping.github.io/posts/2968883c.html"/>
-    <id>https://pudongping.github.io/posts/2968883c.html</id>
-    <published>2024-07-08T04:09:33.000Z</published>
-    <updated>2024-07-08T04:21:12.577Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在开发 Go 应用程序时，我们经常需要重启应用来加载最新的代码更改。这个过程虽然简单，但重复的操作会降低我们的开发效率。&lt;/p&gt;
-&lt;p&gt;今天，我们要介绍的工具 —— &lt;strong&gt;Air&lt;/strong&gt;，</summary>
         
       
     
