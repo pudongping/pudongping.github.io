@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-15T07:11:06.903Z</updated>
+  <updated>2024-08-16T14:17:30.899Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中如何扫描Redis中大量的key</title>
+    <link href="https://pudongping.github.io/posts/9b127c3.html"/>
+    <id>https://pudongping.github.io/posts/9b127c3.html</id>
+    <published>2024-08-16T14:16:56.000Z</published>
+    <updated>2024-08-16T14:17:30.899Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Redis 中，当我们需要遍历大量的键时，直接使用 &lt;code&gt;KEYS&lt;/code&gt; 命令会面临性能瓶颈，尤其是在键数量非常多的情况下。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;KEYS&lt;/code&gt; 命令会一次性返回所有匹配的键，这可能导致 Redis</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中使用sqlx来操作事务</title>
     <link href="https://pudongping.github.io/posts/1ffc0233.html"/>
     <id>https://pudongping.github.io/posts/1ffc0233.html</id>
     <published>2024-08-15T07:10:30.000Z</published>
-    <updated>2024-08-15T07:11:06.903Z</updated>
+    <updated>2024-08-15T07:11:21.968Z</updated>
     
     
       
@@ -280,9 +310,9 @@
     <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
@@ -310,9 +340,9 @@
     <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
@@ -341,9 +371,9 @@
     <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
     
     
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
     <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
@@ -562,34 +592,6 @@
     <summary type="html">&lt;p&gt;在软件开发中，性能往往是我们需要特别关注的方面之一。对于使用 Go 语言的开发者而言，如何编写高性能的代码是一个重要的考虑点。&lt;/p&gt;
 &lt;p&gt;今天，我将分享一些在 Go 语言开发中可以采取的性能优化策略，希望能帮助大家写出更高效的程序。&lt;/p&gt;
 &lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>聊聊 Go 中的单例模式</title>
-    <link href="https://pudongping.github.io/posts/1b8de6f.html"/>
-    <id>https://pudongping.github.io/posts/1b8de6f.html</id>
-    <published>2024-07-08T04:10:43.000Z</published>
-    <updated>2024-07-08T04:21:12.579Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;单例模式在软件开发中是一种常见的设计模式，用于确保一个类在任何情况下都仅有一个实例，并提供一个访问它的全局访问点。&lt;/p&gt;
-&lt;p&gt;在 Go 语言中，实现单例模式通常有两种方式：&lt;strong&gt;饿汉式&lt;/strong&gt; 和</summary>
         
       
     

@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Go语言中如何扫描Redis中大量的key</title>
+      <link href="posts/9b127c3.html"/>
+      <url>posts/9b127c3.html</url>
+      
+        <content type="html"><![CDATA[<p>在 Redis 中，当我们需要遍历大量的键时，直接使用 <code>KEYS</code> 命令会面临性能瓶颈，尤其是在键数量非常多的情况下。</p><p><code>KEYS</code> 命令会一次性返回所有匹配的键，这可能导致 Redis 阻塞，严重影响线上服务的稳定性。为了解决这个问题，Redis 提供了 <code>SCAN</code> 命令，用于分批次迭代键，避免一次性返回所有数据。</p><p>今天，我们将通过两个示例代码，详细讲解如何在 Go 语言中使用 <code>SCAN</code> 命令遍历 Redis 键。</p><p>这里我们用到的是 <code>github.com/go-redis/redis</code> 包，先创建一个 redis 链接</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> redis_demo<span class="token keyword">import</span> <span class="token punctuation">(</span><span class="token string">"github.com/go-redis/redis"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token operator">*</span>redis<span class="token punctuation">.</span>Client<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 创建一个 Redis 客户端</span><span class="token comment">// 也可以使用数据源名称（DSN）来创建</span><span class="token comment">// redis://&lt;user&gt;:&lt;pass&gt;@localhost:6379/&lt;db&gt;</span>opt<span class="token punctuation">,</span> err <span class="token operator">:=</span> redis<span class="token punctuation">.</span><span class="token function">ParseURL</span><span class="token punctuation">(</span><span class="token string">"redis://localhost:6379/0"</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err<span class="token punctuation">}</span>client <span class="token operator">:=</span> redis<span class="token punctuation">.</span><span class="token function">NewClient</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span><span class="token comment">// 通过 cient.Ping() 来检查是否成功连接到了 redis 服务器</span><span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Ping</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err<span class="token punctuation">}</span><span class="token keyword">return</span> client<span class="token punctuation">,</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="代码示例-1：使用-SCAN-命令的基本迭代方式"><a href="#代码示例-1：使用-SCAN-命令的基本迭代方式" class="headerlink" title="代码示例 1：使用 SCAN 命令的基本迭代方式"></a>代码示例 1：使用 <code>SCAN</code> 命令的基本迭代方式</h2><p>首先来看第一个示例代码，这段代码展示了如何通过 <code>SCAN</code> 命令遍历 Redis 数据库中的所有键。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> redis_demo<span class="token keyword">import</span> <span class="token punctuation">(</span><span class="token string">"fmt"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">scanKeysDemo1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">var</span> cursor <span class="token builtin">uint64</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">for</span> <span class="token punctuation">{</span><span class="token keyword">var</span> keys <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token keyword">var</span> err <span class="token builtin">error</span><span class="token comment">// Scan 命令用于迭代数据库中的数据库键。</span>keys<span class="token punctuation">,</span> cursor<span class="token punctuation">,</span> err <span class="token operator">=</span> rdb<span class="token punctuation">.</span><span class="token function">Scan</span><span class="token punctuation">(</span>cursor<span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token comment">// 处理 keys</span><span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> key <span class="token operator">:=</span> <span class="token keyword">range</span> keys <span class="token punctuation">{</span>fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"key: %s\n"</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token comment">// 如果 cursor 为 0，说明已经遍历完成，退出循环</span><span class="token keyword">if</span> cursor <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span><span class="token keyword">break</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="代码详解："><a href="#代码详解：" class="headerlink" title="代码详解："></a>代码详解：</h3><ol><li><p><strong>RDBClient() 函数</strong>: 这段代码假设 <code>RDBClient()</code> 是一个返回 Redis 客户端实例的函数，用于连接 Redis 数据库。如果连接失败，程序会直接 panic 终止。</p></li><li><p><strong>Scan 命令</strong>: <code>rdb.Scan(cursor, "*", 0).Result()</code> 是 <code>SCAN</code> 命令的核心部分。这里的 <code>cursor</code> 用于记录当前扫描的游标位置，<code>*</code> 表示匹配所有键，<code>0</code> 表示每次扫描返回所有匹配键。在第一次调用时，<code>cursor</code> 必须为 <code>0</code>，之后 Redis 会返回新的 <code>cursor</code>，直到 <code>cursor</code> 再次为 <code>0</code> 表示迭代结束。</p></li><li><p><strong>循环扫描</strong>: 使用 <code>for</code> 循环不断调用 <code>SCAN</code> 命令，每次返回一批键并更新 <code>cursor</code>。当 <code>cursor</code> 为 <code>0</code> 时，退出循环。</p></li><li><p><strong>键处理</strong>: <code>for _, key := range keys</code> 用于遍历当前批次的所有键，并对每个键进行处理（如打印出来）。</p></li></ol><p>这个方法相对直观，但如果 Redis 中的键数量巨大，手动处理游标的方式可能显得繁琐。这时候，可以考虑使用更简便的 <code>Iterator</code> 方法。</p><h2 id="代码示例-2：使用-Iterator-简化迭代过程"><a href="#代码示例-2：使用-Iterator-简化迭代过程" class="headerlink" title="代码示例 2：使用 Iterator 简化迭代过程"></a>代码示例 2：使用 <code>Iterator</code> 简化迭代过程</h2><p>接下来是第二个示例代码，它展示了如何使用 <code>Iterator</code> 方法简化键的遍历过程。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> redis_demo<span class="token keyword">import</span> <span class="token punctuation">(</span><span class="token string">"fmt"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">scanKeysDemo2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token comment">// 针对这种需要遍历大量 key 的场景，go-redis 提供了一个更简单的方法 Iterator</span>iter <span class="token operator">:=</span> rdb<span class="token punctuation">.</span><span class="token function">Scan</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">for</span> iter<span class="token punctuation">.</span><span class="token function">Next</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"key: %s\n"</span><span class="token punctuation">,</span> iter<span class="token punctuation">.</span><span class="token function">Val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">if</span> err <span class="token operator">:=</span> iter<span class="token punctuation">.</span><span class="token function">Err</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token comment">// 此外，对于 redis 中的 set、hash、zset 等类型，也可以使用 Iterator 进行遍历</span><span class="token comment">// 例如：</span><span class="token comment">// iter := rdb.SScan("set_key", 0, "*", 50).Iterator()</span><span class="token comment">// iter := rdb.HScan("hash_key", 0, "*", 50).Iterator()</span><span class="token comment">// iter := rdb.ZScan("zset_key", 0, "*", 50).Iterator()</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="代码详解：-1"><a href="#代码详解：-1" class="headerlink" title="代码详解："></a>代码详解：</h3><ol><li><p><strong>使用 Iterator</strong>: 与前一个示例不同，这里使用了 <code>Iterator</code> 迭代器。<code>rdb.Scan(0, "*", 50).Iterator()</code> 创建了一个迭代器，每次返回 50 个匹配的键。这样无需手动处理 <code>cursor</code>，简化了遍历过程。</p></li><li><p><strong>迭代与处理</strong>: <code>for iter.Next()</code> 是一个简洁的循环，用于遍历所有匹配的键。当 <code>iter.Next()</code> 返回 <code>false</code> 时，表示遍历结束。<code>iter.Val()</code> 返回当前键的值。</p></li><li><p><strong>错误处理</strong>: 在循环结束后，检查 <code>iter.Err()</code> 是否为 <code>nil</code>，以确保遍历过程中没有出现错误。</p></li><li><p><strong>扩展功能</strong>: 此外，<code>Iterator</code> 方法不仅适用于遍历键，也可用于遍历 Redis 中的集合（<code>Set</code>）、哈希（<code>Hash</code>）、有序集合（<code>ZSet</code>）等数据结构。通过将 <code>Scan</code> 换成 <code>SScan</code>、<code>HScan</code> 或 <code>ZScan</code>，就能遍历对应的数据结构。</p></li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这篇文章介绍了如何在 Go 语言中使用 <code>SCAN</code> 命令遍历 Redis 键，并比较了手动处理 <code>cursor</code> 和使用 <code>Iterator</code> 的两种方式。对于 Redis 新手来说，了解 <code>SCAN</code> 命令的用法非常重要，它不仅帮助你避免了使用 <code>KEYS</code> 命令可能带来的性能问题，还让你能够更高效地遍历 Redis 数据。</p><p>如果你觉得文章有帮助，欢迎点赞、转发，让更多人掌握 Redis 的这些实用技巧！😊</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+            <tag> Golang </tag>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言中使用sqlx来操作事务</title>
       <link href="posts/1ffc0233.html"/>
       <url>posts/1ffc0233.html</url>
@@ -252,9 +281,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -281,9 +310,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -310,9 +339,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -1704,9 +1733,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1733,9 +1762,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1762,9 +1791,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1791,9 +1820,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2099,9 +2128,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -2128,9 +2157,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -3947,9 +3976,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -3976,9 +4005,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 缓存 </tag>
             
@@ -4005,9 +4034,9 @@
       
         <tags>
             
-            <tag> Cache </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> Cache </tag>
             
             <tag> 分布式集群 </tag>
             
@@ -4233,9 +4262,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4264,9 +4293,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4293,9 +4322,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4322,9 +4351,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4542,9 +4571,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -4781,9 +4810,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -4810,9 +4839,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
