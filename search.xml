@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Go语言中高效使用Redis的Pipeline</title>
+      <link href="posts/9af95445.html"/>
+      <url>posts/9af95445.html</url>
+      
+        <content type="html"><![CDATA[<p>在构建高性能应用时，Redis 经常成为开发者的首选工具。作为一个内存数据库，Redis 可以处理大量的数据操作，但如果每个命令都单独发送，网络延迟会成为瓶颈，影响性能。</p><p>这时，Redis 的 <strong>Pipeline</strong> 和 <strong>Watch</strong> 机制应运而生，帮助我们批量执行命令，并在并发环境中保障数据的安全性。</p><h2 id="什么是-Pipeline？"><a href="#什么是-Pipeline？" class="headerlink" title="什么是 Pipeline？"></a>什么是 Pipeline？</h2><p>在 Redis 中，Pipeline 就像一条流水线，它允许我们将多个命令一次性发送到服务器。这种操作能大幅减少客户端与服务器之间的网络交互时间，从而提升执行效率。</p><p>想象一下，你去超市购物，拿了几件商品，每件商品都要单独结账——这样既浪费时间，又容易出错。Pipeline 的作用就类似于让你可以把所有商品放在购物车里，一次性结账。这样做不仅更快，还避免了频繁的等待。</p><p>在实际操作中，Pipeline 通常用来处理需要连续执行的多个 Redis 命令，例如增加一个计数器，同时为它设置一个过期时间。</p><p>我们先建立一个 redis 链接</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main<span class="token keyword">import</span> <span class="token punctuation">(</span><span class="token string">"github.com/go-redis/redis"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token operator">*</span>redis<span class="token punctuation">.</span>Client<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 创建一个 Redis 客户端</span><span class="token comment">// 也可以使用数据源名称（DSN）来创建</span><span class="token comment">// redis://&lt;user&gt;:&lt;pass&gt;@localhost:6379/&lt;db&gt;</span>opt<span class="token punctuation">,</span> err <span class="token operator">:=</span> redis<span class="token punctuation">.</span><span class="token function">ParseURL</span><span class="token punctuation">(</span><span class="token string">"redis://localhost:6379/0"</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err<span class="token punctuation">}</span>client <span class="token operator">:=</span> redis<span class="token punctuation">.</span><span class="token function">NewClient</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span><span class="token comment">// 通过 cient.Ping() 来检查是否成功连接到了 redis 服务器</span><span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Ping</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err<span class="token punctuation">}</span><span class="token keyword">return</span> client<span class="token punctuation">,</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="使用-Pipeline-提升效率"><a href="#使用-Pipeline-提升效率" class="headerlink" title="使用 Pipeline 提升效率"></a>使用 Pipeline 提升效率</h2><p>我们先来看看一个简单的例子，如何在 Go 语言中使用 Pipeline 批量执行命令。</p><p>假设我们有一个名为 <code>pipeline_counter</code> 的键，我们想在 Redis 中增加它的值，并设置一个 10 秒的过期时间。通常情况下，你可能会写两个独立的命令来完成这项工作。但如果我们使用 Pipeline，就可以把这两个命令打包成一个请求，发送给 Redis。这样不仅减少了请求的次数，还提升了整体性能。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">pipeline1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>pipe <span class="token operator">:=</span> rdb<span class="token punctuation">.</span><span class="token function">Pipeline</span><span class="token punctuation">(</span><span class="token punctuation">)</span>incr <span class="token operator">:=</span> pipe<span class="token punctuation">.</span><span class="token function">Incr</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">)</span>pipe<span class="token punctuation">.</span><span class="token function">Expire</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>cmds<span class="token punctuation">,</span> err <span class="token operator">:=</span> pipe<span class="token punctuation">.</span><span class="token function">Exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter:"</span><span class="token punctuation">,</span> incr<span class="token punctuation">.</span><span class="token function">Val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> cmd <span class="token operator">:=</span> <span class="token keyword">range</span> cmds <span class="token punctuation">{</span>fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"cmd: %#v \n"</span><span class="token punctuation">,</span> cmd<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在这个例子中，我们通过 <code>Pipeline()</code> 方法创建了一个流水线，并在流水线中添加了两个命令：<code>INCR</code> 和 <code>EXPIRE</code>。最后，通过 <code>Exec()</code> 方法一次性执行这些命令，并输出结果。</p><h2 id="让代码更简洁：使用-Pipelined-方法"><a href="#让代码更简洁：使用-Pipelined-方法" class="headerlink" title="让代码更简洁：使用 Pipelined 方法"></a>让代码更简洁：使用 Pipelined 方法</h2><p>虽然手动使用 Pipeline 已经简化了代码，但 <code>go-redis</code> 提供的 <code>Pipelined()</code> 方法让我们可以更优雅地处理这一过程，让你只需关注命令的逻辑部分。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">pipeline2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">var</span> incr <span class="token operator">*</span>redis<span class="token punctuation">.</span>IntCmdcmds<span class="token punctuation">,</span> err <span class="token operator">:=</span> rdb<span class="token punctuation">.</span><span class="token function">Pipelined</span><span class="token punctuation">(</span><span class="token keyword">func</span><span class="token punctuation">(</span>pipe redis<span class="token punctuation">.</span>Pipeliner<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>incr <span class="token operator">=</span> pipe<span class="token punctuation">.</span><span class="token function">Incr</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">)</span>pipe<span class="token punctuation">.</span><span class="token function">Expire</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter:"</span><span class="token punctuation">,</span> incr<span class="token punctuation">.</span><span class="token function">Val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> cmd <span class="token operator">:=</span> <span class="token keyword">range</span> cmds <span class="token punctuation">{</span>fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"cmd: %#v \n"</span><span class="token punctuation">,</span> cmd<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>通过 <code>Pipelined()</code> 方法，我们不再需要手动管理 Pipeline 的创建和执行，只需专注于添加需要执行的命令。这不仅减少了代码量，还让代码的逻辑更加清晰。</p><h2 id="保证操作原子性：TxPipeline"><a href="#保证操作原子性：TxPipeline" class="headerlink" title="保证操作原子性：TxPipeline"></a>保证操作原子性：TxPipeline</h2><p>有时，我们不仅希望批量执行命令，还希望确保这些命令作为一个整体被执行。这种需求在并发环境中尤为常见，特别是当多个客户端可能同时修改同一个键时。为了实现这一点，<code>go-redis</code> 提供了 <strong>TxPipeline</strong>，它类似于 Pipeline，但具有事务性，确保操作的原子性。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">pipeline3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>pipe <span class="token operator">:=</span> rdb<span class="token punctuation">.</span><span class="token function">TxPipeline</span><span class="token punctuation">(</span><span class="token punctuation">)</span>incr <span class="token operator">:=</span> pipe<span class="token punctuation">.</span><span class="token function">Incr</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">)</span>pipe<span class="token punctuation">.</span><span class="token function">Expire</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">=</span> pipe<span class="token punctuation">.</span><span class="token function">Exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter:"</span><span class="token punctuation">,</span> incr<span class="token punctuation">.</span><span class="token function">Val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在这个例子中，我们使用 <code>TxPipeline()</code> 方法确保 <code>INCR</code> 和 <code>EXPIRE</code> 命令一起打包执行。</p><p>当然我们也可以使用下面的代码，逻辑是一致的：</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">pipeline4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">var</span> incr <span class="token operator">*</span>redis<span class="token punctuation">.</span>IntCmd<span class="token comment">// 以下代码就相当于执行了</span><span class="token comment">// MULTI</span><span class="token comment">// INCR pipeline_counter</span><span class="token comment">// EXPIRE pipeline_counter 10</span><span class="token comment">// EXEC</span><span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">=</span> rdb<span class="token punctuation">.</span><span class="token function">TxPipelined</span><span class="token punctuation">(</span><span class="token keyword">func</span><span class="token punctuation">(</span>pipe redis<span class="token punctuation">.</span>Pipeliner<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>incr <span class="token operator">=</span> pipe<span class="token punctuation">.</span><span class="token function">Incr</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">)</span>pipe<span class="token punctuation">.</span><span class="token function">Expire</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token comment">// 获取 incr 命令的执行结果</span>fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"pipeline_counter:"</span><span class="token punctuation">,</span> incr<span class="token punctuation">.</span><span class="token function">Val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="预防并发问题：Watch-机制"><a href="#预防并发问题：Watch-机制" class="headerlink" title="预防并发问题：Watch 机制"></a>预防并发问题：Watch 机制</h2><p>在并发编程中，一个典型的问题是多个客户端同时修改同一个键，导致数据不一致。Redis 的 <strong>Watch</strong> 机制通过监控键的变化，确保只有在键没有被其他客户端修改的情况下才会执行事务，从而实现乐观锁。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">watchDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rdb<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">RDBClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span><span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span>key <span class="token operator">:=</span> <span class="token string">"watch_key"</span>err <span class="token operator">=</span> rdb<span class="token punctuation">.</span><span class="token function">Watch</span><span class="token punctuation">(</span><span class="token keyword">func</span><span class="token punctuation">(</span>tx <span class="token operator">*</span>redis<span class="token punctuation">.</span>Tx<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>num<span class="token punctuation">,</span> err <span class="token operator">:=</span> tx<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Int</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>errors<span class="token punctuation">.</span><span class="token function">Is</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> redis<span class="token punctuation">.</span>Nil<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> err<span class="token punctuation">}</span><span class="token comment">// 模拟并发情况下的数据变更</span>time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">=</span> tx<span class="token punctuation">.</span><span class="token function">TxPipelined</span><span class="token punctuation">(</span><span class="token keyword">func</span><span class="token punctuation">(</span>pipe redis<span class="token punctuation">.</span>Pipeliner<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>pipe<span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> num<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> time<span class="token punctuation">.</span>Second<span class="token operator">*</span><span class="token number">60</span><span class="token punctuation">)</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">}</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token keyword">if</span> errors<span class="token punctuation">.</span><span class="token function">Is</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> redis<span class="token punctuation">.</span>TxFailedErr<span class="token punctuation">)</span> <span class="token punctuation">{</span>fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"事务执行失败"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在这个示例中，<code>Watch()</code> 方法会监控 <code>watch_key</code>，并在事务开始前获取它的值。如果在事务执行期间，<code>watch_key</code> 被其他客户端修改，整个事务将不会执行，这样就避免了数据的不一致性。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过以上的讲解，我们可以看到 Redis 的 Pipeline 和 Watch 机制如何帮助我们更高效地处理数据，并在并发环境中确保数据的安全性。这些机制不仅提升了性能，还简化了代码逻辑，让开发者可以专注于业务逻辑，而不是为细节操心。</p><p>如果你觉得这篇文章对你有帮助，欢迎点赞、转发，让更多的小伙伴也能轻松掌握 Redis 的这些强大功能！😊</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+            <tag> Golang </tag>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言中如何扫描Redis中大量的key</title>
       <link href="posts/9b127c3.html"/>
       <url>posts/9b127c3.html</url>
@@ -1733,9 +1762,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -1762,9 +1791,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -1791,9 +1820,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -1820,9 +1849,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4262,9 +4291,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4293,9 +4322,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4322,9 +4351,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4351,9 +4380,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4571,9 +4600,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
         </tags>
       
@@ -4810,9 +4839,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -4839,9 +4868,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
