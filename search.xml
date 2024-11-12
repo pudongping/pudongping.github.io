@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>如何用Redis高效实现点赞功能？用Set？还是Bitmap？</title>
+      <link href="posts/3adceb1d.html"/>
+      <url>posts/3adceb1d.html</url>
+      
+        <content type="html"><![CDATA[<p>在众多软件应用中，<strong>点赞</strong>功能几乎成了所有应用中的“标配”。但实现一个高效的点赞功能并不简单，尤其是在面对大规模的用户量和高并发场景时。</p><p>今天，我们就从实际需求出发，探索如何利用 Redis 的数据结构来设计一个点赞系统，从而理解 <code>Set</code> 和 <code>Bitmap</code> 数据结构的优缺点。</p><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>我们设定这样一个需求场景：在一篇文章的评论下实现点赞功能，每位用户只能对同一条评论点赞一次，再次点赞则视为“取消点赞”。此外，我们还需要统计每条评论的总点赞数。</p><p>这听上去不复杂，但当需求量级提升，比如用户量达到千万级别，系统会需要承担巨大的数据存储和高频的读写压力。为了满足高性能和低延迟的需求，我们可以选择 Redis 来管理点赞数据。</p><h2 id="方案一：使用-Redis-的-Set-数据结构"><a href="#方案一：使用-Redis-的-Set-数据结构" class="headerlink" title="方案一：使用 Redis 的 Set 数据结构"></a>方案一：使用 Redis 的 <code>Set</code> 数据结构</h2><p>首先考虑使用 Redis 的 <code>Set</code> 数据结构。<code>Set</code> 非常适合存储一组不重复的元素，因此可以用来记录每条评论下点赞的用户 ID。方案设计如下：</p><ol><li><strong>存储设计</strong>：每条评论的点赞数据可以存储为一个 Redis <code>Set</code>，键格式为 <code>comment:likes:{comment_id}</code>，其中 <code>{comment_id}</code> 是评论的唯一标识。</li><li><strong>点赞操作</strong>：当用户点赞时，将用户 ID 添加到该评论对应的 <code>Set</code> 中。</li><li><strong>取消点赞</strong>：如果用户再次点击，则从 <code>Set</code> 中移除用户 ID。</li><li><strong>统计总点赞数</strong>：直接获取 <code>Set</code> 的元素数量，即为当前评论的点赞总数。</li><li><strong>检查用户是否点赞过</strong>：可以通过 <code>SISMEMBER</code> 指令快速检查某个用户 ID 是否存在于该评论的点赞 <code>Set</code> 中。</li></ol><h3 id="Set-方案的代码实现"><a href="#Set-方案的代码实现" class="headerlink" title="Set 方案的代码实现"></a>Set 方案的代码实现</h3><p>以下是 PHP 实现点赞、取消点赞和统计点赞数的代码示例：</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token comment">// 点赞接口</span><span class="token keyword">function</span> <span class="token function-definition function">likeComment</span><span class="token punctuation">(</span><span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token variable">$commentId</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token variable">$redis</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Redis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'127.0.0.1'</span><span class="token punctuation">,</span> <span class="token number">6379</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 生成唯一键</span>    <span class="token variable">$likeSetKey</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"comment:likes:<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$commentId</span><span class="token punctuation">}</span></span>"</span><span class="token punctuation">;</span>    <span class="token comment">// 判断用户是否已点赞</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">sIsMember</span><span class="token punctuation">(</span><span class="token variable">$likeSetKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment">// 已点赞，取消点赞</span>        <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">sRem</span><span class="token punctuation">(</span><span class="token variable">$likeSetKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token variable">$liked</span> <span class="token operator">=</span> <span class="token constant boolean">false</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>        <span class="token comment">// 未点赞，添加点赞</span>        <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">sAdd</span><span class="token punctuation">(</span><span class="token variable">$likeSetKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token variable">$liked</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token comment">// 获取当前总点赞数</span>    <span class="token variable">$totalLikes</span> <span class="token operator">=</span> <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">sCard</span><span class="token punctuation">(</span><span class="token variable">$likeSetKey</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 返回点赞状态</span>    <span class="token keyword">return</span> <span class="token punctuation">[</span>        <span class="token string single-quoted-string">'status'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'success'</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'liked'</span> <span class="token operator">=&gt;</span> <span class="token variable">$liked</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'totalLikes'</span> <span class="token operator">=&gt;</span> <span class="token variable">$totalLikes</span>    <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="使用-Set-方案的优缺点"><a href="#使用-Set-方案的优缺点" class="headerlink" title="使用 Set 方案的优缺点"></a>使用 Set 方案的优缺点</h3><p><strong>优点</strong>：</p><ul><li><strong>灵活性高</strong>：支持不连续的用户 ID，适合大多数应用场景。</li><li><strong>操作简单</strong>：Redis 原生支持集合操作，查询、添加、删除等操作性能较高。</li></ul><p><strong>缺点</strong>：</p><ul><li><strong>存储空间较大</strong>：<code>Set</code> 中每个用户 ID 都会占用存储空间，随着点赞用户增多，<code>Set</code> 的存储开销也会增长。</li></ul><h2 id="方案二：使用-Redis-的-Bitmap-数据结构"><a href="#方案二：使用-Redis-的-Bitmap-数据结构" class="headerlink" title="方案二：使用 Redis 的 Bitmap 数据结构"></a>方案二：使用 Redis 的 <code>Bitmap</code> 数据结构</h2><p>如果用户 ID 是连续的，比如从 <code>0</code> 开始顺序增长，那么可以使用 Redis 的 <code>Bitmap</code> 数据结构来进一步提升存储效率。<code>Bitmap</code> 以每个用户的 ID 作为位（bit）位置，只需 1 位就可以表示每个用户的点赞状态，大大节省存储空间。</p><ol><li><strong>存储设计</strong>：每条评论的点赞数据可以存储为一个 <code>Bitmap</code>，键的格式为 <code>comment:likes:{comment_id}</code>。</li><li><strong>点赞操作</strong>：使用 <code>SETBIT</code> 将用户的位设置为 <code>1</code>。</li><li><strong>取消点赞</strong>：再次点击则用 <code>SETBIT</code> 将该位设置为 <code>0</code>。</li><li><strong>统计总点赞数</strong>：通过 <code>BITCOUNT</code> 指令统计 <code>Bitmap</code> 中位为 <code>1</code> 的数量，即为点赞总数。</li><li><strong>检查用户是否点赞过</strong>：可以用 <code>GETBIT</code> 查询指定用户的点赞状态。</li></ol><h3 id="Bitmap-方案的代码实现"><a href="#Bitmap-方案的代码实现" class="headerlink" title="Bitmap 方案的代码实现"></a>Bitmap 方案的代码实现</h3><p>以下是使用 <code>Bitmap</code> 实现的 PHP 代码示例：</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token keyword">function</span> <span class="token function-definition function">likeComment</span><span class="token punctuation">(</span><span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token variable">$commentId</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token variable">$redis</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Redis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'127.0.0.1'</span><span class="token punctuation">,</span> <span class="token number">6379</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 生成唯一键</span>    <span class="token variable">$likeBitmapKey</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"comment:likes:<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$commentId</span><span class="token punctuation">}</span></span>"</span><span class="token punctuation">;</span>    <span class="token comment">// 获取用户当前的点赞状态</span>    <span class="token variable">$isLiked</span> <span class="token operator">=</span> <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">getBit</span><span class="token punctuation">(</span><span class="token variable">$likeBitmapKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$isLiked</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment">// 已点赞，取消点赞</span>        <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">setBit</span><span class="token punctuation">(</span><span class="token variable">$likeBitmapKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token variable">$liked</span> <span class="token operator">=</span> <span class="token constant boolean">false</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>        <span class="token comment">// 未点赞，设置为点赞</span>        <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">setBit</span><span class="token punctuation">(</span><span class="token variable">$likeBitmapKey</span><span class="token punctuation">,</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token variable">$liked</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token comment">// 获取当前点赞总数</span>    <span class="token variable">$totalLikes</span> <span class="token operator">=</span> <span class="token variable">$redis</span><span class="token operator">-&gt;</span><span class="token function">bitCount</span><span class="token punctuation">(</span><span class="token variable">$likeBitmapKey</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">return</span> <span class="token punctuation">[</span>        <span class="token string single-quoted-string">'status'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'success'</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'liked'</span> <span class="token operator">=&gt;</span> <span class="token variable">$liked</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'totalLikes'</span> <span class="token operator">=&gt;</span> <span class="token variable">$totalLikes</span>    <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="使用-Bitmap-方案的优缺点"><a href="#使用-Bitmap-方案的优缺点" class="headerlink" title="使用 Bitmap 方案的优缺点"></a>使用 Bitmap 方案的优缺点</h3><p><strong>优点</strong>：</p><ul><li><strong>存储效率高</strong>：每位只占 1 bit，适合大量用户数据的二元状态存储，极大节省内存。</li><li><strong>适合批量统计</strong>：通过 <code>BITCOUNT</code> 等命令可以快速统计点赞数量，性能极佳。</li></ul><p><strong>缺点</strong>：</p><ul><li><strong>用户 ID 需连续</strong>：<code>Bitmap</code> 适合连续的 ID（如从 <code>0</code> 到某个上限），对于离散的 ID 或存在大量空位的 ID，不适用。</li><li><strong>操作复杂性较高</strong>：当用户 ID 离散或不连续时，使用 <code>Bitmap</code> 不仅不节省空间，操作复杂性也会增加。</li></ul><h2 id="选择合适的数据结构"><a href="#选择合适的数据结构" class="headerlink" title="选择合适的数据结构"></a>选择合适的数据结构</h2><table><thead><tr><th>特点</th><th>Redis <code>Set</code></th><th>Redis <code>Bitmap</code></th></tr></thead><tbody><tr><td><strong>用户 ID 分布</strong></td><td>适合不连续的 ID</td><td>适合连续的、紧凑的 ID</td></tr><tr><td><strong>存储空间</strong></td><td>随点赞数增长而增大</td><td>每个用户点赞状态占 1 bit，空间占用小</td></tr><tr><td><strong>统计点赞数</strong></td><td>通过 <code>SCARD</code> 精确统计</td><td>通过 <code>BITCOUNT</code> 高效统计</td></tr><tr><td><strong>查询用户状态</strong></td><td>支持任意用户 ID 查询点赞状态</td><td>支持按位查询连续 ID 的状态</td></tr><tr><td><strong>适用场景</strong></td><td>离散用户 ID，点赞、关注等集合操作</td><td>连续 ID，批量二元状态的快速统计</td></tr></tbody></table><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在实际项目中，选择合适的数据结构至关重要。对于点赞功能，如果用户 ID 是不连续的且规模不大，<code>Set</code> 更灵活、易于使用；而对于用户 ID 连续的大规模应用，<code>Bitmap</code> 则能极大提升存储和统计效率。在实际应用中，我们可以根据用户 ID 分布、存储需求和性能要求来选择最优方案。</p><p>其实 <code>Bitmap</code> 这种数据结构更加适合于用作<strong>用户签到、打卡</strong>等场景。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+            <tag> Cache </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言中高效使用Redis的Pipeline</title>
       <link href="posts/9af95445.html"/>
       <url>posts/9af95445.html</url>
@@ -1762,9 +1789,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1791,9 +1818,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1820,9 +1847,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1849,9 +1876,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4291,9 +4318,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4322,9 +4349,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4351,9 +4378,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4380,9 +4407,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4600,9 +4627,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -4839,9 +4866,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -4868,9 +4895,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             

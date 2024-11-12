@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-08-19T07:04:49.449Z</updated>
+  <updated>2024-11-12T02:52:15.214Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何用Redis高效实现点赞功能？用Set？还是Bitmap？</title>
+    <link href="https://pudongping.github.io/posts/3adceb1d.html"/>
+    <id>https://pudongping.github.io/posts/3adceb1d.html</id>
+    <published>2024-11-12T02:51:06.000Z</published>
+    <updated>2024-11-12T02:52:15.214Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在众多软件应用中，&lt;strong&gt;点赞&lt;/strong&gt;功能几乎成了所有应用中的“标配”。但实现一个高效的点赞功能并不简单，尤其是在面对大规模的用户量和高并发场景时。&lt;/p&gt;
+&lt;p&gt;今天，我们就从实际需求出发，探索如何利用 Redis</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中高效使用Redis的Pipeline</title>
     <link href="https://pudongping.github.io/posts/9af95445.html"/>
     <id>https://pudongping.github.io/posts/9af95445.html</id>
     <published>2024-08-19T07:04:17.000Z</published>
-    <updated>2024-08-19T07:04:49.449Z</updated>
+    <updated>2024-08-19T07:04:59.363Z</updated>
     
     
       
@@ -576,34 +604,6 @@
     <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="Protobuf" scheme="https://pudongping.github.io/tags/Protobuf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言设计模式：使用Option模式简化类的初始化</title>
-    <link href="https://pudongping.github.io/posts/d24ea952.html"/>
-    <id>https://pudongping.github.io/posts/d24ea952.html</id>
-    <published>2024-07-09T14:56:04.000Z</published>
-    <updated>2024-07-09T15:11:36.548Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在面向对象编程中，当我们需要创建一个构造参数众多的类时，不仅使得代码难以阅读，而且在参数较多时，调用者需要记住每个参数的顺序和类型，这无疑增加了使用的复杂性，代码往往变得难以管理。&lt;/p&gt;
-&lt;p&gt;Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
