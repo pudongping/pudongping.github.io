@@ -209,7 +209,7 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Software Engineer | Programming Geeker | Artisan, Backend Developer & Overall Web Enthusiast
-  introduction: 英文名：Alex，网名：南山竹，微信公众号：左诗右码。坐标上海，从事后端开发 6 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript。热衷研究新技术，享受书写代码的宁静与乐趣，相信编程是一门艺术，编程丰富生活。
+  introduction: 英文名：Alex，网名：南山竹，微信公众号：左诗右码。坐标上海，从事后端开发 8 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript。热衷研究新技术，享受书写代码的宁静与乐趣，相信编程是一门艺术，编程丰富生活。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -227,21 +227,21 @@ myProjects:
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
       url: https://github.com/pudongping/global-pay
       desc: 简单易用的国际支付宝 php 插件包，支持花呗分期支付
-    document-converter:
+    mp-vx-insight:
       icon: fas fa-exchange-alt
       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-      url: https://github.com/pudongping/document-converter
-      desc: 使用 python3 写的 docx、excel、ppt 转 pdf 工具
+      url: https://github.com/pudongping/mp-vx-insight
+      desc: 微信公众号小助手，扩展了一键获取微信公众号文章封面图、全部文章等功能
     hyperf-biz-web-api:
       icon: fas fa-rocket
       iconBackground: 'linear-gradient(135deg, #e079fc 0%, #7c44ff 100%)'
       url: https://github.com/pudongping/hyperf-biz-web-api
-      desc: 基于 hyperf 框架封装的业务 web api 框架
+      desc: 基于 hyperf 框架封装的业务 web api 脚手架，可拿去直接上手开发项目
     gin-biz-web-api:
       icon: fas fa-wrench
       iconBackground: 'linear-gradient(135deg, #309286 0%, #32dbc6 100%)'
       url: https://github.com/pudongping/gin-biz-web-api
-      desc: 基于 Gin 框架封装的业务 web api 框架
+      desc: 基于 Gin 框架封装的业务 web api 脚手架，可拿去直接上手开发项目
     hexo-blog:
       icon: fas fa-comment
       iconBackground: 'linear-gradient(135deg, #ffeb3b 0%, #ff9900 100%)'
@@ -751,3 +751,13 @@ snow:
 # 是否开启在 about 页面写我的简历
 writeCV:
   enable: false # 开启为 true，关闭为 false
+
+# 是否开启 OpenWrite 插件（开启之后则必须关注公众号之后才可以查看剩下的文章）
+# 详见：themes/hexo-theme-matery/layout/post.ejs 文件
+openWritePlugin:
+  enable: true # 开启为 true，关闭为 false
+  blogId: 33149-1720714429832-433
+  name: 左诗右码
+  qrcode: 'https://mmbiz.qpic.cn/sz_mmbiz_jpg/vQwlDq5Yfs1HQb8cN6e9TTwqBEYBfgJKuejrXaqS6VXAheLQfqnT99UpI0icS9aFPpIz0TFlwibibIibibwo0nxl4Dw/640?wx_fmt=jpeg'
+  keyword: 666
+  btnText: 原创不易，完成人机检测，阅读全文
