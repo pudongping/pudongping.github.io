@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-12T04:00:42.323Z</updated>
+  <updated>2024-11-13T09:30:03.690Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用 Zap 轻松搞定 Go 语言中的结构化日志</title>
+    <link href="https://pudongping.github.io/posts/b16382e2.html"/>
+    <id>https://pudongping.github.io/posts/b16382e2.html</id>
+    <published>2024-11-13T09:29:13.000Z</published>
+    <updated>2024-11-13T09:30:03.690Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在开发现代应用程序时，日志记录是一个不可或缺的部分。它不仅能帮助我们跟踪程序的运行状态，还能在出现问题时提供宝贵的调试信息。&lt;/p&gt;
+&lt;p&gt;在 Go 语言中，有许多日志库可供选择，但在性能和灵活性方面，Zap 是其中的佼佼者。&lt;/p&gt;
+&lt;p&gt;今天，我将带你深入了解如何在</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Zap" scheme="https://pudongping.github.io/tags/Zap/"/>
+    
+  </entry>
   
   <entry>
     <title>Redis 实现高效任务队列：异步队列与延迟队列详解</title>
@@ -577,36 +608,6 @@
     <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 安装 KONG 带你玩转 API 网关</title>
-    <link href="https://pudongping.github.io/posts/b8eafe4f.html"/>
-    <id>https://pudongping.github.io/posts/b8eafe4f.html</id>
-    <published>2024-07-11T15:16:39.000Z</published>
-    <updated>2024-07-11T16:53:57.138Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在当今的软件开发中，API 网关已成为微服务架构中不可或缺的一环。它不仅简化了服务间的通信、提供了统一的入口，还能在安全、监控、限流等方面发挥巨大作用。&lt;/p&gt;
-&lt;p&gt;今天，我们就来聊聊如何通过 Docker 快速部署 KONG —— 一个流行的开源 API</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-    <category term="KONG" scheme="https://pudongping.github.io/tags/KONG/"/>
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
   </entry>
   
