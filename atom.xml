@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-13T09:30:03.690Z</updated>
+  <updated>2024-11-14T03:54:48.893Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go Web服务中如何优雅关机？</title>
+    <link href="https://pudongping.github.io/posts/2e2c4d21.html"/>
+    <id>https://pudongping.github.io/posts/2e2c4d21.html</id>
+    <published>2024-11-14T03:54:11.000Z</published>
+    <updated>2024-11-14T03:54:48.893Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在构建 Web 服务时，我们往往会遇到一个棘手的问题：&lt;strong&gt;当我们想要停止服务时，如何确保正在处理的请求能够顺利完成，而不是突然中断？&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用 Zap 轻松搞定 Go 语言中的结构化日志</title>
     <link href="https://pudongping.github.io/posts/b16382e2.html"/>
     <id>https://pudongping.github.io/posts/b16382e2.html</id>
     <published>2024-11-13T09:29:13.000Z</published>
-    <updated>2024-11-13T09:30:03.690Z</updated>
+    <updated>2024-11-13T09:31:18.945Z</updated>
     
     
       
@@ -579,35 +606,6 @@
     
     
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入理解 Nginx 与 Kong 的配置与实践</title>
-    <link href="https://pudongping.github.io/posts/52ffe35e.html"/>
-    <id>https://pudongping.github.io/posts/52ffe35e.html</id>
-    <published>2024-07-11T15:16:54.000Z</published>
-    <updated>2024-07-11T16:53:57.143Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代的微服务架构中，服务之间的通信和负载坐标成为了关键环节。这篇文章将深入探讨如何通过 Nginx 配置实现服务的负载均衡，同时如何利用 Kong API</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="KONG" scheme="https://pudongping.github.io/tags/KONG/"/>
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
     
   </entry>
   

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Go Web服务中如何优雅关机？</title>
+      <link href="posts/2e2c4d21.html"/>
+      <url>posts/2e2c4d21.html</url>
+      
+        <content type="html"><![CDATA[<p>在构建 Web 服务时，我们往往会遇到一个棘手的问题：<strong>当我们想要停止服务时，如何确保正在处理的请求能够顺利完成，而不是突然中断？</strong> 这种技术被称为“优雅关机”，它可以确保在服务关闭时，所有的请求都被妥善处理。</p><p>在这篇文章中，我们将通过一个简单的例子来演示如何在 Go 语言中使用 Gin 框架实现优雅关机。</p><h2 id="什么是优雅关机？"><a href="#什么是优雅关机？" class="headerlink" title="什么是优雅关机？"></a>什么是优雅关机？</h2><p>优雅的关机是指在关闭服务之前，先让服务处理完当前正在处理的请求，然后再关闭服务。这样可以保证服务不会丢失请求，也不会影响到正在处理的请求。这种方式可以提高用户体验，防止服务中断造成的数据丢失或不一致。<br>而执行 <code>Ctrl + C</code> 或者 <code>kill -2 pid</code> 命令关闭服务，是不会等待服务处理完请求的，这样就会导致服务丢失请求。</p><h2 id="如何实现优雅的关机？"><a href="#如何实现优雅的关机？" class="headerlink" title="如何实现优雅的关机？"></a>如何实现优雅的关机？</h2><p>Go 1.8 版本之后，<code>http.Server</code> 内置的 <code>Shutdown()</code> 方法就支持优雅地关机。</p><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>我们来看一个具体的代码示例，通过这个例子我们将展示如何实现优雅关机。</p><pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main<span class="token keyword">import</span> <span class="token punctuation">(</span><span class="token string">"context"</span><span class="token string">"log"</span><span class="token string">"net/http"</span><span class="token string">"os"</span><span class="token string">"os/signal"</span><span class="token string">"syscall"</span><span class="token string">"time"</span><span class="token string">"github.com/gin-gonic/gin"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>router <span class="token operator">:=</span> gin<span class="token punctuation">.</span><span class="token function">Default</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 定义一个简单的路由</span>router<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/ping"</span><span class="token punctuation">,</span> <span class="token keyword">func</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 模拟一个耗时操作，比如数据库查询或外部API调用</span>time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span> gin<span class="token punctuation">.</span>H<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string">"pong"</span><span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token comment">// 配置 HTTP 服务器</span>srv <span class="token operator">:=</span> <span class="token operator">&amp;</span>http<span class="token punctuation">.</span>Server<span class="token punctuation">{</span>Addr<span class="token punctuation">:</span>    <span class="token string">":8080"</span><span class="token punctuation">,</span>Handler<span class="token punctuation">:</span> router<span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token comment">// 启动服务器</span><span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">if</span> err <span class="token operator">:=</span> srv<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token operator">&amp;&amp;</span> err <span class="token operator">!=</span> http<span class="token punctuation">.</span>ErrServerClosed <span class="token punctuation">{</span>log<span class="token punctuation">.</span><span class="token function">Fatalf</span><span class="token punctuation">(</span><span class="token string">"Failed to start server: %v"</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 等待中断信号来优雅地关闭服务器，为关闭服务器操作设置一个 5 秒的超时</span>quit <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">chan</span> os<span class="token punctuation">.</span>Signal<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 创建一个接收信号的通道</span><span class="token comment">// kill 默认会发送 syscall.SIGTERM 信号</span><span class="token comment">// kill -2 发送 syscall.SIGINT 信号，我们常用的 `Ctrl+C` 就是触发系统 SIGINT 信号</span><span class="token comment">// kill -9 发送 syscall.SIGKILL 信号，但是不能被捕获，所以不需要添加它</span><span class="token comment">// signal.Notify 把收到的 syscall.SIGINT 或 syscall.SIGTERM 信号转发给 quit</span>signal<span class="token punctuation">.</span><span class="token function">Notify</span><span class="token punctuation">(</span>quit<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGINT<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGTERM<span class="token punctuation">)</span> <span class="token comment">// 此处不会阻塞</span><span class="token operator">&lt;-</span>quit                                               <span class="token comment">// 阻塞在此，当接收到上述两种信号时才会往下执行</span>log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Shutdown Server ..."</span><span class="token punctuation">)</span><span class="token comment">// 创建一个 5 秒超时的 context</span>ctx<span class="token punctuation">,</span> cancel <span class="token operator">:=</span> context<span class="token punctuation">.</span><span class="token function">WithTimeout</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token keyword">defer</span> <span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 5 秒内优雅关闭服务（将未处理完的请求处理完再关闭服务），超过 5 秒就超时退出</span><span class="token keyword">if</span> err <span class="token operator">:=</span> srv<span class="token punctuation">.</span><span class="token function">Shutdown</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span><span class="token string">"Server Shutdown: "</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">}</span>log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Server exiting"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h2><h3 id="1-路由定义和服务启动"><a href="#1-路由定义和服务启动" class="headerlink" title="1. 路由定义和服务启动"></a>1. 路由定义和服务启动</h3><pre class="line-numbers language-go" data-language="go"><code class="language-go">router <span class="token operator">:=</span> gin<span class="token punctuation">.</span><span class="token function">Default</span><span class="token punctuation">(</span><span class="token punctuation">)</span>router<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/ping"</span><span class="token punctuation">,</span> <span class="token keyword">func</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span> gin<span class="token punctuation">.</span>H<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string">"pong"</span><span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>首先，我们创建了一个简单的 Gin 路由，并定义了一个 <code>/ping</code> 接口。当访问这个接口时，服务器会模拟一个耗时 5 秒的操作，然后返回一个 JSON 响应。这段代码展示了一个可能需要优雅关机的典型场景：服务器可能正在处理耗时的请求，如果此时直接关机，请求会被中断。</p><h3 id="2-HTTP-服务器配置和启动"><a href="#2-HTTP-服务器配置和启动" class="headerlink" title="2. HTTP 服务器配置和启动"></a>2. HTTP 服务器配置和启动</h3><pre class="line-numbers language-go" data-language="go"><code class="language-go">srv <span class="token operator">:=</span> <span class="token operator">&amp;</span>http<span class="token punctuation">.</span>Server<span class="token punctuation">{</span>Addr<span class="token punctuation">:</span>    <span class="token string">":8080"</span><span class="token punctuation">,</span>Handler<span class="token punctuation">:</span> router<span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">if</span> err <span class="token operator">:=</span> srv<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token operator">&amp;&amp;</span> err <span class="token operator">!=</span> http<span class="token punctuation">.</span>ErrServerClosed <span class="token punctuation">{</span>log<span class="token punctuation">.</span><span class="token function">Fatalf</span><span class="token punctuation">(</span><span class="token string">"Failed to start server: %v"</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>我们使用 <code>http.Server</code> 结构体配置并启动了一个 HTTP 服务器。服务器在一个单独的 goroutine 中运行，这样主程序可以继续执行，而不必等待服务器启动完成。</p><h3 id="3-捕获系统信号"><a href="#3-捕获系统信号" class="headerlink" title="3. 捕获系统信号"></a>3. 捕获系统信号</h3><pre class="line-numbers language-go" data-language="go"><code class="language-go">quit <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">chan</span> os<span class="token punctuation">.</span>Signal<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>signal<span class="token punctuation">.</span><span class="token function">Notify</span><span class="token punctuation">(</span>quit<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGINT<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGTERM<span class="token punctuation">)</span><span class="token operator">&lt;-</span>quit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>为了实现优雅关机，我们需要捕获系统信号。这里使用了 <code>os/signal</code> 包来监听 <code>syscall.SIGINT</code> 和 <code>syscall.SIGTERM</code> 信号。当用户按下 <code>Ctrl+C</code> 或者通过 <code>kill</code> 命令发送信号时，这些信号会被捕获并发送到 <code>quit</code> 通道，程序会随即从阻塞状态中恢复，继续执行后续代码。</p><h3 id="4-实现优雅关机"><a href="#4-实现优雅关机" class="headerlink" title="4. 实现优雅关机"></a>4. 实现优雅关机</h3><pre class="line-numbers language-go" data-language="go"><code class="language-go">ctx<span class="token punctuation">,</span> cancel <span class="token operator">:=</span> context<span class="token punctuation">.</span><span class="token function">WithTimeout</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token operator">*</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span><span class="token keyword">defer</span> <span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> err <span class="token operator">:=</span> srv<span class="token punctuation">.</span><span class="token function">Shutdown</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span><span class="token string">"Server Shutdown: "</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在捕获到关机信号后，我们使用 <code>http.Server</code> 的 <code>Shutdown</code> 方法来实现优雅关机。<code>Shutdown</code> 方法接受一个 <code>context</code> 参数，这个 <code>context</code> 设置了一个超时时间。在这里，我们设置了一个 5 秒的超时时间，意味着服务器将在 5 秒内等待未完成的请求处理完毕，然后关闭。如果超过了设定的超时时间，服务器将退出，程序也会正常结束。</p><h2 id="如何验证优雅关机的效果？"><a href="#如何验证优雅关机的效果？" class="headerlink" title="如何验证优雅关机的效果？"></a>如何验证优雅关机的效果？</h2><p>要验证优雅关机的效果，可以按照以下步骤操作：</p><ol><li>打开终端，运行 go run gin_shutdown.go</li><li>打开浏览器，并访问 <code>http://127.0.0.1:8080/ping</code> 此时浏览器应该会白屏等待服务端返回响应</li><li>在刚刚打开的终端上迅速按下 Ctrl+C 命令，此时会自动给程序发送 syscall.SIGINT 信号</li><li>此时程序并不会立即退出，而是会等上面的第 <strong>2</strong> 步的响应返回之后再退出，从而实现优雅关机的效果</li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>优雅关机是构建健壮 Web 服务的一个重要技术点，它确保了在服务关闭时所有正在处理的请求都能被妥善完成。在本文中，我们通过 Gin 框架演示了如何在 Go 中实现优雅关机。通过这种方式，我们可以提升用户体验，减少由于服务中断导致的各种潜在问题。</p><p>希望这篇文章能够帮助你更好地理解和实现 Go 服务中的优雅关机。如果你有任何问题或建议，欢迎在评论区与我讨论！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用 Zap 轻松搞定 Go 语言中的结构化日志</title>
       <link href="posts/b16382e2.html"/>
       <url>posts/b16382e2.html</url>
@@ -1847,9 +1874,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1876,9 +1903,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1905,9 +1932,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -1934,9 +1961,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4376,9 +4403,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4407,9 +4434,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4436,9 +4463,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4465,9 +4492,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4685,9 +4712,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -4924,9 +4951,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -4953,9 +4980,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
