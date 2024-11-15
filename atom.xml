@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-14T03:54:48.893Z</updated>
+  <updated>2024-11-15T02:30:45.386Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go Web服务中如何优雅平滑重启？</title>
+    <link href="https://pudongping.github.io/posts/cf5ac086.html"/>
+    <id>https://pudongping.github.io/posts/cf5ac086.html</id>
+    <published>2024-11-15T02:30:01.000Z</published>
+    <updated>2024-11-15T02:30:45.386Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在生产环境中，当我们需要对正在运行的服务进行升级时，如何确保不影响当前未处理完的请求，同时又能应用新的代码，是个极具挑战性的问题。&lt;/p&gt;
+&lt;p&gt;传统的做法通常是停止当前服务，部署新代码后再重启服务，但这种方式会导致正在处理的请求被强制中断，用户体验会受到很大的影响。&lt;/p</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go Web服务中如何优雅关机？</title>
     <link href="https://pudongping.github.io/posts/2e2c4d21.html"/>
     <id>https://pudongping.github.io/posts/2e2c4d21.html</id>
     <published>2024-11-14T03:54:11.000Z</published>
-    <updated>2024-11-14T03:54:48.893Z</updated>
+    <updated>2024-11-14T03:54:59.166Z</updated>
     
     
       
@@ -580,32 +608,6 @@
     <category term="互斥锁" scheme="https://pudongping.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/"/>
     
     <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言map并发安全使用的正确姿势</title>
-    <link href="https://pudongping.github.io/posts/85f0ac00.html"/>
-    <id>https://pudongping.github.io/posts/85f0ac00.html</id>
-    <published>2024-07-11T15:17:15.000Z</published>
-    <updated>2024-07-11T16:53:57.139Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在并发编程的世界里，&lt;code&gt;map&lt;/code&gt; 的使用随处可见。然而，当多个 goroutine 同时读写 map 时，如果不加以控制，很容易导致程序崩溃。&lt;/p&gt;
-&lt;p&gt;在 Go 语言中，我们通常有几种方法来保证对 map</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
   </entry>
   
