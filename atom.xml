@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-15T02:30:45.386Z</updated>
+  <updated>2024-11-18T03:45:21.769Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,99 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中使用JWT鉴权、Token刷新完整示例，拿去直接用！</title>
+    <link href="https://pudongping.github.io/posts/9e517530.html"/>
+    <id>https://pudongping.github.io/posts/9e517530.html</id>
+    <published>2024-11-18T03:44:41.000Z</published>
+    <updated>2024-11-18T03:45:21.769Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代 Web 应用中，JWT（JSON Web Token）已经成为了主流的认证与授权解决方案。它轻量、高效、易于实现，并且非常适合于微服务架构。&lt;/p&gt;
+&lt;p&gt;在本文中，我们将通过 Go 语言及其流行的 Gin 框架，来深入探讨如何使用 JWT</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分布式唯一ID生成：深入理解Snowflake算法在Go中的实现</title>
+    <link href="https://pudongping.github.io/posts/821f69.html"/>
+    <id>https://pudongping.github.io/posts/821f69.html</id>
+    <published>2024-11-17T07:15:59.000Z</published>
+    <updated>2024-11-18T03:43:20.144Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在分布式系统中，为了确保每个节点生成的 ID 在整个系统中是唯一的，我们需要一种高效且可靠的 ID 生成机制。&lt;/p&gt;
+&lt;h2 id=&quot;分布式-ID-的特点&quot;&gt;&lt;a href=&quot;#分布式-ID-的特点&quot; class=&quot;headerlink&quot; title=&quot;分布式 ID</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Viper，一个Go语言配置管理神器！</title>
+    <link href="https://pudongping.github.io/posts/8026d3b4.html"/>
+    <id>https://pudongping.github.io/posts/8026d3b4.html</id>
+    <published>2024-11-16T08:36:36.000Z</published>
+    <updated>2024-11-18T03:43:20.144Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代软件开发中，良好的配置管理可以极大地提升应用的灵活性和可维护性。&lt;/p&gt;
+&lt;p&gt;在 Go 语言中，Viper 是一个功能强大且广泛使用的配置管理库，它支持从多个来源读取配置，包括文件、环境变量、远程配置中心等。本文将详细介绍如何使用 Viper</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go Web服务中如何优雅平滑重启？</title>
     <link href="https://pudongping.github.io/posts/cf5ac086.html"/>
     <id>https://pudongping.github.io/posts/cf5ac086.html</id>
     <published>2024-11-15T02:30:01.000Z</published>
-    <updated>2024-11-15T02:30:45.386Z</updated>
+    <updated>2024-11-15T02:30:57.395Z</updated>
     
     
       
@@ -519,95 +607,6 @@
     <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在Redis中快速推算两地之间的距离？——Geo篇</title>
-    <link href="https://pudongping.github.io/posts/9c96a9d2.html"/>
-    <id>https://pudongping.github.io/posts/9c96a9d2.html</id>
-    <published>2024-07-18T10:22:22.000Z</published>
-    <updated>2024-07-18T10:25:01.555Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;处理地理位置数据已成为许多应用程序的核心需求。无论是推送附近的餐馆还是对全国范围内的服务点进行分析，快速而准确地处理和检索地理位置信息都至关重要。Redis，作为一种高性能的内存数据库，为我们提供了这样的解决方案。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Redis 在</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中的map为什么默认不是并发安全的？</title>
-    <link href="https://pudongping.github.io/posts/3761f660.html"/>
-    <id>https://pudongping.github.io/posts/3761f660.html</id>
-    <published>2024-07-11T16:51:29.000Z</published>
-    <updated>2024-07-11T16:53:57.141Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天我们聊一个 Go 语言中的 “热门” 话题——为什么 &lt;strong&gt;Go 语言中的 map 默认不是并发安全&lt;/strong&gt;的呢？&lt;/p&gt;
-&lt;p&gt;对于广大 Go 程序员来说，尤其是那些刚跨入 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言map并发安全，互斥锁和读写锁谁更优？</title>
-    <link href="https://pudongping.github.io/posts/35885ddd.html"/>
-    <id>https://pudongping.github.io/posts/35885ddd.html</id>
-    <published>2024-07-11T15:17:32.000Z</published>
-    <updated>2024-07-11T16:53:57.140Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;并发编程是 Go 语言的一大特色，合理地使用锁对于保证数据一致性和提高程序性能至关重要。&lt;/p&gt;
-&lt;p&gt;在处理并发控制时，&lt;code&gt;sync.Mutex&lt;/code&gt;（互斥锁）和</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="互斥锁" scheme="https://pudongping.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/"/>
-    
-    <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
     
   </entry>
   
