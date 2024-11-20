@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-19T07:08:26.514Z</updated>
+  <updated>2024-11-20T03:20:27.354Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何在Go语言中实现表单验证？整一个validator吧！</title>
+    <link href="https://pudongping.github.io/posts/59486883.html"/>
+    <id>https://pudongping.github.io/posts/59486883.html</id>
+    <published>2024-11-20T03:19:49.000Z</published>
+    <updated>2024-11-20T03:20:27.354Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代 Web 开发中，表单验证和错误处理是至关重要的环节，尤其是在多语言环境下。&lt;/p&gt;
+&lt;p&gt;本文将通过一个实际的示例，演示如何使用 Go 语言的 Gin 框架结合 &lt;code&gt;validator&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用漏桶和令牌桶实现API速率限制</title>
     <link href="https://pudongping.github.io/posts/ea016854.html"/>
     <id>https://pudongping.github.io/posts/ea016854.html</id>
     <published>2024-11-19T07:06:58.000Z</published>
-    <updated>2024-11-19T07:08:26.514Z</updated>
+    <updated>2024-11-19T07:08:32.605Z</updated>
     
     
       
@@ -580,37 +608,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="IMAP" scheme="https://pudongping.github.io/tags/IMAP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何借助Redis巧妙的管理用户签到？——Bitmap篇</title>
-    <link href="https://pudongping.github.io/posts/fe86d4b2.html"/>
-    <id>https://pudongping.github.io/posts/fe86d4b2.html</id>
-    <published>2024-07-18T10:23:06.000Z</published>
-    <updated>2024-07-18T10:25:01.550Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;数据管理和分析是任何大小项目的重要组成部分。在管理如用户签到数据这类信息时，我们通常追求的是高效性和存储节省。&lt;/p&gt;
-&lt;p&gt;今天，让我们一起探索一种既节省空间又高效的数据管理方法——Redis 的位操作（Bit operations）。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
