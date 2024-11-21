@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-20T03:20:27.354Z</updated>
+  <updated>2024-11-21T02:40:53.465Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>聊聊 Go 语言中的 JSON 序列化与 js 前端交互类型失真问题</title>
+    <link href="https://pudongping.github.io/posts/a370ff67.html"/>
+    <id>https://pudongping.github.io/posts/a370ff67.html</id>
+    <published>2024-11-21T02:40:21.000Z</published>
+    <updated>2024-11-21T02:40:53.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Web 开发中，后端与前端之间的数据交换通常通过 JSON 格式进行。&lt;/p&gt;
+&lt;p&gt;然而，在处理数字，尤其是大整数时，我们可能会遇到精度丢失的问题。这是因为 JavaScript 中的数字类型只能安全地处理一定范围内的整数。其数字类型是基于 64 位双精度浮点数的</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何在Go语言中实现表单验证？整一个validator吧！</title>
     <link href="https://pudongping.github.io/posts/59486883.html"/>
     <id>https://pudongping.github.io/posts/59486883.html</id>
     <published>2024-11-20T03:19:49.000Z</published>
-    <updated>2024-11-20T03:20:27.354Z</updated>
+    <updated>2024-11-20T03:20:59.771Z</updated>
     
     
       
@@ -578,36 +606,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="Context" scheme="https://pudongping.github.io/tags/Context/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过IMAP协议使用Go语言解析邮件</title>
-    <link href="https://pudongping.github.io/posts/60016311.html"/>
-    <id>https://pudongping.github.io/posts/60016311.html</id>
-    <published>2024-08-02T06:18:46.000Z</published>
-    <updated>2024-08-02T06:20:18.906Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;电子邮件在现代通信中依然扮演着重要的角色。为了提升邮件处理的效率，使用编程语言进行自动化处理变得尤为重要。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍如何使用 Go 语言从 IMAP</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="IMAP" scheme="https://pudongping.github.io/tags/IMAP/"/>
     
   </entry>
   
