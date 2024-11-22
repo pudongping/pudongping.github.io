@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-21T02:40:53.465Z</updated>
+  <updated>2024-11-22T03:00:48.342Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>探索 Go 语言中的内存对齐：为什么结构体大小会有所不同？</title>
+    <link href="https://pudongping.github.io/posts/8f8634cd.html"/>
+    <id>https://pudongping.github.io/posts/8f8634cd.html</id>
+    <published>2024-11-22T03:00:10.000Z</published>
+    <updated>2024-11-22T03:00:48.342Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言中，内存对齐是一个经常被忽略但非常重要的概念。理解内存对齐不仅可以帮助我们写出更高效的代码，还能避免一些潜在的性能陷阱。&lt;/p&gt;
+&lt;p&gt;在这篇文章中，我们将通过一个简单的例子来探讨 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>聊聊 Go 语言中的 JSON 序列化与 js 前端交互类型失真问题</title>
     <link href="https://pudongping.github.io/posts/a370ff67.html"/>
     <id>https://pudongping.github.io/posts/a370ff67.html</id>
     <published>2024-11-21T02:40:21.000Z</published>
-    <updated>2024-11-21T02:40:53.465Z</updated>
+    <updated>2024-11-21T02:40:58.803Z</updated>
     
     
       
@@ -576,36 +604,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一文弄懂Go语言的Context包，值得收藏！</title>
-    <link href="https://pudongping.github.io/posts/f5eba23a.html"/>
-    <id>https://pudongping.github.io/posts/f5eba23a.html</id>
-    <published>2024-08-02T08:44:26.000Z</published>
-    <updated>2024-08-02T08:45:20.149Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在开发高效且可维护的 Go 应用程序时，处理超时、取消操作和传递请求范围的数据变得至关重要。&lt;/p&gt;
-&lt;p&gt;这时，Go 标准库中的 &lt;code&gt;context&lt;/code&gt; 包就显得尤其重要了，它提供了在不同 API</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Context" scheme="https://pudongping.github.io/tags/Context/"/>
     
   </entry>
   
