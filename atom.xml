@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-22T03:00:48.342Z</updated>
+  <updated>2024-11-25T02:32:34.743Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,95 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中的加解密利器：go-crypto库全解析</title>
+    <link href="https://pudongping.github.io/posts/4f904664.html"/>
+    <id>https://pudongping.github.io/posts/4f904664.html</id>
+    <published>2024-11-25T02:31:50.000Z</published>
+    <updated>2024-11-25T02:32:34.743Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在软件开发中，数据安全和隐私保护越来越受到重视。Go 语言以其简洁高效的特性，成为了许多开发者的首选。然而，在实际项目中使用加解密时，还是需要在标准库的基础上做一些封装。&lt;code&gt;go-crypto&lt;/code&gt; 库应运而生，它是一个专为 Golang</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言中json序列化的一个小坑，建议多留意一下</title>
+    <link href="https://pudongping.github.io/posts/5fc86d1c.html"/>
+    <id>https://pudongping.github.io/posts/5fc86d1c.html</id>
+    <published>2024-11-24T14:27:52.000Z</published>
+    <updated>2024-11-25T02:30:05.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言开发中，JSON（JavaScript Object Notation）因其简洁和广泛的兼容性，通常被用作数据交换的主要序列化格式。然而，当你深入使用 JSON 时，&lt;strong&gt;可能会发现它并不总是最佳选择&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;本文将探讨</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在 Go 项目中隐藏敏感信息，比如避免暴露用户密码？</title>
+    <link href="https://pudongping.github.io/posts/9d35cfe9.html"/>
+    <id>https://pudongping.github.io/posts/9d35cfe9.html</id>
+    <published>2024-11-23T04:19:35.000Z</published>
+    <updated>2024-11-25T02:30:05.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在我们日常开发的 Go 项目中，用户信息管理是一个非常常见的场景。特别是当我们需要存储和处理用户密码等敏感信息时，如何确保这些信息不暴露给客户端就显得尤为重要。&lt;/p&gt;
+&lt;p&gt;今天我们来讨论一个简单而实用的技巧——如何在返回用户数据时，隐藏密码字段。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>探索 Go 语言中的内存对齐：为什么结构体大小会有所不同？</title>
     <link href="https://pudongping.github.io/posts/8f8634cd.html"/>
     <id>https://pudongping.github.io/posts/8f8634cd.html</id>
     <published>2024-11-22T03:00:10.000Z</published>
-    <updated>2024-11-22T03:00:48.342Z</updated>
+    <updated>2024-11-22T03:00:53.310Z</updated>
     
     
       
@@ -518,92 +602,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中进行MySQL预处理和SQL注入防护</title>
-    <link href="https://pudongping.github.io/posts/cd962b5b.html"/>
-    <id>https://pudongping.github.io/posts/cd962b5b.html</id>
-    <published>2024-08-12T14:37:32.000Z</published>
-    <updated>2024-08-12T14:38:15.682Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 web 应用开发中，安全性是我们必须重视的一个方面。SQL 注入是常见的攻击手法之一，它允许攻击者通过构造特殊的 SQL 查询来访问、修改数据库中的数据。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我们将探讨如何在 Go 语言中进行 MySQL 数据库的预处理操作，以有效防止</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手摸手教你，从0到1开发一个Chrome浏览器插件</title>
-    <link href="https://pudongping.github.io/posts/2980e851.html"/>
-    <id>https://pudongping.github.io/posts/2980e851.html</id>
-    <published>2024-08-09T04:13:02.000Z</published>
-    <updated>2024-08-09T04:15:31.195Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;开发 Chrome 浏览器插件（也称为扩展）是一段有趣且有成就感的过程。在本教程中，我将引导你从零开始，逐步创建一个简单的 Chrome 插件。无论你是编程新手还是有一定基础的用户，我们都将以简单易懂的方式介绍整个过程。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://pudongping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Chrome" scheme="https://pudongping.github.io/tags/Chrome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中如何连接 MySQL，基础必备！</title>
-    <link href="https://pudongping.github.io/posts/48b3e862.html"/>
-    <id>https://pudongping.github.io/posts/48b3e862.html</id>
-    <published>2024-08-08T17:10:47.000Z</published>
-    <updated>2024-08-08T17:11:34.804Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代应用中，数据库操作是必不可少的一部分，而 Go 语言凭借其高效性和并发处理能力，成为了越来越多开发者的选择。&lt;/p&gt;
-&lt;p&gt;在本教程中，我们将学习如何使用 Go 语言与 MySQL 数据库进行基本的 CRUD（创建、读取、更新、删除）操作。我们将使用</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
