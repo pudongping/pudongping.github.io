@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-25T02:32:34.743Z</updated>
+  <updated>2024-11-26T02:52:17.941Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你可能不知道 xz 也是一种压缩格式，并且还相当惊艳</title>
+    <link href="https://pudongping.github.io/posts/28e0065f.html"/>
+    <id>https://pudongping.github.io/posts/28e0065f.html</id>
+    <published>2024-11-26T02:51:24.000Z</published>
+    <updated>2024-11-26T02:52:17.941Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代计算中，数据存储和传输的效率至关重要。为了节省存储空间和提高传输效率，文件压缩已成为一种普遍的需求。&lt;/p&gt;
+&lt;p&gt;Linux 系统中有多种工具和格式可以实现文件压缩，最常见的包括</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="XZ" scheme="https://pudongping.github.io/tags/XZ/"/>
+    
+    <category term="解压缩" scheme="https://pudongping.github.io/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中的加解密利器：go-crypto库全解析</title>
     <link href="https://pudongping.github.io/posts/4f904664.html"/>
     <id>https://pudongping.github.io/posts/4f904664.html</id>
     <published>2024-11-25T02:31:50.000Z</published>
-    <updated>2024-11-25T02:32:34.743Z</updated>
+    <updated>2024-11-25T02:32:42.149Z</updated>
     
     
       
@@ -571,37 +601,6 @@
     <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
     
     <category term="sqlx" scheme="https://pudongping.github.io/tags/sqlx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 语言中的 MySQL 事务操作</title>
-    <link href="https://pudongping.github.io/posts/50c9af33.html"/>
-    <id>https://pudongping.github.io/posts/50c9af33.html</id>
-    <published>2024-08-13T08:33:53.000Z</published>
-    <updated>2024-08-13T08:34:35.269Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代应用程序中，数据的完整性和一致性至关重要。MySQL 的事务功能提供了一种确保操作安全且可靠的机制。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我将介绍什么是事务，如何在 Go 语言中进行 MySQL 事务操作。&lt;/p&gt;
-&lt;h2 id=&quot;一、什么是事务？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
     
   </entry>
   
