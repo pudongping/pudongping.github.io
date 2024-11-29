@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hyperf-alarm-clock，一个自动计算代码执行时间，超时并发送通知的小工具</title>
+      <link href="posts/982b031b.html"/>
+      <url>posts/982b031b.html</url>
+      
+        <content type="html"><![CDATA[<p>在软件开发中，我们经常需要对代码执行时间进行监控，以确保系统的性能和稳定性。在 PHP 的世界里，Hyperf 框架以其高性能和丰富的组件生态而闻名，而今天我要介绍的是 Hyperf 生态中的一个小巧的插件包 —— <code>hyperf-alarm-clock</code> 库。它是一个计算代码执行时间，并在超时后发送通知的小工具。</p><p>本文将带你了解这个库的安装、特性、基本与高级功能，并结合实际应用场景，展示其在项目中的应用。</p><h2 id="hyperf-alarm-clock-库简介"><a href="#hyperf-alarm-clock-库简介" class="headerlink" title="hyperf-alarm-clock 库简介"></a>hyperf-alarm-clock 库简介</h2><p><code>hyperf-alarm-clock</code> 是一个为 Hyperf 框架设计的库，它可以帮助开发者监控代码的执行时间，并在<strong>代码执行时间超过预设阈值时发送通知</strong>。这对于需要长时间运行的任务或者需要确保及时响应的系统尤为重要。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>要在你的 Hyperf 项目中使用 <code>hyperf-alarm-clock</code>，你需要通过 Composer 进行安装：</p><blockquote><p>这个库最近已经支持了 <code>hyperf 3.1</code> 版本。</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">composer</span> require pudongping/hyperf-alarm-clock:^3.0 <span class="token parameter variable">-vvv</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>确保你的环境满足以下要求：</p><ul><li>PHP &gt;= 8.1</li><li>Composer</li><li>Hyperf ~3.1.0</li></ul><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>安装完成后，你需要发布配置文件并进行相应的配置。在项目根目录下执行以下命令，生成配置文件：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">php bin/hyperf.php vendor:publish pudongping/hyperf-alarm-clock<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这将在<code>config/autoload</code>目录下生成<code>hyperf_alarm_clock.php</code>配置文件。接下来，你可以根据需要修改该配置文件。</p><p>大致配置项如下：</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token keyword">return</span> <span class="token punctuation">[</span>    <span class="token comment">/*    |--------------------------------------------------------------------------    | 是否开启代码执行耗时，超时后通知提醒    |--------------------------------------------------------------------------    |    | 只有当此参数设定为 `true` ，并且指定的通知通道所需要的必要参数都存在时，才会触发通知提醒。    | 比如，假设设定了通知通道包含 `feishu` 因为发送飞书 webhook 通知必须要有密钥，因此只有当    | ALARM_CLOCK_ENABLE 为 true 并且 ALARM_CLOCK_CHANNEL_FEISHU_WEBHOOK_SECRET 设定    | 有密钥时，才会发送通知提醒    |    */</span>    <span class="token string single-quoted-string">'enable'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_ENABLE'</span><span class="token punctuation">,</span> <span class="token constant boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token comment">/*    |--------------------------------------------------------------------------    | 通知标题    |--------------------------------------------------------------------------    |    */</span>    <span class="token string single-quoted-string">'title'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_TITLE'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'alarm-clock'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token comment">/*    |--------------------------------------------------------------------------    | 默认的通知通道    |--------------------------------------------------------------------------    |    | 默认设定为 **标准输出 stdout** 想要同时设定多个通知通道，请使用英文逗号 `,` 进行分隔。比如    | `feishu,logging`    |    */</span>    <span class="token string single-quoted-string">'default'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_CHANNEL'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'stdout'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token comment">/*    |--------------------------------------------------------------------------    | 通知通道设置    |--------------------------------------------------------------------------    |    | 键名为通知通道的名称，值为通知通道的必要参数    | 不同的通道可能所需要的必要参数不一样    |    */</span>    <span class="token string single-quoted-string">'channels'</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>        <span class="token string single-quoted-string">'feishu'</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>            <span class="token string single-quoted-string">'webhook_secret'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_CHANNEL_FEISHU_WEBHOOK_SECRET'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">)</span><span class="token punctuation">,</span>        <span class="token punctuation">]</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'logging'</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>            <span class="token string single-quoted-string">'group'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_CHANNEL_LOGGING_GROUP'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'default'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>            <span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_CHANNEL_LOGGING_NAME'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'hyperf'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>        <span class="token punctuation">]</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'stdout'</span><span class="token punctuation">,</span>    <span class="token punctuation">]</span><span class="token punctuation">,</span>    <span class="token comment">/*    |--------------------------------------------------------------------------    | 超时时间及通知类型设置，超时时间支持浮点数，比如：5.5 表示 5s 500ms    |--------------------------------------------------------------------------    |    | 以下默认设置表示为：    | 当代码执行时间超过 10s 时，以 `warning` 的形式进行通知    | 当代码执行时间超过 5s 且不足以 10s 时，以 `notice` 的形式进行通知    | 当代码执行时间不超过 5s 时，不通知。    |    */</span>    <span class="token string single-quoted-string">'timeout'</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>        <span class="token string single-quoted-string">'notice'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_TIMEOUT_NOTICE'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>        <span class="token string single-quoted-string">'warning'</span> <span class="token operator">=&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'ALARM_CLOCK_TIMEOUT_WARNING'</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>要使用 <code>hyperf-alarm-clock</code>，你需要将 <code>\Pudongping\HyperfAlarmClock\AlarmClockMiddleware</code> 中间件添加到 <code>config/autoload/middlewares.php</code> 配置文件中，即可。</p><p>比如：</p><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span><span class="token keyword">declare</span><span class="token punctuation">(</span>strict_types<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">return</span> <span class="token punctuation">[</span>    <span class="token string single-quoted-string">'http'</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>        <span class="token class-name class-name-fully-qualified static-context"><span class="token punctuation">\</span>Pudongping<span class="token punctuation">\</span>HyperfAlarmClock<span class="token punctuation">\</span>AlarmClockMiddleware</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>    <span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">]</span><span class="token punctuation">;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h2><p><code>hyperf-alarm-clock</code> 提供了多种通知通道，包括标准输出、日志文件和飞书等。你可以根据项目需求选择合适的通知方式。</p><h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>设定好了中间件之后，就不需要做任何改动了。正常写自己的业务代码，如果自己的接口执行时间超过了在配置文件中定义的时间阀值之后，就会根据设定的通知通道进行发送通知，比如，我们随便在任意一个接口中睡眠了几秒，以模拟代码耗时执行。</p><p>如果使用<strong>标准输出</strong>作为通知通道时，会出现类似以下内容</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-f7f185dfc8df26a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="stdout.png"></p><p>如果使用<strong>日志文件</strong>作为通知通道时，会出现类似以下内容</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-75c95f714f8e7fbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logging.png"></p><p>如果使用<strong>飞书</strong>作为通知通道时，就会出现以下类似内容</p><p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/14623749-a1dbb3040791c44d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="feishu.png"></p><h2 id="实际应用场景"><a href="#实际应用场景" class="headerlink" title="实际应用场景"></a>实际应用场景</h2><p>假设你正在开发一个电商平台，需要监控订单处理流程的执行时间。如果订单处理时间超过预设阈值，<code>hyperf-alarm-clock</code> 可以及时通知开发团队，以便快速定位问题并采取措施。</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p><code>hyperf-alarm-clock</code> 是一个强大的工具，它可以帮助 Hyperf 框架的开发者监控代码的执行时间，并在必要时发送通知。</p><p>通过本文的介绍，希望你能对 <code>hyperf-alarm-clock</code> 有一个全面的了解，并在你的项目中灵活运用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hyperf </tag>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hyperf-wise-locksmith，一个高效的PHP分布式锁方案</title>
       <link href="posts/a3ff01d2.html"/>
       <url>posts/a3ff01d2.html</url>
@@ -2270,9 +2297,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2299,9 +2326,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2328,9 +2355,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -2357,9 +2384,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4799,9 +4826,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4830,9 +4857,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4859,9 +4886,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -4888,9 +4915,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Docker </tag>
             
@@ -5108,9 +5135,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -5347,9 +5374,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -5376,9 +5403,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
