@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-11-29T02:08:37.010Z</updated>
+  <updated>2024-12-02T02:08:58.184Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过标签清理微信好友：Python自动化脚本解析</title>
+    <link href="https://pudongping.github.io/posts/5e38f4b6.html"/>
+    <id>https://pudongping.github.io/posts/5e38f4b6.html</id>
+    <published>2024-12-02T02:08:03.000Z</published>
+    <updated>2024-12-02T02:08:58.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;微信已经成为我们日常生活中不可或缺的社交工具。随着使用时间的增长，我们的微信好友列表可能会变得越来越臃肿。&lt;/p&gt;
+&lt;p&gt;在上一篇文章中，我写了一个自动根据用户状态（好友将我们删除了还是拉黑了）将用户打上不同标签的工具。那么，已经将用户打好了标签之后，我们就可以&lt;stron</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="自动化" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hyperf-alarm-clock，一个自动计算代码执行时间，超时并发送通知的小工具</title>
     <link href="https://pudongping.github.io/posts/982b031b.html"/>
     <id>https://pudongping.github.io/posts/982b031b.html</id>
     <published>2024-11-29T02:07:09.000Z</published>
-    <updated>2024-11-29T02:08:37.010Z</updated>
+    <updated>2024-11-29T02:08:46.146Z</updated>
     
     
       
@@ -565,36 +593,6 @@
     <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
     
     <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中高效使用Redis的Pipeline</title>
-    <link href="https://pudongping.github.io/posts/9af95445.html"/>
-    <id>https://pudongping.github.io/posts/9af95445.html</id>
-    <published>2024-08-19T07:04:17.000Z</published>
-    <updated>2024-08-19T07:04:59.363Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在构建高性能应用时，Redis 经常成为开发者的首选工具。作为一个内存数据库，Redis 可以处理大量的数据操作，但如果每个命令都单独发送，网络延迟会成为瓶颈，影响性能。&lt;/p&gt;
-&lt;p&gt;这时，Redis 的 &lt;strong&gt;Pipeline&lt;/strong&gt; 和</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
     
   </entry>
   
