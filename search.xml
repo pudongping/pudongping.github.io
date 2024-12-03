@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Grequests，非常 Nice 的 Python 异步 HTTP 请求神器</title>
+      <link href="posts/22d60526.html"/>
+      <url>posts/22d60526.html</url>
+      
+        <content type="html"><![CDATA[<p>在 Python 开发中，处理 HTTP 请求是一项基础而重要的任务。我们经常需要从网络获取数据，或者向服务器发送数据。</p><p>我们已知的 <code>requests</code> 库已经是相当的牛掰了，但是比较遗憾的是 <code>requests</code> 库不支持异步请求，今天，我们来介绍一个异步 HTTP 请求库 ——<code>grequests</code>。<code>grequests</code> 库以其异步处理能力，为开发者提供了一个高效、简洁的方式来发送和处理 HTTP 请求，并且它和 <code>requests</code> 库的用法贼为相似。一起来看看吧！</p><h2 id="安装-grequests-库"><a href="#安装-grequests-库" class="headerlink" title="安装 grequests 库"></a>安装 grequests 库</h2><p>首先，让我们来安装 <code>grequests</code> 库。安装过程非常简单，只需要使用 pip 命令即可：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> grequests<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="grequests-库的特性"><a href="#grequests-库的特性" class="headerlink" title="grequests 库的特性"></a>grequests 库的特性</h2><p><code>grequests</code> 库以其强大的功能和灵活性而著称，以下是它的一些核心特性：</p><ul><li><strong>异步请求</strong>：利用 <code>gevent</code> 库，<code>grequests</code> 可以并发发送多个 HTTP 请求，提高程序性能。</li><li><strong>支持多种 HTTP 方法</strong>：支持 GET 、 POST 、 PUT 、 DELETE 等多种 HTTP 方法。</li><li><strong>响应序列化</strong>：支持将响应内容序列化为 JSON 格式，方便数据处理。</li><li><strong>文件上传和下载</strong>：提供了便捷的方式来上传和下载文件。</li></ul><h2 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h2><h3 id="发送-GET-请求"><a href="#发送-GET-请求" class="headerlink" title="发送 GET 请求"></a>发送 GET 请求</h3><p>让我们从一个简单的 GET 请求开始。下面的代码展示了如何使用 <code>grequests</code> 发送 GET 请求：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> grequests<span class="token comment"># 定义请求的 URL 列表</span>urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://httpbin.org/get'</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token comment"># 使用 grequests.map 并发发送请求</span>responses <span class="token operator">=</span> grequests<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>grequests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token keyword">for</span> url <span class="token keyword">in</span> urls<span class="token punctuation">)</span><span class="token comment"># 打印每个响应的 JSON 内容</span><span class="token keyword">for</span> response <span class="token keyword">in</span> responses<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="发送-POST-请求"><a href="#发送-POST-请求" class="headerlink" title="发送 POST 请求"></a>发送 POST 请求</h3><p>发送 POST 请求同样简单，以下是一个示例：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> grequests<span class="token comment"># 定义请求的 URL 列表</span>urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://httpbin.org/post'</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token comment"># 定义 POST 请求的数据</span>data <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'key'</span><span class="token punctuation">:</span> <span class="token string">'value'</span><span class="token punctuation">}</span><span class="token comment"># 使用 grequests.map 并发发送 POST 请求</span>responses <span class="token operator">=</span> grequests<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>grequests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span> <span class="token keyword">for</span> url <span class="token keyword">in</span> urls<span class="token punctuation">)</span><span class="token comment"># 打印每个响应的 JSON 内容</span><span class="token keyword">for</span> response <span class="token keyword">in</span> responses<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="高级功能"><a href="#高级功能" class="headerlink" title="高级功能"></a>高级功能</h2><h3 id="并发请求"><a href="#并发请求" class="headerlink" title="并发请求"></a>并发请求</h3><p><code>grequests</code> 的并发请求功能可以显著提高处理大量 HTTP 请求的效率。下面是一个并发请求的示例：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> grequests<span class="token comment"># 定义请求的 URL 列表</span>urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://httpbin.org/get'</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token comment"># 创建请求列表</span>requests <span class="token operator">=</span> <span class="token punctuation">[</span>grequests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>u<span class="token punctuation">)</span> <span class="token keyword">for</span> u <span class="token keyword">in</span> urls<span class="token punctuation">]</span><span class="token comment"># 使用 grequests.map 并发发送请求</span>responses <span class="token operator">=</span> grequests<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>requests<span class="token punctuation">)</span><span class="token comment"># 打印每个响应的 JSON 内容</span><span class="token keyword">for</span> response <span class="token keyword">in</span> responses<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="并发数控制"><a href="#并发数控制" class="headerlink" title="并发数控制"></a>并发数控制</h3><p><code>grequests</code> 允许我们控制并发请求的数量，这对于避免对服务器造成过大压力非常重要。我们可以通过 <code>grequests.map</code> 函数的 <code>size</code> 参数来控制并发数：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> grequests<span class="token comment"># 定义请求的 URL 列表</span>urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://httpbin.org/get'</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">20</span><span class="token comment"># 创建请求列表</span>requests <span class="token operator">=</span> <span class="token punctuation">[</span>grequests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>u<span class="token punctuation">)</span> <span class="token keyword">for</span> u <span class="token keyword">in</span> urls<span class="token punctuation">]</span><span class="token comment"># 使用 grequests.map 并发发送请求，限制并发数为 5</span>responses <span class="token operator">=</span> grequests<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>requests<span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token comment"># 打印每个响应的 JSON 内容</span><span class="token keyword">for</span> response <span class="token keyword">in</span> responses<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="实际应用场景"><a href="#实际应用场景" class="headerlink" title="实际应用场景"></a>实际应用场景</h2><p><code>grequests</code> 在实际项目中的应用非常广泛，例如：</p><ol><li><strong>爬虫设置 IP 代理池时验证 IP 是否有效</strong>：通过并发请求，快速验证代理 IP 的有效性。</li><li><strong>进行压测时，进行批量请求</strong>：利用异步请求提高压测效率。</li></ol><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p><code>grequests</code> 是一个功能强大且易于使用的 Python 库，它通过异步处理能力，帮助开发者高效地发送和处理 HTTP 请求。希望这篇文章能够帮助你更好地理解和使用 <code>grequests</code> 。</p><p>此文仅作为抛砖引玉，让我们心中有个印象，更多详细功能可查阅 <a href="https://github.com/spyoungtech/grequests">GitHub 仓库</a>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 异步编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>通过标签清理微信好友：Python自动化脚本解析</title>
       <link href="posts/5e38f4b6.html"/>
       <url>posts/5e38f4b6.html</url>
@@ -2382,9 +2409,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2411,9 +2438,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2440,9 +2467,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -2469,9 +2496,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4911,9 +4938,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4942,9 +4969,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -4971,9 +4998,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -5000,9 +5027,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Docker </tag>
             
@@ -5220,9 +5247,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
         </tags>
       
@@ -5459,9 +5486,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             
@@ -5488,9 +5515,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> 免费 HTTPS 证书 </tag>
             

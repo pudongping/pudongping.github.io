@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-12-02T02:09:06.168Z</updated>
+  <updated>2024-12-03T03:52:10.880Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Grequests，非常 Nice 的 Python 异步 HTTP 请求神器</title>
+    <link href="https://pudongping.github.io/posts/22d60526.html"/>
+    <id>https://pudongping.github.io/posts/22d60526.html</id>
+    <published>2024-12-03T03:51:16.000Z</published>
+    <updated>2024-12-03T03:52:10.880Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Python 开发中，处理 HTTP 请求是一项基础而重要的任务。我们经常需要从网络获取数据，或者向服务器发送数据。&lt;/p&gt;
+&lt;p&gt;我们已知的 &lt;code&gt;requests&lt;/code&gt; 库已经是相当的牛掰了，但是比较遗憾的是</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="异步编程" scheme="https://pudongping.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>通过标签清理微信好友：Python自动化脚本解析</title>
@@ -564,37 +592,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用 Zap 轻松搞定 Go 语言中的结构化日志</title>
-    <link href="https://pudongping.github.io/posts/b16382e2.html"/>
-    <id>https://pudongping.github.io/posts/b16382e2.html</id>
-    <published>2024-11-13T09:29:13.000Z</published>
-    <updated>2024-11-13T09:31:18.945Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在开发现代应用程序时，日志记录是一个不可或缺的部分。它不仅能帮助我们跟踪程序的运行状态，还能在出现问题时提供宝贵的调试信息。&lt;/p&gt;
-&lt;p&gt;在 Go 语言中，有许多日志库可供选择，但在性能和灵活性方面，Zap 是其中的佼佼者。&lt;/p&gt;
-&lt;p&gt;今天，我将带你深入了解如何在</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Zap" scheme="https://pudongping.github.io/tags/Zap/"/>
     
   </entry>
   
