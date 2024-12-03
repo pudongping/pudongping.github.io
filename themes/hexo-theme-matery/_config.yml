@@ -755,7 +755,7 @@ writeCV:
 # 是否开启 OpenWrite 插件（开启之后则必须关注公众号之后才可以查看剩下的文章）
 # 详见：themes/hexo-theme-matery/layout/post.ejs 文件
 openWritePlugin:
-  enable: true # 开启为 true，关闭为 false
+  enable: false # 开启为 true，关闭为 false
   blogId: 33149-1720714429832-433
   name: 左诗右码
   qrcode: 'https://mmbiz.qpic.cn/sz_mmbiz_jpg/vQwlDq5Yfs1HQb8cN6e9TTwqBEYBfgJKuejrXaqS6VXAheLQfqnT99UpI0icS9aFPpIz0TFlwibibIibibwo0nxl4Dw/640?wx_fmt=jpeg'
