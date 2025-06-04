@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-12-11T16:02:25.177Z</updated>
+  <updated>2025-06-04T02:35:46.403Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>localhost 和 127.0.0.1 到底有啥区别？</title>
+    <link href="https://pudongping.github.io/posts/a9aab3a3.html"/>
+    <id>https://pudongping.github.io/posts/a9aab3a3.html</id>
+    <published>2025-06-04T02:32:08.000Z</published>
+    <updated>2025-06-04T02:35:46.403Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在开发中，我们经常会接触到 &lt;code&gt;localhost&lt;/code&gt; 和</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>又双叒叕出来了一款船新Copilot！腾讯终于发大招了！码农们又可以丝滑摸鱼啦～</title>
@@ -563,34 +588,6 @@
     
     
     <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go Web服务中如何优雅平滑重启？</title>
-    <link href="https://pudongping.github.io/posts/cf5ac086.html"/>
-    <id>https://pudongping.github.io/posts/cf5ac086.html</id>
-    <published>2024-11-15T02:30:01.000Z</published>
-    <updated>2024-11-16T08:35:28.061Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在生产环境中，当我们需要对正在运行的服务进行升级时，如何确保不影响当前未处理完的请求，同时又能应用新的代码，是个极具挑战性的问题。&lt;/p&gt;
-&lt;p&gt;传统的做法通常是停止当前服务，部署新代码后再重启服务，但这种方式会导致正在处理的请求被强制中断，用户体验会受到很大的影响。&lt;/p</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
     
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
