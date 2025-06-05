@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-04T02:35:46.403Z</updated>
+  <updated>2025-06-05T02:45:36.796Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>还在用 Jmeter 做压测？试试 oha 吧！你会毫不犹豫的爱上它！</title>
+    <link href="https://pudongping.github.io/posts/869fb74d.html"/>
+    <id>https://pudongping.github.io/posts/869fb74d.html</id>
+    <published>2025-06-05T02:44:44.000Z</published>
+    <updated>2025-06-05T02:45:36.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在进行 Web 服务和 API 性能测试时，选择合适的工具至关重要。市面上有很多工具可以帮助开发者进行负载测试，其中 &lt;strong&gt;OHA&lt;/strong&gt; 和 &lt;strong&gt;JMeter&lt;/strong&gt; 是两个常见的选择。&lt;/p&gt;
+&lt;p&gt;今天，我们将一起探讨</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Jmeter" scheme="https://pudongping.github.io/tags/Jmeter/"/>
+    
+    <category term="oha" scheme="https://pudongping.github.io/tags/oha/"/>
+    
+    <category term="压力测试" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="压测" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>localhost 和 127.0.0.1 到底有啥区别？</title>
     <link href="https://pudongping.github.io/posts/a9aab3a3.html"/>
     <id>https://pudongping.github.io/posts/a9aab3a3.html</id>
     <published>2025-06-04T02:32:08.000Z</published>
-    <updated>2025-06-04T02:35:46.403Z</updated>
+    <updated>2025-06-04T02:37:04.068Z</updated>
     
     
       
@@ -558,36 +590,6 @@
     
     <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
     
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Viper，一个Go语言配置管理神器！</title>
-    <link href="https://pudongping.github.io/posts/8026d3b4.html"/>
-    <id>https://pudongping.github.io/posts/8026d3b4.html</id>
-    <published>2024-11-16T08:36:36.000Z</published>
-    <updated>2024-11-16T08:37:32.158Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代软件开发中，良好的配置管理可以极大地提升应用的灵活性和可维护性。&lt;/p&gt;
-&lt;p&gt;在 Go 语言中，Viper 是一个功能强大且广泛使用的配置管理库，它支持从多个来源读取配置，包括文件、环境变量、远程配置中心等。本文将详细介绍如何使用 Viper</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
