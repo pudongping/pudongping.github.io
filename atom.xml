@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-05T02:45:36.796Z</updated>
+  <updated>2025-06-06T02:00:51.526Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTTP2.0 从原理到实践，保证把你治得服服帖帖！</title>
+    <link href="https://pudongping.github.io/posts/96db3e15.html"/>
+    <id>https://pudongping.github.io/posts/96db3e15.html</id>
+    <published>2025-06-06T01:59:34.000Z</published>
+    <updated>2025-06-06T02:00:51.526Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;HTTP 是 Web 传输的基础协议，随着互联网的发展，它不断演进，从最初的 HTTP/1.0 到 HTTP/1.1，再到如今的 HTTP/2，每个版本都带来了显著的改进。&lt;/p&gt;
+&lt;p&gt;本篇文章将深入浅出地讲解</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
+    
+    <category term="HTTP2.0" scheme="https://pudongping.github.io/tags/HTTP2-0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>还在用 Jmeter 做压测？试试 oha 吧！你会毫不犹豫的爱上它！</title>
     <link href="https://pudongping.github.io/posts/869fb74d.html"/>
     <id>https://pudongping.github.io/posts/869fb74d.html</id>
     <published>2025-06-05T02:44:44.000Z</published>
-    <updated>2025-06-05T02:45:36.796Z</updated>
+    <updated>2025-06-05T02:45:46.711Z</updated>
     
     
       
@@ -566,34 +594,6 @@
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
     <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分布式唯一ID生成：深入理解Snowflake算法在Go中的实现</title>
-    <link href="https://pudongping.github.io/posts/821f69.html"/>
-    <id>https://pudongping.github.io/posts/821f69.html</id>
-    <published>2024-11-17T07:15:59.000Z</published>
-    <updated>2024-11-17T07:16:45.690Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在分布式系统中，为了确保每个节点生成的 ID 在整个系统中是唯一的，我们需要一种高效且可靠的 ID 生成机制。&lt;/p&gt;
-&lt;h2 id=&quot;分布式-ID-的特点&quot;&gt;&lt;a href=&quot;#分布式-ID-的特点&quot; class=&quot;headerlink&quot; title=&quot;分布式 ID</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
