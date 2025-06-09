@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2024-12-03T03:52:10.880Z</updated>
+  <updated>2025-06-09T07:08:18.169Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,156 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>告别数据库瓶颈！用这个技巧让你的程序跑得飞快！</title>
+    <link href="https://pudongping.github.io/posts/231318cc.html"/>
+    <id>https://pudongping.github.io/posts/231318cc.html</id>
+    <published>2025-06-09T07:07:28.000Z</published>
+    <updated>2025-06-09T07:08:18.169Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常开发中，数据库连接的管理是一个非常重要的环节。为了避免频繁地创建和销毁数据库连接，我们可以通过&lt;strong&gt;连接池&lt;/strong&gt;来提高系统的性能和响应速度。连接池能够有效地重用已有的连接，避免重复的连接创建和销毁过程。&lt;/p&gt;
+&lt;p&gt;今天，我们将通过一个简单的例</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP2.0 从原理到实践，保证把你治得服服帖帖！</title>
+    <link href="https://pudongping.github.io/posts/96db3e15.html"/>
+    <id>https://pudongping.github.io/posts/96db3e15.html</id>
+    <published>2025-06-06T01:59:34.000Z</published>
+    <updated>2025-06-09T07:04:32.799Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;HTTP 是 Web 传输的基础协议，随着互联网的发展，它不断演进，从最初的 HTTP/1.0 到 HTTP/1.1，再到如今的 HTTP/2，每个版本都带来了显著的改进。&lt;/p&gt;
+&lt;p&gt;本篇文章将深入浅出地讲解</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
+    
+    <category term="HTTP2.0" scheme="https://pudongping.github.io/tags/HTTP2-0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>还在用 Jmeter 做压测？试试 oha 吧！你会毫不犹豫的爱上它！</title>
+    <link href="https://pudongping.github.io/posts/869fb74d.html"/>
+    <id>https://pudongping.github.io/posts/869fb74d.html</id>
+    <published>2025-06-05T02:44:44.000Z</published>
+    <updated>2025-06-09T07:04:32.800Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在进行 Web 服务和 API 性能测试时，选择合适的工具至关重要。市面上有很多工具可以帮助开发者进行负载测试，其中 &lt;strong&gt;OHA&lt;/strong&gt; 和 &lt;strong&gt;JMeter&lt;/strong&gt; 是两个常见的选择。&lt;/p&gt;
+&lt;p&gt;今天，我们将一起探讨</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Jmeter" scheme="https://pudongping.github.io/tags/Jmeter/"/>
+    
+    <category term="oha" scheme="https://pudongping.github.io/tags/oha/"/>
+    
+    <category term="压力测试" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="压测" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>localhost 和 127.0.0.1 到底有啥区别？</title>
+    <link href="https://pudongping.github.io/posts/a9aab3a3.html"/>
+    <id>https://pudongping.github.io/posts/a9aab3a3.html</id>
+    <published>2025-06-04T02:32:08.000Z</published>
+    <updated>2025-06-09T07:04:32.799Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在开发中，我们经常会接触到 &lt;code&gt;localhost&lt;/code&gt; 和</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又双叒叕出来了一款船新Copilot！腾讯终于发大招了！码农们又可以丝滑摸鱼啦～</title>
+    <link href="https://pudongping.github.io/posts/bd2219d.html"/>
+    <id>https://pudongping.github.io/posts/bd2219d.html</id>
+    <published>2024-12-11T16:00:58.000Z</published>
+    <updated>2024-12-13T02:55:52.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这几天在腾讯云开发者社区写文章时，老是给我下面这个弹窗提示，要我去体验一下这款 &lt;strong&gt;AI 代码助手&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/loading.gif&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="Copilot" scheme="https://pudongping.github.io/tags/Copilot/"/>
+    
+    <category term="编程助手" scheme="https://pudongping.github.io/tags/%E7%BC%96%E7%A8%8B%E5%8A%A9%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Grequests，非常 Nice 的 Python 异步 HTTP 请求神器</title>
     <link href="https://pudongping.github.io/posts/22d60526.html"/>
     <id>https://pudongping.github.io/posts/22d60526.html</id>
     <published>2024-12-03T03:51:16.000Z</published>
-    <updated>2024-12-03T03:52:10.880Z</updated>
+    <updated>2024-12-03T03:52:24.028Z</updated>
     
     
       
@@ -449,149 +594,6 @@
     <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
     
     <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中使用JWT鉴权、Token刷新完整示例，拿去直接用！</title>
-    <link href="https://pudongping.github.io/posts/9e517530.html"/>
-    <id>https://pudongping.github.io/posts/9e517530.html</id>
-    <published>2024-11-18T03:44:41.000Z</published>
-    <updated>2024-11-18T03:45:47.526Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 应用中，JWT（JSON Web Token）已经成为了主流的认证与授权解决方案。它轻量、高效、易于实现，并且非常适合于微服务架构。&lt;/p&gt;
-&lt;p&gt;在本文中，我们将通过 Go 语言及其流行的 Gin 框架，来深入探讨如何使用 JWT</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分布式唯一ID生成：深入理解Snowflake算法在Go中的实现</title>
-    <link href="https://pudongping.github.io/posts/821f69.html"/>
-    <id>https://pudongping.github.io/posts/821f69.html</id>
-    <published>2024-11-17T07:15:59.000Z</published>
-    <updated>2024-11-18T03:43:20.144Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在分布式系统中，为了确保每个节点生成的 ID 在整个系统中是唯一的，我们需要一种高效且可靠的 ID 生成机制。&lt;/p&gt;
-&lt;h2 id=&quot;分布式-ID-的特点&quot;&gt;&lt;a href=&quot;#分布式-ID-的特点&quot; class=&quot;headerlink&quot; title=&quot;分布式 ID</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Viper，一个Go语言配置管理神器！</title>
-    <link href="https://pudongping.github.io/posts/8026d3b4.html"/>
-    <id>https://pudongping.github.io/posts/8026d3b4.html</id>
-    <published>2024-11-16T08:36:36.000Z</published>
-    <updated>2024-11-18T03:43:20.144Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代软件开发中，良好的配置管理可以极大地提升应用的灵活性和可维护性。&lt;/p&gt;
-&lt;p&gt;在 Go 语言中，Viper 是一个功能强大且广泛使用的配置管理库，它支持从多个来源读取配置，包括文件、环境变量、远程配置中心等。本文将详细介绍如何使用 Viper</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go Web服务中如何优雅平滑重启？</title>
-    <link href="https://pudongping.github.io/posts/cf5ac086.html"/>
-    <id>https://pudongping.github.io/posts/cf5ac086.html</id>
-    <published>2024-11-15T02:30:01.000Z</published>
-    <updated>2024-11-15T02:30:57.395Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在生产环境中，当我们需要对正在运行的服务进行升级时，如何确保不影响当前未处理完的请求，同时又能应用新的代码，是个极具挑战性的问题。&lt;/p&gt;
-&lt;p&gt;传统的做法通常是停止当前服务，部署新代码后再重启服务，但这种方式会导致正在处理的请求被强制中断，用户体验会受到很大的影响。&lt;/p</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go Web服务中如何优雅关机？</title>
-    <link href="https://pudongping.github.io/posts/2e2c4d21.html"/>
-    <id>https://pudongping.github.io/posts/2e2c4d21.html</id>
-    <published>2024-11-14T03:54:11.000Z</published>
-    <updated>2024-11-14T03:54:59.166Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在构建 Web 服务时，我们往往会遇到一个棘手的问题：&lt;strong&gt;当我们想要停止服务时，如何确保正在处理的请求能够顺利完成，而不是突然中断？&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
