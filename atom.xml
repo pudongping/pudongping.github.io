@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-09T07:08:18.169Z</updated>
+  <updated>2025-06-10T03:11:00.932Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何判断两张图片的相似度？原来图片对比也可以如此简单！</title>
+    <link href="https://pudongping.github.io/posts/5c16cd6d.html"/>
+    <id>https://pudongping.github.io/posts/5c16cd6d.html</id>
+    <published>2025-06-10T03:10:01.000Z</published>
+    <updated>2025-06-10T03:11:00.932Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在介绍技术细节前，我们先来看看图片对比在哪些场景下可以用得到：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;图片去重：自动删除重复图片，为存储空间”瘦身”。想象你是一个社交媒体平台的运营，每天要处理数万张图片。重复图片不仅占用存储空间，还会影响用户体验。&lt;/li&gt;
+&lt;li&gt;内容审核：一些平台</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>告别数据库瓶颈！用这个技巧让你的程序跑得飞快！</title>
     <link href="https://pudongping.github.io/posts/231318cc.html"/>
     <id>https://pudongping.github.io/posts/231318cc.html</id>
     <published>2025-06-09T07:07:28.000Z</published>
-    <updated>2025-06-09T07:08:18.169Z</updated>
+    <updated>2025-06-09T07:08:37.339Z</updated>
     
     
       
@@ -560,40 +590,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用漏桶和令牌桶实现API速率限制</title>
-    <link href="https://pudongping.github.io/posts/ea016854.html"/>
-    <id>https://pudongping.github.io/posts/ea016854.html</id>
-    <published>2024-11-19T07:06:58.000Z</published>
-    <updated>2024-11-19T07:08:32.605Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 应用程序中，流量的突增是不可避免的。为防止服务器被过多的请求压垮，&lt;strong&gt;限流（Rate Limiting）&lt;/strong&gt; 是一个至关重要的技术手段。&lt;/p&gt;
-&lt;p&gt;本文将通过 Go 语言的 Gin</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
-    
-    <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
-    
-    <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
     
   </entry>
   
