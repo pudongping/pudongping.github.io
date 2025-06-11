@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-10T03:11:00.932Z</updated>
+  <updated>2025-06-11T02:05:12.763Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 语言中如何操作二维码？</title>
+    <link href="https://pudongping.github.io/posts/6db97ead.html"/>
+    <id>https://pudongping.github.io/posts/6db97ead.html</id>
+    <published>2025-06-11T02:03:56.000Z</published>
+    <updated>2025-06-11T02:05:12.763Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;二维码（QR Code）已经成为我们生活中不可或缺的一部分，无论是支付、登录还是信息共享，它们可以轻松地存储和传输各种类型的数据，从网站链接到名片信息，无所不能。在开发中，我们经常会遇到识别二维码的需求，那么用 &lt;strong&gt;Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何判断两张图片的相似度？原来图片对比也可以如此简单！</title>
     <link href="https://pudongping.github.io/posts/5c16cd6d.html"/>
     <id>https://pudongping.github.io/posts/5c16cd6d.html</id>
     <published>2025-06-10T03:10:01.000Z</published>
-    <updated>2025-06-10T03:11:00.932Z</updated>
+    <updated>2025-06-10T03:16:49.475Z</updated>
     
     
       
@@ -551,34 +578,6 @@
         
     <summary type="html">&lt;p&gt;在 Web 开发中，后端与前端之间的数据交换通常通过 JSON 格式进行。&lt;/p&gt;
 &lt;p&gt;然而，在处理数字，尤其是大整数时，我们可能会遇到精度丢失的问题。这是因为 JavaScript 中的数字类型只能安全地处理一定范围内的整数。其数字类型是基于 64 位双精度浮点数的</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在Go语言中实现表单验证？整一个validator吧！</title>
-    <link href="https://pudongping.github.io/posts/59486883.html"/>
-    <id>https://pudongping.github.io/posts/59486883.html</id>
-    <published>2024-11-20T03:19:49.000Z</published>
-    <updated>2024-11-20T03:20:59.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 开发中，表单验证和错误处理是至关重要的环节，尤其是在多语言环境下。&lt;/p&gt;
-&lt;p&gt;本文将通过一个实际的示例，演示如何使用 Go 语言的 Gin 框架结合 &lt;code&gt;validator&lt;/code&gt;</summary>
         
       
     
