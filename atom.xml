@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-11T02:05:12.763Z</updated>
+  <updated>2025-06-12T02:32:09.020Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何在 Go 中获取 goroutine 的 ID？</title>
+    <link href="https://pudongping.github.io/posts/2dcc2ce.html"/>
+    <id>https://pudongping.github.io/posts/2dcc2ce.html</id>
+    <published>2025-06-12T02:31:29.000Z</published>
+    <updated>2025-06-12T02:32:09.020Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在使用 Go 语言进行并发编程时，Goroutine 是一种轻量级线程，具有很高的性能优势。然而，Go 语言&lt;strong&gt;并未直接提供&lt;/strong&gt;获取 Goroutine ID 的官方 API。这是 Go 语言设计的一部分，目的是避免开发者依赖 Goroutine</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go 语言中如何操作二维码？</title>
     <link href="https://pudongping.github.io/posts/6db97ead.html"/>
     <id>https://pudongping.github.io/posts/6db97ead.html</id>
     <published>2025-06-11T02:03:56.000Z</published>
-    <updated>2025-06-11T02:05:12.763Z</updated>
+    <updated>2025-06-11T02:05:25.863Z</updated>
     
     
       
@@ -550,34 +577,6 @@
         
     <summary type="html">&lt;p&gt;在 Go 语言中，内存对齐是一个经常被忽略但非常重要的概念。理解内存对齐不仅可以帮助我们写出更高效的代码，还能避免一些潜在的性能陷阱。&lt;/p&gt;
 &lt;p&gt;在这篇文章中，我们将通过一个简单的例子来探讨 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>聊聊 Go 语言中的 JSON 序列化与 js 前端交互类型失真问题</title>
-    <link href="https://pudongping.github.io/posts/a370ff67.html"/>
-    <id>https://pudongping.github.io/posts/a370ff67.html</id>
-    <published>2024-11-21T02:40:21.000Z</published>
-    <updated>2024-11-21T02:40:58.803Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Web 开发中，后端与前端之间的数据交换通常通过 JSON 格式进行。&lt;/p&gt;
-&lt;p&gt;然而，在处理数字，尤其是大整数时，我们可能会遇到精度丢失的问题。这是因为 JavaScript 中的数字类型只能安全地处理一定范围内的整数。其数字类型是基于 64 位双精度浮点数的</summary>
         
       
     
