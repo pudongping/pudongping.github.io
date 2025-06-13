@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-12T02:32:09.020Z</updated>
+  <updated>2025-06-13T01:54:30.436Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你真的会使用 Go 语言中的 Channel 吗？</title>
+    <link href="https://pudongping.github.io/posts/2a20e737.html"/>
+    <id>https://pudongping.github.io/posts/2a20e737.html</id>
+    <published>2025-06-13T01:53:51.000Z</published>
+    <updated>2025-06-13T01:54:30.436Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Go 语言的并发模型是其强大之处之一，而 Channel 则是这一模型的核心。Channel 提供了一种在 goroutine 之间进行通信和同步的机制。然而，正确地使用 Channel 并不是一件简单的事情。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍在 Go 语言中使用</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何在 Go 中获取 goroutine 的 ID？</title>
     <link href="https://pudongping.github.io/posts/2dcc2ce.html"/>
     <id>https://pudongping.github.io/posts/2dcc2ce.html</id>
     <published>2025-06-12T02:31:29.000Z</published>
-    <updated>2025-06-12T02:32:09.020Z</updated>
+    <updated>2025-06-12T02:32:17.332Z</updated>
     
     
       
@@ -549,34 +577,6 @@
     <summary type="html">&lt;p&gt;在我们日常开发的 Go 项目中，用户信息管理是一个非常常见的场景。特别是当我们需要存储和处理用户密码等敏感信息时，如何确保这些信息不暴露给客户端就显得尤为重要。&lt;/p&gt;
 &lt;p&gt;今天我们来讨论一个简单而实用的技巧——如何在返回用户数据时，隐藏密码字段。&lt;/p&gt;
 &lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>探索 Go 语言中的内存对齐：为什么结构体大小会有所不同？</title>
-    <link href="https://pudongping.github.io/posts/8f8634cd.html"/>
-    <id>https://pudongping.github.io/posts/8f8634cd.html</id>
-    <published>2024-11-22T03:00:10.000Z</published>
-    <updated>2024-11-22T03:00:53.310Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言中，内存对齐是一个经常被忽略但非常重要的概念。理解内存对齐不仅可以帮助我们写出更高效的代码，还能避免一些潜在的性能陷阱。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我们将通过一个简单的例子来探讨 Go</summary>
         
       
     
