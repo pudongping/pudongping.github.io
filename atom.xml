@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-13T01:54:30.436Z</updated>
+  <updated>2025-06-16T02:41:00.654Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言中使用切片需要注意什么？</title>
+    <link href="https://pudongping.github.io/posts/816dc455.html"/>
+    <id>https://pudongping.github.io/posts/816dc455.html</id>
+    <published>2025-06-16T02:40:21.000Z</published>
+    <updated>2025-06-16T02:41:00.654Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;切片（Slice）是 Go 语言中非常强大且灵活的数据结构，它是对数组的一个连续片段的引用。切片的使用极大地简化了数组的操作，但在使用过程中也有一些需要注意的地方。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍在 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>你真的会使用 Go 语言中的 Channel 吗？</title>
     <link href="https://pudongping.github.io/posts/2a20e737.html"/>
     <id>https://pudongping.github.io/posts/2a20e737.html</id>
     <published>2025-06-13T01:53:51.000Z</published>
-    <updated>2025-06-13T01:54:30.436Z</updated>
+    <updated>2025-06-13T01:54:40.494Z</updated>
     
     
       
@@ -548,35 +576,6 @@
         
     <summary type="html">&lt;p&gt;在 Go 语言开发中，JSON（JavaScript Object Notation）因其简洁和广泛的兼容性，通常被用作数据交换的主要序列化格式。然而，当你深入使用 JSON 时，&lt;strong&gt;可能会发现它并不总是最佳选择&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;本文将探讨</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在 Go 项目中隐藏敏感信息，比如避免暴露用户密码？</title>
-    <link href="https://pudongping.github.io/posts/9d35cfe9.html"/>
-    <id>https://pudongping.github.io/posts/9d35cfe9.html</id>
-    <published>2024-11-23T04:19:35.000Z</published>
-    <updated>2024-11-25T02:30:05.233Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在我们日常开发的 Go 项目中，用户信息管理是一个非常常见的场景。特别是当我们需要存储和处理用户密码等敏感信息时，如何确保这些信息不暴露给客户端就显得尤为重要。&lt;/p&gt;
-&lt;p&gt;今天我们来讨论一个简单而实用的技巧——如何在返回用户数据时，隐藏密码字段。&lt;/p&gt;
-&lt;h2</summary>
         
       
     
