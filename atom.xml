@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-16T02:41:00.654Z</updated>
+  <updated>2025-06-17T01:51:46.958Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go语言切片，使用技巧与避坑指南</title>
+    <link href="https://pudongping.github.io/posts/96775eb5.html"/>
+    <id>https://pudongping.github.io/posts/96775eb5.html</id>
+    <published>2025-06-17T01:51:12.000Z</published>
+    <updated>2025-06-17T01:51:46.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;切片（Slice）是Go语言中最灵活且高频使用的数据结构之一，其本质是&lt;strong&gt;对底层数组的动态引用视图&lt;/strong&gt;，支持动态扩容、高效截取等特性。&lt;/p&gt;
+&lt;p&gt;本文将结合代码示例，详细解析切片的核心用法及常见注意事项。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言中使用切片需要注意什么？</title>
     <link href="https://pudongping.github.io/posts/816dc455.html"/>
     <id>https://pudongping.github.io/posts/816dc455.html</id>
     <published>2025-06-16T02:40:21.000Z</published>
-    <updated>2025-06-16T02:41:00.654Z</updated>
+    <updated>2025-06-16T02:41:06.879Z</updated>
     
     
       
@@ -548,34 +577,6 @@
         
         
     <summary type="html">&lt;p&gt;在软件开发中，数据安全和隐私保护越来越受到重视。Go 语言以其简洁高效的特性，成为了许多开发者的首选。然而，在实际项目中使用加解密时，还是需要在标准库的基础上做一些封装。&lt;code&gt;go-crypto&lt;/code&gt; 库应运而生，它是一个专为 Golang</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中json序列化的一个小坑，建议多留意一下</title>
-    <link href="https://pudongping.github.io/posts/5fc86d1c.html"/>
-    <id>https://pudongping.github.io/posts/5fc86d1c.html</id>
-    <published>2024-11-24T14:27:52.000Z</published>
-    <updated>2024-11-25T02:30:05.233Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言开发中，JSON（JavaScript Object Notation）因其简洁和广泛的兼容性，通常被用作数据交换的主要序列化格式。然而，当你深入使用 JSON 时，&lt;strong&gt;可能会发现它并不总是最佳选择&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;本文将探讨</summary>
         
       
     
