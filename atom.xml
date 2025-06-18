@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-17T01:51:46.958Z</updated>
+  <updated>2025-06-18T01:50:54.473Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>不用WebSocket也能搞定实时消息推送？试一试SSE吧！</title>
+    <link href="https://pudongping.github.io/posts/5a7767cc.html"/>
+    <id>https://pudongping.github.io/posts/5a7767cc.html</id>
+    <published>2025-06-18T01:49:34.000Z</published>
+    <updated>2025-06-18T01:50:54.473Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代 Web 开发中，实现实时数据更新是一个常见的需求。比如股票行情、聊天消息、体育比赛比分等场景，都需要服务器能够主动将数据推送给客户端，而不是客户端频繁轮询服务器来获取最新数据。&lt;/p&gt;
+&lt;p&gt;今天，我们就来学习如何使用 Go 语言和 Gin 框架实现</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go语言切片，使用技巧与避坑指南</title>
     <link href="https://pudongping.github.io/posts/96775eb5.html"/>
     <id>https://pudongping.github.io/posts/96775eb5.html</id>
     <published>2025-06-17T01:51:12.000Z</published>
-    <updated>2025-06-17T01:51:46.958Z</updated>
+    <updated>2025-06-17T01:51:56.237Z</updated>
     
     
       
@@ -561,33 +589,6 @@
     <category term="XZ" scheme="https://pudongping.github.io/tags/XZ/"/>
     
     <category term="解压缩" scheme="https://pudongping.github.io/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中的加解密利器：go-crypto库全解析</title>
-    <link href="https://pudongping.github.io/posts/4f904664.html"/>
-    <id>https://pudongping.github.io/posts/4f904664.html</id>
-    <published>2024-11-25T02:31:50.000Z</published>
-    <updated>2024-11-25T02:32:42.149Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在软件开发中，数据安全和隐私保护越来越受到重视。Go 语言以其简洁高效的特性，成为了许多开发者的首选。然而，在实际项目中使用加解密时，还是需要在标准库的基础上做一些封装。&lt;code&gt;go-crypto&lt;/code&gt; 库应运而生，它是一个专为 Golang</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
