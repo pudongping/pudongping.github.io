@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-06T02:00:51.526Z</updated>
+  <updated>2025-06-23T08:43:12.480Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,271 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>InfluxDB 时序数据的高效解决方案</title>
+    <link href="https://pudongping.github.io/posts/84187b70.html"/>
+    <id>https://pudongping.github.io/posts/84187b70.html</id>
+    <published>2025-06-23T08:42:10.000Z</published>
+    <updated>2025-06-23T08:43:12.480Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;InfluxDB-是什么？&quot;&gt;&lt;a href=&quot;#InfluxDB-是什么？&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB 是什么？&quot;&gt;&lt;/a&gt;InfluxDB</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="DB" scheme="https://pudongping.github.io/tags/DB/"/>
+    
+    <category term="InfluxDB" scheme="https://pudongping.github.io/tags/InfluxDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不用WebSocket也能搞定实时消息推送？试一试SSE吧！</title>
+    <link href="https://pudongping.github.io/posts/5a7767cc.html"/>
+    <id>https://pudongping.github.io/posts/5a7767cc.html</id>
+    <published>2025-06-18T01:49:34.000Z</published>
+    <updated>2025-06-23T08:41:18.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代 Web 开发中，实现实时数据更新是一个常见的需求。比如股票行情、聊天消息、体育比赛比分等场景，都需要服务器能够主动将数据推送给客户端，而不是客户端频繁轮询服务器来获取最新数据。&lt;/p&gt;
+&lt;p&gt;今天，我们就来学习如何使用 Go 语言和 Gin 框架实现</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言切片，使用技巧与避坑指南</title>
+    <link href="https://pudongping.github.io/posts/96775eb5.html"/>
+    <id>https://pudongping.github.io/posts/96775eb5.html</id>
+    <published>2025-06-17T01:51:12.000Z</published>
+    <updated>2025-06-23T08:41:18.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;切片（Slice）是Go语言中最灵活且高频使用的数据结构之一，其本质是&lt;strong&gt;对底层数组的动态引用视图&lt;/strong&gt;，支持动态扩容、高效截取等特性。&lt;/p&gt;
+&lt;p&gt;本文将结合代码示例，详细解析切片的核心用法及常见注意事项。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言中使用切片需要注意什么？</title>
+    <link href="https://pudongping.github.io/posts/816dc455.html"/>
+    <id>https://pudongping.github.io/posts/816dc455.html</id>
+    <published>2025-06-16T02:40:21.000Z</published>
+    <updated>2025-06-23T08:41:18.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;切片（Slice）是 Go 语言中非常强大且灵活的数据结构，它是对数组的一个连续片段的引用。切片的使用极大地简化了数组的操作，但在使用过程中也有一些需要注意的地方。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍在 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你真的会使用 Go 语言中的 Channel 吗？</title>
+    <link href="https://pudongping.github.io/posts/2a20e737.html"/>
+    <id>https://pudongping.github.io/posts/2a20e737.html</id>
+    <published>2025-06-13T01:53:51.000Z</published>
+    <updated>2025-06-23T08:41:18.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Go 语言的并发模型是其强大之处之一，而 Channel 则是这一模型的核心。Channel 提供了一种在 goroutine 之间进行通信和同步的机制。然而，正确地使用 Channel 并不是一件简单的事情。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍在 Go 语言中使用</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在 Go 中获取 goroutine 的 ID？</title>
+    <link href="https://pudongping.github.io/posts/2dcc2ce.html"/>
+    <id>https://pudongping.github.io/posts/2dcc2ce.html</id>
+    <published>2025-06-12T02:31:29.000Z</published>
+    <updated>2025-06-23T08:41:18.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在使用 Go 语言进行并发编程时，Goroutine 是一种轻量级线程，具有很高的性能优势。然而，Go 语言&lt;strong&gt;并未直接提供&lt;/strong&gt;获取 Goroutine ID 的官方 API。这是 Go 语言设计的一部分，目的是避免开发者依赖 Goroutine</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 语言中如何操作二维码？</title>
+    <link href="https://pudongping.github.io/posts/6db97ead.html"/>
+    <id>https://pudongping.github.io/posts/6db97ead.html</id>
+    <published>2025-06-11T02:03:56.000Z</published>
+    <updated>2025-06-23T08:41:18.069Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;二维码（QR Code）已经成为我们生活中不可或缺的一部分，无论是支付、登录还是信息共享，它们可以轻松地存储和传输各种类型的数据，从网站链接到名片信息，无所不能。在开发中，我们经常会遇到识别二维码的需求，那么用 &lt;strong&gt;Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何判断两张图片的相似度？原来图片对比也可以如此简单！</title>
+    <link href="https://pudongping.github.io/posts/5c16cd6d.html"/>
+    <id>https://pudongping.github.io/posts/5c16cd6d.html</id>
+    <published>2025-06-10T03:10:01.000Z</published>
+    <updated>2025-06-23T08:41:18.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在介绍技术细节前，我们先来看看图片对比在哪些场景下可以用得到：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;图片去重：自动删除重复图片，为存储空间”瘦身”。想象你是一个社交媒体平台的运营，每天要处理数万张图片。重复图片不仅占用存储空间，还会影响用户体验。&lt;/li&gt;
+&lt;li&gt;内容审核：一些平台</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>告别数据库瓶颈！用这个技巧让你的程序跑得飞快！</title>
+    <link href="https://pudongping.github.io/posts/231318cc.html"/>
+    <id>https://pudongping.github.io/posts/231318cc.html</id>
+    <published>2025-06-09T07:07:28.000Z</published>
+    <updated>2025-06-23T08:41:18.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常开发中，数据库连接的管理是一个非常重要的环节。为了避免频繁地创建和销毁数据库连接，我们可以通过&lt;strong&gt;连接池&lt;/strong&gt;来提高系统的性能和响应速度。连接池能够有效地重用已有的连接，避免重复的连接创建和销毁过程。&lt;/p&gt;
+&lt;p&gt;今天，我们将通过一个简单的例</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTTP2.0 从原理到实践，保证把你治得服服帖帖！</title>
     <link href="https://pudongping.github.io/posts/96db3e15.html"/>
     <id>https://pudongping.github.io/posts/96db3e15.html</id>
     <published>2025-06-06T01:59:34.000Z</published>
-    <updated>2025-06-06T02:00:51.526Z</updated>
+    <updated>2025-06-06T02:00:59.600Z</updated>
     
     
       
@@ -332,268 +592,6 @@
     <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
     
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你可能不知道 xz 也是一种压缩格式，并且还相当惊艳</title>
-    <link href="https://pudongping.github.io/posts/28e0065f.html"/>
-    <id>https://pudongping.github.io/posts/28e0065f.html</id>
-    <published>2024-11-26T02:51:24.000Z</published>
-    <updated>2024-11-30T05:24:36.941Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代计算中，数据存储和传输的效率至关重要。为了节省存储空间和提高传输效率，文件压缩已成为一种普遍的需求。&lt;/p&gt;
-&lt;p&gt;Linux 系统中有多种工具和格式可以实现文件压缩，最常见的包括</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
-    <category term="XZ" scheme="https://pudongping.github.io/tags/XZ/"/>
-    
-    <category term="解压缩" scheme="https://pudongping.github.io/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中的加解密利器：go-crypto库全解析</title>
-    <link href="https://pudongping.github.io/posts/4f904664.html"/>
-    <id>https://pudongping.github.io/posts/4f904664.html</id>
-    <published>2024-11-25T02:31:50.000Z</published>
-    <updated>2024-11-30T05:24:36.940Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在软件开发中，数据安全和隐私保护越来越受到重视。Go 语言以其简洁高效的特性，成为了许多开发者的首选。然而，在实际项目中使用加解密时，还是需要在标准库的基础上做一些封装。&lt;code&gt;go-crypto&lt;/code&gt; 库应运而生，它是一个专为 Golang</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中json序列化的一个小坑，建议多留意一下</title>
-    <link href="https://pudongping.github.io/posts/5fc86d1c.html"/>
-    <id>https://pudongping.github.io/posts/5fc86d1c.html</id>
-    <published>2024-11-24T14:27:52.000Z</published>
-    <updated>2024-11-24T14:28:32.626Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言开发中，JSON（JavaScript Object Notation）因其简洁和广泛的兼容性，通常被用作数据交换的主要序列化格式。然而，当你深入使用 JSON 时，&lt;strong&gt;可能会发现它并不总是最佳选择&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;本文将探讨</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在 Go 项目中隐藏敏感信息，比如避免暴露用户密码？</title>
-    <link href="https://pudongping.github.io/posts/9d35cfe9.html"/>
-    <id>https://pudongping.github.io/posts/9d35cfe9.html</id>
-    <published>2024-11-23T04:19:35.000Z</published>
-    <updated>2024-11-23T04:20:23.655Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在我们日常开发的 Go 项目中，用户信息管理是一个非常常见的场景。特别是当我们需要存储和处理用户密码等敏感信息时，如何确保这些信息不暴露给客户端就显得尤为重要。&lt;/p&gt;
-&lt;p&gt;今天我们来讨论一个简单而实用的技巧——如何在返回用户数据时，隐藏密码字段。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>探索 Go 语言中的内存对齐：为什么结构体大小会有所不同？</title>
-    <link href="https://pudongping.github.io/posts/8f8634cd.html"/>
-    <id>https://pudongping.github.io/posts/8f8634cd.html</id>
-    <published>2024-11-22T03:00:10.000Z</published>
-    <updated>2024-11-23T04:16:56.020Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言中，内存对齐是一个经常被忽略但非常重要的概念。理解内存对齐不仅可以帮助我们写出更高效的代码，还能避免一些潜在的性能陷阱。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我们将通过一个简单的例子来探讨 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>聊聊 Go 语言中的 JSON 序列化与 js 前端交互类型失真问题</title>
-    <link href="https://pudongping.github.io/posts/a370ff67.html"/>
-    <id>https://pudongping.github.io/posts/a370ff67.html</id>
-    <published>2024-11-21T02:40:21.000Z</published>
-    <updated>2024-11-23T04:16:56.020Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Web 开发中，后端与前端之间的数据交换通常通过 JSON 格式进行。&lt;/p&gt;
-&lt;p&gt;然而，在处理数字，尤其是大整数时，我们可能会遇到精度丢失的问题。这是因为 JavaScript 中的数字类型只能安全地处理一定范围内的整数。其数字类型是基于 64 位双精度浮点数的</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在Go语言中实现表单验证？整一个validator吧！</title>
-    <link href="https://pudongping.github.io/posts/59486883.html"/>
-    <id>https://pudongping.github.io/posts/59486883.html</id>
-    <published>2024-11-20T03:19:49.000Z</published>
-    <updated>2024-11-23T04:16:56.019Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 开发中，表单验证和错误处理是至关重要的环节，尤其是在多语言环境下。&lt;/p&gt;
-&lt;p&gt;本文将通过一个实际的示例，演示如何使用 Go 语言的 Gin 框架结合 &lt;code&gt;validator&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用漏桶和令牌桶实现API速率限制</title>
-    <link href="https://pudongping.github.io/posts/ea016854.html"/>
-    <id>https://pudongping.github.io/posts/ea016854.html</id>
-    <published>2024-11-19T07:06:58.000Z</published>
-    <updated>2024-11-23T04:16:56.019Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 应用程序中，流量的突增是不可避免的。为防止服务器被过多的请求压垮，&lt;strong&gt;限流（Rate Limiting）&lt;/strong&gt; 是一个至关重要的技术手段。&lt;/p&gt;
-&lt;p&gt;本文将通过 Go 语言的 Gin</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
-    
-    <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
-    
-    <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中使用JWT鉴权、Token刷新完整示例，拿去直接用！</title>
-    <link href="https://pudongping.github.io/posts/9e517530.html"/>
-    <id>https://pudongping.github.io/posts/9e517530.html</id>
-    <published>2024-11-18T03:44:41.000Z</published>
-    <updated>2024-11-23T04:16:56.019Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 应用中，JWT（JSON Web Token）已经成为了主流的认证与授权解决方案。它轻量、高效、易于实现，并且非常适合于微服务架构。&lt;/p&gt;
-&lt;p&gt;在本文中，我们将通过 Go 语言及其流行的 Gin 框架，来深入探讨如何使用 JWT</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="JWT" scheme="https://pudongping.github.io/tags/JWT/"/>
     
   </entry>
   
