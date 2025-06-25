@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-24T02:26:15.196Z</updated>
+  <updated>2025-06-25T02:15:07.226Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 语言中如何处理并发错误</title>
+    <link href="https://pudongping.github.io/posts/d082e483.html"/>
+    <id>https://pudongping.github.io/posts/d082e483.html</id>
+    <published>2025-06-25T02:14:34.000Z</published>
+    <updated>2025-06-25T02:15:07.226Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言中，错误处理一直是开发中不可或缺的一部分。尤其在并发编程场景下，由于多个 goroutine 同时运行，错误的传递和处理就变得更为复杂。这篇文章就介绍了一些常见的处理并发错误的方法，以供各位参考。&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>深入解析 go 语言中的 select 语句</title>
     <link href="https://pudongping.github.io/posts/14df232b.html"/>
     <id>https://pudongping.github.io/posts/14df232b.html</id>
     <published>2025-06-24T02:25:25.000Z</published>
-    <updated>2025-06-24T02:26:15.196Z</updated>
+    <updated>2025-06-24T02:26:22.843Z</updated>
     
     
       
@@ -558,37 +586,6 @@
     <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
     
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hyperf-wise-locksmith，一个高效的PHP分布式锁方案</title>
-    <link href="https://pudongping.github.io/posts/a3ff01d2.html"/>
-    <id>https://pudongping.github.io/posts/a3ff01d2.html</id>
-    <published>2024-11-28T02:24:57.000Z</published>
-    <updated>2024-11-30T05:24:36.941Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在分布式系统中，如何确保多台机器之间不会产生竞争条件，是一个常见且重要的问题。&lt;code&gt;hyperf-wise-locksmith&lt;/code&gt; 库作为 &lt;code&gt;Hyperf&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="锁" scheme="https://pudongping.github.io/tags/%E9%94%81/"/>
-    
-    <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="分布式锁" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
     
   </entry>
   
