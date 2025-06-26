@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-25T02:15:15.861Z</updated>
+  <updated>2025-06-26T01:54:04.115Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何为 gRPC Server 编写本地测试代码</title>
+    <link href="https://pudongping.github.io/posts/e9966a07.html"/>
+    <id>https://pudongping.github.io/posts/e9966a07.html</id>
+    <published>2025-06-26T01:52:58.000Z</published>
+    <updated>2025-06-26T01:54:04.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构中，gRPC 已成为主流的通信协议之一。但许多开发者在面对 gRPC 服务测试时，常常会遇到需要启动真实网络服务、管理端口占用等烦恼。&lt;/p&gt;
+&lt;p&gt;本文将介绍如何利用 Go 语言中 gRPC 提供的测试工具 ——</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+    <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
+    
+  </entry>
   
   <entry>
     <title>Go 语言中如何处理并发错误</title>
@@ -559,33 +591,6 @@
     <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
     
     <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hyperf-alarm-clock，一个自动计算代码执行时间，超时并发送通知的小工具</title>
-    <link href="https://pudongping.github.io/posts/982b031b.html"/>
-    <id>https://pudongping.github.io/posts/982b031b.html</id>
-    <published>2024-11-29T02:07:09.000Z</published>
-    <updated>2024-11-30T05:24:36.941Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在软件开发中，我们经常需要对代码执行时间进行监控，以确保系统的性能和稳定性。在 PHP 的世界里，Hyperf 框架以其高性能和丰富的组件生态而闻名，而今天我要介绍的是 Hyperf 生态中的一个小巧的插件包 ——</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
     
   </entry>
   
