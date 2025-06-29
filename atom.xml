@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-26T01:54:04.115Z</updated>
+  <updated>2025-06-29T06:40:14.479Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 语言单例模式全解析：从青铜到王者段位的实现方案</title>
+    <link href="https://pudongping.github.io/posts/eb161174.html"/>
+    <id>https://pudongping.github.io/posts/eb161174.html</id>
+    <published>2025-06-29T06:39:36.000Z</published>
+    <updated>2025-06-29T06:40:14.479Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是单例模式？&quot;&gt;&lt;a href=&quot;#什么是单例模式？&quot; class=&quot;headerlink&quot; title=&quot;什么是单例模式？&quot;&gt;&lt;/a&gt;什么是单例模式？&lt;/h2&gt;&lt;p&gt;单例模式（Singleton</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何为 gRPC Server 编写本地测试代码</title>
     <link href="https://pudongping.github.io/posts/e9966a07.html"/>
     <id>https://pudongping.github.io/posts/e9966a07.html</id>
     <published>2025-06-26T01:52:58.000Z</published>
-    <updated>2025-06-26T01:54:04.115Z</updated>
+    <updated>2025-06-26T01:54:10.465Z</updated>
     
     
       
@@ -561,36 +588,6 @@
     <category term="自动化" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
     <category term="微信" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hyperf-throttle-requests，一个超牛的 PHP 限流神器</title>
-    <link href="https://pudongping.github.io/posts/5ecf8336.html"/>
-    <id>https://pudongping.github.io/posts/5ecf8336.html</id>
-    <published>2024-11-30T05:24:52.000Z</published>
-    <updated>2024-11-30T05:25:40.488Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在分布式系统和微服务架构中，API 的稳定性和可用性至关重要。为了保护后端服务不受恶意攻击和流量高峰的影响，请求频率限制（Rate Limiting）成为了一种常见的策略。&lt;/p&gt;
-&lt;p&gt;Hyperf 框架作为一款高性能的 PHP</summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
-    
-    
-    <category term="Hyperf" scheme="https://pudongping.github.io/tags/Hyperf/"/>
-    
-    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
-    
-    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
     
   </entry>
   
