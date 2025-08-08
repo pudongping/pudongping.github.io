@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-07T02:13:27.776Z</updated>
+  <updated>2025-08-08T03:09:25.444Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你真的懂 close(chan) 吗？90% 的 Go 开发者都掉过这个坑！</title>
+    <link href="https://pudongping.github.io/posts/5e6d50e0.html"/>
+    <id>https://pudongping.github.io/posts/5e6d50e0.html</id>
+    <published>2025-08-08T03:08:45.000Z</published>
+    <updated>2025-08-08T03:09:25.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常 Go 并发编程中，我们可能会看到类似以下这样的代码：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-go&quot; data-language=&quot;go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用 Go 写桌面应用？试试 Wails 吧！</title>
     <link href="https://pudongping.github.io/posts/f3f6160c.html"/>
     <id>https://pudongping.github.io/posts/f3f6160c.html</id>
     <published>2025-08-07T02:12:34.000Z</published>
-    <updated>2025-08-07T02:13:27.776Z</updated>
+    <updated>2025-08-07T02:13:45.009Z</updated>
     
     
       
@@ -51,7 +79,7 @@
     <link href="https://pudongping.github.io/posts/1e620500.html"/>
     <id>https://pudongping.github.io/posts/1e620500.html</id>
     <published>2025-08-07T02:11:13.000Z</published>
-    <updated>2025-08-07T02:12:09.363Z</updated>
+    <updated>2025-08-07T02:13:45.007Z</updated>
     
     
       
@@ -80,7 +108,7 @@
     <link href="https://pudongping.github.io/posts/68a189a1.html"/>
     <id>https://pudongping.github.io/posts/68a189a1.html</id>
     <published>2025-08-07T02:10:15.000Z</published>
-    <updated>2025-08-07T02:10:55.290Z</updated>
+    <updated>2025-08-07T02:13:45.008Z</updated>
     
     
       
@@ -110,7 +138,7 @@
     <link href="https://pudongping.github.io/posts/3b25df61.html"/>
     <id>https://pudongping.github.io/posts/3b25df61.html</id>
     <published>2025-08-07T02:08:53.000Z</published>
-    <updated>2025-08-07T02:09:49.754Z</updated>
+    <updated>2025-08-07T02:13:45.009Z</updated>
     
     
       
@@ -500,9 +528,9 @@
     <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
     
     
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
-    
     <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
     
     <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
     
@@ -565,31 +593,6 @@
     <category term="压力测试" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/"/>
     
     <category term="压测" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E6%B5%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>localhost 和 127.0.0.1 到底有啥区别？</title>
-    <link href="https://pudongping.github.io/posts/a9aab3a3.html"/>
-    <id>https://pudongping.github.io/posts/a9aab3a3.html</id>
-    <published>2025-06-04T02:32:08.000Z</published>
-    <updated>2025-06-09T07:04:32.799Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在开发中，我们经常会接触到 &lt;code&gt;localhost&lt;/code&gt; 和</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
