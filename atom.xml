@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-08T03:09:25.444Z</updated>
+  <updated>2025-08-12T03:42:04.279Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一文吃透 Promise 与 async/await，异步编程也能如此简单！建议收藏！</title>
+    <link href="https://pudongping.github.io/posts/da88494b.html"/>
+    <id>https://pudongping.github.io/posts/da88494b.html</id>
+    <published>2025-08-12T03:39:29.000Z</published>
+    <updated>2025-08-12T03:42:04.279Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代编程开发中，“异步”两个字几乎贯穿始终：你写的接口请求、定时器、事件监听、动画控制……背后都绕不开异步编程。&lt;/p&gt;
+&lt;p&gt;那到底啥是&lt;strong&gt;异步&lt;/strong&gt;呢？说到异步，我们就需要结合&lt;strong&gt;同步&lt;/strong&gt;来讲讲，这样就更加清晰明了。&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://pudongping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="异步编程" scheme="https://pudongping.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="promise" scheme="https://pudongping.github.io/tags/promise/"/>
+    
+  </entry>
+  
+  <entry>
     <title>你真的懂 close(chan) 吗？90% 的 Go 开发者都掉过这个坑！</title>
     <link href="https://pudongping.github.io/posts/5e6d50e0.html"/>
     <id>https://pudongping.github.io/posts/5e6d50e0.html</id>
     <published>2025-08-08T03:08:45.000Z</published>
-    <updated>2025-08-08T03:09:25.444Z</updated>
+    <updated>2025-08-08T03:09:30.585Z</updated>
     
     
       
@@ -528,9 +558,9 @@
     <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
     
     
-    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
     <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
     
@@ -561,38 +591,6 @@
     <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
     
     <category term="HTTP2.0" scheme="https://pudongping.github.io/tags/HTTP2-0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>还在用 Jmeter 做压测？试试 oha 吧！你会毫不犹豫的爱上它！</title>
-    <link href="https://pudongping.github.io/posts/869fb74d.html"/>
-    <id>https://pudongping.github.io/posts/869fb74d.html</id>
-    <published>2025-06-05T02:44:44.000Z</published>
-    <updated>2025-06-09T07:04:32.800Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在进行 Web 服务和 API 性能测试时，选择合适的工具至关重要。市面上有很多工具可以帮助开发者进行负载测试，其中 &lt;strong&gt;OHA&lt;/strong&gt; 和 &lt;strong&gt;JMeter&lt;/strong&gt; 是两个常见的选择。&lt;/p&gt;
-&lt;p&gt;今天，我们将一起探讨</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Jmeter" scheme="https://pudongping.github.io/tags/Jmeter/"/>
-    
-    <category term="oha" scheme="https://pudongping.github.io/tags/oha/"/>
-    
-    <category term="压力测试" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/"/>
-    
-    <category term="压测" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E6%B5%8B/"/>
     
   </entry>
   
