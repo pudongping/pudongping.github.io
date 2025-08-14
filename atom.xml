@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-12T03:42:04.279Z</updated>
+  <updated>2025-08-14T04:02:45.838Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cookie、Session、Token、JWT 是什么？万字图解带你一次搞懂！看完这篇，你连老奶奶都能教</title>
+    <link href="https://pudongping.github.io/posts/65239a79.html"/>
+    <id>https://pudongping.github.io/posts/65239a79.html</id>
+    <published>2025-08-14T04:01:10.000Z</published>
+    <updated>2025-08-14T04:02:45.838Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在讲这几个专业术语之前，我们先看一下这样的场景：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你去银行准备办理业务，柜台工作人员礼貌地问你：“请问您要办理什么业务？”&lt;br&gt;你说：“我要查询我还有多少余额。”&lt;br&gt;等工作人员处理完之后，你紧接着说：“我还想转账 1000</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Cookie" scheme="https://pudongping.github.io/tags/Cookie/"/>
+    
+    <category term="Session" scheme="https://pudongping.github.io/tags/Session/"/>
+    
+    <category term="Token" scheme="https://pudongping.github.io/tags/Token/"/>
+    
+    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="授权" scheme="https://pudongping.github.io/tags/%E6%8E%88%E6%9D%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3分钟，手摸手教你用OpenResty搭建高性能隧道代理（附完整配置！）</title>
+    <link href="https://pudongping.github.io/posts/c2b7a51a.html"/>
+    <id>https://pudongping.github.io/posts/c2b7a51a.html</id>
+    <published>2025-08-14T04:00:44.000Z</published>
+    <updated>2025-08-14T04:01:58.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;经常写爬虫的小伙伴们对代理 IP 应该不会很陌生了吧？&lt;/p&gt;
+&lt;p&gt;通常，我们为了让爬虫更加稳定，一般我们都会去购买一些代理 IP 用在我们的爬虫服务上。常规的做法，我们一般会去某个代理网站上面购买服务，然后我们会得到一个获取代理 IP</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="OpenResty" scheme="https://pudongping.github.io/tags/OpenResty/"/>
+    
+    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一文吃透 Promise 与 async/await，异步编程也能如此简单！建议收藏！</title>
     <link href="https://pudongping.github.io/posts/da88494b.html"/>
     <id>https://pudongping.github.io/posts/da88494b.html</id>
     <published>2025-08-12T03:39:29.000Z</published>
-    <updated>2025-08-12T03:42:04.279Z</updated>
+    <updated>2025-08-12T03:42:15.992Z</updated>
     
     
       
@@ -533,64 +596,6 @@
     <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>告别数据库瓶颈！用这个技巧让你的程序跑得飞快！</title>
-    <link href="https://pudongping.github.io/posts/231318cc.html"/>
-    <id>https://pudongping.github.io/posts/231318cc.html</id>
-    <published>2025-06-09T07:07:28.000Z</published>
-    <updated>2025-06-09T07:08:37.339Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常开发中，数据库连接的管理是一个非常重要的环节。为了避免频繁地创建和销毁数据库连接，我们可以通过&lt;strong&gt;连接池&lt;/strong&gt;来提高系统的性能和响应速度。连接池能够有效地重用已有的连接，避免重复的连接创建和销毁过程。&lt;/p&gt;
-&lt;p&gt;今天，我们将通过一个简单的例</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
-    
-    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTTP2.0 从原理到实践，保证把你治得服服帖帖！</title>
-    <link href="https://pudongping.github.io/posts/96db3e15.html"/>
-    <id>https://pudongping.github.io/posts/96db3e15.html</id>
-    <published>2025-06-06T01:59:34.000Z</published>
-    <updated>2025-06-09T07:04:32.799Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTTP 是 Web 传输的基础协议，随着互联网的发展，它不断演进，从最初的 HTTP/1.0 到 HTTP/1.1，再到如今的 HTTP/2，每个版本都带来了显著的改进。&lt;/p&gt;
-&lt;p&gt;本篇文章将深入浅出地讲解</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
-    
-    <category term="HTTP2.0" scheme="https://pudongping.github.io/tags/HTTP2-0/"/>
     
   </entry>
   
