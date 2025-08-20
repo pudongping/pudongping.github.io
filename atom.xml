@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-19T02:46:50.623Z</updated>
+  <updated>2025-08-20T02:03:58.369Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gRPC凭什么成为微服务通信首选？深度解析RPC进化史</title>
+    <link href="https://pudongping.github.io/posts/610da067.html"/>
+    <id>https://pudongping.github.io/posts/610da067.html</id>
+    <published>2025-08-20T02:03:11.000Z</published>
+    <updated>2025-08-20T02:03:58.369Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在构建分布式系统或微服务架构时，&lt;strong&gt;服务之间的通信机制&lt;/strong&gt;往往决定了整个系统的性能与可维护性。&lt;/p&gt;
+&lt;p&gt;本文将围绕 RPC 和 gRPC 展开，详细介绍它们的原理、优势及使用方式，并深入讲解 gRPC 所依赖的序列化协议 ——</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微服务不是银弹！这4个设计原则让你少踩90%的坑</title>
     <link href="https://pudongping.github.io/posts/df453781.html"/>
     <id>https://pudongping.github.io/posts/df453781.html</id>
     <published>2025-08-19T02:45:59.000Z</published>
-    <updated>2025-08-19T02:46:50.623Z</updated>
+    <updated>2025-08-19T02:47:00.837Z</updated>
     
     
       
@@ -338,9 +368,9 @@
     
     <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
     <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
     
   </entry>
   
@@ -558,33 +588,6 @@
         
         
     <summary type="html">&lt;p&gt;在使用 Go 语言进行并发编程时，Goroutine 是一种轻量级线程，具有很高的性能优势。然而，Go 语言&lt;strong&gt;并未直接提供&lt;/strong&gt;获取 Goroutine ID 的官方 API。这是 Go 语言设计的一部分，目的是避免开发者依赖 Goroutine</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 语言中如何操作二维码？</title>
-    <link href="https://pudongping.github.io/posts/6db97ead.html"/>
-    <id>https://pudongping.github.io/posts/6db97ead.html</id>
-    <published>2025-06-11T02:03:56.000Z</published>
-    <updated>2025-06-11T02:05:25.863Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;二维码（QR Code）已经成为我们生活中不可或缺的一部分，无论是支付、登录还是信息共享，它们可以轻松地存储和传输各种类型的数据，从网站链接到名片信息，无所不能。在开发中，我们经常会遇到识别二维码的需求，那么用 &lt;strong&gt;Go</summary>
         
       
     
