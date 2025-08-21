@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-20T02:03:58.369Z</updated>
+  <updated>2025-08-21T02:18:38.728Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>全面掌握 Consul：服务注册发现、健康检查、跨数据中心一网打尽</title>
+    <link href="https://pudongping.github.io/posts/38329174.html"/>
+    <id>https://pudongping.github.io/posts/38329174.html</id>
+    <published>2025-08-21T02:17:26.000Z</published>
+    <updated>2025-08-21T02:18:38.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构快速发展的今天，服务之间的通信与协调变得愈发复杂。一个高效、稳定、具备服务注册与发现能力的中间件，几乎是构建高可用系统的“刚需”。&lt;strong&gt;Consul&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="服务注册发现" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%8F%91%E7%8E%B0/"/>
+    
+    <category term="健康检查" scheme="https://pudongping.github.io/tags/%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>gRPC凭什么成为微服务通信首选？深度解析RPC进化史</title>
     <link href="https://pudongping.github.io/posts/610da067.html"/>
     <id>https://pudongping.github.io/posts/610da067.html</id>
     <published>2025-08-20T02:03:11.000Z</published>
-    <updated>2025-08-20T02:03:58.369Z</updated>
+    <updated>2025-08-20T02:04:02.801Z</updated>
     
     
       
@@ -561,33 +592,6 @@
         
     <summary type="html">&lt;p&gt;Go 语言的并发模型是其强大之处之一，而 Channel 则是这一模型的核心。Channel 提供了一种在 goroutine 之间进行通信和同步的机制。然而，正确地使用 Channel 并不是一件简单的事情。&lt;/p&gt;
 &lt;p&gt;本文将详细介绍在 Go 语言中使用</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在 Go 中获取 goroutine 的 ID？</title>
-    <link href="https://pudongping.github.io/posts/2dcc2ce.html"/>
-    <id>https://pudongping.github.io/posts/2dcc2ce.html</id>
-    <published>2025-06-12T02:31:29.000Z</published>
-    <updated>2025-06-12T02:32:17.332Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在使用 Go 语言进行并发编程时，Goroutine 是一种轻量级线程，具有很高的性能优势。然而，Go 语言&lt;strong&gt;并未直接提供&lt;/strong&gt;获取 Goroutine ID 的官方 API。这是 Go 语言设计的一部分，目的是避免开发者依赖 Goroutine</summary>
         
       
     
