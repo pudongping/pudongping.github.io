@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-21T02:18:38.728Z</updated>
+  <updated>2025-08-22T02:50:07.329Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Jaeger，一个链路追踪神器！</title>
+    <link href="https://pudongping.github.io/posts/f542f6b5.html"/>
+    <id>https://pudongping.github.io/posts/f542f6b5.html</id>
+    <published>2025-08-22T02:49:14.000Z</published>
+    <updated>2025-08-22T02:50:07.329Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务系统中，一个接口请求可能穿越十几个服务节点，复杂度远超传统单体应用。此时，如何追踪一次请求的全链路信息、快速定位问题、优化性能，成为了运维与开发必须直面的挑战。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“如果你不能度量它，你就无法改进它。” ——</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="jaeger" scheme="https://pudongping.github.io/tags/jaeger/"/>
+    
+    <category term="链路追踪" scheme="https://pudongping.github.io/tags/%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>全面掌握 Consul：服务注册发现、健康检查、跨数据中心一网打尽</title>
     <link href="https://pudongping.github.io/posts/38329174.html"/>
     <id>https://pudongping.github.io/posts/38329174.html</id>
     <published>2025-08-21T02:17:26.000Z</published>
-    <updated>2025-08-21T02:18:38.728Z</updated>
+    <updated>2025-08-21T02:18:44.699Z</updated>
     
     
       
@@ -564,34 +595,6 @@
         
     <summary type="html">&lt;p&gt;切片（Slice）是 Go 语言中非常强大且灵活的数据结构，它是对数组的一个连续片段的引用。切片的使用极大地简化了数组的操作，但在使用过程中也有一些需要注意的地方。&lt;/p&gt;
 &lt;p&gt;本文将详细介绍在 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你真的会使用 Go 语言中的 Channel 吗？</title>
-    <link href="https://pudongping.github.io/posts/2a20e737.html"/>
-    <id>https://pudongping.github.io/posts/2a20e737.html</id>
-    <published>2025-06-13T01:53:51.000Z</published>
-    <updated>2025-06-13T01:54:40.494Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Go 语言的并发模型是其强大之处之一，而 Channel 则是这一模型的核心。Channel 提供了一种在 goroutine 之间进行通信和同步的机制。然而，正确地使用 Channel 并不是一件简单的事情。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍在 Go 语言中使用</summary>
         
       
     
