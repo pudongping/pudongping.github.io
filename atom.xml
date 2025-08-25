@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-22T02:50:07.329Z</updated>
+  <updated>2025-08-25T02:04:17.159Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>微服务稳定性三板斧：熔断、限流与负载均衡全面解析（附 Hystrix-Go 实战代码）</title>
+    <link href="https://pudongping.github.io/posts/1a4a443b.html"/>
+    <id>https://pudongping.github.io/posts/1a4a443b.html</id>
+    <published>2025-08-25T02:03:30.000Z</published>
+    <updated>2025-08-25T02:04:17.159Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在构建微服务架构的过程中，“高可用”和“稳定性”始终是绕不开的关键词。服务间依赖错综复杂，一旦某个下游服务出现性能瓶颈或故障，就可能引发“雪崩效应”，造成整条链路瘫痪。为了避免这种灾难性后果，我们引入了三项关键技术：&lt;strong&gt;熔断&lt;/strong&gt;、&lt;strong&gt;限</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
+    
+    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
+    
+    <category term="负载均衡" scheme="https://pudongping.github.io/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Jaeger，一个链路追踪神器！</title>
     <link href="https://pudongping.github.io/posts/f542f6b5.html"/>
     <id>https://pudongping.github.io/posts/f542f6b5.html</id>
     <published>2025-08-22T02:49:14.000Z</published>
-    <updated>2025-08-22T02:50:07.329Z</updated>
+    <updated>2025-08-22T02:50:14.086Z</updated>
     
     
       
@@ -567,34 +598,6 @@
     <summary type="html">&lt;p&gt;切片（Slice）是Go语言中最灵活且高频使用的数据结构之一，其本质是&lt;strong&gt;对底层数组的动态引用视图&lt;/strong&gt;，支持动态扩容、高效截取等特性。&lt;/p&gt;
 &lt;p&gt;本文将结合代码示例，详细解析切片的核心用法及常见注意事项。&lt;/p&gt;
 &lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中使用切片需要注意什么？</title>
-    <link href="https://pudongping.github.io/posts/816dc455.html"/>
-    <id>https://pudongping.github.io/posts/816dc455.html</id>
-    <published>2025-06-16T02:40:21.000Z</published>
-    <updated>2025-06-16T02:41:06.879Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;切片（Slice）是 Go 语言中非常强大且灵活的数据结构，它是对数组的一个连续片段的引用。切片的使用极大地简化了数组的操作，但在使用过程中也有一些需要注意的地方。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍在 Go</summary>
         
       
     
