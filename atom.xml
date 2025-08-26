@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-25T02:04:17.159Z</updated>
+  <updated>2025-08-26T02:14:40.532Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高并发系统下，如何用限流算法优雅地保护你的服务？</title>
+    <link href="https://pudongping.github.io/posts/e05f1cd5.html"/>
+    <id>https://pudongping.github.io/posts/e05f1cd5.html</id>
+    <published>2025-08-26T02:12:34.000Z</published>
+    <updated>2025-08-26T02:14:40.532Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构盛行的今天，服务间的调用链路变得越来越复杂。一个看似平静的系统，往往在瞬间的流量洪峰面前不堪一击。当双11零点、热门事件爆发、或者恶意攻击来临时，如何确保我们的服务能够稳定运行，而不是在流量面前缴械投降？&lt;/p&gt;
+&lt;p&gt;回答就是：&lt;strong&gt;限流&lt;/stro</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
+    
+    <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
+    
+    <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
+    
+    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
+    
+    <category term="降级" scheme="https://pudongping.github.io/tags/%E9%99%8D%E7%BA%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微服务稳定性三板斧：熔断、限流与负载均衡全面解析（附 Hystrix-Go 实战代码）</title>
     <link href="https://pudongping.github.io/posts/1a4a443b.html"/>
     <id>https://pudongping.github.io/posts/1a4a443b.html</id>
     <published>2025-08-25T02:03:30.000Z</published>
-    <updated>2025-08-25T02:04:17.159Z</updated>
+    <updated>2025-08-25T02:04:22.170Z</updated>
     
     
       
@@ -569,35 +605,6 @@
         
     <summary type="html">&lt;p&gt;在现代 Web 开发中，实现实时数据更新是一个常见的需求。比如股票行情、聊天消息、体育比赛比分等场景，都需要服务器能够主动将数据推送给客户端，而不是客户端频繁轮询服务器来获取最新数据。&lt;/p&gt;
 &lt;p&gt;今天，我们就来学习如何使用 Go 语言和 Gin 框架实现</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言切片，使用技巧与避坑指南</title>
-    <link href="https://pudongping.github.io/posts/96775eb5.html"/>
-    <id>https://pudongping.github.io/posts/96775eb5.html</id>
-    <published>2025-06-17T01:51:12.000Z</published>
-    <updated>2025-06-17T01:51:56.237Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;切片（Slice）是Go语言中最灵活且高频使用的数据结构之一，其本质是&lt;strong&gt;对底层数组的动态引用视图&lt;/strong&gt;，支持动态扩容、高效截取等特性。&lt;/p&gt;
-&lt;p&gt;本文将结合代码示例，详细解析切片的核心用法及常见注意事项。&lt;/p&gt;
-&lt;h2</summary>
         
       
     
