@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-26T02:14:40.532Z</updated>
+  <updated>2025-08-27T03:34:55.136Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>从入门到实战：一文掌握微服务监控系统 Prometheus + Grafana</title>
+    <link href="https://pudongping.github.io/posts/17b9f045.html"/>
+    <id>https://pudongping.github.io/posts/17b9f045.html</id>
+    <published>2025-08-27T03:33:43.000Z</published>
+    <updated>2025-08-27T03:34:55.136Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;随着微服务架构的广泛应用，系统组件之间的交互变得更加复杂。为了及时发现故障、评估性能瓶颈并提升系统可观测性，构建一套完善的&lt;strong&gt;监控系统&lt;/strong&gt;成为了现代微服务体系中的标配。&lt;/p&gt;
+&lt;p&gt;本文将围绕 Prometheus 这一主流开源监控系统，结合</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="Prometheus" scheme="https://pudongping.github.io/tags/Prometheus/"/>
+    
+    <category term="Grafana" scheme="https://pudongping.github.io/tags/Grafana/"/>
+    
+    <category term="监控" scheme="https://pudongping.github.io/tags/%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高并发系统下，如何用限流算法优雅地保护你的服务？</title>
     <link href="https://pudongping.github.io/posts/e05f1cd5.html"/>
     <id>https://pudongping.github.io/posts/e05f1cd5.html</id>
     <published>2025-08-26T02:12:34.000Z</published>
-    <updated>2025-08-26T02:14:40.532Z</updated>
+    <updated>2025-08-26T02:14:47.365Z</updated>
     
     
       
@@ -588,34 +620,6 @@
     <category term="DB" scheme="https://pudongping.github.io/tags/DB/"/>
     
     <category term="InfluxDB" scheme="https://pudongping.github.io/tags/InfluxDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>不用WebSocket也能搞定实时消息推送？试一试SSE吧！</title>
-    <link href="https://pudongping.github.io/posts/5a7767cc.html"/>
-    <id>https://pudongping.github.io/posts/5a7767cc.html</id>
-    <published>2025-06-18T01:49:34.000Z</published>
-    <updated>2025-06-18T01:50:59.553Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 开发中，实现实时数据更新是一个常见的需求。比如股票行情、聊天消息、体育比赛比分等场景，都需要服务器能够主动将数据推送给客户端，而不是客户端频繁轮询服务器来获取最新数据。&lt;/p&gt;
-&lt;p&gt;今天，我们就来学习如何使用 Go 语言和 Gin 框架实现</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
   </entry>
   
