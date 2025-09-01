@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-08-28T03:33:12.525Z</updated>
+  <updated>2025-09-01T02:33:36.330Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git合并选Rebase还是Merge？弄懂这3点，从此不再纠结</title>
+    <link href="https://pudongping.github.io/posts/a479708b.html"/>
+    <id>https://pudongping.github.io/posts/a479708b.html</id>
+    <published>2025-09-01T02:32:55.000Z</published>
+    <updated>2025-09-01T02:33:36.330Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家好！今天我们来聊聊 Git 中两个非常重要但又容易混淆的概念：&lt;code&gt;git rebase&lt;/code&gt; 和 &lt;code&gt;git merge&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;在日常团队协作开发中，我们经常需要将不同分支的代码进行合并。Git</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>搞懂 ELK 日志系统架构，这一篇就够了（含实战图解）</title>
@@ -584,33 +610,6 @@
         
     <summary type="html">&lt;p&gt;在 Go 语言中，错误处理一直是开发中不可或缺的一部分。尤其在并发编程场景下，由于多个 goroutine 同时运行，错误的传递和处理就变得更为复杂。这篇文章就介绍了一些常见的处理并发错误的方法，以供各位参考。&lt;/p&gt;
 &lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入解析 go 语言中的 select 语句</title>
-    <link href="https://pudongping.github.io/posts/14df232b.html"/>
-    <id>https://pudongping.github.io/posts/14df232b.html</id>
-    <published>2025-06-24T02:25:25.000Z</published>
-    <updated>2025-08-07T02:04:26.004Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 go 语言中，&lt;code&gt;select&lt;/code&gt; 是 Go 语言专门为并发编程设计的控制结构，主要用于在多个 channel 操作之间进行非阻塞选择。它的工作方式类似于 &lt;code&gt;switch&lt;/code&gt;，但所有 case 分支都必须是 channel 的</summary>
         
       
     
