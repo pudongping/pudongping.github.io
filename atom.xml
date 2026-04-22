@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2025-06-29T06:40:14.479Z</updated>
+  <updated>2026-04-22T04:36:38.023Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,478 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Go 语言单例模式全解析：从青铜到王者段位的实现方案</title>
-    <link href="https://pudongping.github.io/posts/eb161174.html"/>
-    <id>https://pudongping.github.io/posts/eb161174.html</id>
-    <published>2025-06-29T06:39:36.000Z</published>
-    <updated>2025-06-29T06:40:14.479Z</updated>
+    <title>AI开发实战2、只有 1% 的人知道！这样给 AI 发指令，写出的前端项目堪比阿里 P7</title>
+    <link href="https://pudongping.github.io/posts/b23f5e1a.html"/>
+    <id>https://pudongping.github.io/posts/b23f5e1a.html</id>
+    <published>2026-04-22T04:36:02.000Z</published>
+    <updated>2026-04-22T04:36:38.023Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;什么是单例模式？&quot;&gt;&lt;a href=&quot;#什么是单例模式？&quot; class=&quot;headerlink&quot; title=&quot;什么是单例模式？&quot;&gt;&lt;/a&gt;什么是单例模式？&lt;/h2&gt;&lt;p&gt;单例模式（Singleton</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何为 gRPC Server 编写本地测试代码</title>
-    <link href="https://pudongping.github.io/posts/e9966a07.html"/>
-    <id>https://pudongping.github.io/posts/e9966a07.html</id>
-    <published>2025-06-26T01:52:58.000Z</published>
-    <updated>2025-06-26T01:54:10.465Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在微服务架构中，gRPC 已成为主流的通信协议之一。但许多开发者在面对 gRPC 服务测试时，常常会遇到需要启动真实网络服务、管理端口占用等烦恼。&lt;/p&gt;
-&lt;p&gt;本文将介绍如何利用 Go 语言中 gRPC 提供的测试工具 ——</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
-    <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 语言中如何处理并发错误</title>
-    <link href="https://pudongping.github.io/posts/d082e483.html"/>
-    <id>https://pudongping.github.io/posts/d082e483.html</id>
-    <published>2025-06-25T02:14:34.000Z</published>
-    <updated>2025-06-25T02:15:15.861Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言中，错误处理一直是开发中不可或缺的一部分。尤其在并发编程场景下，由于多个 goroutine 同时运行，错误的传递和处理就变得更为复杂。这篇文章就介绍了一些常见的处理并发错误的方法，以供各位参考。&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入解析 go 语言中的 select 语句</title>
-    <link href="https://pudongping.github.io/posts/14df232b.html"/>
-    <id>https://pudongping.github.io/posts/14df232b.html</id>
-    <published>2025-06-24T02:25:25.000Z</published>
-    <updated>2025-06-24T02:26:22.843Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 go 语言中，&lt;code&gt;select&lt;/code&gt; 是 Go 语言专门为并发编程设计的控制结构，主要用于在多个 channel 操作之间进行非阻塞选择。它的工作方式类似于 &lt;code&gt;switch&lt;/code&gt;，但所有 case 分支都必须是 channel 的</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>InfluxDB 时序数据的高效解决方案</title>
-    <link href="https://pudongping.github.io/posts/84187b70.html"/>
-    <id>https://pudongping.github.io/posts/84187b70.html</id>
-    <published>2025-06-23T08:42:10.000Z</published>
-    <updated>2025-06-23T08:43:23.276Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;InfluxDB-是什么？&quot;&gt;&lt;a href=&quot;#InfluxDB-是什么？&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB 是什么？&quot;&gt;&lt;/a&gt;InfluxDB</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="DB" scheme="https://pudongping.github.io/tags/DB/"/>
-    
-    <category term="InfluxDB" scheme="https://pudongping.github.io/tags/InfluxDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>不用WebSocket也能搞定实时消息推送？试一试SSE吧！</title>
-    <link href="https://pudongping.github.io/posts/5a7767cc.html"/>
-    <id>https://pudongping.github.io/posts/5a7767cc.html</id>
-    <published>2025-06-18T01:49:34.000Z</published>
-    <updated>2025-06-23T08:41:18.070Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代 Web 开发中，实现实时数据更新是一个常见的需求。比如股票行情、聊天消息、体育比赛比分等场景，都需要服务器能够主动将数据推送给客户端，而不是客户端频繁轮询服务器来获取最新数据。&lt;/p&gt;
-&lt;p&gt;今天，我们就来学习如何使用 Go 语言和 Gin 框架实现</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言切片，使用技巧与避坑指南</title>
-    <link href="https://pudongping.github.io/posts/96775eb5.html"/>
-    <id>https://pudongping.github.io/posts/96775eb5.html</id>
-    <published>2025-06-17T01:51:12.000Z</published>
-    <updated>2025-06-23T08:41:18.070Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;切片（Slice）是Go语言中最灵活且高频使用的数据结构之一，其本质是&lt;strong&gt;对底层数组的动态引用视图&lt;/strong&gt;，支持动态扩容、高效截取等特性。&lt;/p&gt;
-&lt;p&gt;本文将结合代码示例，详细解析切片的核心用法及常见注意事项。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go语言中使用切片需要注意什么？</title>
-    <link href="https://pudongping.github.io/posts/816dc455.html"/>
-    <id>https://pudongping.github.io/posts/816dc455.html</id>
-    <published>2025-06-16T02:40:21.000Z</published>
-    <updated>2025-06-23T08:41:18.070Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;切片（Slice）是 Go 语言中非常强大且灵活的数据结构，它是对数组的一个连续片段的引用。切片的使用极大地简化了数组的操作，但在使用过程中也有一些需要注意的地方。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍在 Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你真的会使用 Go 语言中的 Channel 吗？</title>
-    <link href="https://pudongping.github.io/posts/2a20e737.html"/>
-    <id>https://pudongping.github.io/posts/2a20e737.html</id>
-    <published>2025-06-13T01:53:51.000Z</published>
-    <updated>2025-06-23T08:41:18.070Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Go 语言的并发模型是其强大之处之一，而 Channel 则是这一模型的核心。Channel 提供了一种在 goroutine 之间进行通信和同步的机制。然而，正确地使用 Channel 并不是一件简单的事情。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍在 Go 语言中使用</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在 Go 中获取 goroutine 的 ID？</title>
-    <link href="https://pudongping.github.io/posts/2dcc2ce.html"/>
-    <id>https://pudongping.github.io/posts/2dcc2ce.html</id>
-    <published>2025-06-12T02:31:29.000Z</published>
-    <updated>2025-06-23T08:41:18.071Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在使用 Go 语言进行并发编程时，Goroutine 是一种轻量级线程，具有很高的性能优势。然而，Go 语言&lt;strong&gt;并未直接提供&lt;/strong&gt;获取 Goroutine ID 的官方 API。这是 Go 语言设计的一部分，目的是避免开发者依赖 Goroutine</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go 语言中如何操作二维码？</title>
-    <link href="https://pudongping.github.io/posts/6db97ead.html"/>
-    <id>https://pudongping.github.io/posts/6db97ead.html</id>
-    <published>2025-06-11T02:03:56.000Z</published>
-    <updated>2025-06-23T08:41:18.069Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;二维码（QR Code）已经成为我们生活中不可或缺的一部分，无论是支付、登录还是信息共享，它们可以轻松地存储和传输各种类型的数据，从网站链接到名片信息，无所不能。在开发中，我们经常会遇到识别二维码的需求，那么用 &lt;strong&gt;Go</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何判断两张图片的相似度？原来图片对比也可以如此简单！</title>
-    <link href="https://pudongping.github.io/posts/5c16cd6d.html"/>
-    <id>https://pudongping.github.io/posts/5c16cd6d.html</id>
-    <published>2025-06-10T03:10:01.000Z</published>
-    <updated>2025-06-23T08:41:18.071Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在介绍技术细节前，我们先来看看图片对比在哪些场景下可以用得到：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;图片去重：自动删除重复图片，为存储空间”瘦身”。想象你是一个社交媒体平台的运营，每天要处理数万张图片。重复图片不仅占用存储空间，还会影响用户体验。&lt;/li&gt;
-&lt;li&gt;内容审核：一些平台</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>告别数据库瓶颈！用这个技巧让你的程序跑得飞快！</title>
-    <link href="https://pudongping.github.io/posts/231318cc.html"/>
-    <id>https://pudongping.github.io/posts/231318cc.html</id>
-    <published>2025-06-09T07:07:28.000Z</published>
-    <updated>2025-06-23T08:41:18.071Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常开发中，数据库连接的管理是一个非常重要的环节。为了避免频繁地创建和销毁数据库连接，我们可以通过&lt;strong&gt;连接池&lt;/strong&gt;来提高系统的性能和响应速度。连接池能够有效地重用已有的连接，避免重复的连接创建和销毁过程。&lt;/p&gt;
-&lt;p&gt;今天，我们将通过一个简单的例</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
-    
-    <category term="数据库" scheme="https://pudongping.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="连接池" scheme="https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTTP2.0 从原理到实践，保证把你治得服服帖帖！</title>
-    <link href="https://pudongping.github.io/posts/96db3e15.html"/>
-    <id>https://pudongping.github.io/posts/96db3e15.html</id>
-    <published>2025-06-06T01:59:34.000Z</published>
-    <updated>2025-06-06T02:00:59.600Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTTP 是 Web 传输的基础协议，随着互联网的发展，它不断演进，从最初的 HTTP/1.0 到 HTTP/1.1，再到如今的 HTTP/2，每个版本都带来了显著的改进。&lt;/p&gt;
-&lt;p&gt;本篇文章将深入浅出地讲解</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="HTTP" scheme="https://pudongping.github.io/tags/HTTP/"/>
-    
-    <category term="HTTP2.0" scheme="https://pudongping.github.io/tags/HTTP2-0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>还在用 Jmeter 做压测？试试 oha 吧！你会毫不犹豫的爱上它！</title>
-    <link href="https://pudongping.github.io/posts/869fb74d.html"/>
-    <id>https://pudongping.github.io/posts/869fb74d.html</id>
-    <published>2025-06-05T02:44:44.000Z</published>
-    <updated>2025-06-05T02:45:46.711Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在进行 Web 服务和 API 性能测试时，选择合适的工具至关重要。市面上有很多工具可以帮助开发者进行负载测试，其中 &lt;strong&gt;OHA&lt;/strong&gt; 和 &lt;strong&gt;JMeter&lt;/strong&gt; 是两个常见的选择。&lt;/p&gt;
-&lt;p&gt;今天，我们将一起探讨</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Jmeter" scheme="https://pudongping.github.io/tags/Jmeter/"/>
-    
-    <category term="oha" scheme="https://pudongping.github.io/tags/oha/"/>
-    
-    <category term="压力测试" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/"/>
-    
-    <category term="压测" scheme="https://pudongping.github.io/tags/%E5%8E%8B%E6%B5%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>localhost 和 127.0.0.1 到底有啥区别？</title>
-    <link href="https://pudongping.github.io/posts/a9aab3a3.html"/>
-    <id>https://pudongping.github.io/posts/a9aab3a3.html</id>
-    <published>2025-06-04T02:32:08.000Z</published>
-    <updated>2025-06-04T02:37:04.068Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在开发中，我们经常会接触到 &lt;code&gt;localhost&lt;/code&gt; 和</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>又双叒叕出来了一款船新Copilot！腾讯终于发大招了！码农们又可以丝滑摸鱼啦～</title>
-    <link href="https://pudongping.github.io/posts/bd2219d.html"/>
-    <id>https://pudongping.github.io/posts/bd2219d.html</id>
-    <published>2024-12-11T16:00:58.000Z</published>
-    <updated>2024-12-11T16:02:25.177Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这几天在腾讯云开发者社区写文章时，老是给我下面这个弹窗提示，要我去体验一下这款 &lt;strong&gt;AI 代码助手&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/loading.gif&quot;</summary>
+    <summary type="html">&lt;p&gt;为什么别人用 AI 写出的代码结构清晰、风格统一，而你写出来的却是“屎山”堆积？区别不在于 AI 的智商，而在于你会不会“调教”。&lt;/p&gt;
+&lt;p&gt;本文将为你提供一套经过实战验证的 &lt;strong&gt;“从 0 到 1 前端项目启动 Prompt</summary>
         
       
     
@@ -499,95 +40,590 @@
     
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
-    <category term="Copilot" scheme="https://pudongping.github.io/tags/Copilot/"/>
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
-    <category term="编程助手" scheme="https://pudongping.github.io/tags/%E7%BC%96%E7%A8%8B%E5%8A%A9%E6%89%8B/"/>
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
-    <title>Grequests，非常 Nice 的 Python 异步 HTTP 请求神器</title>
-    <link href="https://pudongping.github.io/posts/22d60526.html"/>
-    <id>https://pudongping.github.io/posts/22d60526.html</id>
-    <published>2024-12-03T03:51:16.000Z</published>
-    <updated>2024-12-11T15:59:05.641Z</updated>
+    <title>AI开发实战1、手摸手教你一行代码不写，全程AI写个小程序——前端布局</title>
+    <link href="https://pudongping.github.io/posts/bd7a8e95.html"/>
+    <id>https://pudongping.github.io/posts/bd7a8e95.html</id>
+    <published>2026-04-22T04:35:11.000Z</published>
+    <updated>2026-04-22T04:35:44.573Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;在 Python 开发中，处理 HTTP 请求是一项基础而重要的任务。我们经常需要从网络获取数据，或者向服务器发送数据。&lt;/p&gt;
-&lt;p&gt;我们已知的 &lt;code&gt;requests&lt;/code&gt; 库已经是相当的牛掰了，但是比较遗憾的是</summary>
+    <summary type="html">&lt;p&gt;经常用 AI 搓前端页面的朋友，一定对那抹“深邃蓝”和“基佬紫”不陌生。&lt;/p&gt;
+&lt;p&gt;只要你不给 Prompt 设限，AI 仿佛全员深爱“赛博朋克渐变风”。第一眼惊艳，看多了想吐——满屏都是溢出来的“AI</summary>
         
       
     
     
     
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
     
     
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【AI开发实战】从想法到上线，我用AI全栈开发了一款记账微信小程序</title>
+    <link href="https://pudongping.github.io/posts/5ec7849a.html"/>
+    <id>https://pudongping.github.io/posts/5ec7849a.html</id>
+    <published>2026-04-22T04:34:21.000Z</published>
+    <updated>2026-04-22T04:34:53.324Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每到月底，看着空空如也的银行卡，你是不是也经常发出灵魂拷问：&lt;br&gt;&lt;strong&gt;“我明明没买什么大件，钱到底都去哪了？”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;奶茶、打车、外卖……这些不起眼的小开销，正在悄悄吞噬你的积蓄。&lt;/p&gt;
+&lt;p&gt;记账，是理财的第一步。但市面上的记账软</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>全网都在推 Claude Code，但只有这篇文章教你如何“真正”能用</title>
+    <link href="https://pudongping.github.io/posts/293ebadc.html"/>
+    <id>https://pudongping.github.io/posts/293ebadc.html</id>
+    <published>2026-04-22T04:33:17.000Z</published>
+    <updated>2026-04-22T04:33:51.701Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Claude Code 这个 AI 神器想必已经不用过多介绍了吧，但是身边有很多朋友都说安装上了，但是总是没办法丝滑的使用，额～由于一些懂得都懂的原因，很多人都卡在网络上，这篇文章就教大家如何一步一步的从安装到能正常使用。&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="Claude Code" scheme="https://pudongping.github.io/tags/Claude-Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git合并选Rebase还是Merge？弄懂这3点，从此不再纠结</title>
+    <link href="https://pudongping.github.io/posts/a479708b.html"/>
+    <id>https://pudongping.github.io/posts/a479708b.html</id>
+    <published>2025-09-01T02:32:55.000Z</published>
+    <updated>2026-04-22T04:31:40.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家好！今天我们来聊聊 Git 中两个非常重要但又容易混淆的概念：&lt;code&gt;git rebase&lt;/code&gt; 和 &lt;code&gt;git merge&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;在日常团队协作开发中，我们经常需要将不同分支的代码进行合并。Git</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搞懂 ELK 日志系统架构，这一篇就够了（含实战图解）</title>
+    <link href="https://pudongping.github.io/posts/cbdca962.html"/>
+    <id>https://pudongping.github.io/posts/cbdca962.html</id>
+    <published>2025-08-28T03:30:26.000Z</published>
+    <updated>2026-04-22T04:31:40.324Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;随着系统架构的不断扩展和业务规模的迅猛增长，传统的日志管理方式已经难以应对海量分布式系统中的日志收集、查询和告警需求。为此，越来越多的企业开始引入成熟的日志系统方案，&lt;strong&gt;Elastic Stack（即 ELK + Beats）&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
+    
+    <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="ELK" scheme="https://pudongping.github.io/tags/ELK/"/>
+    
+    <category term="logstash" scheme="https://pudongping.github.io/tags/logstash/"/>
+    
+    <category term="Filebeat" scheme="https://pudongping.github.io/tags/Filebeat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从入门到实战：一文掌握微服务监控系统 Prometheus + Grafana</title>
+    <link href="https://pudongping.github.io/posts/17b9f045.html"/>
+    <id>https://pudongping.github.io/posts/17b9f045.html</id>
+    <published>2025-08-27T03:33:43.000Z</published>
+    <updated>2026-04-22T04:31:40.322Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;随着微服务架构的广泛应用，系统组件之间的交互变得更加复杂。为了及时发现故障、评估性能瓶颈并提升系统可观测性，构建一套完善的&lt;strong&gt;监控系统&lt;/strong&gt;成为了现代微服务体系中的标配。&lt;/p&gt;
+&lt;p&gt;本文将围绕 Prometheus 这一主流开源监控系统，结合</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="Prometheus" scheme="https://pudongping.github.io/tags/Prometheus/"/>
+    
+    <category term="Grafana" scheme="https://pudongping.github.io/tags/Grafana/"/>
+    
+    <category term="监控" scheme="https://pudongping.github.io/tags/%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高并发系统下，如何用限流算法优雅地保护你的服务？</title>
+    <link href="https://pudongping.github.io/posts/e05f1cd5.html"/>
+    <id>https://pudongping.github.io/posts/e05f1cd5.html</id>
+    <published>2025-08-26T02:12:34.000Z</published>
+    <updated>2026-04-22T04:31:40.324Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构盛行的今天，服务间的调用链路变得越来越复杂。一个看似平静的系统，往往在瞬间的流量洪峰面前不堪一击。当双11零点、热门事件爆发、或者恶意攻击来临时，如何确保我们的服务能够稳定运行，而不是在流量面前缴械投降？&lt;/p&gt;
+&lt;p&gt;回答就是：&lt;strong&gt;限流&lt;/stro</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
+    
+    <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
+    
+    <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
+    
+    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
+    
+    <category term="降级" scheme="https://pudongping.github.io/tags/%E9%99%8D%E7%BA%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服务稳定性三板斧：熔断、限流与负载均衡全面解析（附 Hystrix-Go 实战代码）</title>
+    <link href="https://pudongping.github.io/posts/1a4a443b.html"/>
+    <id>https://pudongping.github.io/posts/1a4a443b.html</id>
+    <published>2025-08-25T02:03:30.000Z</published>
+    <updated>2026-04-22T04:31:40.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在构建微服务架构的过程中，“高可用”和“稳定性”始终是绕不开的关键词。服务间依赖错综复杂，一旦某个下游服务出现性能瓶颈或故障，就可能引发“雪崩效应”，造成整条链路瘫痪。为了避免这种灾难性后果，我们引入了三项关键技术：&lt;strong&gt;熔断&lt;/strong&gt;、&lt;strong&gt;限</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
+    
+    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
+    
+    <category term="负载均衡" scheme="https://pudongping.github.io/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jaeger，一个链路追踪神器！</title>
+    <link href="https://pudongping.github.io/posts/f542f6b5.html"/>
+    <id>https://pudongping.github.io/posts/f542f6b5.html</id>
+    <published>2025-08-22T02:49:14.000Z</published>
+    <updated>2026-04-22T04:31:40.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务系统中，一个接口请求可能穿越十几个服务节点，复杂度远超传统单体应用。此时，如何追踪一次请求的全链路信息、快速定位问题、优化性能，成为了运维与开发必须直面的挑战。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“如果你不能度量它，你就无法改进它。” ——</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="jaeger" scheme="https://pudongping.github.io/tags/jaeger/"/>
+    
+    <category term="链路追踪" scheme="https://pudongping.github.io/tags/%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>全面掌握 Consul：服务注册发现、健康检查、跨数据中心一网打尽</title>
+    <link href="https://pudongping.github.io/posts/38329174.html"/>
+    <id>https://pudongping.github.io/posts/38329174.html</id>
+    <published>2025-08-21T02:17:26.000Z</published>
+    <updated>2026-04-22T04:31:40.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构快速发展的今天，服务之间的通信与协调变得愈发复杂。一个高效、稳定、具备服务注册与发现能力的中间件，几乎是构建高可用系统的“刚需”。&lt;strong&gt;Consul&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="服务注册发现" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%8F%91%E7%8E%B0/"/>
+    
+    <category term="健康检查" scheme="https://pudongping.github.io/tags/%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gRPC凭什么成为微服务通信首选？深度解析RPC进化史</title>
+    <link href="https://pudongping.github.io/posts/610da067.html"/>
+    <id>https://pudongping.github.io/posts/610da067.html</id>
+    <published>2025-08-20T02:03:11.000Z</published>
+    <updated>2026-04-22T04:31:40.321Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在构建分布式系统或微服务架构时，&lt;strong&gt;服务之间的通信机制&lt;/strong&gt;往往决定了整个系统的性能与可维护性。&lt;/p&gt;
+&lt;p&gt;本文将围绕 RPC 和 gRPC 展开，详细介绍它们的原理、优势及使用方式，并深入讲解 gRPC 所依赖的序列化协议 ——</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
+    
+    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服务不是银弹！这4个设计原则让你少踩90%的坑</title>
+    <link href="https://pudongping.github.io/posts/df453781.html"/>
+    <id>https://pudongping.github.io/posts/df453781.html</id>
+    <published>2025-08-19T02:45:59.000Z</published>
+    <updated>2026-04-22T04:31:40.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;随着业务复杂度的不断提升和敏捷开发理念的普及，微服务架构已经成为现代软件工程中的主流选择。但很多团队在实施微服务时常常陷入误区：要么拆得过细导致维护困难，要么边界模糊变成“分布式单体”。要真正掌握微服务的精髓，领域驱动设计（DDD）无疑是不可或缺的一把钥匙。&lt;/p&gt;
+&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="设计原则" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cookie、Session、Token、JWT 是什么？万字图解带你一次搞懂！看完这篇，你连老奶奶都能教</title>
+    <link href="https://pudongping.github.io/posts/65239a79.html"/>
+    <id>https://pudongping.github.io/posts/65239a79.html</id>
+    <published>2025-08-14T04:01:10.000Z</published>
+    <updated>2026-04-22T04:31:40.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在讲这几个专业术语之前，我们先看一下这样的场景：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你去银行准备办理业务，柜台工作人员礼貌地问你：“请问您要办理什么业务？”&lt;br&gt;你说：“我要查询我还有多少余额。”&lt;br&gt;等工作人员处理完之后，你紧接着说：“我还想转账 1000</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Cookie" scheme="https://pudongping.github.io/tags/Cookie/"/>
+    
+    <category term="Session" scheme="https://pudongping.github.io/tags/Session/"/>
+    
+    <category term="Token" scheme="https://pudongping.github.io/tags/Token/"/>
+    
+    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="授权" scheme="https://pudongping.github.io/tags/%E6%8E%88%E6%9D%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3分钟，手摸手教你用OpenResty搭建高性能隧道代理（附完整配置！）</title>
+    <link href="https://pudongping.github.io/posts/c2b7a51a.html"/>
+    <id>https://pudongping.github.io/posts/c2b7a51a.html</id>
+    <published>2025-08-14T04:00:44.000Z</published>
+    <updated>2026-04-22T04:31:40.319Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;经常写爬虫的小伙伴们对代理 IP 应该不会很陌生了吧？&lt;/p&gt;
+&lt;p&gt;通常，我们为了让爬虫更加稳定，一般我们都会去购买一些代理 IP 用在我们的爬虫服务上。常规的做法，我们一般会去某个代理网站上面购买服务，然后我们会得到一个获取代理 IP</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="OpenResty" scheme="https://pudongping.github.io/tags/OpenResty/"/>
+    
+    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一文吃透 Promise 与 async/await，异步编程也能如此简单！建议收藏！</title>
+    <link href="https://pudongping.github.io/posts/da88494b.html"/>
+    <id>https://pudongping.github.io/posts/da88494b.html</id>
+    <published>2025-08-12T03:39:29.000Z</published>
+    <updated>2026-04-22T04:31:40.322Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在现代编程开发中，“异步”两个字几乎贯穿始终：你写的接口请求、定时器、事件监听、动画控制……背后都绕不开异步编程。&lt;/p&gt;
+&lt;p&gt;那到底啥是&lt;strong&gt;异步&lt;/strong&gt;呢？说到异步，我们就需要结合&lt;strong&gt;同步&lt;/strong&gt;来讲讲，这样就更加清晰明了。&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://pudongping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
     
     <category term="异步编程" scheme="https://pudongping.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
     
-  </entry>
-  
-  <entry>
-    <title>通过标签清理微信好友：Python自动化脚本解析</title>
-    <link href="https://pudongping.github.io/posts/5e38f4b6.html"/>
-    <id>https://pudongping.github.io/posts/5e38f4b6.html</id>
-    <published>2024-12-02T02:08:03.000Z</published>
-    <updated>2024-12-11T15:59:05.641Z</updated>
+    <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;微信已经成为我们日常生活中不可或缺的社交工具。随着使用时间的增长，我们的微信好友列表可能会变得越来越臃肿。&lt;/p&gt;
-&lt;p&gt;在上一篇文章中，我写了一个自动根据用户状态（好友将我们删除了还是拉黑了）将用户打上不同标签的工具。那么，已经将用户打好了标签之后，我们就可以&lt;stron</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
-    
-    <category term="自动化" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="promise" scheme="https://pudongping.github.io/tags/promise/"/>
     
   </entry>
   
   <entry>
-    <title>手撸了一个全自动微信清粉小工具（源码详解）</title>
-    <link href="https://pudongping.github.io/posts/59c080d8.html"/>
-    <id>https://pudongping.github.io/posts/59c080d8.html</id>
-    <published>2024-12-01T09:23:36.000Z</published>
-    <updated>2024-12-01T09:24:33.639Z</updated>
+    <title>你真的懂 close(chan) 吗？90% 的 Go 开发者都掉过这个坑！</title>
+    <link href="https://pudongping.github.io/posts/5e6d50e0.html"/>
+    <id>https://pudongping.github.io/posts/5e6d50e0.html</id>
+    <published>2025-08-08T03:08:45.000Z</published>
+    <updated>2026-04-22T04:31:40.323Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;在当今社交软件中，微信是最常用的通讯工具之一。然而，随着时间的推移，我们的好友列表中可能会出现一些不再活跃的账号，也就是我们俗称的“僵尸粉”。&lt;/p&gt;
-&lt;p&gt;这些账号可能是由于长时间不使用、账号被封禁或者故意将我们删除或拉黑。为了保持好友列表的清洁和有效沟通，同时也为了帮助</summary>
+    <summary type="html">&lt;p&gt;在日常 Go 并发编程中，我们可能会看到类似以下这样的代码：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-go&quot; data-language=&quot;go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token</summary>
         
       
     
     
     
-    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
     
     
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
     
-    <category term="自动化" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
     
-    <category term="微信" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+  </entry>
+  
+  <entry>
+    <title>用 Go 写桌面应用？试试 Wails 吧！</title>
+    <link href="https://pudongping.github.io/posts/f3f6160c.html"/>
+    <id>https://pudongping.github.io/posts/f3f6160c.html</id>
+    <published>2025-08-07T02:12:34.000Z</published>
+    <updated>2026-04-22T04:31:40.324Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在前端开发中，提起桌面应用，很多人第一反应是 &lt;strong&gt;Electron&lt;/strong&gt;。虽然它很流行，但不可否认也“很重” —— 内存占用高、打包体积大。&lt;/p&gt;
+&lt;p&gt;有没有更轻量的选择呢？当然有！今天我们来聊一聊一个非常有意思的项目 ——</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Wails" scheme="https://pudongping.github.io/tags/Wails/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Conc，一个神奇的Go语言并发利器！</title>
+    <link href="https://pudongping.github.io/posts/1e620500.html"/>
+    <id>https://pudongping.github.io/posts/1e620500.html</id>
+    <published>2025-08-07T02:11:13.000Z</published>
+    <updated>2026-04-22T04:31:40.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言中，goroutine 和通道是并发编程的核心，但随着项目复杂度的增加，管理成百上千个 goroutine 并确保它们正确协作变得极具挑战性。&lt;code&gt;sourcegraph/conc&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Conc" scheme="https://pudongping.github.io/tags/Conc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wire，一个神奇的Go依赖注入神器！</title>
+    <link href="https://pudongping.github.io/posts/68a189a1.html"/>
+    <id>https://pudongping.github.io/posts/68a189a1.html</id>
+    <published>2025-08-07T02:10:15.000Z</published>
+    <updated>2026-04-22T04:31:40.321Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在介绍 wire 工具之前，我们先聊聊什么是控制反转（IoC）与依赖注入（DI）？它们解决了什么问题？&lt;/p&gt;
+&lt;h2 id=&quot;控制反转（IoC）与依赖注入（DI）&quot;&gt;&lt;a href=&quot;#控制反转（IoC）与依赖注入（DI）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Wire" scheme="https://pudongping.github.io/tags/Wire/"/>
     
   </entry>
   
