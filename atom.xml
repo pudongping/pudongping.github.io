@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-04-22T04:36:38.023Z</updated>
+  <updated>2026-04-22T04:42:43.637Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,130 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AI开发实战6、抄作业吧！我优化了N遍的go-zero项目AI协作规范文件，一字不差全给你</title>
+    <link href="https://pudongping.github.io/posts/3c4544a6.html"/>
+    <id>https://pudongping.github.io/posts/3c4544a6.html</id>
+    <published>2026-04-22T04:42:20.000Z</published>
+    <updated>2026-04-22T04:42:43.637Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 6 篇文章，这也是这个系列的最后一篇文章。&lt;/p&gt;
+&lt;p&gt;今天主要讲解的是，如何在使用 go-zero 框架写 API 服务时，写 &lt;code&gt;CLAUDE.md&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI开发实战5、手摸手教学：如何用AI+go-zero，从数据库设计开始构建API</title>
+    <link href="https://pudongping.github.io/posts/2f6d4246.html"/>
+    <id>https://pudongping.github.io/posts/2f6d4246.html</id>
+    <published>2026-04-22T04:41:38.000Z</published>
+    <updated>2026-04-22T04:42:04.009Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 5 篇文章，也是讲解用 AI 开发后端 API 接口的第一篇文章。&lt;/p&gt;
+&lt;p&gt;关于用 AI 来开发 API 接口的文章不会讲太多，因为其实大部分的框架部分最好还是自己写，用 AI</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI开发实战4、AI总是忘记项目规范？因为你缺了这份终极上下文文件</title>
+    <link href="https://pudongping.github.io/posts/66f0cba6.html"/>
+    <id>https://pudongping.github.io/posts/66f0cba6.html</id>
+    <published>2026-04-22T04:40:53.000Z</published>
+    <updated>2026-04-22T04:41:21.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 4 篇文章，这也是讲前端相关的最后一篇文章，下一篇文章开始讲解如何通过 AI 来用 go-zero 写后端接口。&lt;/p&gt;
+&lt;p&gt;这个系列的文章不是基础编程文章，不会告诉你编程语法是怎样的，而是告诉你用 AI</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI开发实战3、90%人用AI写前端都踩的坑：API层混乱！3步教你标准化</title>
+    <link href="https://pudongping.github.io/posts/6ea7c65a.html"/>
+    <id>https://pudongping.github.io/posts/6ea7c65a.html</id>
+    <published>2026-04-22T04:39:55.000Z</published>
+    <updated>2026-04-22T04:40:36.983Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你也用 AI 写前端代码，你就会发现，AI 帮你写的前端请求代码总是五花八门？一会用 &lt;code&gt;axios&lt;/code&gt;，一会用 &lt;code&gt;uni.request&lt;/code&gt;，甚至把 API</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AI开发实战2、只有 1% 的人知道！这样给 AI 发指令，写出的前端项目堪比阿里 P7</title>
     <link href="https://pudongping.github.io/posts/b23f5e1a.html"/>
     <id>https://pudongping.github.io/posts/b23f5e1a.html</id>
     <published>2026-04-22T04:36:02.000Z</published>
-    <updated>2026-04-22T04:36:38.023Z</updated>
+    <updated>2026-04-22T04:37:03.898Z</updated>
     
     
       
@@ -51,7 +170,7 @@
     <link href="https://pudongping.github.io/posts/bd7a8e95.html"/>
     <id>https://pudongping.github.io/posts/bd7a8e95.html</id>
     <published>2026-04-22T04:35:11.000Z</published>
-    <updated>2026-04-22T04:35:44.573Z</updated>
+    <updated>2026-04-22T04:37:03.897Z</updated>
     
     
       
@@ -81,7 +200,7 @@
     <link href="https://pudongping.github.io/posts/5ec7849a.html"/>
     <id>https://pudongping.github.io/posts/5ec7849a.html</id>
     <published>2026-04-22T04:34:21.000Z</published>
-    <updated>2026-04-22T04:34:53.324Z</updated>
+    <updated>2026-04-22T04:37:03.899Z</updated>
     
     
       
@@ -112,7 +231,7 @@
     <link href="https://pudongping.github.io/posts/293ebadc.html"/>
     <id>https://pudongping.github.io/posts/293ebadc.html</id>
     <published>2026-04-22T04:33:17.000Z</published>
-    <updated>2026-04-22T04:33:51.701Z</updated>
+    <updated>2026-04-22T04:37:03.900Z</updated>
     
     
       
@@ -507,123 +626,6 @@
     <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
     <category term="promise" scheme="https://pudongping.github.io/tags/promise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你真的懂 close(chan) 吗？90% 的 Go 开发者都掉过这个坑！</title>
-    <link href="https://pudongping.github.io/posts/5e6d50e0.html"/>
-    <id>https://pudongping.github.io/posts/5e6d50e0.html</id>
-    <published>2025-08-08T03:08:45.000Z</published>
-    <updated>2026-04-22T04:31:40.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在日常 Go 并发编程中，我们可能会看到类似以下这样的代码：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-go&quot; data-language=&quot;go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用 Go 写桌面应用？试试 Wails 吧！</title>
-    <link href="https://pudongping.github.io/posts/f3f6160c.html"/>
-    <id>https://pudongping.github.io/posts/f3f6160c.html</id>
-    <published>2025-08-07T02:12:34.000Z</published>
-    <updated>2026-04-22T04:31:40.324Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在前端开发中，提起桌面应用，很多人第一反应是 &lt;strong&gt;Electron&lt;/strong&gt;。虽然它很流行，但不可否认也“很重” —— 内存占用高、打包体积大。&lt;/p&gt;
-&lt;p&gt;有没有更轻量的选择呢？当然有！今天我们来聊一聊一个非常有意思的项目 ——</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Wails" scheme="https://pudongping.github.io/tags/Wails/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Conc，一个神奇的Go语言并发利器！</title>
-    <link href="https://pudongping.github.io/posts/1e620500.html"/>
-    <id>https://pudongping.github.io/posts/1e620500.html</id>
-    <published>2025-08-07T02:11:13.000Z</published>
-    <updated>2026-04-22T04:31:40.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 Go 语言中，goroutine 和通道是并发编程的核心，但随着项目复杂度的增加，管理成百上千个 goroutine 并确保它们正确协作变得极具挑战性。&lt;code&gt;sourcegraph/conc&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Conc" scheme="https://pudongping.github.io/tags/Conc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wire，一个神奇的Go依赖注入神器！</title>
-    <link href="https://pudongping.github.io/posts/68a189a1.html"/>
-    <id>https://pudongping.github.io/posts/68a189a1.html</id>
-    <published>2025-08-07T02:10:15.000Z</published>
-    <updated>2026-04-22T04:31:40.321Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在介绍 wire 工具之前，我们先聊聊什么是控制反转（IoC）与依赖注入（DI）？它们解决了什么问题？&lt;/p&gt;
-&lt;h2 id=&quot;控制反转（IoC）与依赖注入（DI）&quot;&gt;&lt;a href=&quot;#控制反转（IoC）与依赖注入（DI）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
-    
-    
-    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
-    
-    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
-    
-    <category term="Wire" scheme="https://pudongping.github.io/tags/Wire/"/>
     
   </entry>
   
