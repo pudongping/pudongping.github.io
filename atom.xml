@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-04-22T04:42:43.637Z</updated>
+  <updated>2026-04-29T03:02:24.472Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,189 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>别再死记硬背了！一文扒光 I/O 多路复用的底裤（Epoll/Select/Poll）</title>
+    <link href="https://pudongping.github.io/posts/96e139d4.html"/>
+    <id>https://pudongping.github.io/posts/96e139d4.html</id>
+    <published>2026-04-29T03:01:42.000Z</published>
+    <updated>2026-04-29T03:02:24.472Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每次面试聊到高并发，面试官总喜欢似笑非笑地问一句：“兄弟，聊聊 I/O 多路复用呗？”&lt;/p&gt;
+&lt;p&gt;如果你只能干巴巴地背出“select、poll、epoll 的区别是底层数据结构不同”，那基本就已经在淘汰边缘疯狂试探了。&lt;/p&gt;
+&lt;p&gt;今天，咱们不搞虚的，直接把</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="网络编程" scheme="https://pudongping.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="I/O" scheme="https://pudongping.github.io/tags/I-O/"/>
+    
+    <category term="Epoll" scheme="https://pudongping.github.io/tags/Epoll/"/>
+    
+    <category term="Select" scheme="https://pudongping.github.io/tags/Select/"/>
+    
+    <category term="Poll" scheme="https://pudongping.github.io/tags/Poll/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>90%的人都不知道：Docker 容器 apt 报错 404 的幕后黑手竟是它！</title>
+    <link href="https://pudongping.github.io/posts/e689d513.html"/>
+    <id>https://pudongping.github.io/posts/e689d513.html</id>
+    <published>2026-04-29T03:00:38.000Z</published>
+    <updated>2026-04-29T03:01:24.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家有没有遇到过这样的情况：你准备在本地跑某个开源项目，你找到了这个开源项目的镜像名称，也将这个镜像 &lt;code&gt;docker pull&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
+    
+    <category term="apt" scheme="https://pudongping.github.io/tags/apt/"/>
+    
+    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密码泄露了？别慌！GitHub、微软、Google都在用的“虚拟MFA”，到底有多强？</title>
+    <link href="https://pudongping.github.io/posts/56de9934.html"/>
+    <id>https://pudongping.github.io/posts/56de9934.html</id>
+    <published>2026-04-29T02:59:23.000Z</published>
+    <updated>2026-04-29T03:00:19.450Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你还认为‘强密码’就能保证账户安全，那么请先回答以下这三个问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你的密码是否在多个网站重复使用？&lt;/li&gt;
+&lt;li&gt;你是否记得三年前注册某个网站时设置的密码？&lt;/li&gt;
+&lt;li&gt;如果某个小网站数据库泄露，你是否能第一时间知道？&lt;/li&gt;
+&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="MFA" scheme="https://pudongping.github.io/tags/MFA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>改了DNS还是不生效？Ubuntu 24.04的这个坑我帮你踩过了</title>
+    <link href="https://pudongping.github.io/posts/3cc10d28.html"/>
+    <id>https://pudongping.github.io/posts/3cc10d28.html</id>
+    <published>2026-04-29T02:57:56.000Z</published>
+    <updated>2026-04-29T02:59:08.430Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天在服务器上拉取 docker 镜像时，死活都拉取不下来，更改了国内镜像源也依旧无法拉下来，最后就怀疑不是 docker 镜像源的问题，于是就干脆 ping 了一下某度，发现竟然是服务器上 DNS</summary>
+        
+      
+    
+    
+    
+    <category term="Ubuntu" scheme="https://pudongping.github.io/categories/Ubuntu/"/>
+    
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
+    
+    <category term="DNS" scheme="https://pudongping.github.io/tags/DNS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>别再用过时的地区数据了！闸北区都消失了，教你一次性搞定省市区同步更新！（附实战源码）</title>
+    <link href="https://pudongping.github.io/posts/ed5160f4.html"/>
+    <id>https://pudongping.github.io/posts/ed5160f4.html</id>
+    <published>2026-04-29T02:56:41.000Z</published>
+    <updated>2026-04-29T02:57:36.308Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在工作中要做一个功能：需要把地区表更新为最新的行政划分。&lt;/p&gt;
+&lt;p&gt;我们的地区表中现在都还保留着闸北区，然而，现在上海市早就没有使用闸北区这个名称了。用户也不止一次两次吐槽我们的地址选项，需要的地区没得选，早就没用的地区依旧还留着，感觉我们的 APP</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
+    
+    <category term="地区数据" scheme="https://pudongping.github.io/tags/%E5%9C%B0%E5%8C%BA%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不装插件不写代码！教你一招搞定网页长截图！清晰且高效！</title>
+    <link href="https://pudongping.github.io/posts/43806498.html"/>
+    <id>https://pudongping.github.io/posts/43806498.html</id>
+    <published>2026-04-29T02:55:14.000Z</published>
+    <updated>2026-04-29T02:56:25.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近想做一个海报，为了更加方便快速实现我的需求，我让 AI 直接帮我用 html 做了一下排版。排版倒是做好了，但是我需要的是一张图片，现在就需要将 html</summary>
+        
+      
+    
+    
+    
+    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="Chrome" scheme="https://pudongping.github.io/tags/Chrome/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AI开发实战6、抄作业吧！我优化了N遍的go-zero项目AI协作规范文件，一字不差全给你</title>
     <link href="https://pudongping.github.io/posts/3c4544a6.html"/>
     <id>https://pudongping.github.io/posts/3c4544a6.html</id>
     <published>2026-04-22T04:42:20.000Z</published>
-    <updated>2026-04-22T04:42:43.637Z</updated>
+    <updated>2026-04-22T04:42:59.055Z</updated>
     
     
       
@@ -51,7 +229,7 @@
     <link href="https://pudongping.github.io/posts/2f6d4246.html"/>
     <id>https://pudongping.github.io/posts/2f6d4246.html</id>
     <published>2026-04-22T04:41:38.000Z</published>
-    <updated>2026-04-22T04:42:04.009Z</updated>
+    <updated>2026-04-22T04:42:59.054Z</updated>
     
     
       
@@ -81,7 +259,7 @@
     <link href="https://pudongping.github.io/posts/66f0cba6.html"/>
     <id>https://pudongping.github.io/posts/66f0cba6.html</id>
     <published>2026-04-22T04:40:53.000Z</published>
-    <updated>2026-04-22T04:41:21.394Z</updated>
+    <updated>2026-04-22T04:42:59.053Z</updated>
     
     
       
@@ -111,7 +289,7 @@
     <link href="https://pudongping.github.io/posts/6ea7c65a.html"/>
     <id>https://pudongping.github.io/posts/6ea7c65a.html</id>
     <published>2026-04-22T04:39:55.000Z</published>
-    <updated>2026-04-22T04:40:36.983Z</updated>
+    <updated>2026-04-22T04:42:59.052Z</updated>
     
     
       
@@ -301,11 +479,11 @@
     <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
     <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
     
     <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="ELK" scheme="https://pudongping.github.io/tags/ELK/"/>
     
@@ -442,190 +620,6 @@
     <category term="jaeger" scheme="https://pudongping.github.io/tags/jaeger/"/>
     
     <category term="链路追踪" scheme="https://pudongping.github.io/tags/%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>全面掌握 Consul：服务注册发现、健康检查、跨数据中心一网打尽</title>
-    <link href="https://pudongping.github.io/posts/38329174.html"/>
-    <id>https://pudongping.github.io/posts/38329174.html</id>
-    <published>2025-08-21T02:17:26.000Z</published>
-    <updated>2026-04-22T04:31:40.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在微服务架构快速发展的今天，服务之间的通信与协调变得愈发复杂。一个高效、稳定、具备服务注册与发现能力的中间件，几乎是构建高可用系统的“刚需”。&lt;strong&gt;Consul&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="Consul" scheme="https://pudongping.github.io/tags/Consul/"/>
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="服务注册发现" scheme="https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%8F%91%E7%8E%B0/"/>
-    
-    <category term="健康检查" scheme="https://pudongping.github.io/tags/%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gRPC凭什么成为微服务通信首选？深度解析RPC进化史</title>
-    <link href="https://pudongping.github.io/posts/610da067.html"/>
-    <id>https://pudongping.github.io/posts/610da067.html</id>
-    <published>2025-08-20T02:03:11.000Z</published>
-    <updated>2026-04-22T04:31:40.321Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在构建分布式系统或微服务架构时，&lt;strong&gt;服务之间的通信机制&lt;/strong&gt;往往决定了整个系统的性能与可维护性。&lt;/p&gt;
-&lt;p&gt;本文将围绕 RPC 和 gRPC 展开，详细介绍它们的原理、优势及使用方式，并深入讲解 gRPC 所依赖的序列化协议 ——</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="gRPC" scheme="https://pudongping.github.io/tags/gRPC/"/>
-    
-    <category term="RPC" scheme="https://pudongping.github.io/tags/RPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微服务不是银弹！这4个设计原则让你少踩90%的坑</title>
-    <link href="https://pudongping.github.io/posts/df453781.html"/>
-    <id>https://pudongping.github.io/posts/df453781.html</id>
-    <published>2025-08-19T02:45:59.000Z</published>
-    <updated>2026-04-22T04:31:40.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随着业务复杂度的不断提升和敏捷开发理念的普及，微服务架构已经成为现代软件工程中的主流选择。但很多团队在实施微服务时常常陷入误区：要么拆得过细导致维护困难，要么边界模糊变成“分布式单体”。要真正掌握微服务的精髓，领域驱动设计（DDD）无疑是不可或缺的一把钥匙。&lt;/p&gt;
-&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    <category term="设计原则" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cookie、Session、Token、JWT 是什么？万字图解带你一次搞懂！看完这篇，你连老奶奶都能教</title>
-    <link href="https://pudongping.github.io/posts/65239a79.html"/>
-    <id>https://pudongping.github.io/posts/65239a79.html</id>
-    <published>2025-08-14T04:01:10.000Z</published>
-    <updated>2026-04-22T04:31:40.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在讲这几个专业术语之前，我们先看一下这样的场景：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;你去银行准备办理业务，柜台工作人员礼貌地问你：“请问您要办理什么业务？”&lt;br&gt;你说：“我要查询我还有多少余额。”&lt;br&gt;等工作人员处理完之后，你紧接着说：“我还想转账 1000</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Cookie" scheme="https://pudongping.github.io/tags/Cookie/"/>
-    
-    <category term="Session" scheme="https://pudongping.github.io/tags/Session/"/>
-    
-    <category term="Token" scheme="https://pudongping.github.io/tags/Token/"/>
-    
-    <category term="安全" scheme="https://pudongping.github.io/tags/%E5%AE%89%E5%85%A8/"/>
-    
-    <category term="授权" scheme="https://pudongping.github.io/tags/%E6%8E%88%E6%9D%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3分钟，手摸手教你用OpenResty搭建高性能隧道代理（附完整配置！）</title>
-    <link href="https://pudongping.github.io/posts/c2b7a51a.html"/>
-    <id>https://pudongping.github.io/posts/c2b7a51a.html</id>
-    <published>2025-08-14T04:00:44.000Z</published>
-    <updated>2026-04-22T04:31:40.319Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;经常写爬虫的小伙伴们对代理 IP 应该不会很陌生了吧？&lt;/p&gt;
-&lt;p&gt;通常，我们为了让爬虫更加稳定，一般我们都会去购买一些代理 IP 用在我们的爬虫服务上。常规的做法，我们一般会去某个代理网站上面购买服务，然后我们会得到一个获取代理 IP</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="OpenResty" scheme="https://pudongping.github.io/tags/OpenResty/"/>
-    
-    <category term="Nginx" scheme="https://pudongping.github.io/tags/Nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一文吃透 Promise 与 async/await，异步编程也能如此简单！建议收藏！</title>
-    <link href="https://pudongping.github.io/posts/da88494b.html"/>
-    <id>https://pudongping.github.io/posts/da88494b.html</id>
-    <published>2025-08-12T03:39:29.000Z</published>
-    <updated>2026-04-22T04:31:40.322Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在现代编程开发中，“异步”两个字几乎贯穿始终：你写的接口请求、定时器、事件监听、动画控制……背后都绕不开异步编程。&lt;/p&gt;
-&lt;p&gt;那到底啥是&lt;strong&gt;异步&lt;/strong&gt;呢？说到异步，我们就需要结合&lt;strong&gt;同步&lt;/strong&gt;来讲讲，这样就更加清晰明了。&lt;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://pudongping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="异步编程" scheme="https://pudongping.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="前端" scheme="https://pudongping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="promise" scheme="https://pudongping.github.io/tags/promise/"/>
     
   </entry>
   
