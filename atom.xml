@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-05-18T03:00:54.944Z</updated>
+  <updated>2026-05-18T03:01:55.190Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>再见 pip！Rust 写的 uv 正在把 Python 包管理按在地上摩擦</title>
+    <link href="https://pudongping.github.io/posts/5cc664da.html"/>
+    <id>https://pudongping.github.io/posts/5cc664da.html</id>
+    <published>2026-05-18T03:01:19.000Z</published>
+    <updated>2026-05-18T03:01:55.190Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你问，作为一名 Python 开发者，平时最让你头疼的事情是什么？&lt;/p&gt;
+&lt;p&gt;我相信 90% 的兄弟都会回答：&lt;strong&gt;依赖管理和环境配置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这就是我们的日常：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python 装饰器很难？那是你没看到这篇文章！</title>
     <link href="https://pudongping.github.io/posts/e9302aa9.html"/>
     <id>https://pudongping.github.io/posts/e9302aa9.html</id>
     <published>2026-05-18T03:00:23.000Z</published>
-    <updated>2026-05-18T03:00:54.944Z</updated>
+    <updated>2026-05-18T03:01:01.727Z</updated>
     
     
       
@@ -47,7 +76,7 @@
     <link href="https://pudongping.github.io/posts/9a2dca58.html"/>
     <id>https://pudongping.github.io/posts/9a2dca58.html</id>
     <published>2026-05-18T02:58:31.000Z</published>
-    <updated>2026-05-18T02:59:12.721Z</updated>
+    <updated>2026-05-18T03:01:01.727Z</updated>
     
     
       
@@ -563,49 +592,17 @@
     <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
     <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
     
     <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
+    
+    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="ELK" scheme="https://pudongping.github.io/tags/ELK/"/>
     
     <category term="logstash" scheme="https://pudongping.github.io/tags/logstash/"/>
     
     <category term="Filebeat" scheme="https://pudongping.github.io/tags/Filebeat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从入门到实战：一文掌握微服务监控系统 Prometheus + Grafana</title>
-    <link href="https://pudongping.github.io/posts/17b9f045.html"/>
-    <id>https://pudongping.github.io/posts/17b9f045.html</id>
-    <published>2025-08-27T03:33:43.000Z</published>
-    <updated>2025-08-27T03:35:01.639Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随着微服务架构的广泛应用，系统组件之间的交互变得更加复杂。为了及时发现故障、评估性能瓶颈并提升系统可观测性，构建一套完善的&lt;strong&gt;监控系统&lt;/strong&gt;成为了现代微服务体系中的标配。&lt;/p&gt;
-&lt;p&gt;本文将围绕 Prometheus 这一主流开源监控系统，结合</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="Prometheus" scheme="https://pudongping.github.io/tags/Prometheus/"/>
-    
-    <category term="Grafana" scheme="https://pudongping.github.io/tags/Grafana/"/>
-    
-    <category term="监控" scheme="https://pudongping.github.io/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
