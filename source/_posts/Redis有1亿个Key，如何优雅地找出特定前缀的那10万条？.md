@@ -6,16 +6,17 @@ hide: false
 cover: false
 toc: true
 mathjax: false
-date: 2026-05-18 10:58:31
-img:
-coverImg:
-password:
-summary:
 categories: Redis
 tags:
   - Cache
   - Redis
   - 缓存
+abbrlink: 9a2dca58
+date: 2026-05-18 10:58:31
+img:
+coverImg:
+password:
+summary:
 ---
 
 Redis 是每一位后端工程师最熟悉的中间件之一。
