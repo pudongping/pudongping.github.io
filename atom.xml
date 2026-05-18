@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-05-18T03:01:55.190Z</updated>
+  <updated>2026-05-18T03:04:19.635Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Celery 太重了？这可能是你一直在找的 asyncio 任务队列</title>
+    <link href="https://pudongping.github.io/posts/35e2046b.html"/>
+    <id>https://pudongping.github.io/posts/35e2046b.html</id>
+    <published>2026-05-18T03:03:30.000Z</published>
+    <updated>2026-05-18T03:04:19.635Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你是否在配置 Celery 时，被复杂的 Broker、Backend、Worker 搞得头皮发麻？你是否在 Python &lt;code&gt;async/await&lt;/code&gt; 的世界里，发现老牌的任务队列总是显得“格格不入”？&lt;/p&gt;
+&lt;p&gt;在 Python</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="Celery" scheme="https://pudongping.github.io/tags/Celery/"/>
+    
+    <category term="arq" scheme="https://pudongping.github.io/tags/arq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 统一大业：uv 如何整合 Pip、Pyenv 和 Venv？</title>
+    <link href="https://pudongping.github.io/posts/c387be6c.html"/>
+    <id>https://pudongping.github.io/posts/c387be6c.html</id>
+    <published>2026-05-18T03:02:18.000Z</published>
+    <updated>2026-05-18T03:03:16.842Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Python 的包管理一直是个让开发者“又爱又恨”的话题。从 &lt;code&gt;pip&lt;/code&gt; 到 &lt;code&gt;virtualenv&lt;/code&gt;，再到</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="Pip" scheme="https://pudongping.github.io/tags/Pip/"/>
+    
+    <category term="Pyenv" scheme="https://pudongping.github.io/tags/Pyenv/"/>
+    
+    <category term="Venv" scheme="https://pudongping.github.io/tags/Venv/"/>
+    
+    <category term="uv" scheme="https://pudongping.github.io/tags/uv/"/>
+    
+  </entry>
+  
+  <entry>
     <title>再见 pip！Rust 写的 uv 正在把 Python 包管理按在地上摩擦</title>
     <link href="https://pudongping.github.io/posts/5cc664da.html"/>
     <id>https://pudongping.github.io/posts/5cc664da.html</id>
     <published>2026-05-18T03:01:19.000Z</published>
-    <updated>2026-05-18T03:01:55.190Z</updated>
+    <updated>2026-05-18T03:02:11.201Z</updated>
     
     
       
@@ -246,9 +309,9 @@
     <category term="Ubuntu" scheme="https://pudongping.github.io/categories/Ubuntu/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="DNS" scheme="https://pudongping.github.io/tags/DNS/"/>
     
@@ -542,67 +605,6 @@
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
     <category term="Claude Code" scheme="https://pudongping.github.io/tags/Claude-Code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git合并选Rebase还是Merge？弄懂这3点，从此不再纠结</title>
-    <link href="https://pudongping.github.io/posts/a479708b.html"/>
-    <id>https://pudongping.github.io/posts/a479708b.html</id>
-    <published>2025-09-01T02:32:55.000Z</published>
-    <updated>2025-09-01T02:33:40.806Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;大家好！今天我们来聊聊 Git 中两个非常重要但又容易混淆的概念：&lt;code&gt;git rebase&lt;/code&gt; 和 &lt;code&gt;git merge&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;在日常团队协作开发中，我们经常需要将不同分支的代码进行合并。Git</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搞懂 ELK 日志系统架构，这一篇就够了（含实战图解）</title>
-    <link href="https://pudongping.github.io/posts/cbdca962.html"/>
-    <id>https://pudongping.github.io/posts/cbdca962.html</id>
-    <published>2025-08-28T03:30:26.000Z</published>
-    <updated>2025-08-28T03:33:12.525Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随着系统架构的不断扩展和业务规模的迅猛增长，传统的日志管理方式已经难以应对海量分布式系统中的日志收集、查询和告警需求。为此，越来越多的企业开始引入成熟的日志系统方案，&lt;strong&gt;Elastic Stack（即 ELK + Beats）&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-    <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="ELK" scheme="https://pudongping.github.io/tags/ELK/"/>
-    
-    <category term="logstash" scheme="https://pudongping.github.io/tags/logstash/"/>
-    
-    <category term="Filebeat" scheme="https://pudongping.github.io/tags/Filebeat/"/>
     
   </entry>
   
