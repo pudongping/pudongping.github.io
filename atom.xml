@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-04-29T03:02:24.472Z</updated>
+  <updated>2026-06-29T03:05:53.860Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,217 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>面试官问“装饰器模式”，这样回答薪资多要 3000！</title>
+    <link href="https://pudongping.github.io/posts/592adfa0.html"/>
+    <id>https://pudongping.github.io/posts/592adfa0.html</id>
+    <published>2026-06-29T03:05:05.000Z</published>
+    <updated>2026-06-29T03:05:53.860Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在 Code Review 的时候，看到某同事写代码，那叫一个“继承满天飞”。为了给一个核心类增加不同的功能，他硬生生造出了十几个子类。看着那像族谱一样庞大的类继承树，我手里的咖啡瞬间就不香了。&lt;/p&gt;
+&lt;p&gt;很多初学者（甚至老手）在面对</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="装饰器模式" scheme="https://pudongping.github.io/tags/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Celery 太重了？这可能是你一直在找的 asyncio 任务队列</title>
+    <link href="https://pudongping.github.io/posts/35e2046b.html"/>
+    <id>https://pudongping.github.io/posts/35e2046b.html</id>
+    <published>2026-05-18T03:03:30.000Z</published>
+    <updated>2026-06-29T03:01:55.463Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你是否在配置 Celery 时，被复杂的 Broker、Backend、Worker 搞得头皮发麻？你是否在 Python &lt;code&gt;async/await&lt;/code&gt; 的世界里，发现老牌的任务队列总是显得“格格不入”？&lt;/p&gt;
+&lt;p&gt;在 Python</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="Celery" scheme="https://pudongping.github.io/tags/Celery/"/>
+    
+    <category term="arq" scheme="https://pudongping.github.io/tags/arq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 统一大业：uv 如何整合 Pip、Pyenv 和 Venv？</title>
+    <link href="https://pudongping.github.io/posts/c387be6c.html"/>
+    <id>https://pudongping.github.io/posts/c387be6c.html</id>
+    <published>2026-05-18T03:02:18.000Z</published>
+    <updated>2026-06-29T03:01:55.463Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Python 的包管理一直是个让开发者“又爱又恨”的话题。从 &lt;code&gt;pip&lt;/code&gt; 到 &lt;code&gt;virtualenv&lt;/code&gt;，再到</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="Pip" scheme="https://pudongping.github.io/tags/Pip/"/>
+    
+    <category term="Pyenv" scheme="https://pudongping.github.io/tags/Pyenv/"/>
+    
+    <category term="Venv" scheme="https://pudongping.github.io/tags/Venv/"/>
+    
+    <category term="uv" scheme="https://pudongping.github.io/tags/uv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>再见 pip！Rust 写的 uv 正在把 Python 包管理按在地上摩擦</title>
+    <link href="https://pudongping.github.io/posts/5cc664da.html"/>
+    <id>https://pudongping.github.io/posts/5cc664da.html</id>
+    <published>2026-05-18T03:01:19.000Z</published>
+    <updated>2026-06-29T03:01:55.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你问，作为一名 Python 开发者，平时最让你头疼的事情是什么？&lt;/p&gt;
+&lt;p&gt;我相信 90% 的兄弟都会回答：&lt;strong&gt;依赖管理和环境配置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这就是我们的日常：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 装饰器很难？那是你没看到这篇文章！</title>
+    <link href="https://pudongping.github.io/posts/e9302aa9.html"/>
+    <id>https://pudongping.github.io/posts/e9302aa9.html</id>
+    <published>2026-05-18T03:00:23.000Z</published>
+    <updated>2026-06-29T03:01:55.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家好，我是 Alex。很多小伙伴在学习 Python 时，都有一座很多初学者觉得难以翻越的大山，那就是 **装饰器 (Decorator)**。&lt;/p&gt;
+&lt;p&gt;每当你看到代码里那个神秘的 &lt;code&gt;@&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis有1亿个Key，如何优雅地找出特定前缀的那10万条？</title>
+    <link href="https://pudongping.github.io/posts/9a2dca58.html"/>
+    <id>https://pudongping.github.io/posts/9a2dca58.html</id>
+    <published>2026-05-18T02:58:31.000Z</published>
+    <updated>2026-06-29T03:01:55.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Redis 是每一位后端工程师最熟悉的中间件之一。&lt;br&gt;它轻量、高效、灵活，几乎是现代高并发系统中最常见的缓存组件。&lt;/p&gt;
+&lt;p&gt;可当业务规模上来之后，Redis</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
+    
+    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员常犯的坑：别再用 VARCHAR 存 IP 了！用对方式，性能何止提升10倍！</title>
+    <link href="https://pudongping.github.io/posts/412dd566.html"/>
+    <id>https://pudongping.github.io/posts/412dd566.html</id>
+    <published>2026-05-18T02:49:56.000Z</published>
+    <updated>2026-06-29T03:01:55.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当我们在使用 MySQL 设计表结构的时候都会遇到一个经典问题：&lt;strong&gt;“如果要存 IP 地址，到底该用什么数据类型？”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;别小看这个问题，如果存储方式选错了，未来不仅浪费空间，还可能导致查询性能低下。今天我就带你一步一步搞懂如何在</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
+    
+    <category term="技巧" scheme="https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>别再死记硬背了！一文扒光 I/O 多路复用的底裤（Epoll/Select/Poll）</title>
     <link href="https://pudongping.github.io/posts/96e139d4.html"/>
     <id>https://pudongping.github.io/posts/96e139d4.html</id>
     <published>2026-04-29T03:01:42.000Z</published>
-    <updated>2026-04-29T03:02:24.472Z</updated>
+    <updated>2026-04-29T03:02:43.554Z</updated>
     
     
       
@@ -56,7 +262,7 @@
     <link href="https://pudongping.github.io/posts/e689d513.html"/>
     <id>https://pudongping.github.io/posts/e689d513.html</id>
     <published>2026-04-29T03:00:38.000Z</published>
-    <updated>2026-04-29T03:01:24.728Z</updated>
+    <updated>2026-04-29T03:02:43.551Z</updated>
     
     
       
@@ -85,7 +291,7 @@
     <link href="https://pudongping.github.io/posts/56de9934.html"/>
     <id>https://pudongping.github.io/posts/56de9934.html</id>
     <published>2026-04-29T02:59:23.000Z</published>
-    <updated>2026-04-29T03:00:19.450Z</updated>
+    <updated>2026-04-29T03:02:43.555Z</updated>
     
     
       
@@ -117,7 +323,7 @@
     <link href="https://pudongping.github.io/posts/3cc10d28.html"/>
     <id>https://pudongping.github.io/posts/3cc10d28.html</id>
     <published>2026-04-29T02:57:56.000Z</published>
-    <updated>2026-04-29T02:59:08.430Z</updated>
+    <updated>2026-04-29T03:02:43.556Z</updated>
     
     
       
@@ -146,7 +352,7 @@
     <link href="https://pudongping.github.io/posts/ed5160f4.html"/>
     <id>https://pudongping.github.io/posts/ed5160f4.html</id>
     <published>2026-04-29T02:56:41.000Z</published>
-    <updated>2026-04-29T02:57:36.308Z</updated>
+    <updated>2026-04-29T03:02:43.554Z</updated>
     
     
       
@@ -174,7 +380,7 @@
     <link href="https://pudongping.github.io/posts/43806498.html"/>
     <id>https://pudongping.github.io/posts/43806498.html</id>
     <published>2026-04-29T02:55:14.000Z</published>
-    <updated>2026-04-29T02:56:25.462Z</updated>
+    <updated>2026-04-29T03:02:43.553Z</updated>
     
     
       
@@ -401,225 +607,6 @@
     <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>全网都在推 Claude Code，但只有这篇文章教你如何“真正”能用</title>
-    <link href="https://pudongping.github.io/posts/293ebadc.html"/>
-    <id>https://pudongping.github.io/posts/293ebadc.html</id>
-    <published>2026-04-22T04:33:17.000Z</published>
-    <updated>2026-04-22T04:37:03.900Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Claude Code 这个 AI 神器想必已经不用过多介绍了吧，但是身边有很多朋友都说安装上了，但是总是没办法丝滑的使用，额～由于一些懂得都懂的原因，很多人都卡在网络上，这篇文章就教大家如何一步一步的从安装到能正常使用。&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="Claude Code" scheme="https://pudongping.github.io/tags/Claude-Code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git合并选Rebase还是Merge？弄懂这3点，从此不再纠结</title>
-    <link href="https://pudongping.github.io/posts/a479708b.html"/>
-    <id>https://pudongping.github.io/posts/a479708b.html</id>
-    <published>2025-09-01T02:32:55.000Z</published>
-    <updated>2026-04-22T04:31:40.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;大家好！今天我们来聊聊 Git 中两个非常重要但又容易混淆的概念：&lt;code&gt;git rebase&lt;/code&gt; 和 &lt;code&gt;git merge&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;在日常团队协作开发中，我们经常需要将不同分支的代码进行合并。Git</summary>
-        
-      
-    
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://pudongping.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搞懂 ELK 日志系统架构，这一篇就够了（含实战图解）</title>
-    <link href="https://pudongping.github.io/posts/cbdca962.html"/>
-    <id>https://pudongping.github.io/posts/cbdca962.html</id>
-    <published>2025-08-28T03:30:26.000Z</published>
-    <updated>2026-04-22T04:31:40.324Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随着系统架构的不断扩展和业务规模的迅猛增长，传统的日志管理方式已经难以应对海量分布式系统中的日志收集、查询和告警需求。为此，越来越多的企业开始引入成熟的日志系统方案，&lt;strong&gt;Elastic Stack（即 ELK + Beats）&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="ElasticSearch" scheme="https://pudongping.github.io/tags/ElasticSearch/"/>
-    
-    <category term="Kibana" scheme="https://pudongping.github.io/tags/Kibana/"/>
-    
-    <category term="ELK" scheme="https://pudongping.github.io/tags/ELK/"/>
-    
-    <category term="logstash" scheme="https://pudongping.github.io/tags/logstash/"/>
-    
-    <category term="Filebeat" scheme="https://pudongping.github.io/tags/Filebeat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从入门到实战：一文掌握微服务监控系统 Prometheus + Grafana</title>
-    <link href="https://pudongping.github.io/posts/17b9f045.html"/>
-    <id>https://pudongping.github.io/posts/17b9f045.html</id>
-    <published>2025-08-27T03:33:43.000Z</published>
-    <updated>2026-04-22T04:31:40.322Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随着微服务架构的广泛应用，系统组件之间的交互变得更加复杂。为了及时发现故障、评估性能瓶颈并提升系统可观测性，构建一套完善的&lt;strong&gt;监控系统&lt;/strong&gt;成为了现代微服务体系中的标配。&lt;/p&gt;
-&lt;p&gt;本文将围绕 Prometheus 这一主流开源监控系统，结合</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="Prometheus" scheme="https://pudongping.github.io/tags/Prometheus/"/>
-    
-    <category term="Grafana" scheme="https://pudongping.github.io/tags/Grafana/"/>
-    
-    <category term="监控" scheme="https://pudongping.github.io/tags/%E7%9B%91%E6%8E%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高并发系统下，如何用限流算法优雅地保护你的服务？</title>
-    <link href="https://pudongping.github.io/posts/e05f1cd5.html"/>
-    <id>https://pudongping.github.io/posts/e05f1cd5.html</id>
-    <published>2025-08-26T02:12:34.000Z</published>
-    <updated>2026-04-22T04:31:40.324Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在微服务架构盛行的今天，服务间的调用链路变得越来越复杂。一个看似平静的系统，往往在瞬间的流量洪峰面前不堪一击。当双11零点、热门事件爆发、或者恶意攻击来临时，如何确保我们的服务能够稳定运行，而不是在流量面前缴械投降？&lt;/p&gt;
-&lt;p&gt;回答就是：&lt;strong&gt;限流&lt;/stro</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
-    
-    <category term="漏桶" scheme="https://pudongping.github.io/tags/%E6%BC%8F%E6%A1%B6/"/>
-    
-    <category term="令牌桶" scheme="https://pudongping.github.io/tags/%E4%BB%A4%E7%89%8C%E6%A1%B6/"/>
-    
-    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
-    
-    <category term="降级" scheme="https://pudongping.github.io/tags/%E9%99%8D%E7%BA%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微服务稳定性三板斧：熔断、限流与负载均衡全面解析（附 Hystrix-Go 实战代码）</title>
-    <link href="https://pudongping.github.io/posts/1a4a443b.html"/>
-    <id>https://pudongping.github.io/posts/1a4a443b.html</id>
-    <published>2025-08-25T02:03:30.000Z</published>
-    <updated>2026-04-22T04:31:40.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在构建微服务架构的过程中，“高可用”和“稳定性”始终是绕不开的关键词。服务间依赖错综复杂，一旦某个下游服务出现性能瓶颈或故障，就可能引发“雪崩效应”，造成整条链路瘫痪。为了避免这种灾难性后果，我们引入了三项关键技术：&lt;strong&gt;熔断&lt;/strong&gt;、&lt;strong&gt;限</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="限流" scheme="https://pudongping.github.io/tags/%E9%99%90%E6%B5%81/"/>
-    
-    <category term="熔断" scheme="https://pudongping.github.io/tags/%E7%86%94%E6%96%AD/"/>
-    
-    <category term="负载均衡" scheme="https://pudongping.github.io/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jaeger，一个链路追踪神器！</title>
-    <link href="https://pudongping.github.io/posts/f542f6b5.html"/>
-    <id>https://pudongping.github.io/posts/f542f6b5.html</id>
-    <published>2025-08-22T02:49:14.000Z</published>
-    <updated>2026-04-22T04:31:40.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在微服务系统中，一个接口请求可能穿越十几个服务节点，复杂度远超传统单体应用。此时，如何追踪一次请求的全链路信息、快速定位问题、优化性能，成为了运维与开发必须直面的挑战。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“如果你不能度量它，你就无法改进它。” ——</summary>
-        
-      
-    
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    
-    <category term="微服务" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
-    <category term="jaeger" scheme="https://pudongping.github.io/tags/jaeger/"/>
-    
-    <category term="链路追踪" scheme="https://pudongping.github.io/tags/%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA/"/>
     
   </entry>
   
