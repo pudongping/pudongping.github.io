@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-06-29T03:05:53.860Z</updated>
+  <updated>2026-06-29T03:08:06.948Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你知道 Go 结构体和结构体指针调用的区别吗？一文带你彻底搞懂！</title>
+    <link href="https://pudongping.github.io/posts/934e573e.html"/>
+    <id>https://pudongping.github.io/posts/934e573e.html</id>
+    <published>2026-06-29T03:07:27.000Z</published>
+    <updated>2026-06-29T03:08:06.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前几天在技术群里看到有小伙伴问了一个经典问题：**”Go 结构体方法调用时，什么时候用值接收器，什么时候用指针接收器？”**&lt;/p&gt;
+&lt;p&gt;虽然这是个老生常谈的话题，但是，我发现很多同学（包括工作几年的）对此还是一知半解。正好最近在梳理 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>面试官问“装饰器模式”，这样回答薪资多要 3000！</title>
     <link href="https://pudongping.github.io/posts/592adfa0.html"/>
     <id>https://pudongping.github.io/posts/592adfa0.html</id>
     <published>2026-06-29T03:05:05.000Z</published>
-    <updated>2026-06-29T03:05:53.860Z</updated>
+    <updated>2026-06-29T03:06:14.078Z</updated>
     
     
       
@@ -339,9 +367,9 @@
     <category term="Ubuntu" scheme="https://pudongping.github.io/categories/Ubuntu/"/>
     
     
-    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
-    
     <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
+    
+    <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
     <category term="DNS" scheme="https://pudongping.github.io/tags/DNS/"/>
     
@@ -563,37 +591,6 @@
         
     <summary type="html">&lt;p&gt;经常用 AI 搓前端页面的朋友，一定对那抹“深邃蓝”和“基佬紫”不陌生。&lt;/p&gt;
 &lt;p&gt;只要你不给 Prompt 设限，AI 仿佛全员深爱“赛博朋克渐变风”。第一眼惊艳，看多了想吐——满屏都是溢出来的“AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【AI开发实战】从想法到上线，我用AI全栈开发了一款记账微信小程序</title>
-    <link href="https://pudongping.github.io/posts/5ec7849a.html"/>
-    <id>https://pudongping.github.io/posts/5ec7849a.html</id>
-    <published>2026-04-22T04:34:21.000Z</published>
-    <updated>2026-04-22T04:37:03.899Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;每到月底，看着空空如也的银行卡，你是不是也经常发出灵魂拷问：&lt;br&gt;&lt;strong&gt;“我明明没买什么大件，钱到底都去哪了？”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;奶茶、打车、外卖……这些不起眼的小开销，正在悄悄吞噬你的积蓄。&lt;/p&gt;
-&lt;p&gt;记账，是理财的第一步。但市面上的记账软</summary>
         
       
     
