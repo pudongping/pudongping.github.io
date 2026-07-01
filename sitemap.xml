@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pudongping.github.io/posts/254c6133.html</loc>
+    
+    <lastmod>2026-07-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pudongping.github.io/posts/b221b7a.html</loc>
     
     <lastmod>2026-07-01</lastmod>
@@ -1668,14 +1675,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/98509b56.html</loc>
+    <loc>https://pudongping.github.io/posts/7c353a38.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/7c353a38.html</loc>
+    <loc>https://pudongping.github.io/posts/98509b56.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -1745,14 +1752,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/43b98a2e.html</loc>
+    <loc>https://pudongping.github.io/posts/7c9f7082.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/7c9f7082.html</loc>
+    <loc>https://pudongping.github.io/posts/43b98a2e.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -1913,14 +1920,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/1e1630f3.html</loc>
+    <loc>https://pudongping.github.io/posts/6c6ec7d4.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/6c6ec7d4.html</loc>
+    <loc>https://pudongping.github.io/posts/1e1630f3.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -1964,20 +1971,6 @@
 
   
   <url>
-    <loc>https://pudongping.github.io/tags/Linux/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/%E7%BA%A2%E5%B8%BD%E8%AE%A4%E8%AF%81/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.github.io/tags/OpenResty/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
@@ -1986,6 +1979,20 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/Nginx/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/Linux/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/%E7%BA%A2%E5%B8%BD%E8%AE%A4%E8%AF%81/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2020,14 +2027,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2125,6 +2132,20 @@
   </url>
   
   <url>
+    <loc>https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/Consul/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.github.io/tags/Go/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
@@ -2140,20 +2161,6 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/Conc/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/Consul/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2300,20 +2307,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/HTTP/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/HTTP2-0/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.github.io/tags/Hyperf/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
@@ -2322,6 +2315,20 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/Swoole/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/HTTP/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/HTTP2-0/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2748,14 +2755,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/</loc>
+    <loc>https://pudongping.github.io/tags/Memcached/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/Memcached/</loc>
+    <loc>https://pudongping.github.io/tags/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3007,6 +3014,13 @@
   </url>
   
   <url>
+    <loc>https://pudongping.github.io/tags/%E5%9C%B0%E5%8C%BA%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pudongping.github.io/tags/Copilot/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
@@ -3021,7 +3035,7 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E5%9C%B0%E5%8C%BA%E6%95%B0%E6%8D%AE/</loc>
+    <loc>https://pudongping.github.io/tags/singleflight/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3029,13 +3043,6 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/singleflight/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3175,13 +3182,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.github.io/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
@@ -3190,6 +3190,13 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/SDK/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3247,14 +3254,14 @@
 
   
   <url>
-    <loc>https://pudongping.github.io/categories/Linux/</loc>
+    <loc>https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/</loc>
+    <loc>https://pudongping.github.io/categories/Linux/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3303,14 +3310,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/categories/Go/</loc>
+    <loc>https://pudongping.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://pudongping.github.io/categories/Go/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-07-01T08:19:45.927Z</updated>
+  <updated>2026-07-01T08:23:59.927Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 语言里判断字符串为空，90% 的人都写错了！</title>
+    <link href="https://pudongping.github.io/posts/254c6133.html"/>
+    <id>https://pudongping.github.io/posts/254c6133.html</id>
+    <published>2026-07-01T08:23:34.000Z</published>
+    <updated>2026-07-01T08:23:59.927Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言中，字符串 &lt;code&gt;len == 0&lt;/code&gt; 和字符串等于空字符串 &lt;code&gt;&quot;&quot;&lt;/code&gt;，到底该用哪个？&lt;/p&gt;
+&lt;p&gt;在日常开发中，这个问题几乎每个 Go 开发者都会遇到：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go 进阶必修：90% 的人都没用对的“表驱动法”</title>
     <link href="https://pudongping.github.io/posts/b221b7a.html"/>
     <id>https://pudongping.github.io/posts/b221b7a.html</id>
     <published>2026-07-01T08:17:22.000Z</published>
-    <updated>2026-07-01T08:19:45.927Z</updated>
+    <updated>2026-07-01T08:19:56.548Z</updated>
     
     
       
@@ -480,9 +509,9 @@
     
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
     <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -510,9 +539,9 @@
     
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
     <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -572,36 +601,6 @@
     <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战2、只有 1% 的人知道！这样给 AI 发指令，写出的前端项目堪比阿里 P7</title>
-    <link href="https://pudongping.github.io/posts/b23f5e1a.html"/>
-    <id>https://pudongping.github.io/posts/b23f5e1a.html</id>
-    <published>2026-04-22T04:36:02.000Z</published>
-    <updated>2026-04-22T04:37:03.898Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;为什么别人用 AI 写出的代码结构清晰、风格统一，而你写出来的却是“屎山”堆积？区别不在于 AI 的智商，而在于你会不会“调教”。&lt;/p&gt;
-&lt;p&gt;本文将为你提供一套经过实战验证的 &lt;strong&gt;“从 0 到 1 前端项目启动 Prompt</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
