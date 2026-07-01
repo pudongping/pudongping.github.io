@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-06-29T03:08:06.948Z</updated>
+  <updated>2026-07-01T08:19:45.927Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go 进阶必修：90% 的人都没用对的“表驱动法”</title>
+    <link href="https://pudongping.github.io/posts/b221b7a.html"/>
+    <id>https://pudongping.github.io/posts/b221b7a.html</id>
+    <published>2026-07-01T08:17:22.000Z</published>
+    <updated>2026-07-01T08:19:45.927Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;作为一名开发者，在日常工作中，我们最常面对的可能不是复杂的算法，而是&lt;strong&gt;复杂多变的业务逻辑&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;是不是经常遇到这种场景：产品经理跑过来说，“我们要接一个新的支付渠道”，或者“针对 VIP</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>你知道 Go 结构体和结构体指针调用的区别吗？一文带你彻底搞懂！</title>
     <link href="https://pudongping.github.io/posts/934e573e.html"/>
     <id>https://pudongping.github.io/posts/934e573e.html</id>
     <published>2026-06-29T03:07:27.000Z</published>
-    <updated>2026-06-29T03:08:06.948Z</updated>
+    <updated>2026-06-29T03:09:48.989Z</updated>
     
     
       
@@ -367,9 +395,9 @@
     <category term="Ubuntu" scheme="https://pudongping.github.io/categories/Ubuntu/"/>
     
     
-    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
     
     <category term="DNS" scheme="https://pudongping.github.io/tags/DNS/"/>
     
@@ -561,36 +589,6 @@
         
     <summary type="html">&lt;p&gt;为什么别人用 AI 写出的代码结构清晰、风格统一，而你写出来的却是“屎山”堆积？区别不在于 AI 的智商，而在于你会不会“调教”。&lt;/p&gt;
 &lt;p&gt;本文将为你提供一套经过实战验证的 &lt;strong&gt;“从 0 到 1 前端项目启动 Prompt</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战1、手摸手教你一行代码不写，全程AI写个小程序——前端布局</title>
-    <link href="https://pudongping.github.io/posts/bd7a8e95.html"/>
-    <id>https://pudongping.github.io/posts/bd7a8e95.html</id>
-    <published>2026-04-22T04:35:11.000Z</published>
-    <updated>2026-04-22T04:37:03.897Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;经常用 AI 搓前端页面的朋友，一定对那抹“深邃蓝”和“基佬紫”不陌生。&lt;/p&gt;
-&lt;p&gt;只要你不给 Prompt 设限，AI 仿佛全员深爱“赛博朋克渐变风”。第一眼惊艳，看多了想吐——满屏都是溢出来的“AI</summary>
         
       
     
