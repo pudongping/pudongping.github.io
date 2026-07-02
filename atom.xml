@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-07-01T08:23:59.927Z</updated>
+  <updated>2026-07-02T02:57:51.562Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>RabbitMQ 太重，Kafka 太复杂？Go 开发者：Asynq分布式任务队列就刚刚好</title>
+    <link href="https://pudongping.github.io/posts/3a7f5eac.html"/>
+    <id>https://pudongping.github.io/posts/3a7f5eac.html</id>
+    <published>2026-07-02T02:56:59.000Z</published>
+    <updated>2026-07-02T02:57:51.562Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在后端服务中，我们经常需要&lt;strong&gt;异步执行耗时任务&lt;/strong&gt; —— 比如发送邮件、生成缩略图、导出报表、调用外部 API 等。让请求等待这些操作完成，会浪费用户体验，也浪费服务器资源。&lt;/p&gt;
+&lt;p&gt;这时异步任务队列就派上用场了。&lt;/p&gt;
+&lt;p&gt;而在 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Asynq" scheme="https://pudongping.github.io/tags/Asynq/"/>
+    
+    <category term="分布式消息队列" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go 语言里判断字符串为空，90% 的人都写错了！</title>
     <link href="https://pudongping.github.io/posts/254c6133.html"/>
     <id>https://pudongping.github.io/posts/254c6133.html</id>
     <published>2026-07-01T08:23:34.000Z</published>
-    <updated>2026-07-01T08:23:59.927Z</updated>
+    <updated>2026-07-01T08:24:14.824Z</updated>
     
     
       
@@ -509,9 +542,9 @@
     
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
     <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -539,9 +572,9 @@
     
     <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
     
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
     <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -559,35 +592,6 @@
         
     <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 4 篇文章，这也是讲前端相关的最后一篇文章，下一篇文章开始讲解如何通过 AI 来用 go-zero 写后端接口。&lt;/p&gt;
 &lt;p&gt;这个系列的文章不是基础编程文章，不会告诉你编程语法是怎样的，而是告诉你用 AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战3、90%人用AI写前端都踩的坑：API层混乱！3步教你标准化</title>
-    <link href="https://pudongping.github.io/posts/6ea7c65a.html"/>
-    <id>https://pudongping.github.io/posts/6ea7c65a.html</id>
-    <published>2026-04-22T04:39:55.000Z</published>
-    <updated>2026-04-22T04:42:59.052Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如果你也用 AI 写前端代码，你就会发现，AI 帮你写的前端请求代码总是五花八门？一会用 &lt;code&gt;axios&lt;/code&gt;，一会用 &lt;code&gt;uni.request&lt;/code&gt;，甚至把 API</summary>
         
       
     
