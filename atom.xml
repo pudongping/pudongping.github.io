@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-07-02T02:57:51.562Z</updated>
+  <updated>2026-07-02T03:08:06.418Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Kafka 太重？试试 NSQ：一个优雅到极致的消息队列</title>
+    <link href="https://pudongping.github.io/posts/6afc65a6.html"/>
+    <id>https://pudongping.github.io/posts/6afc65a6.html</id>
+    <published>2026-07-02T03:02:16.000Z</published>
+    <updated>2026-07-02T03:08:06.418Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天想和大家聊一个既老牌又实用的开源项目——&lt;strong&gt;NSQ&lt;/strong&gt;。如果你是做后端开发，特别是跟 Go 语言打交道比较多的话，对这个名字应该不会陌生。即使你没用过，在消息队列这个技术选型里，NSQ 也绝对是个值得了解的存在。&lt;/p&gt;
+&lt;p&gt;本文会详细介绍</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="NSQ" scheme="https://pudongping.github.io/tags/NSQ/"/>
+    
+    <category term="消息队列" scheme="https://pudongping.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>RabbitMQ 太重，Kafka 太复杂？Go 开发者：Asynq分布式任务队列就刚刚好</title>
     <link href="https://pudongping.github.io/posts/3a7f5eac.html"/>
     <id>https://pudongping.github.io/posts/3a7f5eac.html</id>
     <published>2026-07-02T02:56:59.000Z</published>
-    <updated>2026-07-02T02:57:51.562Z</updated>
+    <updated>2026-07-02T02:58:01.096Z</updated>
     
     
       
@@ -575,36 +607,6 @@
     <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战4、AI总是忘记项目规范？因为你缺了这份终极上下文文件</title>
-    <link href="https://pudongping.github.io/posts/66f0cba6.html"/>
-    <id>https://pudongping.github.io/posts/66f0cba6.html</id>
-    <published>2026-04-22T04:40:53.000Z</published>
-    <updated>2026-04-22T04:42:59.053Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 4 篇文章，这也是讲前端相关的最后一篇文章，下一篇文章开始讲解如何通过 AI 来用 go-zero 写后端接口。&lt;/p&gt;
-&lt;p&gt;这个系列的文章不是基础编程文章，不会告诉你编程语法是怎样的，而是告诉你用 AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   

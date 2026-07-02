@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pudongping.github.io/posts/6afc65a6.html</loc>
+    
+    <lastmod>2026-07-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pudongping.github.io/posts/3a7f5eac.html</loc>
     
     <lastmod>2026-07-02</lastmod>
@@ -1234,14 +1241,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/contact/index.html</loc>
+    <loc>https://pudongping.github.io/friends/index.html</loc>
     
     <lastmod>2023-12-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/friends/index.html</loc>
+    <loc>https://pudongping.github.io/contact/index.html</loc>
     
     <lastmod>2023-12-08</lastmod>
     
@@ -1346,7 +1353,7 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/139571b4.html</loc>
+    <loc>https://pudongping.github.io/posts/199b0f07.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -1360,14 +1367,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/32500f0d.html</loc>
+    <loc>https://pudongping.github.io/posts/139571b4.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/199b0f07.html</loc>
+    <loc>https://pudongping.github.io/posts/32500f0d.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -1402,14 +1409,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/13c0012.html</loc>
+    <loc>https://pudongping.github.io/posts/89044c18.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/posts/89044c18.html</loc>
+    <loc>https://pudongping.github.io/posts/13c0012.html</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -2055,20 +2062,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/CentOS/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pudongping.github.io/tags/LAMP/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.github.io/tags/Python3/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
@@ -2084,6 +2077,20 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/arq/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/CentOS/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/LAMP/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2371,6 +2378,20 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/NSQ/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3084,14 +3105,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/GitBook/</loc>
+    <loc>https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%AE%B9%E5%99%A8/</loc>
+    <loc>https://pudongping.github.io/tags/GitBook/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3203,13 +3224,6 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pudongping.github.io/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
@@ -3218,6 +3232,13 @@
   
   <url>
     <loc>https://pudongping.github.io/tags/SDK/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3303,14 +3324,14 @@
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/categories/CentOS/</loc>
+    <loc>https://pudongping.github.io/categories/Python/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pudongping.github.io/categories/Python/</loc>
+    <loc>https://pudongping.github.io/categories/CentOS/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
