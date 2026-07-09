@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-05-18T03:04:27.127Z</updated>
+  <updated>2026-07-09T04:04:44.961Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -15,6 +15,304 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>还在用字符串返回错误提示？Go语言优雅错误处理的正确姿势！</title>
+    <link href="https://pudongping.github.io/posts/393ef8ad.html"/>
+    <id>https://pudongping.github.io/posts/393ef8ad.html</id>
+    <published>2026-07-09T04:03:59.000Z</published>
+    <updated>2026-07-09T04:04:44.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在日常的Go语言开发中，我们经常会遇到这样一个场景：在一个业务方法（比如校验短信验证码）中，我们需要处理多种情况。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;业务校验失败（如验证码过期、验证码不完整）&lt;/li&gt;
+&lt;li&gt;系统级异常（如Redis反序列化失败、数据库宕机）&lt;/li&gt;
+&lt;li&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="错误" scheme="https://pudongping.github.io/tags/%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从失真到绝对精准：Go语言中如何进行高精度计算？</title>
+    <link href="https://pudongping.github.io/posts/33fa2e5e.html"/>
+    <id>https://pudongping.github.io/posts/33fa2e5e.html</id>
+    <published>2026-07-09T04:02:56.000Z</published>
+    <updated>2026-07-09T04:03:40.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在电商、金融、支付等核心微服务开发中，数据计算的精确度是系统安全的生命线。然而，许多刚接触 Go 语言的开发者，甚至是有一定经验的后端工程师，依然会习惯性地使用 &lt;code&gt;float64&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="decimal" scheme="https://pudongping.github.io/tags/decimal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 程序员进阶必读：这 24 个经典的 Golang 错误，连老手都会栽跟头！</title>
+    <link href="https://pudongping.github.io/posts/51e5597e.html"/>
+    <id>https://pudongping.github.io/posts/51e5597e.html</id>
+    <published>2026-07-06T02:00:18.000Z</published>
+    <updated>2026-07-09T03:40:31.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言（Golang）的开发中，简洁的语法和强大的并发机制让无数程序员爱不释手。然而，正如所有编程语言一样，Go 也有它的“脾气”。尤其是当你从 Java、Python 或 C++</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="错误" scheme="https://pudongping.github.io/tags/%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis 分布式锁的 5个坑，真的是又大又深！！</title>
+    <link href="https://pudongping.github.io/posts/d47f830.html"/>
+    <id>https://pudongping.github.io/posts/d47f830.html</id>
+    <published>2026-07-06T01:59:18.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微服务架构中，分布式锁是我们解决“并发抢占资源”（如秒杀扣库存、防重复提交等）的利器。很多开发者认为，用 Redis 实现分布式锁不就是一行 &lt;code&gt;SETNX&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
+    
+    <category term="分布式锁" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kafka 太重？试试 NSQ：一个优雅到极致的消息队列</title>
+    <link href="https://pudongping.github.io/posts/6afc65a6.html"/>
+    <id>https://pudongping.github.io/posts/6afc65a6.html</id>
+    <published>2026-07-02T03:02:16.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天想和大家聊一个既老牌又实用的开源项目——&lt;strong&gt;NSQ&lt;/strong&gt;。如果你是做后端开发，特别是跟 Go 语言打交道比较多的话，对这个名字应该不会陌生。即使你没用过，在消息队列这个技术选型里，NSQ 也绝对是个值得了解的存在。&lt;/p&gt;
+&lt;p&gt;本文会详细介绍</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="NSQ" scheme="https://pudongping.github.io/tags/NSQ/"/>
+    
+    <category term="消息队列" scheme="https://pudongping.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RabbitMQ 太重，Kafka 太复杂？Go 开发者：Asynq分布式任务队列就刚刚好</title>
+    <link href="https://pudongping.github.io/posts/3a7f5eac.html"/>
+    <id>https://pudongping.github.io/posts/3a7f5eac.html</id>
+    <published>2026-07-02T02:56:59.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在后端服务中，我们经常需要&lt;strong&gt;异步执行耗时任务&lt;/strong&gt; —— 比如发送邮件、生成缩略图、导出报表、调用外部 API 等。让请求等待这些操作完成，会浪费用户体验，也浪费服务器资源。&lt;/p&gt;
+&lt;p&gt;这时异步任务队列就派上用场了。&lt;/p&gt;
+&lt;p&gt;而在 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+    <category term="Asynq" scheme="https://pudongping.github.io/tags/Asynq/"/>
+    
+    <category term="分布式消息队列" scheme="https://pudongping.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 语言里判断字符串为空，90% 的人都写错了！</title>
+    <link href="https://pudongping.github.io/posts/254c6133.html"/>
+    <id>https://pudongping.github.io/posts/254c6133.html</id>
+    <published>2026-07-01T08:23:34.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 Go 语言中，字符串 &lt;code&gt;len == 0&lt;/code&gt; 和字符串等于空字符串 &lt;code&gt;&quot;&quot;&lt;/code&gt;，到底该用哪个？&lt;/p&gt;
+&lt;p&gt;在日常开发中，这个问题几乎每个 Go 开发者都会遇到：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go 进阶必修：90% 的人都没用对的“表驱动法”</title>
+    <link href="https://pudongping.github.io/posts/b221b7a.html"/>
+    <id>https://pudongping.github.io/posts/b221b7a.html</id>
+    <published>2026-07-01T08:17:22.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;作为一名开发者，在日常工作中，我们最常面对的可能不是复杂的算法，而是&lt;strong&gt;复杂多变的业务逻辑&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;是不是经常遇到这种场景：产品经理跑过来说，“我们要接一个新的支付渠道”，或者“针对 VIP</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你知道 Go 结构体和结构体指针调用的区别吗？一文带你彻底搞懂！</title>
+    <link href="https://pudongping.github.io/posts/934e573e.html"/>
+    <id>https://pudongping.github.io/posts/934e573e.html</id>
+    <published>2026-06-29T03:07:27.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前几天在技术群里看到有小伙伴问了一个经典问题：**”Go 结构体方法调用时，什么时候用值接收器，什么时候用指针接收器？”**&lt;/p&gt;
+&lt;p&gt;虽然这是个老生常谈的话题，但是，我发现很多同学（包括工作几年的）对此还是一知半解。正好最近在梳理 Go</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://pudongping.github.io/tags/Go/"/>
+    
+    <category term="Golang" scheme="https://pudongping.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试官问“装饰器模式”，这样回答薪资多要 3000！</title>
+    <link href="https://pudongping.github.io/posts/592adfa0.html"/>
+    <id>https://pudongping.github.io/posts/592adfa0.html</id>
+    <published>2026-06-29T03:05:05.000Z</published>
+    <updated>2026-07-09T03:40:31.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在 Code Review 的时候，看到某同事写代码，那叫一个“继承满天飞”。为了给一个核心类增加不同的功能，他硬生生造出了十几个子类。看着那像族谱一样庞大的类继承树，我手里的咖啡瞬间就不香了。&lt;/p&gt;
+&lt;p&gt;很多初学者（甚至老手）在面对</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="https://pudongping.github.io/tags/PHP/"/>
+    
+    <category term="设计模式" scheme="https://pudongping.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="装饰器模式" scheme="https://pudongping.github.io/tags/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Celery 太重了？这可能是你一直在找的 asyncio 任务队列</title>
@@ -309,302 +607,11 @@
     <category term="Ubuntu" scheme="https://pudongping.github.io/categories/Ubuntu/"/>
     
     
-    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
-    
     <category term="Linux" scheme="https://pudongping.github.io/tags/Linux/"/>
     
+    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
+    
     <category term="DNS" scheme="https://pudongping.github.io/tags/DNS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>别再用过时的地区数据了！闸北区都消失了，教你一次性搞定省市区同步更新！（附实战源码）</title>
-    <link href="https://pudongping.github.io/posts/ed5160f4.html"/>
-    <id>https://pudongping.github.io/posts/ed5160f4.html</id>
-    <published>2026-04-29T02:56:41.000Z</published>
-    <updated>2026-05-18T02:48:57.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近在工作中要做一个功能：需要把地区表更新为最新的行政划分。&lt;/p&gt;
-&lt;p&gt;我们的地区表中现在都还保留着闸北区，然而，现在上海市早就没有使用闸北区这个名称了。用户也不止一次两次吐槽我们的地址选项，需要的地区没得选，早就没用的地区依旧还留着，感觉我们的 APP</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Python" scheme="https://pudongping.github.io/tags/Python/"/>
-    
-    <category term="地区数据" scheme="https://pudongping.github.io/tags/%E5%9C%B0%E5%8C%BA%E6%95%B0%E6%8D%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>不装插件不写代码！教你一招搞定网页长截图！清晰且高效！</title>
-    <link href="https://pudongping.github.io/posts/43806498.html"/>
-    <id>https://pudongping.github.io/posts/43806498.html</id>
-    <published>2026-04-29T02:55:14.000Z</published>
-    <updated>2026-05-18T02:48:57.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近想做一个海报，为了更加方便快速实现我的需求，我让 AI 直接帮我用 html 做了一下排版。排版倒是做好了，但是我需要的是一张图片，现在就需要将 html</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="Chrome" scheme="https://pudongping.github.io/tags/Chrome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战6、抄作业吧！我优化了N遍的go-zero项目AI协作规范文件，一字不差全给你</title>
-    <link href="https://pudongping.github.io/posts/3c4544a6.html"/>
-    <id>https://pudongping.github.io/posts/3c4544a6.html</id>
-    <published>2026-04-22T04:42:20.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 6 篇文章，这也是这个系列的最后一篇文章。&lt;/p&gt;
-&lt;p&gt;今天主要讲解的是，如何在使用 go-zero 框架写 API 服务时，写 &lt;code&gt;CLAUDE.md&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战5、手摸手教学：如何用AI+go-zero，从数据库设计开始构建API</title>
-    <link href="https://pudongping.github.io/posts/2f6d4246.html"/>
-    <id>https://pudongping.github.io/posts/2f6d4246.html</id>
-    <published>2026-04-22T04:41:38.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 5 篇文章，也是讲解用 AI 开发后端 API 接口的第一篇文章。&lt;/p&gt;
-&lt;p&gt;关于用 AI 来开发 API 接口的文章不会讲太多，因为其实大部分的框架部分最好还是自己写，用 AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战4、AI总是忘记项目规范？因为你缺了这份终极上下文文件</title>
-    <link href="https://pudongping.github.io/posts/66f0cba6.html"/>
-    <id>https://pudongping.github.io/posts/66f0cba6.html</id>
-    <published>2026-04-22T04:40:53.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这篇文章是从 0 到 1 使用 AI 开发完整项目的第 4 篇文章，这也是讲前端相关的最后一篇文章，下一篇文章开始讲解如何通过 AI 来用 go-zero 写后端接口。&lt;/p&gt;
-&lt;p&gt;这个系列的文章不是基础编程文章，不会告诉你编程语法是怎样的，而是告诉你用 AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战3、90%人用AI写前端都踩的坑：API层混乱！3步教你标准化</title>
-    <link href="https://pudongping.github.io/posts/6ea7c65a.html"/>
-    <id>https://pudongping.github.io/posts/6ea7c65a.html</id>
-    <published>2026-04-22T04:39:55.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如果你也用 AI 写前端代码，你就会发现，AI 帮你写的前端请求代码总是五花八门？一会用 &lt;code&gt;axios&lt;/code&gt;，一会用 &lt;code&gt;uni.request&lt;/code&gt;，甚至把 API</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI编程" scheme="https://pudongping.github.io/tags/AI%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战2、只有 1% 的人知道！这样给 AI 发指令，写出的前端项目堪比阿里 P7</title>
-    <link href="https://pudongping.github.io/posts/b23f5e1a.html"/>
-    <id>https://pudongping.github.io/posts/b23f5e1a.html</id>
-    <published>2026-04-22T04:36:02.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;为什么别人用 AI 写出的代码结构清晰、风格统一，而你写出来的却是“屎山”堆积？区别不在于 AI 的智商，而在于你会不会“调教”。&lt;/p&gt;
-&lt;p&gt;本文将为你提供一套经过实战验证的 &lt;strong&gt;“从 0 到 1 前端项目启动 Prompt</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI开发实战1、手摸手教你一行代码不写，全程AI写个小程序——前端布局</title>
-    <link href="https://pudongping.github.io/posts/bd7a8e95.html"/>
-    <id>https://pudongping.github.io/posts/bd7a8e95.html</id>
-    <published>2026-04-22T04:35:11.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;经常用 AI 搓前端页面的朋友，一定对那抹“深邃蓝”和“基佬紫”不陌生。&lt;/p&gt;
-&lt;p&gt;只要你不给 Prompt 设限，AI 仿佛全员深爱“赛博朋克渐变风”。第一眼惊艳，看多了想吐——满屏都是溢出来的“AI</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【AI开发实战】从想法到上线，我用AI全栈开发了一款记账微信小程序</title>
-    <link href="https://pudongping.github.io/posts/5ec7849a.html"/>
-    <id>https://pudongping.github.io/posts/5ec7849a.html</id>
-    <published>2026-04-22T04:34:21.000Z</published>
-    <updated>2026-05-18T02:48:57.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;每到月底，看着空空如也的银行卡，你是不是也经常发出灵魂拷问：&lt;br&gt;&lt;strong&gt;“我明明没买什么大件，钱到底都去哪了？”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;奶茶、打车、外卖……这些不起眼的小开销，正在悄悄吞噬你的积蓄。&lt;/p&gt;
-&lt;p&gt;记账，是理财的第一步。但市面上的记账软</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="微信小程序" scheme="https://pudongping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="AI 编程" scheme="https://pudongping.github.io/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>全网都在推 Claude Code，但只有这篇文章教你如何“真正”能用</title>
-    <link href="https://pudongping.github.io/posts/293ebadc.html"/>
-    <id>https://pudongping.github.io/posts/293ebadc.html</id>
-    <published>2026-04-22T04:33:17.000Z</published>
-    <updated>2026-05-18T02:48:57.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Claude Code 这个 AI 神器想必已经不用过多介绍了吧，但是身边有很多朋友都说安装上了，但是总是没办法丝滑的使用，额～由于一些懂得都懂的原因，很多人都卡在网络上，这篇文章就教大家如何一步一步的从安装到能正常使用。&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/categories/AI/"/>
-    
-    
-    <category term="AI" scheme="https://pudongping.github.io/tags/AI/"/>
-    
-    <category term="Claude Code" scheme="https://pudongping.github.io/tags/Claude-Code/"/>
     
   </entry>
   
