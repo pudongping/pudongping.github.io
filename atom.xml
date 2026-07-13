@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-07-10T02:37:19.159Z</updated>
+  <updated>2026-07-13T05:39:52.189Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,107 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>手摸手教你玩 Jenkins，一次搞懂 CI/CD！（第三章：发布之nodeAgent）</title>
+    <link href="https://pudongping.github.io/posts/c6b6ecb5.html"/>
+    <id>https://pudongping.github.io/posts/c6b6ecb5.html</id>
+    <published>2026-07-13T05:39:24.000Z</published>
+    <updated>2026-07-13T05:39:52.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Jenkins 相关的教程，我已经出了两期了。&lt;/p&gt;
+&lt;p&gt;第一章，我讲到了通过 docker 快速部署 Jenkins 以及安装 Jenkins 的必要插件。&lt;/p&gt;
+&lt;p&gt;第二章，我讲到了通过 sshPublisher</summary>
+        
+      
+    
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/categories/Jenkins/"/>
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/tags/Jenkins/"/>
+    
+    <category term="CI" scheme="https://pudongping.github.io/tags/CI/"/>
+    
+    <category term="CD" scheme="https://pudongping.github.io/tags/CD/"/>
+    
+    <category term="自动化部署" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手摸手教你玩 Jenkins，一次搞懂 CI/CD！（第二章：发布之sshPublisher）</title>
+    <link href="https://pudongping.github.io/posts/b67d264e.html"/>
+    <id>https://pudongping.github.io/posts/b67d264e.html</id>
+    <published>2026-07-13T05:38:47.000Z</published>
+    <updated>2026-07-13T05:39:09.264Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;上一章节，我讲到了如何通过 docker 去安装 Jenkins，并且在 Jenkins</summary>
+        
+      
+    
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/categories/Jenkins/"/>
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/tags/Jenkins/"/>
+    
+    <category term="CI" scheme="https://pudongping.github.io/tags/CI/"/>
+    
+    <category term="CD" scheme="https://pudongping.github.io/tags/CD/"/>
+    
+    <category term="自动化部署" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手摸手教你玩 Jenkins，一次搞懂 CI/CD！（第一章：部署）</title>
+    <link href="https://pudongping.github.io/posts/51baa55e.html"/>
+    <id>https://pudongping.github.io/posts/51baa55e.html</id>
+    <published>2026-07-13T05:37:16.000Z</published>
+    <updated>2026-07-13T05:38:30.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;对于开发者来说，能自动化部署项目，就像解锁了“自动驾驶”。而 Jenkins，就是让你从“手动上传代码、拷贝文件、重启服务”的地狱中解放出来的神器。&lt;/p&gt;
+&lt;h2 id=&quot;Jenkins-是什么？&quot;&gt;&lt;a href=&quot;#Jenkins-是什么？&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/categories/Jenkins/"/>
+    
+    
+    <category term="Jenkins" scheme="https://pudongping.github.io/tags/Jenkins/"/>
+    
+    <category term="CI" scheme="https://pudongping.github.io/tags/CI/"/>
+    
+    <category term="CD" scheme="https://pudongping.github.io/tags/CD/"/>
+    
+    <category term="自动化部署" scheme="https://pudongping.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Beanstalkd 实战指南：原来延迟队列、异步任务可以如此简单丝滑！</title>
     <link href="https://pudongping.github.io/posts/9cb3c196.html"/>
     <id>https://pudongping.github.io/posts/9cb3c196.html</id>
     <published>2026-07-10T02:36:20.000Z</published>
-    <updated>2026-07-10T02:37:19.159Z</updated>
+    <updated>2026-07-10T02:37:29.305Z</updated>
     
     
       
@@ -521,98 +617,6 @@
     <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
     
     <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员常犯的坑：别再用 VARCHAR 存 IP 了！用对方式，性能何止提升10倍！</title>
-    <link href="https://pudongping.github.io/posts/412dd566.html"/>
-    <id>https://pudongping.github.io/posts/412dd566.html</id>
-    <published>2026-05-18T02:49:56.000Z</published>
-    <updated>2026-05-18T02:51:33.545Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当我们在使用 MySQL 设计表结构的时候都会遇到一个经典问题：&lt;strong&gt;“如果要存 IP 地址，到底该用什么数据类型？”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;别小看这个问题，如果存储方式选错了，未来不仅浪费空间，还可能导致查询性能低下。今天我就带你一步一步搞懂如何在</summary>
-        
-      
-    
-    
-    
-    <category term="MySQL" scheme="https://pudongping.github.io/categories/MySQL/"/>
-    
-    
-    <category term="MySQL" scheme="https://pudongping.github.io/tags/MySQL/"/>
-    
-    <category term="技巧" scheme="https://pudongping.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>别再死记硬背了！一文扒光 I/O 多路复用的底裤（Epoll/Select/Poll）</title>
-    <link href="https://pudongping.github.io/posts/96e139d4.html"/>
-    <id>https://pudongping.github.io/posts/96e139d4.html</id>
-    <published>2026-04-29T03:01:42.000Z</published>
-    <updated>2026-05-18T02:48:57.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;每次面试聊到高并发，面试官总喜欢似笑非笑地问一句：“兄弟，聊聊 I/O 多路复用呗？”&lt;/p&gt;
-&lt;p&gt;如果你只能干巴巴地背出“select、poll、epoll 的区别是底层数据结构不同”，那基本就已经在淘汰边缘疯狂试探了。&lt;/p&gt;
-&lt;p&gt;今天，咱们不搞虚的，直接把</summary>
-        
-      
-    
-    
-    
-    <category term="科普" scheme="https://pudongping.github.io/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="网络编程" scheme="https://pudongping.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="I/O" scheme="https://pudongping.github.io/tags/I-O/"/>
-    
-    <category term="Epoll" scheme="https://pudongping.github.io/tags/Epoll/"/>
-    
-    <category term="Select" scheme="https://pudongping.github.io/tags/Select/"/>
-    
-    <category term="Poll" scheme="https://pudongping.github.io/tags/Poll/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>90%的人都不知道：Docker 容器 apt 报错 404 的幕后黑手竟是它！</title>
-    <link href="https://pudongping.github.io/posts/e689d513.html"/>
-    <id>https://pudongping.github.io/posts/e689d513.html</id>
-    <published>2026-04-29T03:00:38.000Z</published>
-    <updated>2026-05-18T02:48:57.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;大家有没有遇到过这样的情况：你准备在本地跑某个开源项目，你找到了这个开源项目的镜像名称，也将这个镜像 &lt;code&gt;docker pull&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/categories/Docker/"/>
-    
-    
-    <category term="Docker" scheme="https://pudongping.github.io/tags/Docker/"/>
-    
-    <category term="apt" scheme="https://pudongping.github.io/tags/apt/"/>
-    
-    <category term="Ubuntu" scheme="https://pudongping.github.io/tags/Ubuntu/"/>
     
   </entry>
   
