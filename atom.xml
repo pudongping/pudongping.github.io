@@ -6,7 +6,7 @@
   <link href="https://pudongping.github.io/atom.xml" rel="self"/>
   
   <link href="https://pudongping.github.io/"/>
-  <updated>2026-07-13T05:39:52.189Z</updated>
+  <updated>2026-07-24T14:22:52.057Z</updated>
   <id>https://pudongping.github.io/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python百行代码实现人脸识别，手摸手教你打造私人门禁系统</title>
+    <link href="https://pudongping.github.io/posts/fbc2c993.html"/>
+    <id>https://pudongping.github.io/posts/fbc2c993.html</id>
+    <published>2026-07-24T14:21:35.000Z</published>
+    <updated>2026-07-24T14:22:52.057Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;以前我们提到“人脸识别”，很多人的第一反应是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;调用百度AI接口。&lt;br&gt;调用腾讯云人脸识别。&lt;br&gt;买一套商业门禁系统。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但是对于程序员来说，总感觉少了一点参与感。&lt;/p&gt;
+&lt;p&gt;毕竟：&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://pudongping.github.io/categories/Python/"/>
+    
+    
+    <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
+    
+    <category term="face_recognition" scheme="https://pudongping.github.io/tags/face-recognition/"/>
+    
+    <category term="numpy" scheme="https://pudongping.github.io/tags/numpy/"/>
+    
+    <category term="opencv" scheme="https://pudongping.github.io/tags/opencv/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手摸手教你玩 Jenkins，一次搞懂 CI/CD！（第三章：发布之nodeAgent）</title>
     <link href="https://pudongping.github.io/posts/c6b6ecb5.html"/>
     <id>https://pudongping.github.io/posts/c6b6ecb5.html</id>
     <published>2026-07-13T05:39:24.000Z</published>
-    <updated>2026-07-13T05:39:52.189Z</updated>
+    <updated>2026-07-13T05:40:01.302Z</updated>
     
     
       
@@ -54,7 +90,7 @@
     <link href="https://pudongping.github.io/posts/b67d264e.html"/>
     <id>https://pudongping.github.io/posts/b67d264e.html</id>
     <published>2026-07-13T05:38:47.000Z</published>
-    <updated>2026-07-13T05:39:09.264Z</updated>
+    <updated>2026-07-13T05:40:01.302Z</updated>
     
     
       
@@ -85,7 +121,7 @@
     <link href="https://pudongping.github.io/posts/51baa55e.html"/>
     <id>https://pudongping.github.io/posts/51baa55e.html</id>
     <published>2026-07-13T05:37:16.000Z</published>
-    <updated>2026-07-13T05:38:30.193Z</updated>
+    <updated>2026-07-13T05:40:01.301Z</updated>
     
     
       
@@ -587,36 +623,6 @@
     
     
     <category term="Python3" scheme="https://pudongping.github.io/tags/Python3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis有1亿个Key，如何优雅地找出特定前缀的那10万条？</title>
-    <link href="https://pudongping.github.io/posts/9a2dca58.html"/>
-    <id>https://pudongping.github.io/posts/9a2dca58.html</id>
-    <published>2026-05-18T02:58:31.000Z</published>
-    <updated>2026-05-18T03:01:01.727Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Redis 是每一位后端工程师最熟悉的中间件之一。&lt;br&gt;它轻量、高效、灵活，几乎是现代高并发系统中最常见的缓存组件。&lt;/p&gt;
-&lt;p&gt;可当业务规模上来之后，Redis</summary>
-        
-      
-    
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/categories/Redis/"/>
-    
-    
-    <category term="Redis" scheme="https://pudongping.github.io/tags/Redis/"/>
-    
-    <category term="Cache" scheme="https://pudongping.github.io/tags/Cache/"/>
-    
-    <category term="缓存" scheme="https://pudongping.github.io/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
